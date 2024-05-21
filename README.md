@@ -38,6 +38,6 @@ Pe măsură ce dezvoltarea avansează, vor fi adăugate noi opțiuni și funcți
 
 1. Clonați acest repository:
    ```bash
-   git clone https://github.com/numele-utilizatorului/video-editor.git
+   git clone https://github.com/Sh4rkel/Video-Editor-App.git
    cd video-editor
 
