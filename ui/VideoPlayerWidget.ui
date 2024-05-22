@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>VideoPlayerWidget</class>
+    <widget class="QWidget" name="VideoPlayerWidget">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>450</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Video Player</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QVideoWidget" name="videoWidget" />
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

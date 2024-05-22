@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_project_cpp_FILE C:/books/C programming/project-cpp/cmake-build-debug/project_cpp.exe)
+set(__QT_DEPLOY_TARGET_project_cpp_RUNTIME_DLLS D:/QT/6.7.0/mingw_64/bin/Qt6MultimediaWidgets.dll;D:/QT/6.7.0/mingw_64/bin/Qt6Multimedia.dll;D:/QT/6.7.0/mingw_64/bin/Qt6Network.dll;D:/QT/6.7.0/mingw_64/bin/Qt6Widgets.dll;D:/QT/6.7.0/mingw_64/bin/Qt6Gui.dll;D:/QT/6.7.0/mingw_64/bin/Qt6Core.dll)

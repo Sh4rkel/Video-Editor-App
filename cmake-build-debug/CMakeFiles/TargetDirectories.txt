@@ -1,0 +1,5 @@
+C:/books/C programming/project-cpp/cmake-build-debug/CMakeFiles/project_cpp.dir
+C:/books/C programming/project-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/books/C programming/project-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/books/C programming/project-cpp/cmake-build-debug/CMakeFiles/project_cpp_autogen_timestamp_deps.dir
+C:/books/C programming/project-cpp/cmake-build-debug/CMakeFiles/project_cpp_autogen.dir

@@ -1,0 +1,41 @@
+# ninja log v5
+3	553	7380921609498199	build.ninja	4181ca10517448d4
+4284	7271	7380918830712564	CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj	f468db61ea45358d
+1032	4170	7380918799704005	CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj	9dcd31a03ad5195d
+1035	4284	7380918800835202	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	dd86242ec8b10607
+4171	7012	7380918828125946	CMakeFiles/project_cpp.dir/src/main.cpp.obj	2e1b3f21dfe12dc2
+1030	4326	7380918801255845	CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj	b11937d4890d3ee8
+2481	2647	7380305045133346	project_cpp.exe	af6a3847209690b2
+13	155	7380920940049975	project_cpp_autogen/timestamp	8ee027497834dce
+13	155	7380920940049975	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+13	155	7380920940049975	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
+0	30	0	CMakeFiles/clean.additional	42deee0179de924e
+13	155	7380920940049975	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+1038	4679	7380918804771577	CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj	7457c4f3e25f1d8
+31	40	0	clean	20cf159513f3cbfe
+13	149	7380921879030741	project_cpp_autogen/timestamp	8ee027497834dce
+13	149	7380921879030741	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+13	149	7380921879030741	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
+13	149	7380921879030741	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+160	214	7380921879700891	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	dd86242ec8b10607
+157	2911	7380921906657145	CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj	9dcd31a03ad5195d
+14	159	7380922754402574	project_cpp_autogen/timestamp	8ee027497834dce
+14	159	7380922754402574	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+14	159	7380922754402574	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
+14	159	7380922754402574	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+168	2457	7380922777388130	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	dd86242ec8b10607
+2457	2633	7380922779094184	project_cpp.exe	7293cb9fbcff8a2a
+16	194	7380996233040095	project_cpp_autogen/timestamp	8ee027497834dce
+16	194	7380996233040095	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+16	194	7380996233040095	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
+16	194	7380996233040095	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+202	2383	7380996254928390	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	dd86242ec8b10607
+2384	2576	7380996256807518	project_cpp.exe	7293cb9fbcff8a2a
+16	780	7381097273079940	project_cpp_autogen/timestamp	8ee027497834dce
+16	780	7381097273079940	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+16	780	7381097273079940	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
+16	780	7381097273079940	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
+787	4026	7381097306094282	CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj	b11937d4890d3ee8
+784	4326	7381097309087840	CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj	f468db61ea45358d
+781	4419	7381097310009462	CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj	7457c4f3e25f1d8
+4420	4619	7381097311967565	project_cpp.exe	7293cb9fbcff8a2a
