@@ -389,8 +389,11 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QSlider \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qslider.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

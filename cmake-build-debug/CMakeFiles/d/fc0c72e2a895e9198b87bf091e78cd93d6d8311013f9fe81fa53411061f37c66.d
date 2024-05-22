@@ -45,6 +45,8 @@ project_cpp_autogen/timestamp: \
   project_cpp_autogen/moc_predefs.h \
   C:/books/C\ programming/project-cpp/src/MainWindow.cpp \
   C:/books/C\ programming/project-cpp/src/MainWindow.h \
+  C:/books/C\ programming/project-cpp/src/TextOverlayWidget.cpp \
+  C:/books/C\ programming/project-cpp/src/TextOverlayWidget.h \
   C:/books/C\ programming/project-cpp/src/TimelineWidget.cpp \
   C:/books/C\ programming/project-cpp/src/TimelineWidget.h \
   C:/books/C\ programming/project-cpp/src/VideoEditor.cpp \
@@ -97,6 +99,10 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/fs_dir.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/fs_fwd.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/fs_ops.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/fs_path.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
@@ -187,6 +193,7 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/include/c++/13.2.0/climits \
   C:/msys64/mingw64/include/c++/13.2.0/clocale \
   C:/msys64/mingw64/include/c++/13.2.0/cmath \
+  C:/msys64/mingw64/include/c++/13.2.0/codecvt \
   C:/msys64/mingw64/include/c++/13.2.0/compare \
   C:/msys64/mingw64/include/c++/13.2.0/concepts \
   C:/msys64/mingw64/include/c++/13.2.0/cstddef \
@@ -207,6 +214,7 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/filesystem \
   C:/msys64/mingw64/include/c++/13.2.0/format \
   C:/msys64/mingw64/include/c++/13.2.0/functional \
   C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
@@ -305,7 +313,11 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QList \
   D:/QT/6.7.0/mingw_64/include/QtCore/QObject \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QRect \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QSize \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QSizeF \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -324,6 +336,7 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qbytearraylist.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcalendar.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qchar.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcompare.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcompare_impl.h \
@@ -335,11 +348,22 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdatastream.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qdatetime.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdebug.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qdir.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qendian.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qeventloop.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qexceptionhandling.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qfile.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qfiledevice.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qflags.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qfloat16.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qforeach.h \
@@ -350,12 +374,14 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qhash.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qiodevice.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterator.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qline.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlist.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qlocale.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlogging.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmalloc.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmap.h \
@@ -366,6 +392,7 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmetatype.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qminmax.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnamespace.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnumeric.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject_impl.h \
@@ -408,6 +435,7 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtextstream.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qtimezone.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtmetamacros.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtnoop.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -425,29 +453,48 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qxptype_traits.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/QShowEvent \
+  D:/QT/6.7.0/mingw_64/include/QtGui/QTransform \
   D:/QT/6.7.0/mingw_64/include/QtGui/qaction.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qbitmap.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qbrush.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qcolor.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qcursor.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qevent.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfont.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfontinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfontmetrics.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qicon.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qimage.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpalette.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpen.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpicture.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixmap.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpolygon.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qregion.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgba64.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtextformat.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtextoption.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtransform.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qvector2d.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
@@ -462,10 +509,22 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QFileDialog \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QInputDialog \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QSlider \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qinputdialog.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qlineedit.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qslider.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \

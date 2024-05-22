@@ -328,6 +328,12 @@
 			null
 		],
 		[
+			"C:/books/C programming/project-cpp/src/TextOverlayWidget.h",
+			"MU",
+			"UVLADIE3JM/moc_TextOverlayWidget.cpp",
+			null
+		],
+		[
 			"C:/books/C programming/project-cpp/src/TimelineWidget.h",
 			"MU",
 			"UVLADIE3JM/moc_TimelineWidget.cpp",
@@ -443,6 +449,11 @@
 	"SOURCES" : 
 	[
 		[ "C:/books/C programming/project-cpp/src/MainWindow.cpp", "MU", null ],
+		[
+			"C:/books/C programming/project-cpp/src/TextOverlayWidget.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/books/C programming/project-cpp/src/TimelineWidget.cpp",
 			"MU",

@@ -1,5 +1,6 @@
 C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADIE3JM/moc_VideoPlayerWidget.cpp: C:/books/C\ programming/project-cpp/src/VideoPlayerWidget.h \
   C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/moc_predefs.h \
+  C:/books/C\ programming/project-cpp/src/TextOverlayWidget.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \
@@ -291,6 +292,7 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qhash.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qiodevice.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterator.h \
@@ -379,12 +381,14 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpalette.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpicture.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixmap.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpolygon.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qregion.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgba64.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
@@ -403,7 +407,10 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \

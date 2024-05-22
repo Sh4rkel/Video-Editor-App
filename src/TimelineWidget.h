@@ -2,6 +2,7 @@
 #define TIMELINEWIDGET_H
 
 #include <QWidget>
+#include <QSlider>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TimelineWidget; }
@@ -15,8 +16,15 @@ public:
     explicit TimelineWidget(QWidget *parent = nullptr);
     ~TimelineWidget();
 
+signals:
+    void positionChanged(int position);
+
+private slots:
+    void onSliderValueChanged(int value);
+
 private:
     Ui::TimelineWidget *ui;
+    QSlider *slider;
 };
 
 #endif

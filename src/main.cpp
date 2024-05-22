@@ -1,10 +1,11 @@
 #include <QApplication>
 #include "MainWindow.h"
+#include <QScopedPointer>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QScopedPointer<MainWindow> w(new MainWindow);
+    w->show();
     return a.exec();
 }

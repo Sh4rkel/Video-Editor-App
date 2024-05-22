@@ -24,12 +24,12 @@ add_executable(project_cpp
         src/VideoPlayerWidget.cpp
         src/TimelineWidget.cpp
         src/VideoEditor.cpp
+        src/TextOverlayWidget.cpp
         src/ui_MainWindow.h
         src/ui_VideoPlayerWidget.h
         src/ui_TimelineWidget.h
         src/VideoEditor.h
 )
-
 target_include_directories(project_cpp PRIVATE ${Qt6Core_INCLUDE_DIRS} ${Qt6Gui_INCLUDE_DIRS} ${Qt6Widgets_INCLUDE_DIRS})
 
 target_link_libraries(project_cpp PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Multimedia Qt6::MultimediaWidgets)

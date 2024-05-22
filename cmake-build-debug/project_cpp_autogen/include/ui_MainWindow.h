@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -18,8 +19,8 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include <timelinewidget.h>
-#include <videoplayerwidget.h>
+#include "timelinewidget.h"
+#include "videoplayerwidget.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -32,6 +33,7 @@ public:
     QPushButton *openButton;
     QPushButton *saveButton;
     QPushButton *cutButton;
+    QComboBox *comboBox;
     QPushButton *addTextButton;
     QPushButton *combineButton;
     VideoPlayerWidget *videoPlayerWidget;
@@ -43,7 +45,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(1125, 883);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -64,6 +66,12 @@ public:
         cutButton->setObjectName("cutButton");
 
         horizontalLayout->addWidget(cutButton);
+
+        comboBox = new QComboBox(centralwidget);
+        comboBox->setObjectName("comboBox");
+        comboBox->setEditable(true);
+
+        horizontalLayout->addWidget(comboBox);
 
         addTextButton = new QPushButton(centralwidget);
         addTextButton->setObjectName("addTextButton");
@@ -91,7 +99,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 22));
+        menubar->setGeometry(QRect(0, 0, 1125, 33));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -108,6 +116,7 @@ public:
         openButton->setText(QCoreApplication::translate("MainWindow", "Open", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         cutButton->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
+        comboBox->setCurrentText(QCoreApplication::translate("MainWindow", "Format", nullptr));
         addTextButton->setText(QCoreApplication::translate("MainWindow", "Add Text", nullptr));
         combineButton->setText(QCoreApplication::translate("MainWindow", "Combine", nullptr));
     } // retranslateUi

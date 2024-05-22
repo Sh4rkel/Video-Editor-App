@@ -27,7 +27,7 @@ public:
     {
         if (VideoPlayerWidget->objectName().isEmpty())
             VideoPlayerWidget->setObjectName("VideoPlayerWidget");
-        VideoPlayerWidget->resize(800, 450);
+        VideoPlayerWidget->resize(1200, 900);
         verticalLayout = new QVBoxLayout(VideoPlayerWidget);
         verticalLayout->setObjectName("verticalLayout");
         videoWidget = new QVideoWidget(VideoPlayerWidget);

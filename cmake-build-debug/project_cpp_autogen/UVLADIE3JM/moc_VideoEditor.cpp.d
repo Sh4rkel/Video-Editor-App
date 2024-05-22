@@ -126,6 +126,7 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   C:/msys64/mingw64/include/c++/13.2.0/cerrno \
   C:/msys64/mingw64/include/c++/13.2.0/charconv \
   C:/msys64/mingw64/include/c++/13.2.0/chrono \
+  C:/msys64/mingw64/include/c++/13.2.0/climits \
   C:/msys64/mingw64/include/c++/13.2.0/clocale \
   C:/msys64/mingw64/include/c++/13.2.0/cmath \
   C:/msys64/mingw64/include/c++/13.2.0/compare \
@@ -246,10 +247,15 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QList \
   D:/QT/6.7.0/mingw_64/include/QtCore/QObject \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QRect \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QSize \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QSizeF \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/q23utility.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qalgorithms.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qanystringview.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qarraydata.h \
@@ -274,8 +280,16 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainerfwd.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainertools_impl.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdatastream.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qdebug.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qeventloop.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qflags.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qfloat16.h \
@@ -285,19 +299,26 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qgenericatomic.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qglobal.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qglobalstatic.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qhash.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qiodevice.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qiterator.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlatin1stringview.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qline.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlist.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qlocale.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qlogging.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmalloc.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qmap.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qmargins.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmath.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmetacontainer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmetatype.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qminmax.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnamespace.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnumeric.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject_impl.h \
@@ -305,10 +326,18 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qoverload.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qpair.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qpoint.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qprocessordetection.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qrect.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qrefcount.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qscopedpointer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qscopeguard.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qset.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qshareddata.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qshareddata_impl.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qsharedpointer.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qsize.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qstring.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qstringalgorithms.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qstringbuilder.h \
@@ -331,6 +360,7 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qtcoreexports.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qtextstream.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtmetamacros.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtnoop.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -341,7 +371,32 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtCore/qtversionchecks.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtypeinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qtypes.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qurl.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qutf8stringview.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qvariant.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qxptype_traits.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qyieldcpu.h
+  D:/QT/6.7.0/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/QShowEvent \
+  D:/QT/6.7.0/mingw_64/include/QtGui/QTransform \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qevent.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qpolygon.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qregion.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qtransform.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qvector2d.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qvectornd.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
+  D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h

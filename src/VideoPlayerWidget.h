@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QMediaPlayer>
 #include <QVideoWidget>
+#include "TextOverlayWidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class VideoPlayerWidget; }
@@ -18,10 +19,18 @@ public:
     ~VideoPlayerWidget();
 
     void loadVideo(const QString &fileName);
+    void addTextOverlay(const QString &text);
+    void showEvent(QShowEvent *event);
+    void checkOverlayPosition();
+    void resizeEvent(QResizeEvent *event);
+
+public slots:
+    void seek(int position);
 
 private:
     Ui::VideoPlayerWidget *ui;
     QMediaPlayer *mediaPlayer;
+    TextOverlayWidget *textOverlayWidget;
 };
 
 #endif
