@@ -39,8 +39,11 @@ constexpr auto qt_meta_stringdata_CLASSTimelineWidgetENDCLASS = QtMocHelpers::st
     "positionChanged",
     "",
     "position",
+    "playPauseClicked",
+    "stopClicked",
     "onSliderValueChanged",
-    "value"
+    "value",
+    "onPlayPauseButtonClicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -53,24 +56,30 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTimelineWidgetENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x06,    1 /* Public */,
+       1,    1,   44,    2, 0x06,    1 /* Public */,
+       4,    0,   47,    2, 0x06,    3 /* Public */,
+       5,    0,   48,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    1,   29,    2, 0x08,    3 /* Private */,
+       6,    1,   49,    2, 0x08,    5 /* Private */,
+       8,    0,   52,    2, 0x08,    7 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void,
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -87,9 +96,15 @@ Q_CONSTINIT const QMetaObject TimelineWidget::staticMetaObject = { {
         // method 'positionChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'playPauseClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'stopClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onSliderValueChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'onPlayPauseButtonClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -101,7 +116,10 @@ void TimelineWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         (void)_t;
         switch (_id) {
         case 0: _t->positionChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 1: _t->onSliderValueChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->playPauseClicked(); break;
+        case 2: _t->stopClicked(); break;
+        case 3: _t->onSliderValueChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->onPlayPauseButtonClicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -110,6 +128,20 @@ void TimelineWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             using _t = void (TimelineWidget::*)(int );
             if (_t _q_method = &TimelineWidget::positionChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (TimelineWidget::*)();
+            if (_t _q_method = &TimelineWidget::playPauseClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (TimelineWidget::*)();
+            if (_t _q_method = &TimelineWidget::stopClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
                 return;
             }
         }
@@ -135,13 +167,13 @@ int TimelineWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 5;
     }
     return _id;
 }
@@ -151,5 +183,17 @@ void TimelineWidget::positionChanged(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void TimelineWidget::playPauseClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void TimelineWidget::stopClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

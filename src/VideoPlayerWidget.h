@@ -16,6 +16,7 @@ Q_OBJECT
 
 public:
     explicit VideoPlayerWidget(QWidget *parent = nullptr);
+    QMediaPlayer* getMediaPlayer() const { return mediaPlayer; }
     ~VideoPlayerWidget();
 
     void loadVideo(const QString &fileName);
@@ -23,7 +24,7 @@ public:
     void showEvent(QShowEvent *event);
     void checkOverlayPosition();
     void resizeEvent(QResizeEvent *event);
-
+    void setLoopPlayback();
 public slots:
     void seek(int position);
 

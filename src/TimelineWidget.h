@@ -15,16 +15,21 @@ Q_OBJECT
 public:
     explicit TimelineWidget(QWidget *parent = nullptr);
     ~TimelineWidget();
-
+    void setDuration(int duration);
+    void setPosition(int position);
 signals:
     void positionChanged(int position);
+    void playPauseClicked();
+    void stopClicked();
 
 private slots:
     void onSliderValueChanged(int value);
+    void onPlayPauseButtonClicked();
 
 private:
     Ui::TimelineWidget *ui;
     QSlider *slider;
+    bool isPlaying; // Add this line
 };
 
 #endif

@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -33,7 +32,6 @@ public:
     QPushButton *openButton;
     QPushButton *saveButton;
     QPushButton *cutButton;
-    QComboBox *comboBox;
     QPushButton *addTextButton;
     QPushButton *combineButton;
     VideoPlayerWidget *videoPlayerWidget;
@@ -66,12 +64,6 @@ public:
         cutButton->setObjectName("cutButton");
 
         horizontalLayout->addWidget(cutButton);
-
-        comboBox = new QComboBox(centralwidget);
-        comboBox->setObjectName("comboBox");
-        comboBox->setEditable(true);
-
-        horizontalLayout->addWidget(comboBox);
 
         addTextButton = new QPushButton(centralwidget);
         addTextButton->setObjectName("addTextButton");
@@ -116,7 +108,6 @@ public:
         openButton->setText(QCoreApplication::translate("MainWindow", "Open", nullptr));
         saveButton->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         cutButton->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
-        comboBox->setCurrentText(QCoreApplication::translate("MainWindow", "Format", nullptr));
         addTextButton->setText(QCoreApplication::translate("MainWindow", "Add Text", nullptr));
         combineButton->setText(QCoreApplication::translate("MainWindow", "Combine", nullptr));
     } // retranslateUi

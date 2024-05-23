@@ -432,14 +432,17 @@ C:/books/C\ programming/project-cpp/cmake-build-debug/project_cpp_autogen/UVLADI
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QInputDialog \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/QWidget \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qframe.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qinputdialog.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qlineedit.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/QT/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/QT/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \

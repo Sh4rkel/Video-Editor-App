@@ -39,16 +39,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox">
-        <property name="editable">
-         <bool>true</bool>
-        </property>
-        <property name="currentText">
-         <string>Format</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="addTextButton">
         <property name="text">
          <string>Add Text</string>
