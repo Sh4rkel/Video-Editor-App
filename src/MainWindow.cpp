@@ -160,7 +160,3 @@ void MainWindow::togglePlayPause()
     }
 }
 
-void MainWindow::stopVideo()
-{
-    ui->videoPlayerWidget->getMediaPlayer()->stop();
-}

@@ -18,6 +18,7 @@ VideoPlayerWidget::VideoPlayerWidget(QWidget *parent) :
     connect(timer, &QTimer::timeout, textOverlayWidget, &QWidget::raise);
     timer->start(100);
 }
+
 VideoPlayerWidget::~VideoPlayerWidget()
 {
     qDebug() << "VideoPlayerWidget destroyed";
@@ -71,15 +72,18 @@ void VideoPlayerWidget::resizeEvent(QResizeEvent *event)
     textOverlayWidget->setGeometry(ui->videoWidget->geometry());
     textOverlayWidget->show();
     textOverlayWidget->raise();
+    checkOverlayPosition();
 }
 
 void VideoPlayerWidget::addTextOverlay(const QString &text)
 {
-    qDebug() << "Adding text overlay:" << text;
-    textOverlayWidget->setText(text);
-    textOverlayWidget->show();
-    textOverlayWidget->raise();
-    checkOverlayPosition();
+    if (!text.isEmpty()) {
+        textOverlayWidget->setText(text);
+        textOverlayWidget->show();
+        textOverlayWidget->raise();
+        checkOverlayPosition();
+        textOverlayWidget->update();
+    }
 }
 
 void VideoPlayerWidget::showEvent(QShowEvent *event)
@@ -88,5 +92,6 @@ void VideoPlayerWidget::showEvent(QShowEvent *event)
     textOverlayWidget->setGeometry(ui->videoWidget->geometry());
     textOverlayWidget->show();
     textOverlayWidget->raise();
+    checkOverlayPosition();
 }
 

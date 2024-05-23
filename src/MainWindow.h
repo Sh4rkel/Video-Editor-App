@@ -26,8 +26,6 @@ private:
 
 private slots:
 
-    void stopVideo();
-
     void togglePlayPause();
 
     void openFile();
