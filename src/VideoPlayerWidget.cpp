@@ -1,18 +1,22 @@
 #include "VideoPlayerWidget.h"
 #include "ui_VideoPlayerWidget.h"
-
+#include "QTimer"
+#include <QVideoWidget>
 #include <QResizeEvent>
 VideoPlayerWidget::VideoPlayerWidget(QWidget *parent) :
         QWidget(parent),
         ui(new Ui::VideoPlayerWidget),
         mediaPlayer(new QMediaPlayer(this)),
-        textOverlayWidget(new TextOverlayWidget(this)) // Make TextOverlayWidget a child of VideoPlayerWidget
+        textOverlayWidget(new TextOverlayWidget(this))
 {
     ui->setupUi(this);
     mediaPlayer->setVideoOutput(ui->videoWidget);
     textOverlayWidget->setGeometry(ui->videoWidget->geometry());
-    ui->videoWidget->setParent(this); // Make QVideoWidget a child of VideoPlayerWidget
-    ui->videoWidget->stackUnder(textOverlayWidget); // Ensure TextOverlayWidget is on top
+    ui->videoWidget->setParent(this);
+    ui->videoWidget->stackUnder(textOverlayWidget);
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, textOverlayWidget, &QWidget::raise);
+    timer->start(100);
 }
 VideoPlayerWidget::~VideoPlayerWidget()
 {
@@ -24,7 +28,7 @@ void VideoPlayerWidget::loadVideo(const QString &fileName)
 {
     mediaPlayer->setSource(QUrl::fromLocalFile(fileName));
     mediaPlayer->play();
-    textOverlayWidget->raise();
+    QTimer::singleShot(100, textOverlayWidget, &QWidget::raise);
 }
 
 void VideoPlayerWidget::seek(int position)
@@ -47,6 +51,7 @@ void VideoPlayerWidget::checkOverlayPosition()
         qDebug() << "TextOverlayWidget is visible.";
     } else {
         qDebug() << "TextOverlayWidget is not visible.";
+        textOverlayWidget->show();
     }
 
     QRegion visibleRegion = textOverlayWidget->visibleRegion();
@@ -54,15 +59,18 @@ void VideoPlayerWidget::checkOverlayPosition()
         qDebug() << "TextOverlayWidget is not obscured by other widgets.";
     } else {
         qDebug() << "TextOverlayWidget might be obscured by other widgets.";
+        textOverlayWidget->raise();
     }
+
+
 }
 
 void VideoPlayerWidget::resizeEvent(QResizeEvent *event)
 {
     QWidget::resizeEvent(event);
     textOverlayWidget->setGeometry(ui->videoWidget->geometry());
-    textOverlayWidget->show(); // Show the TextOverlayWidget
-    textOverlayWidget->raise(); // Ensure TextOverlayWidget is on top
+    textOverlayWidget->show();
+    textOverlayWidget->raise();
 }
 
 void VideoPlayerWidget::addTextOverlay(const QString &text)
@@ -78,7 +86,7 @@ void VideoPlayerWidget::showEvent(QShowEvent *event)
 {
     QWidget::showEvent(event);
     textOverlayWidget->setGeometry(ui->videoWidget->geometry());
-    textOverlayWidget->show(); // Show the TextOverlayWidget
-    textOverlayWidget->raise(); // Ensure TextOverlayWidget is on top
+    textOverlayWidget->show();
+    textOverlayWidget->raise();
 }
 

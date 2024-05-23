@@ -315,6 +315,7 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/QList \
   D:/QT/6.7.0/mingw_64/include/QtCore/QObject \
+  D:/QT/6.7.0/mingw_64/include/QtCore/QProcess \
   D:/QT/6.7.0/mingw_64/include/QtCore/QRect \
   D:/QT/6.7.0/mingw_64/include/QtCore/QSize \
   D:/QT/6.7.0/mingw_64/include/QtCore/QSizeF \
@@ -401,6 +402,7 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qoverload.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qpair.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qpoint.h \
+  D:/QT/6.7.0/mingw_64/include/QtCore/qprocess.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qprocessordetection.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qrect.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qrefcount.h \

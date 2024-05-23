@@ -1,12 +1,13 @@
 #include "TextOverlayWidget.h"
 #include <QPainter>
-#include <QMouseEvent> // Include QMouseEvent header
+#include <QMouseEvent>
 #include <QApplication>
-#include <QDebug>
+
 TextOverlayWidget::TextOverlayWidget(QWidget *parent) : QWidget(parent)
 {
     setAttribute(Qt::WA_TransparentForMouseEvents);
     setAttribute(Qt::WA_TranslucentBackground);
+    setAttribute(Qt::WA_NoSystemBackground);
     bool isTransparentForMouseEvents = testAttribute(Qt::WA_TransparentForMouseEvents);
     bool isTranslucentBackground = testAttribute(Qt::WA_TranslucentBackground);
 
@@ -27,28 +28,25 @@ void TextOverlayWidget::paintEvent(QPaintEvent *event)
     qDebug() << "paintEvent called";
 
     QPainter painter(this);
-    painter.setPen(Qt::black); // Change the text color to black
+    painter.setPen(Qt::black);
     painter.setFont(QFont("Arial", 300));
-    QRect rectObj = rect();
-    int x = 10; // x position of the text
-    int y = 50; // y position of the text
+    int x = 10;
+    int y = 50;
 
-    // Create a rectangle for the text background
     QFontMetrics fm(painter.font());
     int textWidth = fm.horizontalAdvance(text);
     int textHeight = fm.height();
     QRect textRect(x, y - textHeight, textWidth, textHeight);
 
-    // Set the opacity
-    painter.setOpacity(0.7); // Adjust this value as needed
+    painter.setOpacity(1);
 
-    // Draw the text background
-    painter.fillRect(textRect, QColor(255, 255, 0, 127)); // Semi-transparent yellow
+    painter.fillRect(textRect, QColor(255, 255, 0, 127));
 
     qDebug() << "Drawing text at position (" << x << "," << y << ")";
     painter.drawText(x, y, text);
 
     qDebug() << "Text drawn: " << text;
+
 }
 
 void TextOverlayWidget::mousePressEvent(QMouseEvent *event)

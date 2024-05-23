@@ -258,6 +258,7 @@ C:/books/C programming/project-cpp/src/MainWindow.h
  mdp:C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h
  mdp:C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h
  mdp:C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h
+ mdp:D:/QT/6.7.0/mingw_64/include/QtCore/QProcess
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/q20type_traits.h
@@ -334,6 +335,7 @@ C:/books/C programming/project-cpp/src/MainWindow.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qoverload.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qpair.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qpoint.h
+ mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qprocess.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qrect.h
  mdp:D:/QT/6.7.0/mingw_64/include/QtCore/qrefcount.h

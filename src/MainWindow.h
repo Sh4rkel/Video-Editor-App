@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QProcess>
 #include <QMainWindow>
 #include <QFileDialog>
 #include <QInputDialog>
@@ -19,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QString currentVideo;
 
 private slots:
     void openFile();
@@ -26,6 +27,7 @@ private slots:
     void cutVideo();
     void addTextToVideo();
     void combineVideos();
+    void convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format);
 };
 
 #endif // MAINWINDOW_H
