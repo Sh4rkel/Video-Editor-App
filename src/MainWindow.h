@@ -22,7 +22,12 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    qint64 cutStart = -1;
+    qint64 cutEnd = -1;
     QString currentVideo;
+
+    void cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end);
+
 
 private slots:
 

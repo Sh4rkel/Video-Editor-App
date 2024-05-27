@@ -5,7 +5,7 @@
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QInputDialog>
-
+#include <QStandardPaths>
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent)
         , ui(new Ui::MainWindow)
@@ -121,33 +121,146 @@ void MainWindow::saveFile()
         return;
     }
 
-    QStringList formats;
-    formats << "mp4" << "avi" << "mkv" << "mov";
     bool ok;
-    QString format = QInputDialog::getItem(this, tr("Select Output Format"), tr("Format:"), formats, 0, false, &ok);
-    if (ok && !format.isEmpty()) {
-        convertVideoFormat(currentVideo, outputVideo, format);
+    QStringList formats = {"mp4", "avi", "mkv", "mov"};
+    QString format = QInputDialog::getItem(this, tr("Save Video File"), tr("Select the desired format:"), formats, 0, false, &ok);
+    if (!ok || format.isEmpty()) {
+        return;
     }
+
+    convertVideoFormat(currentVideo, outputVideo, format);
 }
 
 void MainWindow::cutVideo()
 {
-    // Implementation for cutting video
+    qint64 position = ui->videoPlayerWidget->getMediaPlayer()->position();
+    if (cutStart == -1) {
+        cutStart = position;
+        QMessageBox::information(this, "Cut Video", "Start point set. Please set the end point.");
+    } else if (cutEnd == -1) {
+        cutEnd = position;
+        QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video Segment"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+        if (!outputVideo.isEmpty()) {
+            cutVideoSegment(currentVideo, outputVideo, cutStart, cutEnd);
+            cutStart = -1;
+            cutEnd = -1;
+        }
+    }
+}
+
+void MainWindow::cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end)
+{
+    QProcess ffmpeg;
+    QStringList arguments;
+    arguments << "-i" << inputVideo
+              << "-ss" << QString::number(start / 1000.0)
+              << "-to" << QString::number(end / 1000.0)
+              << "-c" << "copy"
+              << outputVideo;
+
+    ffmpeg.start("ffmpeg", arguments);
+
+    if (!ffmpeg.waitForStarted()) {
+        QMessageBox::critical(this, "Error", "Failed to start ffmpeg process.");
+        return;
+    }
+
+    if (!ffmpeg.waitForFinished()) {
+        QMessageBox::critical(this, "Error", "Failed to finish ffmpeg process.");
+        return;
+    }
+
+    if (!QFile::exists(outputVideo)) {
+        QMessageBox::critical(this, "Error", "Output file was not created.");
+        return;
+    }
+
+    QMessageBox::information(this, "Success", "Video segment cut successfully.");
 }
 
 void MainWindow::addTextToVideo()
 {
+    QString videoFile = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (!QFile::exists(videoFile)) {
+        QMessageBox::critical(this, "Error", "The video file does not exist.");
+        return;
+    }
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video With Text Overlay"), "", tr("Video Files (*.mp4)"));
+    if (outputVideo.isEmpty()) {
+        QMessageBox::critical(this, "Error", "No output file selected.");
+        return;
+    }
+
+    if (!outputVideo.endsWith(".mp4")) {
+        outputVideo += ".mp4";
+    }
+
     bool ok;
-    QString text = QInputDialog::getText(this, tr("Add Text"), tr("Text to overlay:"), QLineEdit::Normal, "", &ok);
+    QString text = QInputDialog::getText(this, tr("Enter Text"), tr("Text:"), QLineEdit::Normal, "", &ok);
     if (ok && !text.isEmpty()) {
-        ui->videoPlayerWidget->addTextOverlay(text);
-        ui->videoPlayerWidget->update();
+        QProcess ffmpeg;
+        ffmpeg.start("ffmpeg", QStringList() << "-i" << videoFile << "-vf" << QString("drawtext=fontfile=/path/to/font.ttf:text='%1':x=(w-text_w)/2:y=(h-text_h)/2:fontsize=24:fontcolor=white").arg(text) << "-c:a" << "copy" << outputVideo);
+        ffmpeg.waitForFinished();
+
+        if (ffmpeg.exitCode() != 0) {
+            QByteArray errorOutput = ffmpeg.readAllStandardError();
+            qDebug() << "FFmpeg error output:" << errorOutput;
+            QMessageBox::critical(this, "Error", "FFmpeg command failed. Check the log for details.");
+            return;
+        }
+
+        if (!QFile::exists(outputVideo)) {
+            QMessageBox::critical(this, "Error", "Output file was not created.");
+            return;
+        }
+
+        QMessageBox::information(this, "Success", "Text overlay added successfully.");
     }
 }
 
 void MainWindow::combineVideos()
 {
-    // Implementation for combining videos
+    QString videoFile1 = QFileDialog::getOpenFileName(this, tr("Open First Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    QString videoFile2 = QFileDialog::getOpenFileName(this, tr("Open Second Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+
+    if (!QFile::exists(videoFile1) || !QFile::exists(videoFile2)) {
+        QMessageBox::critical(this, "Error", "One or both video files do not exist.");
+        return;
+    }
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Combined Video"), "", tr("Video Files (*.mp4)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    if (!outputVideo.endsWith(".mp4")) {
+        outputVideo += ".mp4";
+    }
+
+    QProcess ffmpeg;
+    ffmpeg.start("ffmpeg", QStringList() << "-i" << videoFile1 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part1.ts");
+    ffmpeg.waitForFinished();
+    ffmpeg.start("ffmpeg", QStringList() << "-i" << videoFile2 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part2.ts");
+    ffmpeg.waitForFinished();
+
+    QFile::remove("parts.ts");
+    QFile part1("part1.ts");
+    QFile part2("part2.ts");
+    part1.open(QIODevice::ReadOnly);
+    part2.open(QIODevice::ReadOnly);
+    QByteArray part1Data = part1.readAll();
+    QByteArray part2Data = part2.readAll();
+    part1.close();
+    part2.close();
+    QFile parts("parts.ts");
+    parts.open(QIODevice::WriteOnly);
+    parts.write(part1Data);
+    parts.write(part2Data);
+    parts.close();
+
+    ffmpeg.start("ffmpeg", QStringList() << "-i" << "parts.ts" << "-c" << "copy" << "-bsf:a" << "aac_adtstoasc" << outputVideo);
+    ffmpeg.waitForFinished();
 }
 
 void MainWindow::togglePlayPause()
@@ -159,4 +272,3 @@ void MainWindow::togglePlayPause()
         ui->videoPlayerWidget->getMediaPlayer()->play();
     }
 }
-

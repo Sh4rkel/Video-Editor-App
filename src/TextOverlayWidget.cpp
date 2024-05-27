@@ -23,13 +23,14 @@ void TextOverlayWidget::setText(const QString &text)
     raise();
     update();
 }
+
 void TextOverlayWidget::paintEvent(QPaintEvent *event)
 {
     qDebug() << "paintEvent called";
 
     QPainter painter(this);
-    painter.setPen(Qt::black);
-    painter.setFont(QFont("Arial", 300));
+    painter.setPen(Qt::white);
+    painter.setFont(QFont("Arial", 30));
     int x = 10;
     int y = 50;
 
@@ -46,7 +47,6 @@ void TextOverlayWidget::paintEvent(QPaintEvent *event)
     painter.drawText(x, y, text);
 
     qDebug() << "Text drawn: " << text;
-
 }
 
 void TextOverlayWidget::mousePressEvent(QMouseEvent *event)

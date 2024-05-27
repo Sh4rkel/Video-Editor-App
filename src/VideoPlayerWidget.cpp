@@ -83,6 +83,7 @@ void VideoPlayerWidget::addTextOverlay(const QString &text)
         textOverlayWidget->raise();
         checkOverlayPosition();
         textOverlayWidget->update();
+        qDebug() << "TextOverlayWidget updated and raised to the top.";
     }
 }
 
