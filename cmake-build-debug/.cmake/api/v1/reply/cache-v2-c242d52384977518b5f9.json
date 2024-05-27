@@ -6698,42 +6698,6 @@
 			"value" : "D:/QT/6.7.0/mingw_64/lib/cmake/Qt6"
 		},
 		{
-			"name" : "VideoEditorApp_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/books/C programming/project-cpp/cmake-build-debug"
-		},
-		{
-			"name" : "VideoEditorApp_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "VideoEditorApp_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/books/C programming/project-cpp"
-		},
-		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
 			"properties" : 
 			[
@@ -6832,42 +6796,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "C:/Program Files (x86)/project_cpp"
-		},
-		{
-			"name" : "project.cpp_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/books/C programming/project-cpp/cmake-build-debug"
-		},
-		{
-			"name" : "project.cpp_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "project.cpp_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/books/C programming/project-cpp"
 		},
 		{
 			"name" : "project_cpp_BINARY_DIR",

@@ -333,15 +333,6 @@ Qt6ZlibPrivate_DIR:PATH=D:/QT/6.7.0/mingw_64/lib/cmake/Qt6ZlibPrivate
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=D:/QT/6.7.0/mingw_64/lib/cmake/Qt6
 
-//Value Computed by CMake
-VideoEditorApp_BINARY_DIR:STATIC=C:/books/C programming/project-cpp/cmake-build-debug
-
-//Value Computed by CMake
-VideoEditorApp_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-VideoEditorApp_SOURCE_DIR:STATIC=C:/books/C programming/project-cpp
-
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
 
@@ -356,15 +347,6 @@ Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 
 //Path to a program.
 WINDEPLOYQT_EXECUTABLE:FILEPATH=D:/QT/6.7.0/mingw_64/bin/windeployqt.exe
-
-//Value Computed by CMake
-project.cpp_BINARY_DIR:STATIC=C:/books/C programming/project-cpp/cmake-build-debug
-
-//Value Computed by CMake
-project.cpp_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-project.cpp_SOURCE_DIR:STATIC=C:/books/C programming/project-cpp
 
 //Value Computed by CMake
 project_cpp_BINARY_DIR:STATIC=C:/books/C programming/project-cpp/cmake-build-debug
