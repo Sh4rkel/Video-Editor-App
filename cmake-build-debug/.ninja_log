@@ -1,13 +1,32 @@
-# ninja log v5
-2	3724	7385234154067193	project_cpp_autogen/timestamp	8ee027497834dce
-2	3724	7385234154067193	project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
-2	3724	7385234154067193	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	8ee027497834dce
-2	3724	7385234154067193	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	8ee027497834dce
-3733	9951	7385234219894574	CMakeFiles/project_cpp.dir/src/main.cpp.obj	2e1b3f21dfe12dc2
-3736	10310	7385234223571974	CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj	b11937d4890d3ee8
-3729	10988	7385234230309302	CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj	f468db61ea45358d
-3725	11297	7385234233430087	CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj	7457c4f3e25f1d8
-9957	13095	7385234251442393	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	dd86242ec8b10607
-10311	13709	7385234257581075	CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj	1182939b7daf917
-10988	14096	7385234261413412	CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj	9dcd31a03ad5195d
-14101	14369	7385234264100623	project_cpp.exe	692c616b3e97f460
+# ninja log v6
+33	136	7393927356742596	project_cpp_autogen/timestamp	7e199a4279aa8a9b
+33	136	7393927356742596	project_cpp_autogen/mocs_compilation.cpp	7e199a4279aa8a9b
+135	198	7393920380796126	CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj	ad3039b9d302b278
+33	136	7393927356742596	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	7e199a4279aa8a9b
+33	136	7393927356742596	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	7e199a4279aa8a9b
+201	3893	7393911614176442	CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj	e267273a8da977ea
+194	3935	7393911614106415	CMakeFiles/project_cpp.dir/src/main.cpp.obj	e558052fcd73ea81
+146	4090	7393923367506533	CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj	10c9e8f2db100b91
+3935	6958	7393911651519285	CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj	9b0440880653f1a4
+150	3254	7393923367546609	CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj	ba7f3bf9abb508da
+251	4849	7393892853145389	CMakeFiles/project_cpp.dir/Headers/src/MainWindow.cpp.obj	3a71959cca6e5774
+4571	7885	7393911657872220	CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj	d90bf0d503df51dd
+4888	5124	7393909917937470	project_cpp.exe	972544aca750b960
+7	676	7393927505731066	build.ninja	4181ca10517448d4
+2082	7943	7393892482557930	CMakeFiles/project_cpp.dir/Headers/src/main.cpp.obj	36cf1023ce07629d
+2096	8107	7393892482693166	CMakeFiles/project_cpp.dir/Headers/src/VideoPlayerWidget.cpp.obj	2f7093670768f72
+7944	11579	7393892541175436	CMakeFiles/project_cpp.dir/Headers/src/VideoEditor.cpp.obj	2e38e8cbec4455fb
+7937	11754	7393892541114691	CMakeFiles/project_cpp.dir/Headers/src/TimelineWidget.cpp.obj	75ce62af83ee1022
+8107	12170	7393892542813698	CMakeFiles/project_cpp.dir/Headers/src/TextOverlayWidget.cpp.obj	d1a4eddfb8c86463
+8	695	7393927505731066	build.ninja	4181ca10517448d4
+32	844	7393927514278392	project_cpp_autogen/timestamp	7e199a4279aa8a9b
+32	844	7393927514278392	project_cpp_autogen/mocs_compilation.cpp	7e199a4279aa8a9b
+32	844	7393927514278392	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/timestamp	7e199a4279aa8a9b
+32	844	7393927514278392	C:/books/C programming/project-cpp/cmake-build-debug/project_cpp_autogen/mocs_compilation.cpp	7e199a4279aa8a9b
+855	4799	7393927515054185	CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj	e267273a8da977ea
+848	4810	7393927514989012	CMakeFiles/project_cpp.dir/src/main.cpp.obj	e558052fcd73ea81
+844	5056	7393927514948441	CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj	ad3039b9d302b278
+851	5491	7393927515014130	CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj	10c9e8f2db100b91
+4800	7872	7393927554512019	CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj	ba7f3bf9abb508da
+4810	8053	7393927554615626	CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj	d90bf0d503df51dd
+8053	8279	7393927587044689	project_cpp.exe	ce0e9bf92054c200

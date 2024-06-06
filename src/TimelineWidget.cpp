@@ -20,11 +20,11 @@ void TimelineWidget::onSliderValueChanged(int value)
 
 void TimelineWidget::onPlayPauseButtonClicked()
 {
-    isPlaying = !isPlaying; // Toggle isPlaying
+    isPlaying = !isPlaying;
     if (isPlaying) {
-        ui->pausePlayButton->setText("⏸️"); // Change button text to pause symbol
+        ui->pausePlayButton->setText("⏸️");
     } else {
-        ui->pausePlayButton->setText("▶️"); // Change button text to play symbol
+        ui->pausePlayButton->setText("▶️");
     }
     emit playPauseClicked();
 }

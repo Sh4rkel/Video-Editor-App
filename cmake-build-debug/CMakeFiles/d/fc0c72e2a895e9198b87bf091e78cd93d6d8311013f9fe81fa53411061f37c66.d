@@ -1,124 +1,47 @@
 project_cpp_autogen/timestamp: \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompiler.cmake.in \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/FindVulkan.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake \
-  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindVulkan.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake \
+  C:/Users/filip/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake \
   C:/books/C\ programming/project-cpp/CMakeLists.txt \
-  CMakeFiles/3.27.8/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeRCCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeSystem.cmake \
+  CMakeFiles/3.28.1/CMakeCCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeSystem.cmake \
   project_cpp_autogen/moc_predefs.h \
   C:/books/C\ programming/project-cpp/src/MainWindow.cpp \
   C:/books/C\ programming/project-cpp/src/MainWindow.h \
@@ -126,17 +49,9 @@ project_cpp_autogen/timestamp: \
   C:/books/C\ programming/project-cpp/src/TextOverlayWidget.h \
   C:/books/C\ programming/project-cpp/src/TimelineWidget.cpp \
   C:/books/C\ programming/project-cpp/src/TimelineWidget.h \
-  C:/books/C\ programming/project-cpp/src/VideoEditor.cpp \
-  C:/books/C\ programming/project-cpp/src/VideoEditor.h \
   C:/books/C\ programming/project-cpp/src/VideoPlayerWidget.cpp \
   C:/books/C\ programming/project-cpp/src/VideoPlayerWidget.h \
   C:/books/C\ programming/project-cpp/src/main.cpp \
-  C:/books/C\ programming/project-cpp/src/ui_MainWindow.h \
-  C:/books/C\ programming/project-cpp/src/ui_TimelineWidget.h \
-  C:/books/C\ programming/project-cpp/src/ui_VideoPlayerWidget.h \
-  C:/books/C\ programming/project-cpp/ui/MainWindow.ui \
-  C:/books/C\ programming/project-cpp/ui/TimelineWidget.ui \
-  C:/books/C\ programming/project-cpp/ui/VideoPlayerWidget.ui \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \
@@ -390,12 +305,7 @@ project_cpp_autogen/timestamp: \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/QList \
-  D:/QT/6.7.0/mingw_64/include/QtCore/QObject \
   D:/QT/6.7.0/mingw_64/include/QtCore/QProcess \
-  D:/QT/6.7.0/mingw_64/include/QtCore/QRect \
-  D:/QT/6.7.0/mingw_64/include/QtCore/QSize \
-  D:/QT/6.7.0/mingw_64/include/QtCore/QSizeF \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -426,18 +336,12 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qcontiguouscache.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdatastream.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdatetime.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdebug.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qdir.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qendian.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qeventloop.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qfile.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qfiledevice.h \
@@ -470,7 +374,6 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qmetatype.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qminmax.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnamespace.h \
-  D:/QT/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qnumeric.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qobject_impl.h \
@@ -532,24 +435,16 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qxptype_traits.h \
   D:/QT/6.7.0/mingw_64/include/QtCore/qyieldcpu.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/QShowEvent \
-  D:/QT/6.7.0/mingw_64/include/QtGui/QTransform \
   D:/QT/6.7.0/mingw_64/include/QtGui/qaction.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qbitmap.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qbrush.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qcolor.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qcursor.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qevent.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfont.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfontinfo.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qfontmetrics.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qicon.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qimage.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpalette.h \
@@ -557,13 +452,10 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpicture.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpixmap.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qpolygon.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qregion.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qrgba64.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtextformat.h \
@@ -572,8 +464,6 @@ project_cpp_autogen/timestamp: \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qtransform.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qvector2d.h \
-  D:/QT/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/QT/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \

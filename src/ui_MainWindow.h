@@ -18,8 +18,8 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include <timelinewidget.h>
-#include <videoplayerwidget.h>
+#include "TimelineWidget.h"
+#include "VideoPlayerWidget.h"
 
 QT_BEGIN_NAMESPACE
 

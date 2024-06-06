@@ -181,42 +181,57 @@ void MainWindow::cutVideoSegment(const QString &inputVideo, const QString &outpu
 void MainWindow::addTextToVideo()
 {
     QString videoFile = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (!QFile::exists(videoFile)) {
-        QMessageBox::critical(this, "Error", "The video file does not exist.");
-        return;
-    }
 
     QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video With Text Overlay"), "", tr("Video Files (*.mp4)"));
-    if (outputVideo.isEmpty()) {
-        QMessageBox::critical(this, "Error", "No output file selected.");
-        return;
-    }
 
     if (!outputVideo.endsWith(".mp4")) {
         outputVideo += ".mp4";
     }
 
-    bool ok;
-    QString text = QInputDialog::getText(this, tr("Enter Text"), tr("Text:"), QLineEdit::Normal, "", &ok);
-    if (ok && !text.isEmpty()) {
-        QProcess ffmpeg;
-        ffmpeg.start("ffmpeg", QStringList() << "-i" << videoFile << "-vf" << QString("drawtext=fontfile=/path/to/font.ttf:text='%1':x=(w-text_w)/2:y=(h-text_h)/2:fontsize=24:fontcolor=white").arg(text) << "-c:a" << "copy" << outputVideo);
-        ffmpeg.waitForFinished();
-
-        if (ffmpeg.exitCode() != 0) {
-            QByteArray errorOutput = ffmpeg.readAllStandardError();
-            qDebug() << "FFmpeg error output:" << errorOutput;
-            QMessageBox::critical(this, "Error", "FFmpeg command failed. Check the log for details.");
-            return;
-        }
-
-        if (!QFile::exists(outputVideo)) {
-            QMessageBox::critical(this, "Error", "Output file was not created.");
-            return;
-        }
-
-        QMessageBox::information(this, "Success", "Text overlay added successfully.");
+    QFile inputFile("C:/books/C programming/project-cpp/Files/input.txt");
+    if (!inputFile.open(QIODevice::ReadOnly)) {
+        QMessageBox::critical(this, "Error", "Failed to open text file.");
+        return;
     }
+    QTextStream in(&inputFile);
+    QString text = in.readAll();
+    inputFile.close();
+
+    // Escape special characters in the text
+    text.replace("'", "'\\''");
+
+    QString fontFile = "C:/books/C programming/project-cpp/Fonts/Roboto/Roboto-Regular.ttf";
+
+    QProcess ffmpeg;
+    QStringList ffmpegCommand;
+    ffmpegCommand << "-i" << videoFile
+                  << "-vf" << QString("drawtext=fontfile='%1':text='%2':fontsize=24:fontcolor=white").arg(fontFile, text)
+                  << "-c:a" << "copy"
+                  << outputVideo;
+
+    ffmpeg.start("ffmpeg", ffmpegCommand);
+
+    if (!ffmpeg.waitForStarted()) {
+        QMessageBox::critical(this, "Error", "Failed to start ffmpeg process.");
+        return;
+    }
+
+    if (!ffmpeg.waitForFinished()) {
+        QMessageBox::critical(this, "Error", "Failed to finish ffmpeg process.");
+        return;
+    }
+
+    QByteArray errorOutput = ffmpeg.readAllStandardError();
+    if (!errorOutput.isEmpty()) {
+        qDebug() << "FFmpeg error output:" << errorOutput;
+    }
+
+    if (!QFile::exists(outputVideo)) {
+        QMessageBox::critical(this, "Error", "Output file was not created.");
+        return;
+    }
+
+    QMessageBox::information(this, "Success", "Video with text overlay created successfully.");
 }
 
 void MainWindow::combineVideos()

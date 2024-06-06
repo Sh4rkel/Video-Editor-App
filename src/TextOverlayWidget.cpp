@@ -11,14 +11,10 @@ TextOverlayWidget::TextOverlayWidget(QWidget *parent) : QWidget(parent)
     bool isTransparentForMouseEvents = testAttribute(Qt::WA_TransparentForMouseEvents);
     bool isTranslucentBackground = testAttribute(Qt::WA_TranslucentBackground);
 
-    qDebug() << "Is Transparent For Mouse Events: " << (isTransparentForMouseEvents ? "Yes" : "No");
-    qDebug() << "Is Translucent Background: " << (isTranslucentBackground ? "Yes" : "No");
-
 }
 
 void TextOverlayWidget::setText(const QString &text)
 {
-    qDebug() << "setText called with text:" << text;
     this->text = text;
     raise();
     update();
@@ -26,7 +22,6 @@ void TextOverlayWidget::setText(const QString &text)
 
 void TextOverlayWidget::paintEvent(QPaintEvent *event)
 {
-    qDebug() << "paintEvent called";
 
     QPainter painter(this);
     painter.setPen(Qt::white);
@@ -43,16 +38,13 @@ void TextOverlayWidget::paintEvent(QPaintEvent *event)
 
     painter.fillRect(textRect, QColor(255, 255, 0, 127));
 
-    qDebug() << "Drawing text at position (" << x << "," << y << ")";
     painter.drawText(x, y, text);
 
-    qDebug() << "Text drawn: " << text;
 }
 
 void TextOverlayWidget::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
-        qDebug() << "Mouse pressed at position (" << event->pos().x() << "," << event->pos().y() << ")";
         dragStartPosition = event->pos();
     }
 }
@@ -77,3 +69,7 @@ TextOverlayWidget::~TextOverlayWidget()
     else
         qDebug() << "No parent widget";
 }
+
+
+
+

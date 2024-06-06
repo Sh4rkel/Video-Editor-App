@@ -96,3 +96,7 @@ void VideoPlayerWidget::showEvent(QShowEvent *event)
     checkOverlayPosition();
 }
 
+TextOverlayWidget* VideoPlayerWidget::getTextOverlayWidget() const
+{
+    return textOverlayWidget;
+}

@@ -25,6 +25,7 @@ public:
     void checkOverlayPosition();
     void resizeEvent(QResizeEvent *event);
     void setLoopPlayback();
+    TextOverlayWidget* getTextOverlayWidget() const;
 public slots:
     void seek(int position);
 
