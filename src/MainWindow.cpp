@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
         , currentVideo("")
 {
     ui->setupUi(this);
+    connect(ui->timelineWidget, &TimelineWidget::speedChanged, ui->videoPlayerWidget, &VideoPlayerWidget::setPlaybackRate);
     connect(ui->openButton, &QPushButton::clicked, this, &MainWindow::openFile);
     connect(ui->saveButton, &QPushButton::clicked, this, &MainWindow::saveFile);
     connect(ui->cutButton, &QPushButton::clicked, this, &MainWindow::cutVideo);

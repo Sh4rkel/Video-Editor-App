@@ -39,13 +39,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="addTextButton">
-        <property name="text">
-         <string>Add Text</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="combineButton">
         <property name="text">
          <string>Combine</string>
@@ -56,6 +49,19 @@
     </item>
     <item>
      <widget class="VideoPlayerWidget" name="videoPlayerWidget" native="true"/>
+    </item>
+    <item alignment="Qt::AlignmentFlag::AlignLeft">
+     <widget class="QSlider" name="speedSlider">
+      <property name="maximumSize">
+       <size>
+        <width>1107</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="TimelineWidget" name="timelineWidget" native="true"/>

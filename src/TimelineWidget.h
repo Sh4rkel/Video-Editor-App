@@ -19,6 +19,7 @@ public:
     void setPosition(int position);
 
 signals:
+    void speedChanged(double speed);
     void positionChanged(int position);
     void playPauseClicked();
     void stopClicked();
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::TimelineWidget *ui;
     QSlider *slider;
+    QSlider *speedSlider;
     bool isPlaying;
 };
 

@@ -27,6 +27,7 @@ public:
     void setLoopPlayback();
     TextOverlayWidget* getTextOverlayWidget() const;
 public slots:
+    void setPlaybackRate(double rate);
     void seek(int position);
 
 private:

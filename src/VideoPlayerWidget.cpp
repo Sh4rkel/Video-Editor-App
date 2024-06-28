@@ -100,3 +100,8 @@ TextOverlayWidget* VideoPlayerWidget::getTextOverlayWidget() const
 {
     return textOverlayWidget;
 }
+
+void VideoPlayerWidget::setPlaybackRate(double rate)
+{
+    mediaPlayer->setPlaybackRate(rate);
+}

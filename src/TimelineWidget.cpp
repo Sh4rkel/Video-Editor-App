@@ -6,9 +6,17 @@ TimelineWidget::TimelineWidget(QWidget *parent) :
         ui(new Ui::TimelineWidget),
         isPlaying(false)
 {
+
     ui->setupUi(this);
     slider = ui->timelineSlider;
     slider->setOrientation(Qt::Horizontal);
+    speedSlider = new QSlider(this);
+    speedSlider->setOrientation(Qt::Horizontal);
+    speedSlider->setRange(50, 200);
+    speedSlider->setValue(100);
+    connect(speedSlider, &QSlider::valueChanged, [this](int value) {
+        emit speedChanged(value / 100.0);
+    });
     connect(slider, &QSlider::valueChanged, this, &TimelineWidget::onSliderValueChanged);
     connect(ui->pausePlayButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
 }
