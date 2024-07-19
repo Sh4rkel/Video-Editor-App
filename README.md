@@ -1,43 +1,39 @@
-# Video Editor - Proiect în C++
+# Video Editor - C++ Project
 
-## Descriere generală
+## Overview
 
-Acesta este un proiect C++ pentru dezvoltarea unui editor video simplu și intuitiv. Editorul video va include funcționalități esențiale precum importul și exportul videoclipurilor, vizualizarea previzualizării, o bandă pentru cadrele video, decuparea secțiunilor video, adăugarea de text pe video și combinarea mai multor videoclipuri. Opțiuni suplimentare vor fi adăugate în viitor, după finalizarea celor menționate mai sus.
+This is a C++ project for developing a simple and intuitive video editor. The video editor will include essential features such as importing and exporting videos, an interactive video timeline, video speed adjustment, video cutting, and combining multiple videos. Additional options will be added in the future after completing the mentioned features.
 
-## Caracteristici principale
+## Key Features
 
 ### 1. Import/Export Video
-Editorul nostru video va permite utilizatorilor să importe videoclipuri din diverse formate comune (e.g., MP4, AVI, MOV) și să exporte proiectele finalizate în aceleași formate. Funcționalitatea de import/export este esențială pentru a permite utilizatorilor să înceapă editarea cu ușurință și să salveze munca lor.
+Our video editor will allow users to import videos from various common formats (e.g., MP4, AVI, MOV) and export the finished projects in the same formats. The import/export functionality is essential for allowing users to start editing with ease and save their work.
 
-### 2. Fereastră de previzualizare
-Editorul va include o fereastră de previzualizare unde utilizatorii pot vizualiza modificările în timp real. Această caracteristică este importantă pentru a permite utilizatorilor să vadă cum arată videoclipul în orice moment al procesului de editare.
+### 2. Interactive Video Timeline
+The editor will have an interactive video timeline that allows users to navigate through their video frame by frame. This will aid in precise editing and quickly finding specific sections of the video.
 
-### 3. Bandă pentru cadrele video
-Editorul va avea o bandă pentru cadrele video care va permite utilizatorilor să navigheze prin videoclipul lor cadru cu cadru. Aceasta va ajuta la editarea precisă și la găsirea rapidă a secțiunilor specifice ale videoclipului.
+### 3. Video Speed Adjustment
+Users will be able to adjust the speed of the video. This feature is essential for creating slow-motion or fast-motion effects to enhance the video content.
 
-### 4. Decuparea părților din video
-Utilizatorii vor putea să decupeze părți nedorite din videoclip. Această funcționalitate este esențială pentru a elimina segmentele nefolositoare și pentru a păstra doar conținutul dorit.
+### 4. Video Cutting
+Users will be able to cut parts of the video. This functionality is essential for removing unnecessary segments and keeping only the desired content.
 
-### 5. Adăugarea de text pe video
-Editorul va permite adăugarea de text pe videoclipuri. Utilizatorii vor putea să insereze titluri, subtitrări sau alte informații textuale direct pe videoclipurile lor.
+### 5. Combining Videos
+The editor will offer the ability to combine multiple videos into a single project. Users will be able to merge various video sequences to create a complete final video.
 
-### 6. Combinarea videoclipurilor
-Editorul va oferi posibilitatea de a combina mai multe videoclipuri într-un singur proiect. Utilizatorii vor putea să unească diverse secvențe video pentru a crea un videoclip final complet.
+## Future Features
+As development progresses, new options and functionalities will be added to enhance the video editor and meet user needs. These will be implemented after completing and testing the basic features.
 
-## Funcționalități viitoare
-Pe măsură ce dezvoltarea avansează, vor fi adăugate noi opțiuni și funcționalități pentru a îmbunătăți editorul video și a răspunde nevoilor utilizatorilor. Acestea vor fi implementate după finalizarea și testarea caracteristicilor de bază.
+## System Requirements
 
-## Cerințe de sistem
+- C++ Compiler (e.g., GCC, Clang, MSVC)
+- FFmpeg library for video file handling
+- Qt library for the graphical user interface (GUI)
+- Operating System: Windows, macOS, or Linux
 
-- Compilator C++ (e.g., GCC, Clang, MSVC)
-- Biblioteca FFmpeg pentru manipularea fișierelor video
-- Biblioteca Qt pentru interfața grafică a utilizatorului (GUI)
-- Sistem de operare: Windows, macOS sau Linux
+## Installation Instructions
 
-## Instrucțiuni de instalare
-
-1. Clonați acest repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/Sh4rkel/Video-Editor-App.git
    cd video-editor
-
