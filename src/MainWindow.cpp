@@ -56,7 +56,6 @@ void MainWindow::convertVideoFormat(const QString &inputVideo, QString &outputVi
         videoCodec = it->second.first;
         audioCodec = it->second.second;
     } else {
-        QMessageBox::critical(this, "Error", "Unsupported output format.");
         return;
     }
 
@@ -72,12 +71,10 @@ void MainWindow::convertVideoFormat(const QString &inputVideo, QString &outputVi
     ffmpeg.start("ffmpeg", arguments);
 
     if (!ffmpeg.waitForStarted()) {
-        QMessageBox::critical(this, "Error", "Failed to start ffmpeg process.");
         return;
     }
 
     if (!ffmpeg.waitForFinished()) {
-        QMessageBox::critical(this, "Error", "Failed to finish ffmpeg process.");
         return;
     }
 
@@ -88,7 +85,6 @@ void MainWindow::convertVideoFormat(const QString &inputVideo, QString &outputVi
 //    }
 
     if (!QFile::exists(outputFilePath)) {
-        QMessageBox::critical(this, "Error", "Output file was not created.");
         return;
     }
 
@@ -162,17 +158,14 @@ void MainWindow::cutVideoSegment(const QString &inputVideo, const QString &outpu
     ffmpeg.start("ffmpeg", arguments);
 
     if (!ffmpeg.waitForStarted()) {
-        QMessageBox::critical(this, "Error", "Failed to start ffmpeg process.");
         return;
     }
 
     if (!ffmpeg.waitForFinished()) {
-        QMessageBox::critical(this, "Error", "Failed to finish ffmpeg process.");
         return;
     }
 
     if (!QFile::exists(outputVideo)) {
-        QMessageBox::critical(this, "Error", "Output file was not created.");
         return;
     }
 
@@ -191,7 +184,6 @@ void MainWindow::addTextToVideo()
 
     QFile inputFile("C:/books/C programming/project-cpp/Files/input.txt");
     if (!inputFile.open(QIODevice::ReadOnly)) {
-        QMessageBox::critical(this, "Error", "Failed to open text file.");
         return;
     }
     QTextStream in(&inputFile);
@@ -201,24 +193,13 @@ void MainWindow::addTextToVideo()
     // Escape special characters in the text
     text.replace("'", "'\\''");
 
-    QString fontFile = "C:/books/C programming/project-cpp/Fonts/Roboto/Roboto-Regular.ttf";
-
-    QProcess ffmpeg;
-    QStringList ffmpegCommand;
-    ffmpegCommand << "-i" << videoFile
-                  << "-vf" << QString("drawtext=fontfile='%1':text='%2':fontsize=24:fontcolor=white").arg(fontFile, text)
-                  << "-c:a" << "copy"
-                  << outputVideo;
-
     ffmpeg.start("ffmpeg", ffmpegCommand);
 
     if (!ffmpeg.waitForStarted()) {
-        QMessageBox::critical(this, "Error", "Failed to start ffmpeg process.");
         return;
     }
 
     if (!ffmpeg.waitForFinished()) {
-        QMessageBox::critical(this, "Error", "Failed to finish ffmpeg process.");
         return;
     }
 
@@ -228,7 +209,6 @@ void MainWindow::addTextToVideo()
     }
 
     if (!QFile::exists(outputVideo)) {
-        QMessageBox::critical(this, "Error", "Output file was not created.");
         return;
     }
 
@@ -241,7 +221,6 @@ void MainWindow::combineVideos()
     QString videoFile2 = QFileDialog::getOpenFileName(this, tr("Open Second Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
 
     if (!QFile::exists(videoFile1) || !QFile::exists(videoFile2)) {
-        QMessageBox::critical(this, "Error", "One or both video files do not exist.");
         return;
     }
 
@@ -259,21 +238,6 @@ void MainWindow::combineVideos()
     ffmpeg.waitForFinished();
     ffmpeg.start("ffmpeg", QStringList() << "-i" << videoFile2 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part2.ts");
     ffmpeg.waitForFinished();
-
-    QFile::remove("parts.ts");
-    QFile part1("part1.ts");
-    QFile part2("part2.ts");
-    part1.open(QIODevice::ReadOnly);
-    part2.open(QIODevice::ReadOnly);
-    QByteArray part1Data = part1.readAll();
-    QByteArray part2Data = part2.readAll();
-    part1.close();
-    part2.close();
-    QFile parts("parts.ts");
-    parts.open(QIODevice::WriteOnly);
-    parts.write(part1Data);
-    parts.write(part2Data);
-    parts.close();
 
     ffmpeg.start("ffmpeg", QStringList() << "-i" << "parts.ts" << "-c" << "copy" << "-bsf:a" << "aac_adtstoasc" << outputVideo);
     ffmpeg.waitForFinished();
