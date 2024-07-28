@@ -21,7 +21,6 @@ VideoPlayerWidget::VideoPlayerWidget(QWidget *parent) :
 
 VideoPlayerWidget::~VideoPlayerWidget()
 {
-    qDebug() << "VideoPlayerWidget destroyed";
     delete ui;
 }
 
@@ -42,12 +41,6 @@ void VideoPlayerWidget::checkOverlayPosition()
     QRect videoGeometry = ui->videoWidget->geometry();
     QRect overlayGeometry = textOverlayWidget->geometry();
 
-    if(videoGeometry == overlayGeometry) {
-        qDebug() << "TextOverlayWidget is correctly positioned over the QVideoWidget.";
-    } else {
-        qDebug() << "TextOverlayWidget is not correctly positioned over the QVideoWidget.";
-    }
-
     if(textOverlayWidget->isVisible()) {
         qDebug() << "TextOverlayWidget is visible.";
     } else {
@@ -56,14 +49,6 @@ void VideoPlayerWidget::checkOverlayPosition()
     }
 
     QRegion visibleRegion = textOverlayWidget->visibleRegion();
-    if(visibleRegion.boundingRect() == textOverlayWidget->rect()) {
-        qDebug() << "TextOverlayWidget is not obscured by other widgets.";
-    } else {
-        qDebug() << "TextOverlayWidget might be obscured by other widgets.";
-        textOverlayWidget->raise();
-    }
-
-
 }
 
 void VideoPlayerWidget::resizeEvent(QResizeEvent *event)
@@ -83,7 +68,6 @@ void VideoPlayerWidget::addTextOverlay(const QString &text)
         textOverlayWidget->raise();
         checkOverlayPosition();
         textOverlayWidget->update();
-        qDebug() << "TextOverlayWidget updated and raised to the top.";
     }
 }
 
