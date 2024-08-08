@@ -63,13 +63,4 @@ void TextOverlayWidget::mouseMoveEvent(QMouseEvent *event)
 
 TextOverlayWidget::~TextOverlayWidget()
 {
-    qDebug() << "TextOverlayWidget destroyed";
-    if (parent())
-        qDebug() << "Parent widget:" << parent()->metaObject()->className();
-    else
-        qDebug() << "No parent widget";
 }
-
-
-
-
