@@ -22,7 +22,6 @@ set(HEADERS
         src/VideoPlayerWidget.h
         src/TimelineWidget.h
         src/TextOverlayWidget.h
-
 )
 
 add_executable(project_cpp
