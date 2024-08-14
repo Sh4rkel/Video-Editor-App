@@ -1,0 +1,5 @@
+C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/CMakeFiles/project_cpp.dir
+C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/CMakeFiles/project_cpp_autogen_timestamp_deps.dir
+C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/CMakeFiles/project_cpp_autogen.dir

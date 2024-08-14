@@ -1,0 +1,3 @@
+C:\Users\filip\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\project_cpp.dir/objects.a
+C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\project_cpp.dir/objects.a @CMakeFiles\project_cpp.dir\objects1.rsp
+C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\project_cpp.dir/objects.a -Wl,--no-whole-archive -o project_cpp.exe -Wl,--out-implib,libproject_cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\project_cpp.dir\linkLibs.rsp

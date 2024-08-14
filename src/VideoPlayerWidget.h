@@ -10,30 +10,27 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class VideoPlayerWidget; }
 QT_END_NAMESPACE
 
-class VideoPlayerWidget : public QWidget
-{
-Q_OBJECT
+class VideoPlayerWidget : public QWidget {
+    Q_OBJECT
 
-public:
+    public:
     explicit VideoPlayerWidget(QWidget *parent = nullptr);
-    QMediaPlayer* getMediaPlayer() const { return mediaPlayer; }
     ~VideoPlayerWidget();
-
     void loadVideo(const QString &fileName);
-    void addTextOverlay(const QString &text);
-    void showEvent(QShowEvent *event);
-    void checkOverlayPosition();
-    void resizeEvent(QResizeEvent *event);
-    void setLoopPlayback();
-    TextOverlayWidget* getTextOverlayWidget() const;
-public slots:
-    void setPlaybackRate(double rate);
     void seek(int position);
+    QMediaPlayer* getMediaPlayer() const;
+    void setPlaybackRate(double rate);
+    void addTextOverlay(const QString &text);
+
+protected:
+    void resizeEvent(QResizeEvent *event) override;
+    void showEvent(QShowEvent *event) override;
 
 private:
     Ui::VideoPlayerWidget *ui;
     QMediaPlayer *mediaPlayer;
     TextOverlayWidget *textOverlayWidget;
+    void checkOverlayPosition();
 };
 
-#endif
+#endif // VIDEOPLAYERWIDGET_H
