@@ -452,6 +452,4 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QScopedPointer \
- D:/QT/6.7.2/mingw_64/include/QtCore/qscopedpointer.h
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h
