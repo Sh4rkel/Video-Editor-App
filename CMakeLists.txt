@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.5)
 project(project_cpp)
 set(CMAKE_AUTOMOC ON)
 
@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 23)
 find_package(Qt6 COMPONENTS Core Gui Widgets Multimedia MultimediaWidgets REQUIRED)
 
 
-include_directories(src ui Headers Fonts Files)
+include_directories(src ui)
 
 set(UI_FILES
         ui/MainWindow.ui
@@ -22,7 +22,6 @@ set(HEADERS
         src/VideoPlayerWidget.h
         src/TimelineWidget.h
         src/TextOverlayWidget.h
-
 )
 
 add_executable(project_cpp
@@ -31,8 +30,11 @@ add_executable(project_cpp
         src/VideoPlayerWidget.cpp
         src/TimelineWidget.cpp
         src/TextOverlayWidget.cpp
+        src/FFmpegHandler.cpp
+        src/FFmpegHandler.h
 )
 
+set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")
 
 target_include_directories(project_cpp PRIVATE ${Qt6Core_INCLUDE_DIRS} ${Qt6Gui_INCLUDE_DIRS} ${Qt6Widgets_INCLUDE_DIRS})
 
