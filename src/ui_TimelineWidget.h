@@ -14,6 +14,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,28 +22,27 @@ QT_BEGIN_NAMESPACE
 class Ui_TimelineWidget
 {
 public:
-    QHBoxLayout *horizontalLayout;
-    QPushButton *pausePlayButton;
+    QVBoxLayout *verticalLayout;
     QSlider *timelineSlider;
+    QPushButton *pausePlayButton;
 
     void setupUi(QWidget *TimelineWidget)
     {
         if (TimelineWidget->objectName().isEmpty())
             TimelineWidget->setObjectName("TimelineWidget");
-        TimelineWidget->resize(800, 85);
-        horizontalLayout = new QHBoxLayout(TimelineWidget);
-        horizontalLayout->setObjectName("horizontalLayout");
+        TimelineWidget->resize(1200, 400);
+        verticalLayout = new QVBoxLayout(TimelineWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        timelineSlider = new QSlider(TimelineWidget);
+        timelineSlider->setObjectName("timelineSlider");
+        timelineSlider->setOrientation(Qt::Horizontal);
+
+        verticalLayout->addWidget(timelineSlider);
+
         pausePlayButton = new QPushButton(TimelineWidget);
         pausePlayButton->setObjectName("pausePlayButton");
 
-        horizontalLayout->addWidget(pausePlayButton);
-
-        timelineSlider = new QSlider(TimelineWidget);
-        timelineSlider->setObjectName("timelineSlider");
-        timelineSlider->setOrientation(Qt::Orientation::Horizontal);
-
-        horizontalLayout->addWidget(timelineSlider);
-
+        verticalLayout->addWidget(pausePlayButton);
 
         retranslateUi(TimelineWidget);
 
@@ -51,8 +51,7 @@ public:
 
     void retranslateUi(QWidget *TimelineWidget)
     {
-        TimelineWidget->setWindowTitle(QCoreApplication::translate("TimelineWidget", "Timeline", nullptr));
-        pausePlayButton->setText(QCoreApplication::translate("TimelineWidget", "\342\217\270\357\270\217", nullptr));
+        pausePlayButton->setText(QCoreApplication::translate("TimelineWidget", "▶️", nullptr));
     } // retranslateUi
 
 };

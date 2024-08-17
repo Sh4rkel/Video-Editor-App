@@ -7,13 +7,34 @@
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow), ffmpegHandler(new FFmpegHandler(this)), currentVideo("") {
     ui->setupUi(this);
-    connect(ui->timelineWidget, &TimelineWidget::positionChanged, ui->videoPlayerWidget, &VideoPlayerWidget::seek);
-    connect(ui->timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
-    connect(ui->videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, ui->timelineWidget, &TimelineWidget::setDuration);
-    connect(ui->videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, ui->timelineWidget, &TimelineWidget::setPosition);
-    ui->videoPlayerWidget->show();
 
-    // Connect menu actions to slots
+    fileImportWidget = new FileImportWidget(this);
+    timelineWidget = new TimelineWidget(this);
+    videoPlayerWidget = new VideoPlayerWidget(this);
+
+    connect(fileImportWidget, &FileImportWidget::fileImported, this, &MainWindow::onFileImported);
+
+    QVBoxLayout *leftLayout = new QVBoxLayout();
+    leftLayout->addWidget(fileImportWidget);
+    leftLayout->addWidget(timelineWidget);
+    leftLayout->setStretch(0, 1);  // Set the stretch factor for fileImportWidget
+    leftLayout->setStretch(1, 1);  // Set the stretch factor for timelineWidget
+
+    QHBoxLayout *mainLayout = new QHBoxLayout();
+    mainLayout->addLayout(leftLayout);
+    mainLayout->addWidget(videoPlayerWidget);
+    mainLayout->setStretch(0, 1);  // Set the stretch factor for leftLayout
+    mainLayout->setStretch(1, 1);  // Set the stretch factor for videoPlayerWidget
+
+    QWidget *centralWidget = new QWidget(this);
+    centralWidget->setLayout(mainLayout);
+    setCentralWidget(centralWidget);
+
+    connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
+    connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
+    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
+    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
+
     connect(ui->openAction, &QAction::triggered, this, &MainWindow::openFile);
     connect(ui->saveAction, &QAction::triggered, this, &MainWindow::saveFile);
     connect(ui->cutAction, &QAction::triggered, this, &MainWindow::cutVideo);
@@ -28,7 +49,7 @@ MainWindow::~MainWindow() {
 void MainWindow::openFile() {
     QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (!fileName.isEmpty()) {
-        ui->videoPlayerWidget->loadVideo(fileName);
+        videoPlayerWidget->loadVideo(fileName);
         currentVideo = fileName;
     }
 }
@@ -74,26 +95,6 @@ void MainWindow::cutVideo() {
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);
 }
 
-void MainWindow::addTextToVideo() {
-    if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
-        return;
-    }
-
-    bool ok;
-    QString text = QInputDialog::getText(this, tr("Add Text to Video"), tr("Text:"), QLineEdit::Normal, "", &ok);
-    if (!ok || text.isEmpty()) {
-        return;
-    }
-
-    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video with Text"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (outputVideo.isEmpty()) {
-        return;
-    }
-
-    ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text);
-}
-
 void MainWindow::combineVideos() {
     QString videoFile1 = QFileDialog::getOpenFileName(this, tr("Open First Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (videoFile1.isEmpty()) {
@@ -114,10 +115,15 @@ void MainWindow::combineVideos() {
 }
 
 void MainWindow::togglePlayPause() {
-    QMediaPlayer::MediaStatus status = ui->videoPlayerWidget->getMediaPlayer()->mediaStatus();
+    QMediaPlayer::MediaStatus status = videoPlayerWidget->getMediaPlayer()->mediaStatus();
     if (status == QMediaPlayer::LoadedMedia || status == QMediaPlayer::BufferedMedia) {
-        ui->videoPlayerWidget->getMediaPlayer()->pause();
+        videoPlayerWidget->getMediaPlayer()->pause();
     } else {
-        ui->videoPlayerWidget->getMediaPlayer()->play();
+        videoPlayerWidget->getMediaPlayer()->play();
     }
+}
+
+void MainWindow::onFileImported(const QString &fileName) {
+    videoPlayerWidget->loadVideo(fileName);
+    currentVideo = fileName;
 }

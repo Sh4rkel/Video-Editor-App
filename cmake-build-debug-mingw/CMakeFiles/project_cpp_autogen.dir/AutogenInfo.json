@@ -291,6 +291,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h",
+			"Mu",
+			"UVLADIE3JM/moc_FileImportWidget.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h",
 			"Mu",
 			"UVLADIE3JM/moc_MainWindow.cpp",
@@ -306,6 +312,18 @@
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_TimelineWidget.cpp",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h",
+			"Mu",
+			"UVLADIE3JM/moc_Track.cpp",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h",
+			"Mu",
+			"UVLADIE3JM/moc_VideoEditor.cpp",
 			null
 		],
 		[
@@ -400,6 +418,11 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp",
+			"Mu",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp",
 			"Mu",
 			null
@@ -411,6 +434,16 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp",
 			"Mu",
 			null
 		],

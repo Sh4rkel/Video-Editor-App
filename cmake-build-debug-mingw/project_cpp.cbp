@@ -165,6 +165,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
@@ -181,6 +187,18 @@
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp">

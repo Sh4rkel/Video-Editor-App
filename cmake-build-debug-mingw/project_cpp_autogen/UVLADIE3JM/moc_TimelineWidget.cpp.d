@@ -389,9 +389,18 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \

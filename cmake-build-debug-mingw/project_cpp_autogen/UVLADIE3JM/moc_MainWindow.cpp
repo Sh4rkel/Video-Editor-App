@@ -7,7 +7,6 @@
 *****************************************************************************/
 
 #include "../../../src/MainWindow.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -41,9 +40,10 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "",
     "saveFile",
     "cutVideo",
-    "addTextToVideo",
     "combineVideos",
-    "togglePlayPause"
+    "togglePlayPause",
+    "onFileImported",
+    "fileName"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -69,7 +69,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        4,    0,   52,    2, 0x08,    3 /* Private */,
        5,    0,   53,    2, 0x08,    4 /* Private */,
        6,    0,   54,    2, 0x08,    5 /* Private */,
-       7,    0,   55,    2, 0x08,    6 /* Private */,
+       7,    1,   55,    2, 0x08,    6 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -77,7 +77,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    8,
 
        0        // eod
 };
@@ -97,12 +97,13 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'cutVideo'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'addTextToVideo'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'combineVideos'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'togglePlayPause'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onFileImported'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
@@ -116,13 +117,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->openFile(); break;
         case 1: _t->saveFile(); break;
         case 2: _t->cutVideo(); break;
-        case 3: _t->addTextToVideo(); break;
-        case 4: _t->combineVideos(); break;
-        case 5: _t->togglePlayPause(); break;
+        case 3: _t->combineVideos(); break;
+        case 4: _t->togglePlayPause(); break;
+        case 5: _t->onFileImported((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const

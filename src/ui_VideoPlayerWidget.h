@@ -12,6 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtMultimediaWidgets/QVideoWidget>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -20,25 +22,32 @@ QT_BEGIN_NAMESPACE
 class Ui_VideoPlayerWidget
 {
 public:
-    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout;
+    QListWidget *fileListWidget;
+    QVBoxLayout *videoLayout;
     QVideoWidget *videoWidget;
 
     void setupUi(QWidget *VideoPlayerWidget)
     {
         if (VideoPlayerWidget->objectName().isEmpty())
             VideoPlayerWidget->setObjectName("VideoPlayerWidget");
-        VideoPlayerWidget->resize(800, 450);
-        verticalLayout = new QVBoxLayout(VideoPlayerWidget);
-        verticalLayout->setObjectName("verticalLayout");
+        VideoPlayerWidget->resize(800, 650);
+
+        horizontalLayout = new QHBoxLayout(VideoPlayerWidget);
+        horizontalLayout->setObjectName("horizontalLayout");
+
+        fileListWidget = new QListWidget(VideoPlayerWidget);
+        fileListWidget->setObjectName("fileListWidget");
+        horizontalLayout->addWidget(fileListWidget);
+
+        videoLayout = new QVBoxLayout();
+        videoLayout->setObjectName("videoLayout");
+
         videoWidget = new QVideoWidget(VideoPlayerWidget);
         videoWidget->setObjectName("videoWidget");
+        videoLayout->addWidget(videoWidget);
 
-        verticalLayout->addWidget(videoWidget);
-
-
-        retranslateUi(VideoPlayerWidget);
-
-        QMetaObject::connectSlotsByName(VideoPlayerWidget);
+        horizontalLayout->addLayout(videoLayout);
     } // setupUi
 
     void retranslateUi(QWidget *VideoPlayerWidget)

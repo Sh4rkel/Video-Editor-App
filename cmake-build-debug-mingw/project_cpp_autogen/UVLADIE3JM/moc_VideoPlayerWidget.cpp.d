@@ -247,7 +247,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -292,7 +291,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qglobalstatic.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h \
@@ -381,14 +379,12 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
-  D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h \
-  D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -407,10 +403,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \

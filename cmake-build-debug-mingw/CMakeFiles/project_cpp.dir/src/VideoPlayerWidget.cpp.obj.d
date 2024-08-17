@@ -424,13 +424,6 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\TextOverlayWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
  D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
@@ -448,33 +441,30 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
- D:/QT/6.7.2/mingw_64/include/QtCore/QTimer \
- D:/QT/6.7.2/mingw_64/include/QtCore/qtimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qbasictimer.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/QResizeEvent \
- D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvector2d.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvectornd.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpointingdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QList \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
- D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSize \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
- D:/QT/6.7.2/mingw_64/include/QtGui/QTransform \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget

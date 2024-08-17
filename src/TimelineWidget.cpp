@@ -1,24 +1,39 @@
 #include "TimelineWidget.h"
 #include "ui_TimelineWidget.h"
+#include <QLabel>
 
 TimelineWidget::TimelineWidget(QWidget *parent) :
         QWidget(parent),
         ui(new Ui::TimelineWidget),
         isPlaying(false)
 {
-
     ui->setupUi(this);
-    slider = ui->timelineSlider;
-    slider->setOrientation(Qt::Horizontal);
-    speedSlider = new QSlider(this);
-    speedSlider->setOrientation(Qt::Horizontal);
+
+    // Initialize widgets
+    slider = new QSlider(Qt::Horizontal, this);
+    speedSlider = new QSlider(Qt::Horizontal, this);
+    playPauseButton = new QPushButton("▶️", this);
+
+    // Configure widgets
     speedSlider->setRange(50, 200);
     speedSlider->setValue(100);
+
+    // Connect signals and slots
     connect(speedSlider, &QSlider::valueChanged, [this](int value) {
         emit speedChanged(value / 100.0);
     });
     connect(slider, &QSlider::valueChanged, this, &TimelineWidget::onSliderValueChanged);
-    connect(ui->pausePlayButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
+    connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
+
+    // Layout setup
+    controlsLayout = new QHBoxLayout();
+    controlsLayout->addWidget(playPauseButton);
+    controlsLayout->addWidget(slider);
+
+    mainLayout = new QVBoxLayout(this);
+    mainLayout->addLayout(controlsLayout);
+    mainLayout->addWidget(speedSlider);
+    setLayout(mainLayout);
 }
 
 void TimelineWidget::onSliderValueChanged(int value)
@@ -29,11 +44,7 @@ void TimelineWidget::onSliderValueChanged(int value)
 void TimelineWidget::onPlayPauseButtonClicked()
 {
     isPlaying = !isPlaying;
-    if (isPlaying) {
-        ui->pausePlayButton->setText("⏸️");
-    } else {
-        ui->pausePlayButton->setText("▶️");
-    }
+    playPauseButton->setText(isPlaying ? "⏸️" : "▶️");
     emit playPauseClicked();
 }
 

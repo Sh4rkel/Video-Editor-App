@@ -202,6 +202,30 @@ src/FFmpegHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.s
 .PHONY : src/FFmpegHandler.cpp.s
 
+src/FileImportWidget.obj: src/FileImportWidget.cpp.obj
+.PHONY : src/FileImportWidget.obj
+
+# target to build an object file
+src/FileImportWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj
+.PHONY : src/FileImportWidget.cpp.obj
+
+src/FileImportWidget.i: src/FileImportWidget.cpp.i
+.PHONY : src/FileImportWidget.i
+
+# target to preprocess a source file
+src/FileImportWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.i
+.PHONY : src/FileImportWidget.cpp.i
+
+src/FileImportWidget.s: src/FileImportWidget.cpp.s
+.PHONY : src/FileImportWidget.s
+
+# target to generate assembly for a file
+src/FileImportWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.s
+.PHONY : src/FileImportWidget.cpp.s
+
 src/MainWindow.obj: src/MainWindow.cpp.obj
 .PHONY : src/MainWindow.obj
 
@@ -274,6 +298,54 @@ src/TimelineWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.s
 .PHONY : src/TimelineWidget.cpp.s
 
+src/Track.obj: src/Track.cpp.obj
+.PHONY : src/Track.obj
+
+# target to build an object file
+src/Track.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.obj
+.PHONY : src/Track.cpp.obj
+
+src/Track.i: src/Track.cpp.i
+.PHONY : src/Track.i
+
+# target to preprocess a source file
+src/Track.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.i
+.PHONY : src/Track.cpp.i
+
+src/Track.s: src/Track.cpp.s
+.PHONY : src/Track.s
+
+# target to generate assembly for a file
+src/Track.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.s
+.PHONY : src/Track.cpp.s
+
+src/VideoEditor.obj: src/VideoEditor.cpp.obj
+.PHONY : src/VideoEditor.obj
+
+# target to build an object file
+src/VideoEditor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj
+.PHONY : src/VideoEditor.cpp.obj
+
+src/VideoEditor.i: src/VideoEditor.cpp.i
+.PHONY : src/VideoEditor.i
+
+# target to preprocess a source file
+src/VideoEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.i
+.PHONY : src/VideoEditor.cpp.i
+
+src/VideoEditor.s: src/VideoEditor.cpp.s
+.PHONY : src/VideoEditor.s
+
+# target to generate assembly for a file
+src/VideoEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.s
+.PHONY : src/VideoEditor.cpp.s
+
 src/VideoPlayerWidget.obj: src/VideoPlayerWidget.cpp.obj
 .PHONY : src/VideoPlayerWidget.obj
 
@@ -339,6 +411,9 @@ help:
 	@echo ... src/FFmpegHandler.obj
 	@echo ... src/FFmpegHandler.i
 	@echo ... src/FFmpegHandler.s
+	@echo ... src/FileImportWidget.obj
+	@echo ... src/FileImportWidget.i
+	@echo ... src/FileImportWidget.s
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
@@ -348,6 +423,12 @@ help:
 	@echo ... src/TimelineWidget.obj
 	@echo ... src/TimelineWidget.i
 	@echo ... src/TimelineWidget.s
+	@echo ... src/Track.obj
+	@echo ... src/Track.i
+	@echo ... src/Track.s
+	@echo ... src/VideoEditor.obj
+	@echo ... src/VideoEditor.i
+	@echo ... src/VideoEditor.s
 	@echo ... src/VideoPlayerWidget.obj
 	@echo ... src/VideoPlayerWidget.i
 	@echo ... src/VideoPlayerWidget.s

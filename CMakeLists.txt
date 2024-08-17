@@ -32,6 +32,12 @@ add_executable(project_cpp
         src/TextOverlayWidget.cpp
         src/FFmpegHandler.cpp
         src/FFmpegHandler.h
+        src/Track.h
+        src/Track.cpp
+        src/Track.cpp
+        src/VideoEditor.cpp
+        src/FileImportWidget.cpp
+        src/FileImportWidget.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

@@ -3,14 +3,16 @@
 
 #include <QWidget>
 #include <QSlider>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TimelineWidget; }
 QT_END_NAMESPACE
 
-class TimelineWidget : public QWidget
-{
-Q_OBJECT
+class TimelineWidget : public QWidget {
+    Q_OBJECT
 
 public:
     explicit TimelineWidget(QWidget *parent = nullptr);
@@ -18,21 +20,23 @@ public:
     void setDuration(int duration);
     void setPosition(int position);
 
-signals:
-    void speedChanged(double speed);
-    void positionChanged(int position);
+    signals:
+        void positionChanged(int position);
     void playPauseClicked();
-    void stopClicked();
-private slots:
-    void onSliderValueChanged(int value);
-    void onPlayPauseButtonClicked();
+    void speedChanged(double speed);
 
+    private slots:
+        void onSliderValueChanged(int value);
+    void onPlayPauseButtonClicked();
 
 private:
     Ui::TimelineWidget *ui;
     QSlider *slider;
     QSlider *speedSlider;
+    QPushButton *playPauseButton;
+    QHBoxLayout *controlsLayout;
+    QVBoxLayout *mainLayout;
     bool isPlaying;
 };
 
-#endif
+#endif // TIMELINEWIDGET_H

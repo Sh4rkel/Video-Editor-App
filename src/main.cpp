@@ -5,6 +5,7 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;
     w.setWindowTitle("Video Editor");
+
     // Add some style to the main window
     QString styleSheet = R"(
         QMainWindow {
@@ -81,6 +82,10 @@ int main(int argc, char *argv[]) {
 
         QSlider::handle:horizontal:pressed {
             background: #3E3E3E;
+        }
+
+        QLabel {
+            color: #FFFFFF;
         }
     )";
 
