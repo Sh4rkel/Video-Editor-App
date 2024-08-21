@@ -3,10 +3,10 @@
 
 #include <QMainWindow>
 #include <QMediaPlayer>
-#include "VideoPlayerWidget.h" // Add this include
-#include "TimelineWidget.h"    // Add this include
-#include "SpeedWidget.h"       // Add this include
-#include "FFmpegHandler.h"     // Add this include
+#include "VideoPlayerWidget.h"
+#include "TimelineWidget.h"
+#include "SpeedWidget.h"
+#include "FFmpegHandler.h"
 
 namespace Ui {
     class MainWindow;

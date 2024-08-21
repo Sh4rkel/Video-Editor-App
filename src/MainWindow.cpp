@@ -125,7 +125,7 @@ void MainWindow::changeSpeed(qreal speed) {
 
 void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status) {
     if (status == QMediaPlayer::EndOfMedia) {
-        videoPlayerWidget->getMediaPlayer()->stop();
+        videoPlayerWidget->getMediaPlayer()->pause();
         timelineWidget->updatePlayPauseButtonText("▶️");
     }
 }
