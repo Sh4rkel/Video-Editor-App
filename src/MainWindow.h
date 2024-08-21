@@ -26,7 +26,8 @@ public:
     void combineVideos();
     void togglePlayPause();
     void changeSpeed(qreal speed);
-    void handleMediaStatusChanged(QMediaPlayer::MediaStatus status); // Add this slot
+    void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
+    void addTextToVideo();
 
 private:
     Ui::MainWindow *ui;
@@ -35,6 +36,13 @@ private:
     SpeedWidget *speedWidget;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
+    QAction *openAction;
+    QAction *saveAction;
+    QAction *cutAction;
+    QAction *combineAction;
+    QAction *addTextAction;
+    QMenuBar *menuBar;
+    QMenu *videoMenu;
 };
 
 #endif // MAINWINDOW_H

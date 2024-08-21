@@ -26,13 +26,34 @@ MainWindow::MainWindow(QWidget *parent)
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
-    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged); // Connect the signal
+    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
     connect(speedWidget, &SpeedWidget::speedChanged, this, &MainWindow::changeSpeed);
 
-    connect(ui->openAction, &QAction::triggered, this, &MainWindow::openFile);
-    connect(ui->saveAction, &QAction::triggered, this, &MainWindow::saveFile);
-    connect(ui->cutAction, &QAction::triggered, this, &MainWindow::cutVideo);
-    connect(ui->combineAction, &QAction::triggered, this, &MainWindow::combineVideos);
+    menuBar = new QMenuBar(this); // Initialize the menu bar
+    setMenuBar(menuBar); // Set the menu bar
+
+    videoMenu = new QMenu(tr("Video"), this); // Create a menu for video operations
+    menuBar->addMenu(videoMenu); // Add the video menu to the menu bar
+
+    openAction = new QAction(tr("Open"), this);
+    connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
+    videoMenu->addAction(openAction);
+
+    saveAction = new QAction(tr("Save"), this);
+    connect(saveAction, &QAction::triggered, this, &MainWindow::saveFile);
+    videoMenu->addAction(saveAction);
+
+    cutAction = new QAction(tr("Cut"), this);
+    connect(cutAction, &QAction::triggered, this, &MainWindow::cutVideo);
+    videoMenu->addAction(cutAction);
+
+    combineAction = new QAction(tr("Combine"), this);
+    connect(combineAction, &QAction::triggered, this, &MainWindow::combineVideos);
+    videoMenu->addAction(combineAction);
+
+    addTextAction = new QAction(tr("Add Text"), this); // Initialize the action
+    connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo); // Connect the action
+    videoMenu->addAction(addTextAction); // Add the action to the video menu
 }
 
 MainWindow::~MainWindow() {
@@ -128,4 +149,29 @@ void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status) {
         videoPlayerWidget->getMediaPlayer()->pause();
         timelineWidget->updatePlayPauseButtonText("▶️");
     }
+}
+
+void MainWindow::addTextToVideo() {
+    if (currentVideo.isEmpty()) {
+        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
+        return;
+    }
+
+    bool ok;
+    QString text = QInputDialog::getText(this, tr("Add Text to Video"), tr("Enter text:"), QLineEdit::Normal, "", &ok);
+    if (!ok || text.isEmpty()) {
+        return;
+    }
+
+    int x = QInputDialog::getInt(this, tr("Add Text to Video"), tr("X position:"), 0, 0, INT_MAX, 1, &ok);
+    if (!ok) return;
+    int y = QInputDialog::getInt(this, tr("Add Text to Video"), tr("Y position:"), 0, 0, INT_MAX, 1, &ok);
+    if (!ok) return;
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video with Text"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
 }
