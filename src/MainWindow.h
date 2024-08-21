@@ -2,9 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "FileImportWidget.h"
-#include "TimelineWidget.h"
 #include "VideoPlayerWidget.h"
+#include "TimelineWidget.h"
 #include "FFmpegHandler.h"
 
 QT_BEGIN_NAMESPACE
@@ -24,15 +23,13 @@ public:
     void cutVideo();
     void combineVideos();
     void togglePlayPause();
-    void onFileImported(const QString &fileName);
 
 private:
     Ui::MainWindow *ui;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
-    FileImportWidget *fileImportWidget;
-    TimelineWidget *timelineWidget;
     VideoPlayerWidget *videoPlayerWidget;
+    TimelineWidget *timelineWidget;
 };
 
 #endif // MAINWINDOW_H

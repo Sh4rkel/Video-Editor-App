@@ -441,30 +441,10 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget

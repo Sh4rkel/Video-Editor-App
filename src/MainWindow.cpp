@@ -8,23 +8,12 @@ MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow), ffmpegHandler(new FFmpegHandler(this)), currentVideo("") {
     ui->setupUi(this);
 
-    fileImportWidget = new FileImportWidget(this);
-    timelineWidget = new TimelineWidget(this);
     videoPlayerWidget = new VideoPlayerWidget(this);
+    timelineWidget = new TimelineWidget(this);
 
-    connect(fileImportWidget, &FileImportWidget::fileImported, this, &MainWindow::onFileImported);
-
-    QVBoxLayout *leftLayout = new QVBoxLayout();
-    leftLayout->addWidget(fileImportWidget);
-    leftLayout->addWidget(timelineWidget);
-    leftLayout->setStretch(0, 1);  // Set the stretch factor for fileImportWidget
-    leftLayout->setStretch(1, 1);  // Set the stretch factor for timelineWidget
-
-    QHBoxLayout *mainLayout = new QHBoxLayout();
-    mainLayout->addLayout(leftLayout);
+    QVBoxLayout *mainLayout = new QVBoxLayout();
     mainLayout->addWidget(videoPlayerWidget);
-    mainLayout->setStretch(0, 1);  // Set the stretch factor for leftLayout
-    mainLayout->setStretch(1, 1);  // Set the stretch factor for videoPlayerWidget
+    mainLayout->addWidget(timelineWidget);
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
@@ -121,9 +110,4 @@ void MainWindow::togglePlayPause() {
     } else {
         videoPlayerWidget->getMediaPlayer()->play();
     }
-}
-
-void MainWindow::onFileImported(const QString &fileName) {
-    videoPlayerWidget->loadVideo(fileName);
-    currentVideo = fileName;
 }

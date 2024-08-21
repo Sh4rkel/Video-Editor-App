@@ -452,11 +452,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -472,6 +467,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TextOverlayWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
