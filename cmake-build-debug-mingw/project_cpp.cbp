@@ -5,7 +5,7 @@
 		<Option title="project_cpp"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\QT\;CMake Files\QT\6.7.2\;CMake Files\QT\6.7.2\mingw_64\;CMake Files\QT\6.7.2\mingw_64\lib\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Core\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6CoreTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6ZlibPrivate\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Gui\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Multimedia\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Network\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6MultimediaWidgets\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\QT\;CMake Files\QT\6.7.2\;CMake Files\QT\6.7.2\mingw_64\;CMake Files\QT\6.7.2\mingw_64\lib\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Core\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6CoreTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6ZlibPrivate\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Gui\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Multimedia\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Network\;CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6MultimediaWidgets\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw"/>
@@ -381,6 +381,96 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessTargets.cmake">
 			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake">
 			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Gui\"/>
 		</Unit>
@@ -527,96 +617,6 @@
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake">
 			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Gui\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Widgets\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
-			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/QT/6.7.2/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake">
 			<Option virtualFolder="CMake Files\QT\6.7.2\mingw_64\lib\cmake\Qt6Multimedia\"/>

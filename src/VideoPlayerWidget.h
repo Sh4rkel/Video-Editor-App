@@ -22,7 +22,6 @@ public:
 private:
     Ui::VideoPlayerWidget *ui;
     QMediaPlayer *mediaPlayer;
-    QVideoWidget *videoWidget;
 };
 
 #endif // VIDEOPLAYERWIDGET_H

@@ -37,7 +37,9 @@
 			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
 			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -173,24 +175,56 @@
 				"parent" : 4
 			},
 			{
-				"file" : 12,
+				"file" : 14,
 				"parent" : 24
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 43,
+				"parent" : 25
+			},
+			{
+				"file" : 13,
+				"parent" : 26
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 42,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 111,
+				"parent" : 28
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 76,
+				"parent" : 29
+			},
+			{
+				"file" : 12,
+				"parent" : 30
 			},
 			{
 				"command" : 3,
 				"file" : 12,
 				"line" : 55,
-				"parent" : 25
+				"parent" : 31
 			},
 			{
 				"file" : 11,
-				"parent" : 26
+				"parent" : 32
 			},
 			{
 				"command" : 2,
 				"file" : 11,
 				"line" : 61,
-				"parent" : 27
+				"parent" : 33
 			},
 			{
 				"command" : 7,
@@ -277,30 +311,30 @@
 					"path" : "C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cpp_autogen/include"
 				},
 				{
-					"backtrace" : 29,
+					"backtrace" : 35,
 					"path" : "C:/Users/filip/CLionProjects/Video-Editor-App/src"
 				},
 				{
-					"backtrace" : 29,
+					"backtrace" : 35,
 					"path" : "C:/Users/filip/CLionProjects/Video-Editor-App/ui"
 				},
 				{
-					"backtrace" : 30,
+					"backtrace" : 36,
 					"isSystem" : true,
 					"path" : "D:/QT/6.7.2/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 30,
+					"backtrace" : 36,
 					"isSystem" : true,
 					"path" : "D:/QT/6.7.2/mingw_64/include"
 				},
 				{
-					"backtrace" : 30,
+					"backtrace" : 36,
 					"isSystem" : true,
 					"path" : "D:/QT/6.7.2/mingw_64/include/QtGui"
 				},
 				{
-					"backtrace" : 30,
+					"backtrace" : 36,
 					"isSystem" : true,
 					"path" : "D:/QT/6.7.2/mingw_64/include/QtWidgets"
 				},
@@ -353,11 +387,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "project_cpp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "project_cpp_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "project_cpp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "project_cpp::@6890427a1f51a3e7e1df",
@@ -419,22 +453,22 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 34,
 				"fragment" : "-ld3d11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 34,
 				"fragment" : "-ldxgi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 34,
 				"fragment" : "-ldxguid",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 28,
+				"backtrace" : 34,
 				"fragment" : "-ld3d12",
 				"role" : "libraries"
 			},

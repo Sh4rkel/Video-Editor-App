@@ -1,11 +1,12 @@
 #include "VideoPlayerWidget.h"
 #include "ui_VideoPlayerWidget.h"
+#include <QUrl>
+#include <QMediaPlayer>
 
-VideoPlayerWidget::VideoPlayerWidget(QWidget *parent) :
-        QWidget(parent), ui(new Ui::VideoPlayerWidget), mediaPlayer(new QMediaPlayer(this)), videoWidget(new QVideoWidget(this)) {
+VideoPlayerWidget::VideoPlayerWidget(QWidget *parent)
+    : QWidget(parent), ui(new Ui::VideoPlayerWidget), mediaPlayer(new QMediaPlayer(this)) {
     ui->setupUi(this);
-    mediaPlayer->setVideoOutput(videoWidget);
-    ui->videoLayout->addWidget(videoWidget);
+    mediaPlayer->setVideoOutput(ui->videoWidget);
 }
 
 VideoPlayerWidget::~VideoPlayerWidget() {

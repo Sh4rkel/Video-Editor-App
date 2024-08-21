@@ -447,4 +447,6 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h

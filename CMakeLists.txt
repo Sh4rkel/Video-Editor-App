@@ -4,7 +4,7 @@ set(CMAKE_AUTOMOC ON)
 
 set(CMAKE_CXX_STANDARD 23)
 
-find_package(Qt6 COMPONENTS Core Gui Widgets Multimedia MultimediaWidgets REQUIRED)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Multimedia MultimediaWidgets)
 
 
 include_directories(src ui)
