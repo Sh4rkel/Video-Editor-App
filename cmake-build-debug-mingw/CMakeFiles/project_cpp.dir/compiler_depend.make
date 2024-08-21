@@ -301,6 +301,8 @@ project_cpp_autogen/timestamp: C:/Users/filip/AppData/Local/Programs/CLion/bin/c
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp \
@@ -503,6 +505,7 @@ project_cpp_autogen/timestamp: C:/Users/filip/AppData/Local/Programs/CLion/bin/c
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
@@ -518,6 +521,7 @@ project_cpp_autogen/timestamp: C:/Users/filip/AppData/Local/Programs/CLion/bin/c
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
@@ -4613,6 +4617,7 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: C:/Users/filip/CLionPr
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_VideoPlayerWidget.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
   D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
@@ -6200,6 +6205,10 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp:
 
 C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h:
 
+C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp:
+
+C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h:
+
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp:
 
 D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake:
@@ -6352,6 +6361,8 @@ D:/QT/6.7.2/mingw_64/include/QtCore/qnumeric.h:
 
 D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h:
 
+D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox:
+
 D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h:
 
 D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
@@ -6396,10 +6407,6 @@ D:/QT/6.7.2/mingw_64/include/QtCore/qtclasshelpermacros.h:
 
 D:/QT/6.7.2/mingw_64/include/QtCore/qtconfiginclude.h:
 
-D:/QT/6.7.2/mingw_64/include/QtWidgets/qlineedit.h:
-
-D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget:
-
 D:/QT/6.7.2/mingw_64/include/QtCore/qtcore-config.h:
 
 D:/QT/6.7.2/mingw_64/include/QtCore/qtcoreexports.h:
@@ -6422,9 +6429,9 @@ D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h:
 
 D:/QT/6.7.2/mingw_64/include/QtCore/qtversionchecks.h:
 
-D:/QT/6.7.2/mingw_64/include/QtCore/qtypeinfo.h:
-
 D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h:
+
+D:/QT/6.7.2/mingw_64/include/QtCore/qtypeinfo.h:
 
 D:/QT/6.7.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsAdditionalTargetInfo.cmake:
 
@@ -6484,11 +6491,17 @@ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel:
 
 D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow:
 
+D:/QT/6.7.2/mingw_64/include/QtWidgets/qlineedit.h:
+
+D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget:
+
 D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h:
 
 D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h:
 
 D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h:
+
+D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h:
 
 D:/QT/6.7.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake:
 
@@ -6829,3 +6842,5 @@ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h:
 C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h:
 
 C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_VideoPlayerWidget.h:
+
+D:/QT/6.7.2/mingw_64/include/QtCore/QUrl:

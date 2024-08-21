@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "VideoPlayerWidget.h"
 #include "TimelineWidget.h"
+#include "SpeedWidget.h"
 #include "FFmpegHandler.h"
 
 QT_BEGIN_NAMESPACE
@@ -23,6 +24,7 @@ public:
     void cutVideo();
     void combineVideos();
     void togglePlayPause();
+    void changeSpeed(qreal speed);
 
 private:
     Ui::MainWindow *ui;
@@ -30,6 +32,7 @@ private:
     QString currentVideo;
     VideoPlayerWidget *videoPlayerWidget;
     TimelineWidget *timelineWidget;
+    SpeedWidget *speedWidget;
 };
 
 #endif // MAINWINDOW_H

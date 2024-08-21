@@ -10,10 +10,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     videoPlayerWidget = new VideoPlayerWidget(this);
     timelineWidget = new TimelineWidget(this);
+    speedWidget = new SpeedWidget(this);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
     mainLayout->addWidget(videoPlayerWidget);
     mainLayout->addWidget(timelineWidget);
+    mainLayout->addWidget(speedWidget);
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
@@ -23,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
+    connect(speedWidget, &SpeedWidget::speedChanged, this, &MainWindow::changeSpeed);
 
     connect(ui->openAction, &QAction::triggered, this, &MainWindow::openFile);
     connect(ui->saveAction, &QAction::triggered, this, &MainWindow::saveFile);
@@ -110,4 +113,8 @@ void MainWindow::togglePlayPause() {
     } else {
         videoPlayerWidget->getMediaPlayer()->play();
     }
+}
+
+void MainWindow::changeSpeed(qreal speed) {
+    videoPlayerWidget->getMediaPlayer()->setPlaybackRate(speed);
 }

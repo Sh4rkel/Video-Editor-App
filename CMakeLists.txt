@@ -38,6 +38,8 @@ add_executable(project_cpp
         src/VideoEditor.cpp
         src/FileImportWidget.cpp
         src/FileImportWidget.h
+        src/SpeedWidget.cpp
+        src/SpeedWidget.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

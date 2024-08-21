@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj"

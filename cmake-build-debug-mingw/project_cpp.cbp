@@ -177,6 +177,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

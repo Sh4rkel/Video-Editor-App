@@ -250,6 +250,30 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/SpeedWidget.obj: src/SpeedWidget.cpp.obj
+.PHONY : src/SpeedWidget.obj
+
+# target to build an object file
+src/SpeedWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj
+.PHONY : src/SpeedWidget.cpp.obj
+
+src/SpeedWidget.i: src/SpeedWidget.cpp.i
+.PHONY : src/SpeedWidget.i
+
+# target to preprocess a source file
+src/SpeedWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.i
+.PHONY : src/SpeedWidget.cpp.i
+
+src/SpeedWidget.s: src/SpeedWidget.cpp.s
+.PHONY : src/SpeedWidget.s
+
+# target to generate assembly for a file
+src/SpeedWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.s
+.PHONY : src/SpeedWidget.cpp.s
+
 src/TextOverlayWidget.obj: src/TextOverlayWidget.cpp.obj
 .PHONY : src/TextOverlayWidget.obj
 
@@ -417,6 +441,9 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
+	@echo ... src/SpeedWidget.obj
+	@echo ... src/SpeedWidget.i
+	@echo ... src/SpeedWidget.s
 	@echo ... src/TextOverlayWidget.obj
 	@echo ... src/TextOverlayWidget.i
 	@echo ... src/TextOverlayWidget.s

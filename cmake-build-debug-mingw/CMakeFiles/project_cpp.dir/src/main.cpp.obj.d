@@ -455,6 +455,20 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \

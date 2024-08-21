@@ -311,6 +311,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h",
+			"Mu",
+			"UVLADIE3JM/moc_SpeedWidget.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_TextOverlayWidget.cpp",
@@ -432,6 +438,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp",
 			"Mu",
 			null
 		],

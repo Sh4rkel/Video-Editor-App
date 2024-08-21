@@ -471,7 +471,12 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedWidget.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TextOverlayWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
