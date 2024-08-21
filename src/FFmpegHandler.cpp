@@ -93,34 +93,6 @@ void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &ou
     QMessageBox::information(nullptr, "Success", "Video segment cut successfully.");
 }
 
-// void FFmpegHandler::addTextToVideo(const QString &inputFile, const QString &outputFile, const QString &text, int x, int y) {
-//     QStringList arguments;
-//     arguments << "-i" << inputFile
-//               << "-vf" << QString("drawtext=text='%1':x=%2:y=%3:fontcolor=white:fontsize=24").arg(text).arg(x).arg(y)
-//               << "-codec:a" << "copy"
-//               << outputFile;
-//
-//     ffmpeg.setArguments(arguments);
-//     ffmpeg.start();
-//
-//     if (!ffmpeg.waitForStarted()) {
-//         QMessageBox::warning(nullptr, "Error", "Failed to start FFmpeg.");
-//         return;
-//     }
-//
-//     if (!ffmpeg.waitForFinished()) {
-//         QMessageBox::warning(nullptr, "Error", "FFmpeg process failed.");
-//         return;
-//     }
-//
-//     if (!QFile::exists(outputFile)) {
-//         QMessageBox::warning(nullptr, "Error", "Output video file was not created.");
-//         return;
-//     }
-//
-//     QMessageBox::information(nullptr, "Success", "Video with text overlay created successfully.");
-// }
-
 void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo) {
     ffmpeg.setArguments(QStringList() << "-i" << videoFile1 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part1.ts");
     ffmpeg.start();
