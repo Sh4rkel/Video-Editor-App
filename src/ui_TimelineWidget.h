@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QVBoxLayout>
@@ -23,26 +24,44 @@ class Ui_TimelineWidget
 {
 public:
     QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout;
+    QLabel *currentTimeLabel;
     QSlider *timelineSlider;
-    QPushButton *pausePlayButton;
+    QLabel *totalTimeLabel;
+    QPushButton *playPauseButton;
 
     void setupUi(QWidget *TimelineWidget)
     {
         if (TimelineWidget->objectName().isEmpty())
             TimelineWidget->setObjectName("TimelineWidget");
-        TimelineWidget->resize(1200, 400);
+        TimelineWidget->resize(800, 100);
         verticalLayout = new QVBoxLayout(TimelineWidget);
         verticalLayout->setObjectName("verticalLayout");
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
+
+        playPauseButton = new QPushButton(TimelineWidget);
+        playPauseButton->setObjectName("playPauseButton");
+        playPauseButton->setFixedSize(30, 30);
+        horizontalLayout->addWidget(playPauseButton);
+
+        currentTimeLabel = new QLabel(TimelineWidget);
+        currentTimeLabel->setObjectName("currentTimeLabel");
+        currentTimeLabel->setText("00:00");
+        horizontalLayout->addWidget(currentTimeLabel);
+
         timelineSlider = new QSlider(TimelineWidget);
         timelineSlider->setObjectName("timelineSlider");
         timelineSlider->setOrientation(Qt::Horizontal);
+        horizontalLayout->addWidget(timelineSlider);
 
-        verticalLayout->addWidget(timelineSlider);
+        totalTimeLabel = new QLabel(TimelineWidget);
+        totalTimeLabel->setObjectName("totalTimeLabel");
+        totalTimeLabel->setText("00:00");
+        horizontalLayout->addWidget(totalTimeLabel);
 
-        pausePlayButton = new QPushButton(TimelineWidget);
-        pausePlayButton->setObjectName("pausePlayButton");
-
-        verticalLayout->addWidget(pausePlayButton);
+        verticalLayout->addLayout(horizontalLayout);
 
         retranslateUi(TimelineWidget);
 
@@ -51,7 +70,7 @@ public:
 
     void retranslateUi(QWidget *TimelineWidget)
     {
-        pausePlayButton->setText(QCoreApplication::translate("TimelineWidget", "▶️", nullptr));
+        playPauseButton->setText(QCoreApplication::translate("TimelineWidget", "▶️", nullptr));
     } // retranslateUi
 
 };
