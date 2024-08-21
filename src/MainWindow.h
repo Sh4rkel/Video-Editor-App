@@ -2,14 +2,15 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "VideoPlayerWidget.h"
-#include "TimelineWidget.h"
-#include "SpeedWidget.h"
-#include "FFmpegHandler.h"
+#include <QMediaPlayer>
+#include "VideoPlayerWidget.h" // Add this include
+#include "TimelineWidget.h"    // Add this include
+#include "SpeedWidget.h"       // Add this include
+#include "FFmpegHandler.h"     // Add this include
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
+namespace Ui {
+    class MainWindow;
+}
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -25,14 +26,15 @@ public:
     void combineVideos();
     void togglePlayPause();
     void changeSpeed(qreal speed);
+    void handleMediaStatusChanged(QMediaPlayer::MediaStatus status); // Add this slot
 
 private:
     Ui::MainWindow *ui;
-    FFmpegHandler *ffmpegHandler;
-    QString currentVideo;
     VideoPlayerWidget *videoPlayerWidget;
     TimelineWidget *timelineWidget;
     SpeedWidget *speedWidget;
+    FFmpegHandler *ffmpegHandler;
+    QString currentVideo;
 };
 
 #endif // MAINWINDOW_H

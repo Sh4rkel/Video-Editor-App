@@ -3,7 +3,7 @@
 #include <QFileDialog>
 #include <QInputDialog>
 #include <QMessageBox>
-#include <QMediaPlayer> // Add this include
+#include <QMediaPlayer>
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow), ffmpegHandler(new FFmpegHandler(this)), currentVideo("") {
@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
+    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged); // Connect the signal
     connect(speedWidget, &SpeedWidget::speedChanged, this, &MainWindow::changeSpeed);
 
     connect(ui->openAction, &QAction::triggered, this, &MainWindow::openFile);
@@ -120,4 +121,11 @@ void MainWindow::togglePlayPause() {
 
 void MainWindow::changeSpeed(qreal speed) {
     videoPlayerWidget->getMediaPlayer()->setPlaybackRate(speed);
+}
+
+void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status) {
+    if (status == QMediaPlayer::EndOfMedia) {
+        videoPlayerWidget->getMediaPlayer()->stop();
+        timelineWidget->updatePlayPauseButtonText("▶️");
+    }
 }

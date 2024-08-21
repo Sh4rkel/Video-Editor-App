@@ -452,7 +452,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
@@ -463,6 +462,7 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/QVideoWidget \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
