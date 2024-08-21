@@ -1,64 +1,39 @@
 #include "TimelineWidget.h"
-#include "ui_TimelineWidget.h"
-#include <QLabel>
+#include <QTime> // Add this include
 
-TimelineWidget::TimelineWidget(QWidget *parent) :
-        QWidget(parent),
-        ui(new Ui::TimelineWidget),
-        isPlaying(false)
-{
-    ui->setupUi(this);
+TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), videoDuration(0) {
+    setupUi(this);
 
-    // Initialize widgets
-    slider = new QSlider(Qt::Horizontal, this);
-    speedSlider = new QSlider(Qt::Horizontal, this);
-    playPauseButton = new QPushButton("▶️", this);
-
-    // Configure widgets
-    speedSlider->setRange(50, 200);
-    speedSlider->setValue(100);
-
-    // Connect signals and slots
-    connect(speedSlider, &QSlider::valueChanged, [this](int value) {
-        emit speedChanged(value / 100.0);
-    });
-    connect(slider, &QSlider::valueChanged, this, &TimelineWidget::onSliderValueChanged);
     connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
-
-    // Layout setup
-    controlsLayout = new QHBoxLayout();
-    controlsLayout->addWidget(playPauseButton);
-    controlsLayout->addWidget(slider);
-
-    mainLayout = new QVBoxLayout(this);
-    mainLayout->addLayout(controlsLayout);
-    mainLayout->addWidget(speedSlider);
-    setLayout(mainLayout);
+    connect(timelineSlider, &QSlider::sliderMoved, this, &TimelineWidget::onSliderMoved);
 }
 
-void TimelineWidget::onSliderValueChanged(int value)
-{
-    emit positionChanged(value);
+void TimelineWidget::setDuration(qint64 duration) {
+    videoDuration = duration;
+    timelineSlider->setMaximum(static_cast<int>(duration));
+    totalTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(static_cast<int>(duration)).toString("mm:ss"));
 }
 
-void TimelineWidget::onPlayPauseButtonClicked()
-{
-    isPlaying = !isPlaying;
-    playPauseButton->setText(isPlaying ? "⏸️" : "▶️");
+void TimelineWidget::setPosition(qint64 position) {
+    if (!timelineSlider->isSliderDown()) {
+        timelineSlider->setValue(static_cast<int>(position));
+    }
+    currentTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(static_cast<int>(position)).toString("mm:ss"));
+}
+
+void TimelineWidget::onPlayPauseButtonClicked() {
+    if (playPauseButton->text() == "▶️") {
+        playPauseButton->setText("⏸️");
+    } else {
+        playPauseButton->setText("▶️");
+    }
     emit playPauseClicked();
 }
 
-void TimelineWidget::setDuration(int duration)
-{
-    slider->setMaximum(duration);
+void TimelineWidget::onSliderMoved(int position) {
+    emit positionChanged(position);
 }
 
-void TimelineWidget::setPosition(int position)
-{
-    slider->setValue(position);
-}
-
-TimelineWidget::~TimelineWidget()
-{
-    delete ui;
+void TimelineWidget::updatePlayPauseButtonText(const QString &text) {
+    playPauseButton->setText(text);
 }

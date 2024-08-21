@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QMediaPlayer> // Add this include
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent), ui(new Ui::MainWindow), ffmpegHandler(new FFmpegHandler(this)), currentVideo("") {
@@ -107,11 +108,13 @@ void MainWindow::combineVideos() {
 }
 
 void MainWindow::togglePlayPause() {
-    QMediaPlayer::MediaStatus status = videoPlayerWidget->getMediaPlayer()->mediaStatus();
-    if (status == QMediaPlayer::LoadedMedia || status == QMediaPlayer::BufferedMedia) {
-        videoPlayerWidget->getMediaPlayer()->pause();
+    QMediaPlayer *player = videoPlayerWidget->getMediaPlayer();
+    if (player->playbackState() == QMediaPlayer::PlayingState) {
+        player->pause();
+        timelineWidget->updatePlayPauseButtonText("▶️");
     } else {
-        videoPlayerWidget->getMediaPlayer()->play();
+        player->play();
+        timelineWidget->updatePlayPauseButtonText("⏸️");
     }
 }
 

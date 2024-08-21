@@ -442,19 +442,30 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_TimelineWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
@@ -467,11 +478,9 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
- D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h

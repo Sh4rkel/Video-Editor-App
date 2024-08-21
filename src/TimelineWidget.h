@@ -2,41 +2,29 @@
 #define TIMELINEWIDGET_H
 
 #include <QWidget>
-#include <QSlider>
-#include <QPushButton>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
+#include "ui_TimelineWidget.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class TimelineWidget; }
-QT_END_NAMESPACE
-
-class TimelineWidget : public QWidget {
+class TimelineWidget : public QWidget, private Ui::TimelineWidget {
     Q_OBJECT
 
 public:
     explicit TimelineWidget(QWidget *parent = nullptr);
-    ~TimelineWidget();
-    void setDuration(int duration);
-    void setPosition(int position);
+    void updatePlayPauseButtonText(const QString &text);
 
     signals:
-        void positionChanged(int position);
-    void playPauseClicked();
-    void speedChanged(double speed);
+        void playPauseClicked();
+    void positionChanged(int position);
+
+    public slots:
+        void setDuration(qint64 duration);
+    void setPosition(qint64 position);
 
     private slots:
-        void onSliderValueChanged(int value);
-    void onPlayPauseButtonClicked();
+        void onPlayPauseButtonClicked();
+    void onSliderMoved(int position);
 
 private:
-    Ui::TimelineWidget *ui;
-    QSlider *slider;
-    QSlider *speedSlider;
-    QPushButton *playPauseButton;
-    QHBoxLayout *controlsLayout;
-    QVBoxLayout *mainLayout;
-    bool isPlaying;
+    qint64 videoDuration;
 };
 
 #endif // TIMELINEWIDGET_H

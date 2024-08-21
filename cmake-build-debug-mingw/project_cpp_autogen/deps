@@ -311,12 +311,14 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QList \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QSize \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
+	D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
 	D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -502,6 +504,7 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+	D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
@@ -517,6 +520,7 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+	D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \

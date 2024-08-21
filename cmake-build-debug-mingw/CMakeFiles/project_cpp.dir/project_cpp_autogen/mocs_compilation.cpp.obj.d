@@ -468,34 +468,53 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TextOverlayWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TimelineWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_Track.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoEditor.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QShowEvent \
  D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qvector2d.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qvectornd.h \
@@ -512,15 +531,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
  D:/QT/6.7.2/mingw_64/include/QtGui/QTransform \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
