@@ -148,9 +148,24 @@ void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &out
 void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
     QProcess process;
     process.start("ffmpeg", arguments);
+    if (!process.waitForStarted()) {
+        qDebug() << "FFmpeg process failed to start:" << process.errorString();
+        QMessageBox::warning(nullptr, "Error", "Failed to start FFmpeg.");
+        return;
+    }
+
     if (!process.waitForFinished()) {
         qDebug() << "FFmpeg process failed:" << process.errorString();
-    } else {
-        qDebug() << "FFmpeg process finished successfully.";
+        QMessageBox::warning(nullptr, "Error", "FFmpeg process failed.");
+        return;
     }
+
+    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
+        qDebug() << "FFmpeg process exited with errors:" << process.readAllStandardError();
+        QMessageBox::warning(nullptr, "Error", "FFmpeg process exited with errors.");
+        return;
+    }
+
+    qDebug() << "FFmpeg process finished successfully.";
+    QMessageBox::information(nullptr, "Success", "Video with text overlay created successfully.");
 }
