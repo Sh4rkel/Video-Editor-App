@@ -6,7 +6,6 @@ int main(int argc, char *argv[]) {
     MainWindow w;
     w.setWindowTitle("Video Editor");
 
-    // Add some style to the main window
     QString styleSheet = R"(
         QMainWindow {
             background-color: #2E2E2E;
@@ -86,6 +85,104 @@ int main(int argc, char *argv[]) {
 
         QLabel {
             color: #FFFFFF;
+        }
+
+        QListWidget {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+            border: 1px solid #5E5E5E;
+        }
+
+        QListWidget::item {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+
+        QListWidget::item:selected {
+            background-color: #5E5E5E;
+        }
+
+        QLineEdit {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+            border: 1px solid #5E5E5E;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        QComboBox {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+            border: 1px solid #5E5E5E;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        QComboBox::drop-down {
+            background-color: #4E4E4E;
+        }
+
+        QComboBox::down-arrow {
+            image: url(:/icons/down_arrow.png);
+        }
+
+        QCheckBox {
+            color: #FFFFFF;
+        }
+
+        QCheckBox::indicator {
+            width: 20px;
+            height: 20px;
+        }
+
+        QCheckBox::indicator:checked {
+            image: url(:/icons/checkbox_checked.png);
+        }
+
+        QCheckBox::indicator:unchecked {
+            image: url(:/icons/checkbox_unchecked.png);
+        }
+
+        QRadioButton {
+            color: #FFFFFF;
+        }
+
+        QRadioButton::indicator {
+            width: 20px;
+            height: 20px;
+        }
+
+        QRadioButton::indicator:checked {
+            image: url(:/icons/radiobutton_checked.png);
+        }
+
+        QRadioButton::indicator:unchecked {
+            image: url(:/icons/radiobutton_unchecked.png);
+        }
+
+        QTabWidget::pane {
+            border: 1px solid #5E5E5E;
+            background: #3E3E3E;
+        }
+
+        QTabWidget::tab-bar {
+            left: 5px;
+        }
+
+        QTabBar::tab {
+            background: #4E4E4E;
+            color: #FFFFFF;
+            border: 1px solid #5E5E5E;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        QTabBar::tab:selected {
+            background: #5E5E5E;
+        }
+
+        QTabBar::tab:hover {
+            background: #5E5E5E;
         }
     )";
 
