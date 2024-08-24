@@ -37,3 +37,7 @@ As development progresses, new options and functionalities will be added to enha
    ```bash
    git clone https://github.com/Sh4rkel/Video-Editor-App.git
    cd video-editor
+
+## Photo Gallery
+<img src="assets/video_editing_app_1.png" alt="Screenshot 1"></img>
+<img src="assets/video_editing_app_2.png" alt="Screenshot 2"></img>
