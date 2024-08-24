@@ -483,4 +483,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
- D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h

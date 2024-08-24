@@ -15,9 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     speedWidget = new SpeedWidget(this);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
-    mainLayout->addWidget(videoPlayerWidget);
-    mainLayout->addWidget(timelineWidget);
-    mainLayout->addWidget(speedWidget);
+    mainLayout->addWidget(videoPlayerWidget, 3);
+    mainLayout->addWidget(timelineWidget, 1);
+    mainLayout->addWidget(speedWidget, 1);
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
@@ -30,12 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
     connect(speedWidget, &SpeedWidget::speedChanged, this, &MainWindow::changeSpeed);
 
-    menuBar = new QMenuBar(this); // Initialize the menu bar
-    setMenuBar(menuBar); // Set the menu bar
+    menuBar = new QMenuBar(this);
+    setMenuBar(menuBar);
 
-
-    videoMenu = new QMenu(tr("Video"), this); // Create a menu for video operations
-    menuBar->addMenu(videoMenu); // Add the video menu to the menu bar
+    videoMenu = new QMenu(tr("Video"), this);
+    menuBar->addMenu(videoMenu);
 
     openAction = new QAction(tr("Open"), this);
     connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
@@ -53,14 +52,14 @@ MainWindow::MainWindow(QWidget *parent)
     connect(combineAction, &QAction::triggered, this, &MainWindow::combineVideos);
     videoMenu->addAction(combineAction);
 
-    addTextAction = new QAction(tr("Add Text"), this); // Initialize the action
-    connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo); // Connect the action
-    videoMenu->addAction(addTextAction); // Add the action to the video menu
+    addTextAction = new QAction(tr("Add Text"), this);
+    connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo);
+    videoMenu->addAction(addTextAction);
 
-    toggleThemeAction = new QAction(tr("&Toggle Theme"), this); // New action for theme switching
-    connect(toggleThemeAction, &QAction::triggered, this, &MainWindow::toggleTheme); // Connect theme action
+    toggleThemeAction = new QAction(tr("&Toggle Theme"), this);
+    connect(toggleThemeAction, &QAction::triggered, this, &MainWindow::toggleTheme);
 
-    themeMenu = menuBar->addMenu(tr("&Theme")); // New menu for theme
+    themeMenu = menuBar->addMenu(tr("&Theme"));
     themeMenu->addAction(toggleThemeAction);
     toggleTheme();
 

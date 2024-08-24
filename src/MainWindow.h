@@ -42,11 +42,11 @@ private:
     QAction *cutAction;
     QAction *combineAction;
     QAction *addTextAction;
-    QAction *toggleThemeAction; // New action for theme switching
+    QAction *toggleThemeAction;
     QMenuBar *menuBar;
     QMenu *videoMenu;
-    QMenu *themeMenu; // New menu for theme
-    bool darkModeEnabled; // Flag to track the current theme
+    QMenu *themeMenu;
+    bool darkModeEnabled;
 };
 
 #endif // MAINWINDOW_H

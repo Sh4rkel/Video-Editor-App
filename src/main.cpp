@@ -1,11 +1,11 @@
 #include <QApplication>
 #include "MainWindow.h"
-
+#include <QIcon>
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;
     w.setWindowTitle("Video Editor");
-
+    w.setWindowIcon(QIcon("C:/Users/filip/CLionProjects/Video-Editor-App/assets/logo.png"));
     QString styleSheet = R"(
         QMainWindow {
             background-color: #2E2E2E;
