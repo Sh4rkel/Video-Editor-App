@@ -28,6 +28,7 @@ public:
     void changeSpeed(qreal speed);
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
+    void toggleTheme(); // New slot for theme switching
 
 private:
     Ui::MainWindow *ui;
@@ -41,8 +42,11 @@ private:
     QAction *cutAction;
     QAction *combineAction;
     QAction *addTextAction;
+    QAction *toggleThemeAction; // New action for theme switching
     QMenuBar *menuBar;
     QMenu *videoMenu;
+    QMenu *themeMenu; // New menu for theme
+    bool darkModeEnabled; // Flag to track the current theme
 };
 
 #endif // MAINWINDOW_H
