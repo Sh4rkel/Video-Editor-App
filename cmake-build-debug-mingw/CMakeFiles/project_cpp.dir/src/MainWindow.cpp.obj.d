@@ -483,6 +483,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FileHandler.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_MainWindow.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMenu \
@@ -517,4 +521,5 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h

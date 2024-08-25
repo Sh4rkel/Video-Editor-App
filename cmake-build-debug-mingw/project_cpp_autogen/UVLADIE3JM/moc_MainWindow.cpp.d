@@ -248,12 +248,15 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
   D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
+  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
   D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \

@@ -448,6 +448,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FileManager.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_MainWindow.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
@@ -497,6 +501,8 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
@@ -533,4 +539,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_filehandler.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h

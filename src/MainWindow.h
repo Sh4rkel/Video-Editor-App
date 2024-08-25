@@ -7,7 +7,7 @@
 #include "TimelineWidget.h"
 #include "SpeedWidget.h"
 #include "FFmpegHandler.h"
-
+#include "FileHandler.h"
 namespace Ui {
     class MainWindow;
 }
@@ -28,7 +28,7 @@ public:
     void changeSpeed(qreal speed);
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
-    void toggleTheme(); // New slot for theme switching
+    void toggleTheme();
 
 private:
     Ui::MainWindow *ui;
@@ -46,6 +46,7 @@ private:
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
+    FileHandler *fileHandler;
     bool darkModeEnabled;
 };
 

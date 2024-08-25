@@ -67,9 +67,9 @@ include CMakeFiles/project_cpp_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6Core.a
 CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/./bin/moc.exe
+CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6Widgets.a
 CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6Multimedia.a
 CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6MultimediaWidgets.a
-CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6Widgets.a
 CMakeFiles/project_cpp_autogen_timestamp_deps: D:/QT/6.7.2/mingw_64/lib/libQt6Gui.a
 
 project_cpp_autogen_timestamp_deps: CMakeFiles/project_cpp_autogen_timestamp_deps

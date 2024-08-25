@@ -171,6 +171,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
@@ -213,7 +219,16 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/ui/filehandler.ui">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/CMakeLists.txt">

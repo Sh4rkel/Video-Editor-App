@@ -226,6 +226,30 @@ src/FileImportWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.s
 .PHONY : src/FileImportWidget.cpp.s
 
+src/FileManager.obj: src/FileManager.cpp.obj
+.PHONY : src/FileManager.obj
+
+# target to build an object file
+src/FileManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj
+.PHONY : src/FileManager.cpp.obj
+
+src/FileManager.i: src/FileManager.cpp.i
+.PHONY : src/FileManager.i
+
+# target to preprocess a source file
+src/FileManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileManager.cpp.i
+.PHONY : src/FileManager.cpp.i
+
+src/FileManager.s: src/FileManager.cpp.s
+.PHONY : src/FileManager.s
+
+# target to generate assembly for a file
+src/FileManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileManager.cpp.s
+.PHONY : src/FileManager.cpp.s
+
 src/MainWindow.obj: src/MainWindow.cpp.obj
 .PHONY : src/MainWindow.obj
 
@@ -394,6 +418,30 @@ src/VideoPlayerWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.s
 .PHONY : src/VideoPlayerWidget.cpp.s
 
+src/filehandler.obj: src/filehandler.cpp.obj
+.PHONY : src/filehandler.obj
+
+# target to build an object file
+src/filehandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj
+.PHONY : src/filehandler.cpp.obj
+
+src/filehandler.i: src/filehandler.cpp.i
+.PHONY : src/filehandler.i
+
+# target to preprocess a source file
+src/filehandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/filehandler.cpp.i
+.PHONY : src/filehandler.cpp.i
+
+src/filehandler.s: src/filehandler.cpp.s
+.PHONY : src/filehandler.s
+
+# target to generate assembly for a file
+src/filehandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/filehandler.cpp.s
+.PHONY : src/filehandler.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -438,6 +486,9 @@ help:
 	@echo ... src/FileImportWidget.obj
 	@echo ... src/FileImportWidget.i
 	@echo ... src/FileImportWidget.s
+	@echo ... src/FileManager.obj
+	@echo ... src/FileManager.i
+	@echo ... src/FileManager.s
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
@@ -459,6 +510,9 @@ help:
 	@echo ... src/VideoPlayerWidget.obj
 	@echo ... src/VideoPlayerWidget.i
 	@echo ... src/VideoPlayerWidget.s
+	@echo ... src/filehandler.obj
+	@echo ... src/filehandler.i
+	@echo ... src/filehandler.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

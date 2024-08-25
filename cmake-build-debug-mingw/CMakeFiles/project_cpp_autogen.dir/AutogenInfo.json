@@ -305,6 +305,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h",
+			"Mu",
+			"UVLADIE3JM/moc_FileManager.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h",
 			"Mu",
 			"UVLADIE3JM/moc_MainWindow.cpp",
@@ -344,6 +350,12 @@
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_VideoPlayerWidget.cpp",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h",
+			"Mu",
+			"UVLADIE3JM/moc_filehandler.cpp",
 			null
 		]
 	],
@@ -437,6 +449,11 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp",
+			"Mu",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp",
 			"Mu",
 			null
@@ -468,6 +485,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp",
 			"Mu",
 			null
 		],

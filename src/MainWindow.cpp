@@ -4,20 +4,34 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QMediaPlayer>
+#include "filehandler.h"
 
-MainWindow::MainWindow(QWidget *parent)
-        : QMainWindow(parent), ui(new Ui::MainWindow), ffmpegHandler(new FFmpegHandler(this)), currentVideo(""),    darkModeEnabled(true) // Start with dark mode enabled
- {
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow),
+    ffmpegHandler(new FFmpegHandler(this)),
+    videoPlayerWidget(new VideoPlayerWidget(this)),
+    timelineWidget(new TimelineWidget(this)),
+    speedWidget(new SpeedWidget(this)),
+    fileHandler(new FileHandler(this)), // Initialize FileHandler
+    darkModeEnabled(true)
+{
     ui->setupUi(this);
 
-    videoPlayerWidget = new VideoPlayerWidget(this);
-    timelineWidget = new TimelineWidget(this);
-    speedWidget = new SpeedWidget(this);
+    // Set a larger initial size for the main window
+    resize(1280, 720);
+
+    // Adjust size policy and stretch factors
+    videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    speedWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
-    mainLayout->addWidget(videoPlayerWidget, 3);
+    mainLayout->addWidget(videoPlayerWidget, 3); // Increase stretch factor for videoPlayerWidget
     mainLayout->addWidget(timelineWidget, 1);
     mainLayout->addWidget(speedWidget, 1);
+    mainLayout->addWidget(fileHandler, 2); // Add FileHandler to the layout
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
@@ -62,7 +76,6 @@ MainWindow::MainWindow(QWidget *parent)
     themeMenu = menuBar->addMenu(tr("&Theme"));
     themeMenu->addAction(toggleThemeAction);
     toggleTheme();
-
 }
 
 MainWindow::~MainWindow() {
