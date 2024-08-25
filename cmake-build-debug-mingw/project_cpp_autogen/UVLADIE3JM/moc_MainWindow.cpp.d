@@ -311,6 +311,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -436,6 +437,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
@@ -443,6 +445,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
@@ -453,6 +457,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \

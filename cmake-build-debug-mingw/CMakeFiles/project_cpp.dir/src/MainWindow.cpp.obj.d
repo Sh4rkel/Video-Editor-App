@@ -484,6 +484,12 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileHandler.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \

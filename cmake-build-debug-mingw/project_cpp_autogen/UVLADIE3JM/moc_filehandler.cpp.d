@@ -254,6 +254,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qalgorithms.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qanystringview.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qarraydata.h \
@@ -295,11 +296,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qline.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlogging.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmalloc.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h \
@@ -320,6 +323,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qrefcount.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qscopedpointer.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qscopeguard.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qset.h \
@@ -390,10 +394,26 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

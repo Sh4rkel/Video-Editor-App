@@ -409,6 +409,27 @@ CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
@@ -428,28 +449,8 @@ CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \

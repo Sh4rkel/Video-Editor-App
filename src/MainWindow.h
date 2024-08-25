@@ -29,6 +29,7 @@ public:
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
     void toggleTheme();
+    void handleFileSelected(const QString &filePath);
 
 private:
     Ui::MainWindow *ui;

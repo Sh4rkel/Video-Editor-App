@@ -502,6 +502,7 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \

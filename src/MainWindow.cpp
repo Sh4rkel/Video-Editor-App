@@ -6,6 +6,8 @@
 #include <QMediaPlayer>
 #include "filehandler.h"
 
+#include "filehandler.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -76,8 +78,14 @@ MainWindow::MainWindow(QWidget *parent) :
     themeMenu = menuBar->addMenu(tr("&Theme"));
     themeMenu->addAction(toggleThemeAction);
     toggleTheme();
+
+    connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 }
 
+void MainWindow::handleFileSelected(const QString &filePath) {
+    currentVideo = filePath;
+    videoPlayerWidget->loadVideo(filePath);
+}
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;

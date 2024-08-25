@@ -314,6 +314,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h
@@ -439,6 +440,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider
@@ -446,6 +448,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h
@@ -456,6 +460,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h
@@ -1993,6 +1999,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qarraydata.h
@@ -2034,11 +2041,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qline.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlogging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmalloc.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h
@@ -2059,6 +2068,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrefcount.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopedpointer.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopeguard.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qset.h
@@ -2129,10 +2139,26 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -2552,10 +2578,10 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h
  mmc:Q_OBJECT
