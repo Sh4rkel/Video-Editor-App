@@ -523,25 +523,8 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoEditor.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/QShowEvent \
- D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvector2d.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvectornd.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpointingdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QList \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
- D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSize \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
- D:/QT/6.7.2/mingw_64/include/QtGui/QTransform \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QString \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_filehandler.cpp \

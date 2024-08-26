@@ -19,8 +19,8 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    private slots:
-        void openFile();
+private slots:
+    void openFile();
     void saveFile();
     void cutVideo();
     void combineVideos();
@@ -30,6 +30,7 @@ public:
     void addTextToVideo();
     void toggleTheme();
     void handleFileSelected(const QString &filePath);
+
 
 private:
     Ui::MainWindow *ui;

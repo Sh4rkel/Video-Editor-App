@@ -359,63 +359,10 @@ CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj: \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/format \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/charconv \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/span \
- D:/QT/6.7.2/mingw_64/include/QtGui/QShowEvent \
- D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QString \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qtextstream.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcontiguouscache.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata_impl.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qset.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvector2d.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvectornd.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpointingdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QList \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
- D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSize \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
- D:/QT/6.7.2/mingw_64/include/QtGui/QTransform \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qline.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h

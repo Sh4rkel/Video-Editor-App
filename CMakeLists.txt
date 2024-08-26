@@ -32,7 +32,6 @@ add_executable(project_cpp
         src/TextOverlayWidget.cpp
         src/FFmpegHandler.cpp
         src/Track.cpp
-        src/VideoEditor.cpp
         src/FileImportWidget.cpp
         src/SpeedWidget.cpp
         src/filehandler.cpp
