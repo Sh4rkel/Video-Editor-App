@@ -300,6 +300,8 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp \

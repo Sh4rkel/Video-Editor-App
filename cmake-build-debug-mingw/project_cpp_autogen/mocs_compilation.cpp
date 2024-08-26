@@ -3,6 +3,7 @@
 #include "UVLADIE3JM/moc_FileImportWidget.cpp"
 #include "UVLADIE3JM/moc_FileManager.cpp"
 #include "UVLADIE3JM/moc_MainWindow.cpp"
+#include "UVLADIE3JM/moc_PreviewSlider.cpp"
 #include "UVLADIE3JM/moc_SpeedWidget.cpp"
 #include "UVLADIE3JM/moc_TextOverlayWidget.cpp"
 #include "UVLADIE3JM/moc_TimelineWidget.cpp"

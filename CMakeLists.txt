@@ -40,6 +40,8 @@ add_executable(project_cpp
         ui/filehandler.ui
         src/FileManager.h
         src/FileManager.cpp
+        src/PreviewSlider.cpp
+        src/PreviewSlider.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

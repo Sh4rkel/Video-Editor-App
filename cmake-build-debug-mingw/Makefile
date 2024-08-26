@@ -274,6 +274,30 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/PreviewSlider.obj: src/PreviewSlider.cpp.obj
+.PHONY : src/PreviewSlider.obj
+
+# target to build an object file
+src/PreviewSlider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj
+.PHONY : src/PreviewSlider.cpp.obj
+
+src/PreviewSlider.i: src/PreviewSlider.cpp.i
+.PHONY : src/PreviewSlider.i
+
+# target to preprocess a source file
+src/PreviewSlider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.i
+.PHONY : src/PreviewSlider.cpp.i
+
+src/PreviewSlider.s: src/PreviewSlider.cpp.s
+.PHONY : src/PreviewSlider.s
+
+# target to generate assembly for a file
+src/PreviewSlider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.s
+.PHONY : src/PreviewSlider.cpp.s
+
 src/SpeedWidget.obj: src/SpeedWidget.cpp.obj
 .PHONY : src/SpeedWidget.obj
 
@@ -492,6 +516,9 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
+	@echo ... src/PreviewSlider.obj
+	@echo ... src/PreviewSlider.i
+	@echo ... src/PreviewSlider.s
 	@echo ... src/SpeedWidget.obj
 	@echo ... src/SpeedWidget.i
 	@echo ... src/SpeedWidget.s

@@ -6,8 +6,6 @@
 #include <QMediaPlayer>
 #include "filehandler.h"
 
-#include "filehandler.h"
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -15,25 +13,23 @@ MainWindow::MainWindow(QWidget *parent) :
     videoPlayerWidget(new VideoPlayerWidget(this)),
     timelineWidget(new TimelineWidget(this)),
     speedWidget(new SpeedWidget(this)),
-    fileHandler(new FileHandler(this)), // Initialize FileHandler
+    fileHandler(new FileHandler(this)),
     darkModeEnabled(true)
 {
     ui->setupUi(this);
 
-    // Set a larger initial size for the main window
     resize(1280, 720);
 
-    // Adjust size policy and stretch factors
     videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     speedWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
-    mainLayout->addWidget(videoPlayerWidget, 3); // Increase stretch factor for videoPlayerWidget
+    mainLayout->addWidget(videoPlayerWidget, 3);
     mainLayout->addWidget(timelineWidget, 1);
     mainLayout->addWidget(speedWidget, 1);
-    mainLayout->addWidget(fileHandler, 2); // Add FileHandler to the layout
+    mainLayout->addWidget(fileHandler, 2);
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);

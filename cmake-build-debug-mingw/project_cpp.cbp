@@ -183,6 +183,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

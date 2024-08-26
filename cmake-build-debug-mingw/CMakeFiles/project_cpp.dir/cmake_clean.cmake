@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj"
