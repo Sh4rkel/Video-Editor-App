@@ -194,26 +194,11 @@ CMakeFiles/project_cpp.dir/src/Track.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project_cpp.dir/src/Track.cpp.s"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\filip\CLionProjects\Video-Editor-App\src\Track.cpp -o CMakeFiles\project_cpp.dir\src\Track.cpp.s
 
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj: CMakeFiles/project_cpp.dir/flags.make
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj"
-	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj -MF CMakeFiles\project_cpp.dir\src\VideoEditor.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\VideoEditor.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoEditor.cpp
-
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.i"
-	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoEditor.cpp > CMakeFiles\project_cpp.dir\src\VideoEditor.cpp.i
-
-CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.s"
-	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoEditor.cpp -o CMakeFiles\project_cpp.dir\src\VideoEditor.cpp.s
-
 CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj: CMakeFiles/project_cpp.dir/flags.make
 CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
 CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
 CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj -MF CMakeFiles\project_cpp.dir\src\FileImportWidget.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\FileImportWidget.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\FileImportWidget.cpp
 
 CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.i: cmake_force
@@ -228,7 +213,7 @@ CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj: CMakeFiles/project_cpp.dir/f
 CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
 CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp
 CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj -MF CMakeFiles\project_cpp.dir\src\SpeedWidget.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\SpeedWidget.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.cpp
 
 CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.i: cmake_force
@@ -243,7 +228,7 @@ CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: CMakeFiles/project_cpp.dir/f
 CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
 CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
 CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj -MF CMakeFiles\project_cpp.dir\src\filehandler.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\filehandler.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.cpp
 
 CMakeFiles/project_cpp.dir/src/filehandler.cpp.i: cmake_force
@@ -258,7 +243,7 @@ CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj: CMakeFiles/project_cpp.dir/f
 CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
 CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp
 CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj -MF CMakeFiles\project_cpp.dir\src\FileManager.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\FileManager.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.cpp
 
 CMakeFiles/project_cpp.dir/src/FileManager.cpp.i: cmake_force
@@ -273,7 +258,7 @@ CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj: CMakeFiles/project_cpp.dir
 CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
 CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.cpp
 CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj -MF CMakeFiles\project_cpp.dir\src\PreviewSlider.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\PreviewSlider.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\PreviewSlider.cpp
 
 CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.i: cmake_force
@@ -294,7 +279,6 @@ project_cpp_OBJECTS = \
 "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/Track.cpp.obj" \
-"CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj" \
@@ -312,7 +296,6 @@ project_cpp.exe: CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/Track.cpp.obj
-project_cpp.exe: CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj
@@ -328,7 +311,7 @@ project_cpp.exe: D:/QT/6.7.2/mingw_64/lib/libQt6Core.a
 project_cpp.exe: CMakeFiles/project_cpp.dir/linkLibs.rsp
 project_cpp.exe: CMakeFiles/project_cpp.dir/objects1.rsp
 project_cpp.exe: CMakeFiles/project_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable project_cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable project_cpp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_cpp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -310,8 +310,6 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h \
-	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp \
-	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp \
@@ -320,7 +318,6 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
-	D:/QT/6.7.2/mingw_64/include/QtCore/QString \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
 	D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \

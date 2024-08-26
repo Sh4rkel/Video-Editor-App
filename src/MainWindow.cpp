@@ -13,8 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
     videoPlayerWidget(new VideoPlayerWidget(this)),
     timelineWidget(new TimelineWidget(this)),
     speedWidget(new SpeedWidget(this)),
-    previewSlider(new PreviewSlider(Qt::Horizontal, this)),
-    videoEditor(new VideoEditor(this)),
     fileHandler(new FileHandler(this)),
     darkModeEnabled(true)
 {
@@ -202,11 +200,6 @@ void MainWindow::addTextToVideo() {
     }
 
     ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
-}
-
-void MainWindow::handleVideoEdited(const QString &outputFile) {
-    QMessageBox::information(this, tr("Video Edited"), tr("The video has been edited and saved to: %1").arg(outputFile));
-    handleFileSelected(outputFile);
 }
 
 void MainWindow::toggleTheme() {

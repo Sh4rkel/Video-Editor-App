@@ -394,30 +394,6 @@ src/Track.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.s
 .PHONY : src/Track.cpp.s
 
-src/VideoEditor.obj: src/VideoEditor.cpp.obj
-.PHONY : src/VideoEditor.obj
-
-# target to build an object file
-src/VideoEditor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj
-.PHONY : src/VideoEditor.cpp.obj
-
-src/VideoEditor.i: src/VideoEditor.cpp.i
-.PHONY : src/VideoEditor.i
-
-# target to preprocess a source file
-src/VideoEditor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.i
-.PHONY : src/VideoEditor.cpp.i
-
-src/VideoEditor.s: src/VideoEditor.cpp.s
-.PHONY : src/VideoEditor.s
-
-# target to generate assembly for a file
-src/VideoEditor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.s
-.PHONY : src/VideoEditor.cpp.s
-
 src/VideoPlayerWidget.obj: src/VideoPlayerWidget.cpp.obj
 .PHONY : src/VideoPlayerWidget.obj
 
@@ -531,9 +507,6 @@ help:
 	@echo ... src/Track.obj
 	@echo ... src/Track.i
 	@echo ... src/Track.s
-	@echo ... src/VideoEditor.obj
-	@echo ... src/VideoEditor.i
-	@echo ... src/VideoEditor.s
 	@echo ... src/VideoPlayerWidget.obj
 	@echo ... src/VideoPlayerWidget.i
 	@echo ... src/VideoPlayerWidget.s

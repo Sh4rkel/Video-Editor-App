@@ -521,10 +521,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_Track.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoEditor.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QString \
- D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_filehandler.cpp \

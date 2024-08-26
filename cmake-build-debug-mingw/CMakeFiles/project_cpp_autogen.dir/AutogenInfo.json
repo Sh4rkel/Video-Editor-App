@@ -347,12 +347,6 @@
 			null
 		],
 		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h",
-			"Mu",
-			"UVLADIE3JM/moc_VideoEditor.cpp",
-			null
-		],
-		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_VideoPlayerWidget.cpp",
@@ -486,11 +480,6 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp",
-			"Mu",
-			null
-		],
-		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp",
 			"Mu",
 			null
 		],

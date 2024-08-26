@@ -213,12 +213,6 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h">
 			<Option target="project_cpp"/>
 		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp">
-			<Option target="project_cpp"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h">
-			<Option target="project_cpp"/>
-		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

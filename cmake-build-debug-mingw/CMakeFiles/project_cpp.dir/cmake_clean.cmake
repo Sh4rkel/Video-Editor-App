@@ -22,8 +22,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/Track.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/Track.cpp.obj.d"
-  "CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj"
-  "CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj"

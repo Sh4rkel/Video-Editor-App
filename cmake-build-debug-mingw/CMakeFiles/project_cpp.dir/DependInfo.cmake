@@ -19,7 +19,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp" "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp" "CMakeFiles/project_cpp.dir/src/Track.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/Track.cpp.obj.d"
-  "C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.cpp" "CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/VideoEditor.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp" "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp" "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp" "CMakeFiles/project_cpp.dir/src/main.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/main.cpp.obj.d"
