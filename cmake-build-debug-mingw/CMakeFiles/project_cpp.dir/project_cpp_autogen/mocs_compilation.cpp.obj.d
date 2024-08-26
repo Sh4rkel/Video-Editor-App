@@ -508,19 +508,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_PreviewSlider.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TextOverlayWidget.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TimelineWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_Track.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_filehandler.cpp \

@@ -82,6 +82,7 @@ void MainWindow::handleFileSelected(const QString &filePath) {
     currentVideo = filePath;
     videoPlayerWidget->loadVideo(filePath);
 }
+
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
@@ -159,10 +160,8 @@ void MainWindow::togglePlayPause() {
     QMediaPlayer *player = videoPlayerWidget->getMediaPlayer();
     if (player->playbackState() == QMediaPlayer::PlayingState) {
         player->pause();
-        timelineWidget->updatePlayPauseButtonText("▶️");
     } else {
         player->play();
-        timelineWidget->updatePlayPauseButtonText("⏸️");
     }
 }
 
@@ -200,6 +199,14 @@ void MainWindow::addTextToVideo() {
     }
 
     ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
+}
+
+void MainWindow::showSpeedWidget() {
+    QDialog speedDialog(this);
+    QVBoxLayout layout(&speedDialog);
+    layout.addWidget(speedWidget);
+    speedDialog.setWindowTitle(tr("Adjust Playback Speed"));
+    speedDialog.exec();
 }
 
 void MainWindow::toggleTheme() {

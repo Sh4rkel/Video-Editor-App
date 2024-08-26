@@ -317,33 +317,15 @@
 			null
 		],
 		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.h",
-			"Mu",
-			"UVLADIE3JM/moc_PreviewSlider.cpp",
-			null
-		],
-		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_SpeedWidget.cpp",
 			null
 		],
 		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h",
-			"Mu",
-			"UVLADIE3JM/moc_TextOverlayWidget.cpp",
-			null
-		],
-		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_TimelineWidget.cpp",
-			null
-		],
-		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h",
-			"Mu",
-			"UVLADIE3JM/moc_Track.cpp",
 			null
 		],
 		[
@@ -459,27 +441,12 @@
 			null
 		],
 		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.cpp",
-			"Mu",
-			null
-		],
-		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp",
 			"Mu",
 			null
 		],
 		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp",
-			"Mu",
-			null
-		],
-		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp",
-			"Mu",
-			null
-		],
-		[
-			"C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp",
 			"Mu",
 			null
 		],

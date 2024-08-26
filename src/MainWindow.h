@@ -8,6 +8,7 @@
 #include "SpeedWidget.h"
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
+
 namespace Ui {
     class MainWindow;
 }
@@ -19,8 +20,8 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void openFile();
+    private slots:
+        void openFile();
     void saveFile();
     void cutVideo();
     void combineVideos();
@@ -30,7 +31,7 @@ private slots:
     void addTextToVideo();
     void toggleTheme();
     void handleFileSelected(const QString &filePath);
-
+    void showSpeedWidget();
 
 private:
     Ui::MainWindow *ui;
@@ -45,6 +46,7 @@ private:
     QAction *combineAction;
     QAction *addTextAction;
     QAction *toggleThemeAction;
+    QAction *speedAction;
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;

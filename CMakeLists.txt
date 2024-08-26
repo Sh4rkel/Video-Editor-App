@@ -21,7 +21,6 @@ set(HEADERS
         src/MainWindow.h
         src/VideoPlayerWidget.h
         src/TimelineWidget.h
-        src/TextOverlayWidget.h
 )
 
 add_executable(project_cpp
@@ -29,9 +28,7 @@ add_executable(project_cpp
         src/MainWindow.cpp
         src/VideoPlayerWidget.cpp
         src/TimelineWidget.cpp
-        src/TextOverlayWidget.cpp
         src/FFmpegHandler.cpp
-        src/Track.cpp
         src/FileImportWidget.cpp
         src/SpeedWidget.cpp
         src/filehandler.cpp
@@ -39,8 +36,6 @@ add_executable(project_cpp
         ui/filehandler.ui
         src/FileManager.h
         src/FileManager.cpp
-        src/PreviewSlider.cpp
-        src/PreviewSlider.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

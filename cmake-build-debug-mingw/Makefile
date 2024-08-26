@@ -274,30 +274,6 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
-src/PreviewSlider.obj: src/PreviewSlider.cpp.obj
-.PHONY : src/PreviewSlider.obj
-
-# target to build an object file
-src/PreviewSlider.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.obj
-.PHONY : src/PreviewSlider.cpp.obj
-
-src/PreviewSlider.i: src/PreviewSlider.cpp.i
-.PHONY : src/PreviewSlider.i
-
-# target to preprocess a source file
-src/PreviewSlider.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.i
-.PHONY : src/PreviewSlider.cpp.i
-
-src/PreviewSlider.s: src/PreviewSlider.cpp.s
-.PHONY : src/PreviewSlider.s
-
-# target to generate assembly for a file
-src/PreviewSlider.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/PreviewSlider.cpp.s
-.PHONY : src/PreviewSlider.cpp.s
-
 src/SpeedWidget.obj: src/SpeedWidget.cpp.obj
 .PHONY : src/SpeedWidget.obj
 
@@ -322,30 +298,6 @@ src/SpeedWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.s
 .PHONY : src/SpeedWidget.cpp.s
 
-src/TextOverlayWidget.obj: src/TextOverlayWidget.cpp.obj
-.PHONY : src/TextOverlayWidget.obj
-
-# target to build an object file
-src/TextOverlayWidget.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.obj
-.PHONY : src/TextOverlayWidget.cpp.obj
-
-src/TextOverlayWidget.i: src/TextOverlayWidget.cpp.i
-.PHONY : src/TextOverlayWidget.i
-
-# target to preprocess a source file
-src/TextOverlayWidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.i
-.PHONY : src/TextOverlayWidget.cpp.i
-
-src/TextOverlayWidget.s: src/TextOverlayWidget.cpp.s
-.PHONY : src/TextOverlayWidget.s
-
-# target to generate assembly for a file
-src/TextOverlayWidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayWidget.cpp.s
-.PHONY : src/TextOverlayWidget.cpp.s
-
 src/TimelineWidget.obj: src/TimelineWidget.cpp.obj
 .PHONY : src/TimelineWidget.obj
 
@@ -369,30 +321,6 @@ src/TimelineWidget.s: src/TimelineWidget.cpp.s
 src/TimelineWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.s
 .PHONY : src/TimelineWidget.cpp.s
-
-src/Track.obj: src/Track.cpp.obj
-.PHONY : src/Track.obj
-
-# target to build an object file
-src/Track.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.obj
-.PHONY : src/Track.cpp.obj
-
-src/Track.i: src/Track.cpp.i
-.PHONY : src/Track.i
-
-# target to preprocess a source file
-src/Track.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.i
-.PHONY : src/Track.cpp.i
-
-src/Track.s: src/Track.cpp.s
-.PHONY : src/Track.s
-
-# target to generate assembly for a file
-src/Track.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/Track.cpp.s
-.PHONY : src/Track.cpp.s
 
 src/VideoPlayerWidget.obj: src/VideoPlayerWidget.cpp.obj
 .PHONY : src/VideoPlayerWidget.obj
@@ -492,21 +420,12 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
-	@echo ... src/PreviewSlider.obj
-	@echo ... src/PreviewSlider.i
-	@echo ... src/PreviewSlider.s
 	@echo ... src/SpeedWidget.obj
 	@echo ... src/SpeedWidget.i
 	@echo ... src/SpeedWidget.s
-	@echo ... src/TextOverlayWidget.obj
-	@echo ... src/TextOverlayWidget.i
-	@echo ... src/TextOverlayWidget.s
 	@echo ... src/TimelineWidget.obj
 	@echo ... src/TimelineWidget.i
 	@echo ... src/TimelineWidget.s
-	@echo ... src/Track.obj
-	@echo ... src/Track.i
-	@echo ... src/Track.s
 	@echo ... src/VideoPlayerWidget.obj
 	@echo ... src/VideoPlayerWidget.i
 	@echo ... src/VideoPlayerWidget.s

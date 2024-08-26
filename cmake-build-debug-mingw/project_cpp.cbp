@@ -183,34 +183,16 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h">
 			<Option target="project_cpp"/>
 		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.cpp">
-			<Option target="project_cpp"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/PreviewSlider.h">
-			<Option target="project_cpp"/>
-		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp">
-			<Option target="project_cpp"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.h">
-			<Option target="project_cpp"/>
-		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h">
-			<Option target="project_cpp"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp">
-			<Option target="project_cpp"/>
-		</Unit>
-		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp">
