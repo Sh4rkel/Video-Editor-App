@@ -141,3 +141,15 @@ void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
     qDebug() << "FFmpeg process finished successfully.";
     QMessageBox::information(nullptr, "Success", "Video with text overlay created successfully.");
 }
+
+void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y) {
+    QStringList arguments;
+    arguments << "-i" << inputVideo
+              << "-i" << overlayImage
+              << "-filter_complex" << QString("overlay=%1:%2").arg(x).arg(y)
+              << outputVideo;
+
+    QProcess ffmpegProcess;
+    ffmpegProcess.start("ffmpeg", arguments);
+    ffmpegProcess.waitForFinished();
+}

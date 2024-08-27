@@ -83,6 +83,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(speedAction, &QAction::triggered, this, &MainWindow::showSpeedDialog);
     videoMenu->addAction(speedAction);
 
+    addOverlayAction = new QAction(tr("Add Overlay"), this);
+    connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);  // Ensure this action is connected
+    videoMenu->addAction(addOverlayAction);
+
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 }
 
@@ -254,4 +258,26 @@ void MainWindow::toggleTheme() {
 
 void MainWindow::showSpeedDialog() {
     speedDialog->exec();
+}
+
+void MainWindow::addOverlayToVideo() {
+    if (currentVideo.isEmpty()) {
+        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
+        return;
+    }
+
+    QString overlayFile = QFileDialog::getOpenFileName(this, tr("Open Overlay Image"), "", tr("Image Files (*.png *.jpg *.bmp)"));
+    if (overlayFile.isEmpty()) {
+        return;
+    }
+
+    int x = QInputDialog::getInt(this, tr("Add Overlay to Video"), tr("X position:"), 0, 0, INT_MAX, 1);
+    int y = QInputDialog::getInt(this, tr("Add Overlay to Video"), tr("Y position:"), 0, 0, INT_MAX, 1);
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video with Overlay"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    ffmpegHandler->addOverlayToVideo(currentVideo, outputVideo, overlayFile, x, y);
 }

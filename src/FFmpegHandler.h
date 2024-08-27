@@ -13,6 +13,8 @@ public:
     void cutVideoSegment(const QString &inputFile, const QString &outputFile, qint64 start, qint64 end);
     void combineVideos(const QString &inputFile1, const QString &inputFile2, const QString &outputFile);
     void addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y);
+    void addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y);  // Add this declaration
+
 
 private:
     QString ffmpegPath;

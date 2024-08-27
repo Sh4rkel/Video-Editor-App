@@ -32,6 +32,7 @@ public:
     void toggleTheme();
     void handleFileSelected(const QString &filePath);
     void showSpeedDialog();
+    void addOverlayToVideo();  // Ensure this slot is declared
 
 private:
     Ui::MainWindow *ui;
@@ -48,6 +49,7 @@ private:
     QAction *addTextAction;
     QAction *toggleThemeAction;
     QAction *speedAction;
+    QAction *addOverlayAction;  // Ensure this action is declared
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
