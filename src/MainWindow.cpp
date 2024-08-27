@@ -266,8 +266,9 @@ void MainWindow::addOverlayToVideo() {
         return;
     }
 
-    QString overlayFile = QFileDialog::getOpenFileName(this, tr("Open Overlay Image"), "", tr("Image Files (*.png *.jpg *.bmp)"));
-    if (overlayFile.isEmpty()) {
+    bool ok;
+    QString overlayText = QInputDialog::getText(this, tr("Add Overlay Text"), tr("Enter overlay text:"), QLineEdit::Normal, "", &ok);
+    if (!ok || overlayText.isEmpty()) {
         return;
     }
 
@@ -279,5 +280,5 @@ void MainWindow::addOverlayToVideo() {
         return;
     }
 
-    ffmpegHandler->addOverlayToVideo(currentVideo, outputVideo, overlayFile, x, y);
+    ffmpegHandler->addTextToVideo(currentVideo, outputVideo, overlayText, x, y);
 }
