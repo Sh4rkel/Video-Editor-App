@@ -114,7 +114,7 @@ void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &out
               << outputVideo;
 
     QProcess ffmpegProcess;
-    ffmpegProcess.start("ffmpeg", arguments);
+    ffmpegProcess.start("C:/path/to/ffmpeg.exe", arguments);
     if (!ffmpegProcess.waitForStarted()) {
         qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
         return;
@@ -155,7 +155,7 @@ void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &
               << outputVideo;
 
     QProcess ffmpegProcess;
-    ffmpegProcess.start("ffmpeg", arguments);
+    ffmpegProcess.start("C:/path/to/ffmpeg.exe", arguments);
     if (!ffmpegProcess.waitForStarted()) {
         qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
         return;
