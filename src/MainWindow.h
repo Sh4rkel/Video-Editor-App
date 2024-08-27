@@ -8,6 +8,7 @@
 #include "SpeedDialog.h"
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
+#include "SpeedWidget.h"
 
 namespace Ui {
     class MainWindow;
@@ -37,6 +38,7 @@ private:
     VideoPlayerWidget *videoPlayerWidget;
     TimelineWidget *timelineWidget;
     SpeedDialog *speedDialog;
+    SpeedWidget *speedWidget;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
     QAction *openAction;

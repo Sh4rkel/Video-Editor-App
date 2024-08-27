@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     videoPlayerWidget(new VideoPlayerWidget(this)),
     timelineWidget(new TimelineWidget(this)),
     speedDialog(new SpeedDialog(this)),
+    speedWidget(new SpeedWidget(this)),
     fileHandler(new FileHandler(this)),
     darkModeEnabled(true)
 {
@@ -32,6 +33,12 @@ MainWindow::MainWindow(QWidget *parent) :
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
     setCentralWidget(centralWidget);
+
+    QHBoxLayout *controlLayout = new QHBoxLayout();
+    controlLayout->addWidget(speedWidget);
+    controlLayout->addWidget(timelineWidget);
+
+    mainLayout->addLayout(controlLayout);
 
     connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
