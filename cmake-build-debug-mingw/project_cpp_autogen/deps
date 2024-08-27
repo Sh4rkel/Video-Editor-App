@@ -300,6 +300,8 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp \
@@ -491,6 +493,7 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+	D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
@@ -509,6 +512,7 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
+	D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \

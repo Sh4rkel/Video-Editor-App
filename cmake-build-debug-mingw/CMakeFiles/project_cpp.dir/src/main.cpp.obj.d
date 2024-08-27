@@ -466,6 +466,9 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedDialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \

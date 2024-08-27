@@ -250,6 +250,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
@@ -435,6 +436,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
@@ -452,6 +454,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \

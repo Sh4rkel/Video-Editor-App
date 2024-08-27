@@ -274,6 +274,30 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/SpeedDialog.obj: src/SpeedDialog.cpp.obj
+.PHONY : src/SpeedDialog.obj
+
+# target to build an object file
+src/SpeedDialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj
+.PHONY : src/SpeedDialog.cpp.obj
+
+src/SpeedDialog.i: src/SpeedDialog.cpp.i
+.PHONY : src/SpeedDialog.i
+
+# target to preprocess a source file
+src/SpeedDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.i
+.PHONY : src/SpeedDialog.cpp.i
+
+src/SpeedDialog.s: src/SpeedDialog.cpp.s
+.PHONY : src/SpeedDialog.s
+
+# target to generate assembly for a file
+src/SpeedDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.s
+.PHONY : src/SpeedDialog.cpp.s
+
 src/SpeedWidget.obj: src/SpeedWidget.cpp.obj
 .PHONY : src/SpeedWidget.obj
 
@@ -420,6 +444,9 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
+	@echo ... src/SpeedDialog.obj
+	@echo ... src/SpeedDialog.i
+	@echo ... src/SpeedDialog.s
 	@echo ... src/SpeedWidget.obj
 	@echo ... src/SpeedWidget.i
 	@echo ... src/SpeedWidget.s

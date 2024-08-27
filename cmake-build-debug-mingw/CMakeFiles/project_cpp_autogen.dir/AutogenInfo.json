@@ -317,6 +317,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h",
+			"Mu",
+			"UVLADIE3JM/moc_SpeedDialog.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_SpeedWidget.cpp",
@@ -437,6 +443,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp",
 			"Mu",
 			null
 		],

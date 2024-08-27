@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ffmpegHandler(new FFmpegHandler(this)),
     videoPlayerWidget(new VideoPlayerWidget(this)),
     timelineWidget(new TimelineWidget(this)),
-    speedWidget(new SpeedWidget(this)),
+    speedDialog(new SpeedDialog(this)),
     fileHandler(new FileHandler(this)),
     darkModeEnabled(true)
 {
@@ -22,13 +22,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    speedWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     QVBoxLayout *mainLayout = new QVBoxLayout();
     mainLayout->addWidget(videoPlayerWidget, 3);
     mainLayout->addWidget(timelineWidget, 1);
-    mainLayout->addWidget(speedWidget, 1);
     mainLayout->addWidget(fileHandler, 2);
 
     QWidget *centralWidget = new QWidget(this);
@@ -40,7 +38,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
-    connect(speedWidget, &SpeedWidget::speedChanged, this, &MainWindow::changeSpeed);
 
     menuBar = new QMenuBar(this);
     setMenuBar(menuBar);
@@ -75,6 +72,10 @@ MainWindow::MainWindow(QWidget *parent) :
     themeMenu->addAction(toggleThemeAction);
     toggleTheme();
 
+    speedAction = new QAction(tr("Speed"), this);
+    connect(speedAction, &QAction::triggered, this, &MainWindow::showSpeedDialog);
+    videoMenu->addAction(speedAction);
+
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 }
 
@@ -103,10 +104,6 @@ void MainWindow::saveFile() {
     }
 
     QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (outputVideo.isEmpty()) {
-        return;
-    }
-
     bool ok;
     QStringList formats = {"mp4", "avi", "mkv", "mov"};
     QString format = QInputDialog::getItem(this, tr("Save Video File"), tr("Select the desired format:"), formats, 0, false, &ok);
@@ -165,10 +162,6 @@ void MainWindow::togglePlayPause() {
     }
 }
 
-void MainWindow::changeSpeed(qreal speed) {
-    videoPlayerWidget->getMediaPlayer()->setPlaybackRate(speed);
-}
-
 void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status) {
     if (status == QMediaPlayer::EndOfMedia) {
         videoPlayerWidget->getMediaPlayer()->pause();
@@ -201,14 +194,6 @@ void MainWindow::addTextToVideo() {
     ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
 }
 
-void MainWindow::showSpeedWidget() {
-    QDialog speedDialog(this);
-    QVBoxLayout layout(&speedDialog);
-    layout.addWidget(speedWidget);
-    speedDialog.setWindowTitle(tr("Adjust Playback Speed"));
-    speedDialog.exec();
-}
-
 void MainWindow::toggleTheme() {
     darkModeEnabled = !darkModeEnabled;
     QString styleSheet;
@@ -221,7 +206,6 @@ void MainWindow::toggleTheme() {
             QMenuBar {
                 background-color: #3E3E3E;
                 color: #FFFFFF;
-                border-bottom: 1px solid #5E5E5E;
             }
             QMenuBar::item {
                 background-color: #3E3E3E;
@@ -233,129 +217,6 @@ void MainWindow::toggleTheme() {
             QMenu {
                 background-color: #3E3E3E;
                 color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-            }
-            QMenu::item:selected {
-                background-color: #5E5E5E;
-            }
-            QPushButton {
-                background-color: #4E4E4E;
-                color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QPushButton:hover {
-                background-color: #5E5E5E;
-            }
-            QPushButton:pressed {
-                background-color: #3E3E3E;
-            }
-            QStatusBar {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-                border-top: 1px solid #5E5E5E;
-            }
-            QSlider::groove:horizontal {
-                border: 1px solid #5E5E5E;
-                height: 8px;
-                background: #3E3E3E;
-                margin: 2px 0;
-                border-radius: 4px;
-            }
-            QSlider::handle:horizontal {
-                background: #5E5E5E;
-                border: 1px solid #5E5E5E;
-                width: 18px;
-                margin: -2px 0;
-                border-radius: 9px;
-            }
-            QSlider::handle:horizontal:hover {
-                background: #7E7E7E;
-            }
-            QSlider::handle:horizontal:pressed {
-                background: #3E3E3E;
-            }
-            QLabel {
-                color: #FFFFFF;
-            }
-            QListWidget {
-                background-color: #2E2E2E;
-                color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-            }
-            QListWidget::item {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-            }
-            QListWidget::item:selected {
-                background-color: #5E5E5E;
-            }
-            QLineEdit {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QComboBox {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QComboBox::drop-down {
-                background-color: #4E4E4E;
-            }
-            QComboBox::down-arrow {
-                image: url(:/icons/down_arrow.png);
-            }
-            QCheckBox {
-                color: #FFFFFF;
-            }
-            QCheckBox::indicator {
-                width: 20px;
-                height: 20px;
-            }
-            QCheckBox::indicator:checked {
-                image: url(:/icons/checkbox_checked.png);
-            }
-            QCheckBox::indicator:unchecked {
-                image: url(:/icons/checkbox_unchecked.png);
-            }
-            QRadioButton {
-                color: #FFFFFF;
-            }
-            QRadioButton::indicator {
-                width: 20px;
-                height: 20px;
-            }
-            QRadioButton::indicator:checked {
-                image: url(:/icons/radiobutton_checked.png);
-            }
-            QRadioButton::indicator:unchecked {
-                image: url(:/icons/radiobutton_unchecked.png);
-            }
-            QTabWidget::pane {
-                border: 1px solid #5E5E5E;
-                background: #3E3E3E;
-            }
-            QTabWidget::tab-bar {
-                left: 5px;
-            }
-            QTabBar::tab {
-                background: #4E4E4E;
-                color: #FFFFFF;
-                border: 1px solid #5E5E5E;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QTabBar::tab:selected {
-                background: #5E5E5E;
-            }
-            QTabBar::tab:hover {
-                background: #5E5E5E;
             }
         )";
     } else {
@@ -367,143 +228,23 @@ void MainWindow::toggleTheme() {
             QMenuBar {
                 background-color: #F0F0F0;
                 color: #000000;
-                border-bottom: 1px solid #C0C0C0;
             }
             QMenuBar::item {
                 background-color: #F0F0F0;
                 color: #000000;
             }
             QMenuBar::item:selected {
-                background-color: #C0C0C0;
+                background-color: #D0D0D0;
             }
             QMenu {
                 background-color: #F0F0F0;
                 color: #000000;
-                border: 1px solid #C0C0C0;
-            }
-            QMenu::item:selected {
-                background-color: #C0C0C0;
-            }
-            QPushButton {
-                background-color: #E0E0E0;
-                color: #000000;
-                border: 1px solid #C0C0C0;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QPushButton:hover {
-                background-color: #C0C0C0;
-            }
-            QPushButton:pressed {
-                background-color: #A0A0A0;
-            }
-            QStatusBar {
-                background-color: #F0F0F0;
-                color: #000000;
-                border-top: 1px solid #C0C0C0;
-            }
-            QSlider::groove:horizontal {
-                border: 1px solid #C0C0C0;
-                height: 8px;
-                background: #F0F0F0;
-                margin: 2px 0;
-                border-radius: 4px;
-            }
-            QSlider::handle:horizontal {
-                background: #C0C0C0;
-                border: 1px solid #C0C0C0;
-                width: 18px;
-                margin: -2px 0;
-                border-radius: 9px;
-            }
-            QSlider::handle:horizontal:hover {
-                background: #A0A0A0;
-            }
-            QSlider::handle:horizontal:pressed {
-                background: #808080;
-            }
-            QLabel {
-                color: #000000;
-            }
-            QListWidget {
-                background-color: #FFFFFF;
-                color: #000000;
-                border: 1px solid #C0C0C0;
-            }
-            QListWidget::item {
-                background-color: #F0F0F0;
-                color: #000000;
-            }
-            QListWidget::item:selected {
-                background-color: #C0C0C0;
-            }
-            QLineEdit {
-                background-color: #F0F0F0;
-                color: #000000;
-                border: 1px solid #C0C0C0;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QComboBox {
-                background-color: #F0F0F0;
-                color: #000000;
-                border: 1px solid #C0C0C0;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QComboBox::drop-down {
-                background-color: #E0E0E0;
-            }
-            QComboBox::down-arrow {
-                image: url(:/icons/down_arrow.png);
-            }
-            QCheckBox {
-                color: #000000;
-            }
-            QCheckBox::indicator {
-                width: 20px;
-                height: 20px;
-            }
-            QCheckBox::indicator:checked {
-                image: url(:/icons/checkbox_checked.png);
-            }
-            QCheckBox::indicator:unchecked {
-                image: url(:/icons/checkbox_unchecked.png);
-            }
-            QRadioButton {
-                color: #000000;
-            }
-            QRadioButton::indicator {
-                width: 20px;
-                height: 20px;
-            }
-            QRadioButton::indicator:checked {
-                image: url(:/icons/radiobutton_checked.png);
-            }
-            QRadioButton::indicator:unchecked {
-                image: url(:/icons/radiobutton_unchecked.png);
-            }
-            QTabWidget::pane {
-                border: 1px solid #C0C0C0;
-                background: #F0F0F0;
-            }
-            QTabWidget::tab-bar {
-                left: 5px;
-            }
-            QTabBar::tab {
-                background: #E0E0E0;
-                color: #000000;
-                border: 1px solid #C0C0C0;
-                border-radius: 5px;
-                padding: 5px;
-            }
-            QTabBar::tab:selected {
-                background: #C0C0C0;
-            }
-            QTabBar::tab:hover {
-                background: #C0C0C0;
             }
         )";
     }
     qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::showSpeedDialog() {
+    speedDialog->exec();
 }

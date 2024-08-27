@@ -5,7 +5,7 @@
 #include <QMediaPlayer>
 #include "VideoPlayerWidget.h"
 #include "TimelineWidget.h"
-#include "SpeedWidget.h"
+#include "SpeedDialog.h"
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
 
@@ -26,18 +26,17 @@ public:
     void cutVideo();
     void combineVideos();
     void togglePlayPause();
-    void changeSpeed(qreal speed);
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
     void toggleTheme();
     void handleFileSelected(const QString &filePath);
-    void showSpeedWidget();
+    void showSpeedDialog();
 
 private:
     Ui::MainWindow *ui;
     VideoPlayerWidget *videoPlayerWidget;
     TimelineWidget *timelineWidget;
-    SpeedWidget *speedWidget;
+    SpeedDialog *speedDialog;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
     QAction *openAction;
