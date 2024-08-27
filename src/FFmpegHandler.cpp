@@ -110,11 +110,16 @@ void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &vide
 void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y) {
     QStringList arguments;
     arguments << "-i" << inputVideo
-              << "-vf" << QString("drawtext=text='%1':x=%2:y=%3:fontcolor=white:fontsize=24").arg(text).arg(x).arg(y)
-              << "-codec:a" << "copy"
+              << "-vf" << QString("drawtext=text='%1':x=%2:y=%3").arg(text).arg(x).arg(y)
               << outputVideo;
 
-    executeFFmpegCommand(arguments);
+    QProcess ffmpegProcess;
+    ffmpegProcess.start("ffmpeg", arguments);
+    if (!ffmpegProcess.waitForStarted()) {
+        qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
+        return;
+    }
+    ffmpegProcess.waitForFinished();
 }
 
 void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
@@ -151,5 +156,9 @@ void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &
 
     QProcess ffmpegProcess;
     ffmpegProcess.start("ffmpeg", arguments);
+    if (!ffmpegProcess.waitForStarted()) {
+        qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
+        return;
+    }
     ffmpegProcess.waitForFinished();
 }
