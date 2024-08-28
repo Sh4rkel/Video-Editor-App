@@ -10,6 +10,7 @@ class FFmpegHandler : public QObject {
 
 public:
     explicit FFmpegHandler(QObject *parent = nullptr);
+    ~FFmpegHandler();
     void executeFFmpegCommand(const QStringList &arguments);
     void convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format);
     void cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end);

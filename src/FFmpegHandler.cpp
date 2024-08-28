@@ -11,6 +11,11 @@ FFmpegHandler::FFmpegHandler(QObject *parent) : QObject(parent) {
     workerThread.start();
 }
 
+FFmpegHandler::~FFmpegHandler() {
+    workerThread.quit();
+    workerThread.wait();
+}
+
 void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
     worker->setArguments(arguments);
     QMetaObject::invokeMethod(worker, "execute", Qt::QueuedConnection);
