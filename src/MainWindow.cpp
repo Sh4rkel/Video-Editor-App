@@ -206,9 +206,33 @@ void MainWindow::addTextToVideo() {
 }
 
 void MainWindow::toggleTheme() {
-    darkModeEnabled = !darkModeEnabled;
+    static int themeIndex = 0;
+    themeIndex = (themeIndex + 1) % 3; // Cycle through 3 themes: Light, Dark, Purple Nounces
+
     QString styleSheet;
-    if (darkModeEnabled) {
+    if (themeIndex == 0) {
+        styleSheet = R"(
+            QMainWindow {
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+            QMenuBar {
+                background-color: #F0F0F0;
+                color: #000000;
+            }
+            QMenuBar::item {
+                background-color: #F0F0F0;
+                color: #000000;
+            }
+            QMenuBar::item:selected {
+                background-color: #D0D0D0;
+            }
+            QMenu {
+                background-color: #F0F0F0;
+                color: #000000;
+            }
+        )";
+    } else if (themeIndex == 1) {
         styleSheet = R"(
             QMainWindow {
                 background-color: #2E2E2E;
@@ -230,26 +254,26 @@ void MainWindow::toggleTheme() {
                 color: #FFFFFF;
             }
         )";
-    } else {
+    } else if (themeIndex == 2) {
         styleSheet = R"(
             QMainWindow {
-                background-color: #FFFFFF;
-                color: #000000;
+                background-color: #4B0082;
+                color: #E6E6FA;
             }
             QMenuBar {
-                background-color: #F0F0F0;
-                color: #000000;
+                background-color: #8A2BE2;
+                color: #E6E6FA;
             }
             QMenuBar::item {
-                background-color: #F0F0F0;
-                color: #000000;
+                background-color: #8A2BE2;
+                color: #E6E6FA;
             }
             QMenuBar::item:selected {
-                background-color: #D0D0D0;
+                background-color: #9370DB;
             }
             QMenu {
-                background-color: #F0F0F0;
-                color: #000000;
+                background-color: #8A2BE2;
+                color: #E6E6FA;
             }
         )";
     }
