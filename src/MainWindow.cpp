@@ -72,22 +72,17 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo);
     videoMenu->addAction(addTextAction);
 
-    toggleThemeAction = new QAction(tr("&Toggle Theme"), this);
-    connect(toggleThemeAction, &QAction::triggered, this, &MainWindow::toggleTheme);
-
-    themeMenu = menuBar->addMenu(tr("&Theme"));
-    themeMenu->addAction(toggleThemeAction);
-    toggleTheme();
-
     speedAction = new QAction(tr("Speed"), this);
     connect(speedAction, &QAction::triggered, this, &MainWindow::showSpeedDialog);
     videoMenu->addAction(speedAction);
 
     addOverlayAction = new QAction(tr("Add Overlay"), this);
-    connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);  // Ensure this action is connected
+    connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
     videoMenu->addAction(addOverlayAction);
 
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
+
+    setupThemeMenu();
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
@@ -205,79 +200,95 @@ void MainWindow::addTextToVideo() {
     ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
 }
 
-void MainWindow::toggleTheme() {
-    static int themeIndex = 0;
-    themeIndex = (themeIndex + 1) % 3; // Cycle through 3 themes: Light, Dark, Purple Nounces
-
-    QString styleSheet;
-    if (themeIndex == 0) {
-        styleSheet = R"(
-            QMainWindow {
-                background-color: #FFFFFF;
-                color: #000000;
-            }
-            QMenuBar {
-                background-color: #F0F0F0;
-                color: #000000;
-            }
-            QMenuBar::item {
-                background-color: #F0F0F0;
-                color: #000000;
-            }
-            QMenuBar::item:selected {
-                background-color: #D0D0D0;
-            }
-            QMenu {
-                background-color: #F0F0F0;
-                color: #000000;
-            }
-        )";
-    } else if (themeIndex == 1) {
-        styleSheet = R"(
-            QMainWindow {
-                background-color: #2E2E2E;
-                color: #FFFFFF;
-            }
-            QMenuBar {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-            }
-            QMenuBar::item {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-            }
-            QMenuBar::item:selected {
-                background-color: #5E5E5E;
-            }
-            QMenu {
-                background-color: #3E3E3E;
-                color: #FFFFFF;
-            }
-        )";
-    } else if (themeIndex == 2) {
-        styleSheet = R"(
-            QMainWindow {
-                background-color: #4B0082;
-                color: #E6E6FA;
-            }
-            QMenuBar {
-                background-color: #8A2BE2;
-                color: #E6E6FA;
-            }
-            QMenuBar::item {
-                background-color: #8A2BE2;
-                color: #E6E6FA;
-            }
-            QMenuBar::item:selected {
-                background-color: #9370DB;
-            }
-            QMenu {
-                background-color: #8A2BE2;
-                color: #E6E6FA;
-            }
-        )";
-    }
+void MainWindow::applyLightTheme() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        QMenuBar {
+            background-color: #F0F0F0;
+            color: #000000;
+        }
+        QMenuBar::item {
+            background-color: #F0F0F0;
+            color: #000000;
+        }
+        QMenuBar::item:selected {
+            background-color: #D0D0D0;
+        }
+        QMenu {
+            background-color: #F0F0F0;
+            color: #000000;
+        }
+    )";
     qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyDarkTheme() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QMenuBar {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QMenuBar::item {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QMenuBar::item:selected {
+            background-color: #5E5E5E;
+        }
+        QMenu {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyPurpleNouncesTheme() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #4B0082;
+            color: #E6E6FA;
+        }
+        QMenuBar {
+            background-color: #8A2BE2;
+            color: #E6E6FA;
+        }
+        QMenuBar::item {
+            background-color: #8A2BE2;
+            color: #E6E6FA;
+        }
+        QMenuBar::item:selected {
+            background-color: #9370DB;
+        }
+        QMenu {
+            background-color: #8A2BE2;
+            color: #E6E6FA;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::setupThemeMenu() {
+    themeMenu = menuBar->addMenu(tr("&Theme"));
+
+    QAction *lightThemeAction = new QAction(tr("Light Theme"), this);
+    connect(lightThemeAction, &QAction::triggered, this, &MainWindow::applyLightTheme);
+    themeMenu->addAction(lightThemeAction);
+
+    QAction *darkThemeAction = new QAction(tr("Dark Theme"), this);
+    connect(darkThemeAction, &QAction::triggered, this, &MainWindow::applyDarkTheme);
+    themeMenu->addAction(darkThemeAction);
+
+    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Theme"), this);
+    connect(purpleNouncesThemeAction, &QAction::triggered, this, &MainWindow::applyPurpleNouncesTheme);
+    themeMenu->addAction(purpleNouncesThemeAction);
 }
 
 void MainWindow::showSpeedDialog() {

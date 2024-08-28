@@ -29,10 +29,14 @@ public:
     void togglePlayPause();
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
-    void toggleTheme();
+    // void toggleTheme();
     void handleFileSelected(const QString &filePath);
     void showSpeedDialog();
-    void addOverlayToVideo();  // Ensure this slot is declared
+    void addOverlayToVideo();
+    void applyLightTheme();
+    void applyDarkTheme();
+    void applyPurpleNouncesTheme();
+    void setupThemeMenu();
 
 private:
     Ui::MainWindow *ui;
@@ -47,7 +51,7 @@ private:
     QAction *cutAction;
     QAction *combineAction;
     QAction *addTextAction;
-    QAction *toggleThemeAction;
+    // QAction *toggleThemeAction;
     QAction *speedAction;
     QAction *addOverlayAction;  // Ensure this action is declared
     QMenuBar *menuBar;
