@@ -29,7 +29,6 @@ public:
     void togglePlayPause();
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
-    // void toggleTheme();
     void handleFileSelected(const QString &filePath);
     void showSpeedDialog();
     void addOverlayToVideo();
@@ -51,9 +50,8 @@ private:
     QAction *cutAction;
     QAction *combineAction;
     QAction *addTextAction;
-    // QAction *toggleThemeAction;
     QAction *speedAction;
-    QAction *addOverlayAction;  // Ensure this action is declared
+    QAction *addOverlayAction;
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
