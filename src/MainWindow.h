@@ -33,6 +33,7 @@ public:
     void showSpeedDialog();
     void addOverlayToVideo();
     void applyLightTheme();
+    void applyGreenTheme();
     void applyDarkTheme();
     void applyPurpleNouncesTheme();
     void setupThemeMenu();

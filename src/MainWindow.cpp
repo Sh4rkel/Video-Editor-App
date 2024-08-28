@@ -275,6 +275,31 @@ void MainWindow::applyPurpleNouncesTheme() {
     qApp->setStyleSheet(styleSheet);
 }
 
+void MainWindow::applyGreenTheme() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #008000;
+            color: #F0FFF0;
+        }
+        QMenuBar {
+            background-color: #32CD32;
+            color: #F0FFF0;
+        }
+        QMenuBar::item {
+            background-color: #32CD32;
+            color: #F0FFF0;
+        }
+        QMenuBar::item:selected {
+            background-color: #98FB98;
+        }
+        QMenu {
+            background-color: #32CD32;
+            color: #F0FFF0;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
 void MainWindow::setupThemeMenu() {
     themeMenu = menuBar->addMenu(tr("&Theme"));
 
@@ -286,9 +311,13 @@ void MainWindow::setupThemeMenu() {
     connect(darkThemeAction, &QAction::triggered, this, &MainWindow::applyDarkTheme);
     themeMenu->addAction(darkThemeAction);
 
-    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Theme"), this);
+    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Nounces Theme"), this);
     connect(purpleNouncesThemeAction, &QAction::triggered, this, &MainWindow::applyPurpleNouncesTheme);
     themeMenu->addAction(purpleNouncesThemeAction);
+
+    QAction *greenThemeAction = new QAction(tr("Green Theme"), this);
+    connect(greenThemeAction, &QAction::triggered, this, &MainWindow::applyGreenTheme);
+    themeMenu->addAction(greenThemeAction);
 }
 
 void MainWindow::showSpeedDialog() {
