@@ -300,6 +300,31 @@ void MainWindow::applyGreenTheme() {
     qApp->setStyleSheet(styleSheet);
 }
 
+void MainWindow::applyBlueTheme() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #0000FF;
+            color: #F0F8FF;
+        }
+        QMenuBar {
+            background-color: #1E90FF;
+            color: #F0F8FF;
+        }
+        QMenuBar::item {
+            background-color: #1E90FF;
+            color: #F0F8FF;
+        }
+        QMenuBar::item:selected {
+            background-color: #87CEFA;
+        }
+        QMenu {
+            background-color: #1E90FF;
+            color: #F0F8FF;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
 void MainWindow::setupThemeMenu() {
     themeMenu = menuBar->addMenu(tr("&Theme"));
 
@@ -318,6 +343,10 @@ void MainWindow::setupThemeMenu() {
     QAction *greenThemeAction = new QAction(tr("Green Theme"), this);
     connect(greenThemeAction, &QAction::triggered, this, &MainWindow::applyGreenTheme);
     themeMenu->addAction(greenThemeAction);
+
+    QAction *blueThemeAction = new QAction(tr("Blue Theme"), this);
+    connect(blueThemeAction, &QAction::triggered, this, &MainWindow::applyBlueTheme);
+    themeMenu->addAction(blueThemeAction);
 }
 
 void MainWindow::showSpeedDialog() {
