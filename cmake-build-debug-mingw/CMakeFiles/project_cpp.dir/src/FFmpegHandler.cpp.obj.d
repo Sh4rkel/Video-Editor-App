@@ -359,70 +359,25 @@ CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj: \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/format \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/charconv \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/span \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qthread.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stop_token \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/semaphore \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/semaphore_base.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_timed_wait.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/semaphore.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegWorker.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QFile \
- D:/QT/6.7.2/mingw_64/include/QtCore/qfile.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qfiledevice.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qaction.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qcolor.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qline.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qtextstream.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcontiguouscache.h \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata_impl.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qset.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qfont.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qendian.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qfontmetrics.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qfontinfo.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h

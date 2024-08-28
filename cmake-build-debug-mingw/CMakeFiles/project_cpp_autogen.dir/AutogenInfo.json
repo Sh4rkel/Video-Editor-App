@@ -299,6 +299,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h",
+			"Mu",
+			"UVLADIE3JM/moc_FFmpegWorker.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_FileImportWidget.cpp",
@@ -428,6 +434,11 @@
 	[
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.cpp",
 			"Mu",
 			null
 		],

@@ -5,7 +5,8 @@
 #include <QMessageBox>
 #include <QMediaPlayer>
 #include "filehandler.h"
-
+#include "FFmpegHandler.h"
+#include "FFmpegWorker.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),

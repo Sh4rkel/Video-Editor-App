@@ -1,67 +1,25 @@
 #include "FFmpegHandler.h"
-#include <QFile>
-#include <QMessageBox>
 
-FFmpegHandler::FFmpegHandler(QObject *parent) : QObject(parent), ffmpegPath("ffmpeg") {
-    ffmpeg.setProgram(ffmpegPath);
+FFmpegHandler::FFmpegHandler(QObject *parent) : QObject(parent) {
+    worker = new FFmpegWorker();
+    worker->moveToThread(&workerThread);
+
+    connect(&workerThread, &QThread::finished, worker, &QObject::deleteLater);
+    connect(worker, &FFmpegWorker::finished, this, &FFmpegHandler::handleWorkerFinished);
+    connect(worker, &FFmpegWorker::errorOccurred, this, &FFmpegHandler::handleWorkerError);
+
+    workerThread.start();
+}
+
+void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
+    worker->setArguments(arguments);
+    QMetaObject::invokeMethod(worker, "execute", Qt::QueuedConnection);
 }
 
 void FFmpegHandler::convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format) {
     QStringList arguments;
-    QString output = outputVideo;
-    if (!output.endsWith("." + format)) {
-        int lastDotIndex = output.lastIndexOf(".");
-        if (lastDotIndex != -1) {
-            output = output.left(lastDotIndex);
-        }
-        output += "." + format;
-    }
-
-    QString videoCodec, audioCodec;
-    std::map<QString, std::pair<QString, QString>> formatMap = {
-        {"mp4", {"libx264", "aac"}},
-        {"avi", {"libxvid", "mp3"}},
-        {"mkv", {"libx264", "aac"}},
-        {"mov", {"libx264", "aac"}}
-    };
-
-    auto it = formatMap.find(format);
-    if (it != formatMap.end()) {
-        videoCodec = it->second.first;
-        audioCodec = it->second.second;
-    } else {
-        QMessageBox::warning(nullptr, "Error", "Unsupported format.");
-        return;
-    }
-
-    arguments << "-y"
-              << "-i" << inputVideo
-              << "-c:v" << videoCodec
-              << "-preset" << "medium"
-              << "-crf" << "23"
-              << "-c:a" << audioCodec
-              << "-b:a" << "192k"
-              << output;
-
-    ffmpeg.setArguments(arguments);
-    ffmpeg.start();
-
-    if (!ffmpeg.waitForStarted()) {
-        QMessageBox::warning(nullptr, "Error", "Failed to start FFmpeg.");
-        return;
-    }
-
-    if (!ffmpeg.waitForFinished()) {
-        QMessageBox::warning(nullptr, "Error", "FFmpeg process failed.");
-        return;
-    }
-
-    if (!QFile::exists(output)) {
-        QMessageBox::warning(nullptr, "Error", "Output video file was not created.");
-        return;
-    }
-
-    QMessageBox::information(nullptr, "Success", "Video converted successfully.");
+    arguments << "-i" << inputVideo << outputVideo + "." + format;
+    executeFFmpegCommand(arguments);
 }
 
 void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end) {
@@ -69,42 +27,19 @@ void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &ou
     arguments << "-i" << inputVideo
               << "-ss" << QString::number(start / 1000.0)
               << "-to" << QString::number(end / 1000.0)
-              << "-c" << "copy"
-              << outputVideo;
-
-    ffmpeg.setArguments(arguments);
-    ffmpeg.start();
-
-    if (!ffmpeg.waitForStarted()) {
-        QMessageBox::warning(nullptr, "Error", "Failed to start FFmpeg.");
-        return;
-    }
-
-    if (!ffmpeg.waitForFinished()) {
-        QMessageBox::warning(nullptr, "Error", "FFmpeg process failed.");
-        return;
-    }
-
-    if (!QFile::exists(outputVideo)) {
-        QMessageBox::warning(nullptr, "Error", "Output video file was not created.");
-        return;
-    }
-
-    QMessageBox::information(nullptr, "Success", "Video segment cut successfully.");
+              << "-c" << "copy" << outputVideo;
+    executeFFmpegCommand(arguments);
 }
 
 void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo) {
-    ffmpeg.setArguments(QStringList() << "-i" << videoFile1 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part1.ts");
-    ffmpeg.start();
-    ffmpeg.waitForFinished();
-
-    ffmpeg.setArguments(QStringList() << "-i" << videoFile2 << "-c" << "copy" << "-bsf:v" << "h264_mp4toannexb" << "-f" << "mpegts" << "part2.ts");
-    ffmpeg.start();
-    ffmpeg.waitForFinished();
-
-    ffmpeg.setArguments(QStringList() << "-i" << "concat:part1.ts|part2.ts" << "-c" << "copy" << "-bsf:a" << "aac_adtstoasc" << outputVideo);
-    ffmpeg.start();
-    ffmpeg.waitForFinished();
+    QStringList arguments;
+    arguments << "-i" << videoFile1
+              << "-i" << videoFile2
+              << "-filter_complex" << "[0:v][1:v]concat=n=2:v=1[outv];[0:a][1:a]concat=n=2:v=0:a=1[outa]"
+              << "-map" << "[outv]"
+              << "-map" << "[outa]"
+              << outputVideo;
+    executeFFmpegCommand(arguments);
 }
 
 void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y) {
@@ -112,39 +47,7 @@ void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &out
     arguments << "-i" << inputVideo
               << "-vf" << QString("drawtext=text='%1':x=%2:y=%3").arg(text).arg(x).arg(y)
               << outputVideo;
-
-    QProcess ffmpegProcess;
-    ffmpegProcess.start("C:/path/to/ffmpeg.exe", arguments);
-    if (!ffmpegProcess.waitForStarted()) {
-        qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
-        return;
-    }
-    ffmpegProcess.waitForFinished();
-}
-
-void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
-    QProcess process;
-    process.start("ffmpeg", arguments);
-    if (!process.waitForStarted()) {
-        qDebug() << "FFmpeg process failed to start:" << process.errorString();
-        QMessageBox::warning(nullptr, "Error", "Failed to start FFmpeg.");
-        return;
-    }
-
-    if (!process.waitForFinished()) {
-        qDebug() << "FFmpeg process failed:" << process.errorString();
-        QMessageBox::warning(nullptr, "Error", "FFmpeg process failed.");
-        return;
-    }
-
-    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
-        qDebug() << "FFmpeg process exited with errors:" << process.readAllStandardError();
-        QMessageBox::warning(nullptr, "Error", "FFmpeg process exited with errors.");
-        return;
-    }
-
-    qDebug() << "FFmpeg process finished successfully.";
-    QMessageBox::information(nullptr, "Success", "Video with text overlay created successfully.");
+    executeFFmpegCommand(arguments);
 }
 
 void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y) {
@@ -153,12 +56,13 @@ void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &
               << "-i" << overlayImage
               << "-filter_complex" << QString("overlay=%1:%2").arg(x).arg(y)
               << outputVideo;
+    executeFFmpegCommand(arguments);
+}
 
-    QProcess ffmpegProcess;
-    ffmpegProcess.start("C:/path/to/ffmpeg.exe", arguments);
-    if (!ffmpegProcess.waitForStarted()) {
-        qDebug() << "FFmpeg process failed to start:" << ffmpegProcess.errorString();
-        return;
-    }
-    ffmpegProcess.waitForFinished();
+void FFmpegHandler::handleWorkerFinished() {
+    emit commandFinished();
+}
+
+void FFmpegHandler::handleWorkerError(const QString &error) {
+    emit commandError(error);
 }

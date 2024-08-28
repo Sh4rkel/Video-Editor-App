@@ -165,6 +165,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

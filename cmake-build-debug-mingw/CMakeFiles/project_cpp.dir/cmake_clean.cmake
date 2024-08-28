@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj"

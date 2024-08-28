@@ -2,25 +2,32 @@
 #define FFMPEGHANDLER_H
 
 #include <QObject>
-#include <QProcess>
+#include <QThread>
+#include "FFmpegWorker.h"
 
 class FFmpegHandler : public QObject {
     Q_OBJECT
 
 public:
     explicit FFmpegHandler(QObject *parent = nullptr);
-    void convertVideoFormat(const QString &inputFile, const QString &outputFile, const QString &format);
-    void cutVideoSegment(const QString &inputFile, const QString &outputFile, qint64 start, qint64 end);
-    void combineVideos(const QString &inputFile1, const QString &inputFile2, const QString &outputFile);
+    void executeFFmpegCommand(const QStringList &arguments);
+    void convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format);
+    void cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end);
+    void combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo);
     void addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y);
-    void addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y);  // Add this declaration
+    void addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y);
 
+    signals:
+        void commandFinished();
+    void commandError(const QString &error);
+
+    private slots:
+        void handleWorkerFinished();
+    void handleWorkerError(const QString &error);
 
 private:
-    QString ffmpegPath;
-    QProcess ffmpeg;
-    void executeFFmpegCommand(const QStringList &arguments);
-
+    QThread workerThread;
+    FFmpegWorker *worker;
 };
 
 #endif // FFMPEGHANDLER_H

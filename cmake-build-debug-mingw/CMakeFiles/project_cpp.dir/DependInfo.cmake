@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "project_cpp_autogen/timestamp" "custom" "project_cpp_autogen/deps"
   "C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cpp_autogen/mocs_compilation.cpp" "CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.cpp" "CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj.d"
+  "C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.cpp" "CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp" "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FileImportWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp" "CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp" "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj.d"

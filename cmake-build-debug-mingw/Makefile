@@ -202,6 +202,30 @@ src/FFmpegHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.s
 .PHONY : src/FFmpegHandler.cpp.s
 
+src/FFmpegWorker.obj: src/FFmpegWorker.cpp.obj
+.PHONY : src/FFmpegWorker.obj
+
+# target to build an object file
+src/FFmpegWorker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj
+.PHONY : src/FFmpegWorker.cpp.obj
+
+src/FFmpegWorker.i: src/FFmpegWorker.cpp.i
+.PHONY : src/FFmpegWorker.i
+
+# target to preprocess a source file
+src/FFmpegWorker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.i
+.PHONY : src/FFmpegWorker.cpp.i
+
+src/FFmpegWorker.s: src/FFmpegWorker.cpp.s
+.PHONY : src/FFmpegWorker.s
+
+# target to generate assembly for a file
+src/FFmpegWorker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.s
+.PHONY : src/FFmpegWorker.cpp.s
+
 src/FileImportWidget.obj: src/FileImportWidget.cpp.obj
 .PHONY : src/FileImportWidget.obj
 
@@ -435,6 +459,9 @@ help:
 	@echo ... src/FFmpegHandler.obj
 	@echo ... src/FFmpegHandler.i
 	@echo ... src/FFmpegHandler.s
+	@echo ... src/FFmpegWorker.obj
+	@echo ... src/FFmpegWorker.i
+	@echo ... src/FFmpegWorker.s
 	@echo ... src/FileImportWidget.obj
 	@echo ... src/FileImportWidget.i
 	@echo ... src/FileImportWidget.s
