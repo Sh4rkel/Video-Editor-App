@@ -266,7 +266,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h
- mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
@@ -455,7 +454,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
@@ -473,7 +471,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h
@@ -1157,7 +1154,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qarraydata.h
@@ -1198,13 +1194,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qglobalstatic.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qline.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlogging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmalloc.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h
@@ -1225,7 +1221,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrefcount.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopedpointer.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopeguard.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qset.h
@@ -1267,6 +1262,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtversionchecks.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtypeinfo.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtypes.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qutf8stringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h
@@ -1286,35 +1282,35 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -3017,9 +3013,11 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
@@ -3373,8 +3371,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qyieldcpu.h
-C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h
  mmc:Q_OBJECT
@@ -4769,7 +4765,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qarraydata.h
@@ -4810,13 +4805,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qglobalstatic.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qhashfunctions.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiodevicebase.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterable.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qiterator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qline.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qlogging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmalloc.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h
@@ -4837,7 +4832,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrefcount.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopedpointer.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qscopeguard.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qset.h
@@ -4879,6 +4873,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtversionchecks.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtypeinfo.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qtypes.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qutf8stringview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h
@@ -4898,33 +4893,33 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h
- mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h

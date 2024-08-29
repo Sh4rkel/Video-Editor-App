@@ -413,25 +413,19 @@ CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h

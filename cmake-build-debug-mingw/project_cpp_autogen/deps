@@ -512,7 +512,6 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
 	D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
-	D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
@@ -531,7 +530,6 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
-	D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 	D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \

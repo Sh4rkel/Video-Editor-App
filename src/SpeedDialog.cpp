@@ -1,9 +1,11 @@
 #include "SpeedDialog.h"
-#include <QVBoxLayout>
 
-SpeedDialog::SpeedDialog(QWidget *parent) : QDialog(parent), speedWidget(new SpeedWidget(this)) {
+SpeedDialog::SpeedDialog(QWidget *parent) : QDialog(parent) {
     QVBoxLayout *layout = new QVBoxLayout(this);
+
+    speedWidget = new SpeedWidget(this);
     layout->addWidget(speedWidget);
+
     setLayout(layout);
-    setWindowTitle(tr("Adjust Playback Speed"));
+    setWindowTitle("Speed Settings");
 }

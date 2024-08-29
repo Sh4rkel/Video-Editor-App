@@ -470,18 +470,9 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
@@ -509,13 +500,19 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettingsDialog.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \
  D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h

@@ -1,19 +1,24 @@
 #include "SpeedWidget.h"
 
 SpeedWidget::SpeedWidget(QWidget *parent) : QWidget(parent) {
-    speedComboBox = new QComboBox(this);
-    speedComboBox->addItem("0.25x", 0.25);
-    speedComboBox->addItem("0.5x", 0.5);
-    speedComboBox->addItem("0.75x", 0.75);
-    speedComboBox->addItem("1x", 1.0);
-    speedComboBox->addItem("1.25x", 1.25);
-    speedComboBox->addItem("1.5x", 1.5);
-    speedComboBox->addItem("2x", 2.0);
+    QVBoxLayout *layout = new QVBoxLayout(this);
 
-    connect(speedComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &SpeedWidget::onSpeedChanged);
+    speedLabel = new QLabel("Speed: 1.0x", this);
+    speedLabel->setStyleSheet("color: black;");
+
+    speedSlider = new QSlider(Qt::Horizontal, this);
+    speedSlider->setRange(50, 200);
+    speedSlider->setValue(100);
+    connect(speedSlider, &QSlider::valueChanged, this, &SpeedWidget::onSpeedSliderChanged);
+
+    layout->addWidget(speedLabel);
+    layout->addWidget(speedSlider);
+
+    setLayout(layout);
 }
 
-void SpeedWidget::onSpeedChanged(int index) {
-    qreal speed = speedComboBox->itemData(index).toReal();
+void SpeedWidget::onSpeedSliderChanged(int value) {
+    double speed = value / 100.0;
+    speedLabel->setText(QString("Speed: %1x").arg(speed));
     emit speedChanged(speed);
 }

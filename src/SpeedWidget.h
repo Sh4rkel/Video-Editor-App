@@ -2,7 +2,9 @@
 #define SPEEDWIDGET_H
 
 #include <QWidget>
-#include <QComboBox>
+#include <QSlider>
+#include <QVBoxLayout>
+#include <QLabel>
 
 class SpeedWidget : public QWidget {
     Q_OBJECT
@@ -11,13 +13,14 @@ public:
     explicit SpeedWidget(QWidget *parent = nullptr);
 
     signals:
-        void speedChanged(qreal speed);
+        void speedChanged(double speed);
 
     private slots:
-        void onSpeedChanged(int index);
+        void onSpeedSliderChanged(int value);
 
 private:
-    QComboBox *speedComboBox;
+    QSlider *speedSlider;
+    QLabel *speedLabel;
 };
 
 #endif // SPEEDWIDGET_H

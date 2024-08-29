@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../src/SpeedWidget.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -39,8 +40,8 @@ constexpr auto qt_meta_stringdata_CLASSSpeedWidgetENDCLASS = QtMocHelpers::strin
     "speedChanged",
     "",
     "speed",
-    "onSpeedChanged",
-    "index"
+    "onSpeedSliderChanged",
+    "value"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -67,7 +68,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSpeedWidgetENDCLASS[] = {
        4,    1,   29,    2, 0x08,    3 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QReal,    3,
+    QMetaType::Void, QMetaType::Double,    3,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    5,
@@ -86,8 +87,8 @@ Q_CONSTINIT const QMetaObject SpeedWidget::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<SpeedWidget, std::true_type>,
         // method 'speedChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qreal, std::false_type>,
-        // method 'onSpeedChanged'
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'onSpeedSliderChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
@@ -100,14 +101,14 @@ void SpeedWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         auto *_t = static_cast<SpeedWidget *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->speedChanged((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1]))); break;
-        case 1: _t->onSpeedChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 0: _t->speedChanged((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 1: _t->onSpeedSliderChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (SpeedWidget::*)(qreal );
+            using _t = void (SpeedWidget::*)(double );
             if (_t _q_method = &SpeedWidget::speedChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
@@ -147,7 +148,7 @@ int SpeedWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void SpeedWidget::speedChanged(qreal _t1)
+void SpeedWidget::speedChanged(double _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

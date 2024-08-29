@@ -9,8 +9,6 @@
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
 #include "SpeedWidget.h"
-#include "FilterSettings.h"
-#include "FilterSettingsDialog.h"
 
 namespace Ui {
     class MainWindow;
@@ -40,9 +38,6 @@ public:
     void applyDarkTheme();
     void applyPurpleNouncesTheme();
     void setupThemeMenu();
-    void applyFilters();
-    void updateFilterSettings();
-    void showFilterSettingsDialog();
 
 private:
     Ui::MainWindow *ui;
@@ -51,7 +46,6 @@ private:
     SpeedDialog *speedDialog;
     SpeedWidget *speedWidget;
     FFmpegHandler *ffmpegHandler;
-    FileHandler *fileHandler;
     QString currentVideo;
     QAction *openAction;
     QAction *saveAction;
@@ -60,13 +54,11 @@ private:
     QAction *addTextAction;
     QAction *speedAction;
     QAction *addOverlayAction;
-    QAction *filterSettingsAction;
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
+    FileHandler *fileHandler;
     bool darkModeEnabled;
-    FilterSettings *filterSettings;
-    FilterSettingsDialog *filterSettingsDialog;
 };
 
 #endif // MAINWINDOW_H
