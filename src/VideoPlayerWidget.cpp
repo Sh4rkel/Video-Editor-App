@@ -25,3 +25,7 @@ QMediaPlayer* VideoPlayerWidget::getMediaPlayer() const {
 void VideoPlayerWidget::seek(int position) {
     mediaPlayer->setPosition(position);
 }
+
+void VideoPlayerWidget::setSpeed(double speed) {
+    mediaPlayer->setPlaybackRate(speed);
+}

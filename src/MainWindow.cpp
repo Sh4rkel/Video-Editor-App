@@ -6,7 +6,12 @@
 #include <QMediaPlayer>
 #include "filehandler.h"
 #include "FFmpegHandler.h"
+#include <QSplitter>
+#include "FilterSettings.h"
 #include "FFmpegWorker.h"
+#include "SpeedDialog.h"
+#include "VideoPlayerWidget.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -31,6 +36,11 @@ MainWindow::MainWindow(QWidget *parent) :
     mainLayout->addWidget(timelineWidget, 1);
     mainLayout->addWidget(fileHandler, 2);
 
+    QSplitter *splitter = new QSplitter(Qt::Vertical, this);
+    splitter->addWidget(videoPlayerWidget);
+    splitter->addWidget(timelineWidget);
+    splitter->addWidget(fileHandler);
+
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
     setCentralWidget(centralWidget);
@@ -46,6 +56,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
+    connect(speedWidget, &SpeedWidget::speedChanged, videoPlayerWidget, &VideoPlayerWidget::setSpeed);
 
     menuBar = new QMenuBar(this);
     setMenuBar(menuBar);

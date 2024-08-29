@@ -18,6 +18,7 @@ public:
     void loadVideo(const QString &fileName);
     QMediaPlayer* getMediaPlayer() const;
     void seek(int position);
+    void setSpeed(double speed);
 
 private:
     Ui::VideoPlayerWidget *ui;

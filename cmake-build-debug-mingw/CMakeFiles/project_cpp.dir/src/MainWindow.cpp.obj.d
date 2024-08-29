@@ -548,4 +548,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSplitter \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qsplitter.h
