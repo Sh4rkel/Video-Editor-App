@@ -13,6 +13,9 @@ class FilterSettingsDialog : public QDialog {
 public:
     explicit FilterSettingsDialog(FilterSettings *settings, QWidget *parent = nullptr);
 
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
+
 private:
     FilterSettings *filterSettings;
     QSlider *gradientSlider;

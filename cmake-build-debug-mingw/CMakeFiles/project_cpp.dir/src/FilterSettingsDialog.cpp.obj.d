@@ -428,4 +428,36 @@ CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QMouseEvent \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qeventpoint.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvector2d.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvectornd.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qinputdevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qscreen.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QList \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QSize \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QSizeF \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QTransform \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qscreen_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QStyle \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h
