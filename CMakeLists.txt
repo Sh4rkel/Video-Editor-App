@@ -40,6 +40,10 @@ add_executable(project_cpp
         src/SpeedDialog.h
         src/FFmpegWorker.cpp
         src/FFmpegWorker.h
+        src/FilterSettings.cpp
+        src/FilterSettings.h
+        src/FilterSettingsDialog.cpp
+        src/FilterSettingsDialog.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

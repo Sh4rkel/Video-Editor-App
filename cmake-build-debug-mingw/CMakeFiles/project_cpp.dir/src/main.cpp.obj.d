@@ -502,6 +502,7 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegWorker.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
@@ -512,5 +513,9 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettingsDialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \
  D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h

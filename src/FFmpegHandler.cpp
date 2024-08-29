@@ -21,6 +21,13 @@ void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
     QMetaObject::invokeMethod(worker, "execute", Qt::QueuedConnection);
 }
 
+void FFmpegHandler::applyFilters(const QString &inputVideo, const QString &outputVideo, const FilterSettings &settings) {
+    QStringList arguments;
+    QString filterString = QString("gradients=%1,shadows=%2").arg(settings.getGradient()).arg(settings.getShadow());
+    arguments << "-i" << inputVideo << "-vf" << filterString << outputVideo;
+    executeFFmpegCommand(arguments);
+}
+
 void FFmpegHandler::convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format) {
     QStringList arguments;
     arguments << "-i" << inputVideo << outputVideo + "." + format;

@@ -16,7 +16,9 @@ MainWindow::MainWindow(QWidget *parent) :
     speedDialog(new SpeedDialog(this)),
     speedWidget(new SpeedWidget(this)),
     fileHandler(new FileHandler(this)),
-    darkModeEnabled(true)
+    darkModeEnabled(true),
+    filterSettings(new FilterSettings(this)),
+    filterSettingsDialog(new FilterSettingsDialog(filterSettings, this))
 {
     ui->setupUi(this);
 
@@ -46,6 +48,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
+    connect(filterSettings, &FilterSettings::settingsChanged, this, &MainWindow::updateFilterSettings);
 
     menuBar = new QMenuBar(this);
     setMenuBar(menuBar);
@@ -81,9 +84,31 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
     videoMenu->addAction(addOverlayAction);
 
+    filterSettingsAction = new QAction(tr("Filter Settings"), this);
+    connect(filterSettingsAction, &QAction::triggered, this, &MainWindow::showFilterSettingsDialog);
+    videoMenu->addAction(filterSettingsAction);
+
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
     setupThemeMenu();
+}
+
+void MainWindow::applyFilters() {
+    if (currentVideo.isEmpty()) {
+        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
+        return;
+    }
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Filtered Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    ffmpegHandler->applyFilters(currentVideo, outputVideo, *filterSettings);
+}
+
+void MainWindow::updateFilterSettings() {
+    applyFilters();
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
@@ -94,6 +119,12 @@ void MainWindow::handleFileSelected(const QString &filePath) {
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
+    delete filterSettings;
+    delete filterSettingsDialog;
+}
+
+void MainWindow::showFilterSettingsDialog() {
+    filterSettingsDialog->exec();
 }
 
 void MainWindow::openFile() {

@@ -317,6 +317,18 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h",
+			"Mu",
+			"UVLADIE3JM/moc_FilterSettings.cpp",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h",
+			"Mu",
+			"UVLADIE3JM/moc_FilterSettingsDialog.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h",
 			"Mu",
 			"UVLADIE3JM/moc_MainWindow.cpp",
@@ -449,6 +461,16 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp",
 			"Mu",
 			null
 		],

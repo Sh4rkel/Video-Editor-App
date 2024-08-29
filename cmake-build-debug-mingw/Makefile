@@ -274,6 +274,54 @@ src/FileManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FileManager.cpp.s
 .PHONY : src/FileManager.cpp.s
 
+src/FilterSettings.obj: src/FilterSettings.cpp.obj
+.PHONY : src/FilterSettings.obj
+
+# target to build an object file
+src/FilterSettings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj
+.PHONY : src/FilterSettings.cpp.obj
+
+src/FilterSettings.i: src/FilterSettings.cpp.i
+.PHONY : src/FilterSettings.i
+
+# target to preprocess a source file
+src/FilterSettings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.i
+.PHONY : src/FilterSettings.cpp.i
+
+src/FilterSettings.s: src/FilterSettings.cpp.s
+.PHONY : src/FilterSettings.s
+
+# target to generate assembly for a file
+src/FilterSettings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.s
+.PHONY : src/FilterSettings.cpp.s
+
+src/FilterSettingsDialog.obj: src/FilterSettingsDialog.cpp.obj
+.PHONY : src/FilterSettingsDialog.obj
+
+# target to build an object file
+src/FilterSettingsDialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj
+.PHONY : src/FilterSettingsDialog.cpp.obj
+
+src/FilterSettingsDialog.i: src/FilterSettingsDialog.cpp.i
+.PHONY : src/FilterSettingsDialog.i
+
+# target to preprocess a source file
+src/FilterSettingsDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.i
+.PHONY : src/FilterSettingsDialog.cpp.i
+
+src/FilterSettingsDialog.s: src/FilterSettingsDialog.cpp.s
+.PHONY : src/FilterSettingsDialog.s
+
+# target to generate assembly for a file
+src/FilterSettingsDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.s
+.PHONY : src/FilterSettingsDialog.cpp.s
+
 src/MainWindow.obj: src/MainWindow.cpp.obj
 .PHONY : src/MainWindow.obj
 
@@ -468,6 +516,12 @@ help:
 	@echo ... src/FileManager.obj
 	@echo ... src/FileManager.i
 	@echo ... src/FileManager.s
+	@echo ... src/FilterSettings.obj
+	@echo ... src/FilterSettings.i
+	@echo ... src/FilterSettings.s
+	@echo ... src/FilterSettingsDialog.obj
+	@echo ... src/FilterSettingsDialog.i
+	@echo ... src/FilterSettingsDialog.s
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s

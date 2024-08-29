@@ -312,6 +312,10 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp \

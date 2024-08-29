@@ -183,6 +183,18 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

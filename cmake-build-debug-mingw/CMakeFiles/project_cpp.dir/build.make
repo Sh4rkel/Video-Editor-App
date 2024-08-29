@@ -254,6 +254,36 @@ CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.s"
 	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegWorker.cpp -o CMakeFiles\project_cpp.dir\src\FFmpegWorker.cpp.s
 
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: CMakeFiles/project_cpp.dir/flags.make
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj -MF CMakeFiles\project_cpp.dir\src\FilterSettings.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\FilterSettings.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.cpp
+
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.i"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.cpp > CMakeFiles\project_cpp.dir\src\FilterSettings.cpp.i
+
+CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.s"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.cpp -o CMakeFiles\project_cpp.dir\src\FilterSettings.cpp.s
+
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: CMakeFiles/project_cpp.dir/flags.make
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: CMakeFiles/project_cpp.dir/includes_CXX.rsp
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: CMakeFiles/project_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj -MF CMakeFiles\project_cpp.dir\src\FilterSettingsDialog.cpp.obj.d -o CMakeFiles\project_cpp.dir\src\FilterSettingsDialog.cpp.obj -c C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettingsDialog.cpp
+
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.i"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettingsDialog.cpp > CMakeFiles\project_cpp.dir\src\FilterSettingsDialog.cpp.i
+
+CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.s"
+	C:\Users\filip\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettingsDialog.cpp -o CMakeFiles\project_cpp.dir\src\FilterSettingsDialog.cpp.s
+
 # Object files for target project_cpp
 project_cpp_OBJECTS = \
 "CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj" \
@@ -267,7 +297,9 @@ project_cpp_OBJECTS = \
 "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj" \
 "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj" \
-"CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj"
+"CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj" \
+"CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj" \
+"CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj"
 
 # External object files for target project_cpp
 project_cpp_EXTERNAL_OBJECTS =
@@ -284,6 +316,8 @@ project_cpp.exe: CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/FileManager.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/src/FFmpegWorker.cpp.obj
+project_cpp.exe: CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj
+project_cpp.exe: CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj
 project_cpp.exe: CMakeFiles/project_cpp.dir/build.make
 project_cpp.exe: D:/QT/6.7.2/mingw_64/lib/libQt6MultimediaWidgets.a
 project_cpp.exe: D:/QT/6.7.2/mingw_64/lib/libQt6Multimedia.a
@@ -294,7 +328,7 @@ project_cpp.exe: D:/QT/6.7.2/mingw_64/lib/libQt6Core.a
 project_cpp.exe: CMakeFiles/project_cpp.dir/linkLibs.rsp
 project_cpp.exe: CMakeFiles/project_cpp.dir/objects1.rsp
 project_cpp.exe: CMakeFiles/project_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable project_cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable project_cpp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_cpp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

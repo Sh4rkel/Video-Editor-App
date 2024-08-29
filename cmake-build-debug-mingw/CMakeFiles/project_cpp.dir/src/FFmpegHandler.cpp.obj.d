@@ -380,4 +380,5 @@ CMakeFiles/project_cpp.dir/src/FFmpegHandler.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.h

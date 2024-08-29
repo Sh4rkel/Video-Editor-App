@@ -382,6 +382,7 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qtmochelpers.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FFmpegWorker.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h \
@@ -471,13 +472,29 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FilterSettings.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FilterSettingsDialog.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_MainWindow.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
@@ -506,17 +523,11 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
@@ -524,10 +535,7 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedDialog.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedWidget.cpp \
