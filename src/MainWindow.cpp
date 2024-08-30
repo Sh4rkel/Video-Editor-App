@@ -91,6 +91,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
     setupThemeMenu();
+
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
@@ -355,10 +356,6 @@ void MainWindow::setupThemeMenu() {
     QAction *blueThemeAction = new QAction(tr("Blue Theme"), this);
     connect(blueThemeAction, &QAction::triggered, this, &MainWindow::applyBlueTheme);
     themeMenu->addAction(blueThemeAction);
-}
-
-void MainWindow::showSpeedDialog() {
-    speedDialog->exec();
 }
 
 void MainWindow::addOverlayToVideo() {

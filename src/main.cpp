@@ -1,11 +1,13 @@
 #include <QApplication>
 #include "MainWindow.h"
 #include <QIcon>
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;
     w.setWindowTitle("Video Editor");
     w.setWindowIcon(QIcon("C:/Users/filip/CLionProjects/Video-Editor-App/assets/logo.png"));
+
     QString styleSheet = R"(
         QMainWindow {
             background-color: #2E2E2E;
@@ -147,29 +149,30 @@ int main(int argc, char *argv[]) {
             color: #FFFFFF;
         }
 
-        QRadioButton::indicator {
-            width: 20px;
-            height: 20px;
-        }
-
-        QRadioButton::indicator:checked {
-            image: url(:/icons/radiobutton_checked.png);
-        }
-
-        QRadioButton::indicator:unchecked {
-            image: url(:/icons/radiobutton_unchecked.png);
-        }
-
         QTabWidget::pane {
             border: 1px solid #5E5E5E;
-            background: #3E3E3E;
-        }
-
-        QTabWidget::tab-bar {
-            left: 5px;
+            background: #2E2E2E;
         }
 
         QTabBar::tab {
+            background: #3E3E3E;
+            color: #FFFFFF;
+            padding: 10px;
+            border: 1px solid #5E5E5E;
+            border-bottom: none;
+        }
+
+        QTabBar::tab:selected {
+            background: #5E5E5E;
+            margin-bottom: -1px;
+        }
+
+        QToolBar {
+            background: #3E3E3E;
+            border: 1px solid #5E5E5E;
+        }
+
+        QToolButton {
             background: #4E4E4E;
             color: #FFFFFF;
             border: 1px solid #5E5E5E;
@@ -177,17 +180,16 @@ int main(int argc, char *argv[]) {
             padding: 5px;
         }
 
-        QTabBar::tab:selected {
+        QToolButton:hover {
             background: #5E5E5E;
         }
 
-        QTabBar::tab:hover {
-            background: #5E5E5E;
+        QToolButton:pressed {
+            background: #3E3E3E;
         }
     )";
 
-    a.setStyleSheet(styleSheet);
-
+    qApp->setStyleSheet(styleSheet);
     w.show();
     return a.exec();
 }
