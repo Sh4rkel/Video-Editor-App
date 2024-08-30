@@ -46,8 +46,8 @@ MainWindow::MainWindow(QWidget *parent) :
     setCentralWidget(centralWidget);
 
     QHBoxLayout *controlLayout = new QHBoxLayout();
-    controlLayout->addWidget(speedWidget);
-    controlLayout->addWidget(timelineWidget);
+    controlLayout->addWidget(speedWidget, 1);
+    controlLayout->addWidget(timelineWidget, 9);
 
     mainLayout->addLayout(controlLayout);
 
@@ -83,10 +83,6 @@ MainWindow::MainWindow(QWidget *parent) :
     addTextAction = new QAction(tr("Add Text"), this);
     connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo);
     videoMenu->addAction(addTextAction);
-
-    speedAction = new QAction(tr("Speed"), this);
-    connect(speedAction, &QAction::triggered, this, &MainWindow::showSpeedDialog);
-    videoMenu->addAction(speedAction);
 
     addOverlayAction = new QAction(tr("Add Overlay"), this);
     connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
