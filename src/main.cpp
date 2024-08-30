@@ -69,6 +69,13 @@ int main(int argc, char *argv[]) {
             border-radius: 4px;
         }
 
+        QSlider::sub-page:horizontal {
+            background: #FFFFFF;
+            border: 1px solid #5E5E5E;
+            height: 8px;
+            border-radius: 4px;
+        }
+
         QSlider::handle:horizontal {
             background: #5E5E5E;
             border: 1px solid #5E5E5E;
