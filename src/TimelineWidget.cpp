@@ -5,6 +5,7 @@
 #include <QMediaPlayer>
 #include <QUrl>
 #include <QTime>
+#include <QDebug>
 
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0) {
     QHBoxLayout *layout = new QHBoxLayout(this);
@@ -13,6 +14,11 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
 void TimelineWidget::addVideo(const QString &filePath) {
     QMediaPlayer *mediaPlayer = new QMediaPlayer(this);
+    if (!mediaPlayer) {
+        qDebug() << "Failed to create QMediaPlayer";
+        return;
+    }
+
     mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
     mediaPlayers.append(mediaPlayer);
 

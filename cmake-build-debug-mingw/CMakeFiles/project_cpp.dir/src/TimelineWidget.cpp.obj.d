@@ -463,4 +463,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QTime \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h
