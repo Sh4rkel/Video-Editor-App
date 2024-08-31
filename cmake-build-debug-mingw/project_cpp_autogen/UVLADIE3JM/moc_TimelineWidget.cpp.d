@@ -313,6 +313,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmath.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmetacontainer.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmetatype.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qminmax.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qnamespace.h \
@@ -406,6 +407,14 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \

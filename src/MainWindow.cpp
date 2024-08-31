@@ -88,10 +88,25 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
     videoMenu->addAction(addOverlayAction);
 
+    QAction *addVideosAction = new QAction(tr("Add Videos to Timeline"), this);
+    connect(addVideosAction, &QAction::triggered, this, &MainWindow::addVideosToTimeline);
+    videoMenu->addAction(addVideosAction);
+
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
     setupThemeMenu();
 
+}
+
+void MainWindow::addVideosToTimeline() {
+    QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (fileNames.isEmpty()) {
+        return;
+    }
+
+    for (const QString &fileName : fileNames) {
+        timelineWidget->addVideo(fileName);
+    }
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {

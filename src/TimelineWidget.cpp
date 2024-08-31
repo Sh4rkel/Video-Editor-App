@@ -1,11 +1,27 @@
 #include "TimelineWidget.h"
-#include <QTime> // Add this include
+#include <QHBoxLayout>
+#include <QSlider>
+#include <QLabel>
+#include <QMediaPlayer>
+#include <QUrl>
+#include <QTime>
 
-TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), videoDuration(0) {
-    setupUi(this);
+TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0) {
+    QHBoxLayout *layout = new QHBoxLayout(this);
+    setLayout(layout);
+}
 
-    connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
-    connect(timelineSlider, &QSlider::sliderMoved, this, &TimelineWidget::onSliderMoved);
+void TimelineWidget::addVideo(const QString &filePath) {
+    QMediaPlayer *mediaPlayer = new QMediaPlayer(this);
+    mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+    mediaPlayers.append(mediaPlayer);
+
+    connect(mediaPlayer, &QMediaPlayer::durationChanged, this, [this, mediaPlayer](qint64 duration) {
+        totalDuration += duration;
+        emit setDuration(totalDuration);
+    });
+
+    connect(mediaPlayer, &QMediaPlayer::positionChanged, this, &TimelineWidget::positionChanged);
 }
 
 void TimelineWidget::setDuration(qint64 duration) {

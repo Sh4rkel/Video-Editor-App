@@ -3,13 +3,14 @@
 
 #include <QWidget>
 #include "ui_TimelineWidget.h"
-
+#include <QMediaPlayer>
 class TimelineWidget : public QWidget, private Ui::TimelineWidget {
     Q_OBJECT
 
 public:
     explicit TimelineWidget(QWidget *parent = nullptr);
     void updatePlayPauseButtonText(const QString &text);
+    void addVideo(const QString &filePath);
 
     signals:
         void playPauseClicked();
@@ -24,6 +25,8 @@ public:
     void onSliderMoved(int position);
 
 private:
+    QList<QMediaPlayer*> mediaPlayers;
+    qint64 totalDuration;
     qint64 videoDuration;
 };
 

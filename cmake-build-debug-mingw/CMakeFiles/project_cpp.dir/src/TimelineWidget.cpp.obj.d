@@ -447,6 +447,20 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
+ D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QTime \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h

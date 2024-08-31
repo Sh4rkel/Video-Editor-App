@@ -2059,6 +2059,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmath.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qmetatype.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qminmax.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qnamespace.h
@@ -2152,6 +2153,14 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
@@ -3013,11 +3022,9 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
-C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
@@ -3371,6 +3378,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qyieldcpu.h
+C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h
  mmc:Q_OBJECT

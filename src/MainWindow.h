@@ -37,6 +37,7 @@ public:
     void applyDarkTheme();
     void applyPurpleNouncesTheme();
     void setupThemeMenu();
+    void addVideosToTimeline();
 
 private:
     Ui::MainWindow *ui;
