@@ -60,4 +60,4 @@ private:
     bool darkModeEnabled;
 };
 
-#endif // MAINWINDOW_H
+#endif 
