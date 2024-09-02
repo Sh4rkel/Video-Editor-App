@@ -25,4 +25,4 @@ private:
     QMediaPlayer *mediaPlayer;
 };
 
-#endif // VIDEOPLAYERWIDGET_H
+#endif 
