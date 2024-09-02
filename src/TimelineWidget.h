@@ -30,4 +30,4 @@ private:
     qint64 videoDuration;
 };
 
-#endif // TIMELINEWIDGET_H
+#endif 
