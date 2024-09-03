@@ -33,4 +33,4 @@ private:
     FFmpegWorker *worker;
 };
 
-#endif // FFMPEGHANDLER_H
+#endif 

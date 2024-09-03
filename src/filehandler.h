@@ -28,4 +28,4 @@ private:
     FileManager *fileManager;
 };
 
-#endif // FILEHANDLER_H
+#endif 

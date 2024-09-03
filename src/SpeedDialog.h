@@ -14,4 +14,4 @@ private:
     SpeedWidget *speedWidget;
 };
 
-#endif // SPEEDDIALOG_H
+#endif 

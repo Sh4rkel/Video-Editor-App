@@ -22,4 +22,4 @@ private:
     QStringList arguments;
 };
 
-#endif // FFMPEGWORKER_H
+#endif 

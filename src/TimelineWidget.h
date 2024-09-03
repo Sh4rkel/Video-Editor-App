@@ -41,4 +41,4 @@ private:
     QPushButton *playPauseButton;
 };
 
-#endif // TIMELINEWIDGET_H
+#endif 

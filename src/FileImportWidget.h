@@ -24,4 +24,4 @@ private:
     QVBoxLayout *mainLayout;
 };
 
-#endif // FILEIMPORTWIDGET_H
+#endif 

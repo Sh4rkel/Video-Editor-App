@@ -22,4 +22,4 @@ private:
     QSlider *shadowSlider;
 };
 
-#endif // FILTERSETTINGSDIALOG_H
+#endif 

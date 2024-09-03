@@ -23,4 +23,4 @@ private:
     int shadow;
 };
 
-#endif // FILTERSETTINGS_H
+#endif 

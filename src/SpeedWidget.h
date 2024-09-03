@@ -23,4 +23,4 @@ private:
     QLabel *speedLabel;
 };
 
-#endif // SPEEDWIDGET_H
+#endif 
