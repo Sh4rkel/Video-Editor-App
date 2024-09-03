@@ -8,6 +8,7 @@
 #include <QSlider>
 #include <QLabel>
 #include <QPushButton>
+
 class TimelineWidget : public QWidget {
     Q_OBJECT
 
@@ -29,6 +30,9 @@ public:
         void onPlayPauseButtonClicked();
     void onSliderMoved(int position);
 
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
+
 private:
     QList<QMediaPlayer*> mediaPlayers;
     qint64 totalDuration;
@@ -41,4 +45,4 @@ private:
     QPushButton *playPauseButton;
 };
 
-#endif 
+#endif

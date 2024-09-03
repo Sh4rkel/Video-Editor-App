@@ -9,6 +9,7 @@
 #include <QGraphicsRectItem>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QKeyEvent>
 
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -94,4 +95,12 @@ void TimelineWidget::onSliderMoved(int position) {
 
 void TimelineWidget::updatePlayPauseButtonText(const QString &text) {
     playPauseButton->setText(text);
+}
+
+void TimelineWidget::keyPressEvent(QKeyEvent *event) {
+    if (event->key() == Qt::Key_Space) {
+        playPauseButton->click();
+    } else {
+        QWidget::keyPressEvent(event);
+    }
 }
