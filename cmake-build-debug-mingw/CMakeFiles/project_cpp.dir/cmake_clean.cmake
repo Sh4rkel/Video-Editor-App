@@ -26,6 +26,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/main.cpp.obj"

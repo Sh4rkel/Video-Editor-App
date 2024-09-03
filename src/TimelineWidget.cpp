@@ -6,12 +6,11 @@
 #include <QUrl>
 #include <QTime>
 #include <QDebug>
-#include <QGraphicsRectItem>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QKeyEvent>
 
-TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0) {
+TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
 
@@ -62,7 +61,8 @@ void TimelineWidget::renderVideos() {
 
     for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
         qint64 duration = mediaPlayer->duration();
-        QGraphicsRectItem *rect = scene->addRect(currentPosition, 0, duration / 1000, 50, QPen(Qt::black), QBrush(Qt::blue));
+        VideoSegmentItem *rect = new VideoSegmentItem(mediaPlayer, currentPosition, 0, duration / 1000, 50);
+        scene->addItem(rect);
         currentPosition += duration / 1000;
     }
 }

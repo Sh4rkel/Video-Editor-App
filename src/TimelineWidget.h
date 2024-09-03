@@ -8,6 +8,7 @@
 #include <QSlider>
 #include <QLabel>
 #include <QPushButton>
+#include "VideoSegmentItem.h"
 
 class TimelineWidget : public QWidget {
     Q_OBJECT
@@ -43,6 +44,7 @@ private:
     QLabel *currentTimeLabel;
     QLabel *totalTimeLabel;
     QPushButton *playPauseButton;
+    QGraphicsRectItem *selectedSegment;
 };
 
-#endif
+#endif // TIMELINEWIDGET_H

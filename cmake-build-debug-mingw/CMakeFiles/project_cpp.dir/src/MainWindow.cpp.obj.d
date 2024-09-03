@@ -451,6 +451,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \

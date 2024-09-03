@@ -442,6 +442,30 @@ src/VideoPlayerWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.s
 .PHONY : src/VideoPlayerWidget.cpp.s
 
+src/VideoSegmentItem.obj: src/VideoSegmentItem.cpp.obj
+.PHONY : src/VideoSegmentItem.obj
+
+# target to build an object file
+src/VideoSegmentItem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj
+.PHONY : src/VideoSegmentItem.cpp.obj
+
+src/VideoSegmentItem.i: src/VideoSegmentItem.cpp.i
+.PHONY : src/VideoSegmentItem.i
+
+# target to preprocess a source file
+src/VideoSegmentItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.i
+.PHONY : src/VideoSegmentItem.cpp.i
+
+src/VideoSegmentItem.s: src/VideoSegmentItem.cpp.s
+.PHONY : src/VideoSegmentItem.s
+
+# target to generate assembly for a file
+src/VideoSegmentItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.s
+.PHONY : src/VideoSegmentItem.cpp.s
+
 src/filehandler.obj: src/filehandler.cpp.obj
 .PHONY : src/filehandler.obj
 
@@ -537,6 +561,9 @@ help:
 	@echo ... src/VideoPlayerWidget.obj
 	@echo ... src/VideoPlayerWidget.i
 	@echo ... src/VideoPlayerWidget.s
+	@echo ... src/VideoSegmentItem.obj
+	@echo ... src/VideoSegmentItem.i
+	@echo ... src/VideoSegmentItem.s
 	@echo ... src/filehandler.obj
 	@echo ... src/filehandler.i
 	@echo ... src/filehandler.s

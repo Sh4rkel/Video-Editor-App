@@ -225,6 +225,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp">
 			<Option target="project_cpp"/>
 		</Unit>

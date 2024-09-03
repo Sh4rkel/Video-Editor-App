@@ -268,6 +268,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
   D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
   D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
@@ -413,6 +414,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
@@ -444,6 +446,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
@@ -462,6 +465,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \

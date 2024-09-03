@@ -44,6 +44,8 @@ add_executable(project_cpp
         src/FilterSettings.h
         src/FilterSettingsDialog.cpp
         src/FilterSettingsDialog.h
+        src/VideoSegmentItem.cpp
+        src/VideoSegmentItem.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

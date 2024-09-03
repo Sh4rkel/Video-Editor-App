@@ -442,6 +442,10 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
@@ -456,9 +460,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtGui/QKeyEvent \
  D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \

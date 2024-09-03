@@ -247,6 +247,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -380,6 +381,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
@@ -405,6 +407,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
@@ -415,6 +418,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \

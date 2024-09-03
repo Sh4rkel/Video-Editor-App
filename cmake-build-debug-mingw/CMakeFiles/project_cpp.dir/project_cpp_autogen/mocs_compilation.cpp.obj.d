@@ -515,6 +515,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \

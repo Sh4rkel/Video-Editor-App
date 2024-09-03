@@ -359,6 +359,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h",
+			"Mu",
+			"UVLADIE3JM/moc_VideoSegmentItem.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h",
 			"Mu",
 			"UVLADIE3JM/moc_filehandler.cpp",
@@ -496,6 +502,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.cpp",
 			"Mu",
 			null
 		],

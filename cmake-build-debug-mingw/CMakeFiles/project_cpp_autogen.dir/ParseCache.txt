@@ -271,6 +271,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
+ mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QObject
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QProcess
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QStringList
@@ -416,6 +417,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h
@@ -447,6 +449,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
@@ -465,6 +468,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h
@@ -1988,6 +1992,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cpp_autogen/moc_predefs.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
+ mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -2121,6 +2126,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h
@@ -2146,6 +2152,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
@@ -2156,6 +2163,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h
@@ -3736,6 +3744,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qyieldcpu.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
@@ -4150,6 +4159,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/Track.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoEditor.h
  mmc:Q_OBJECT
