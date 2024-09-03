@@ -2,15 +2,20 @@
 #define TIMELINEWIDGET_H
 
 #include <QWidget>
-#include "ui_TimelineWidget.h"
 #include <QMediaPlayer>
-class TimelineWidget : public QWidget, private Ui::TimelineWidget {
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QSlider>
+#include <QLabel>
+#include <QPushButton>
+class TimelineWidget : public QWidget {
     Q_OBJECT
 
 public:
     explicit TimelineWidget(QWidget *parent = nullptr);
     void updatePlayPauseButtonText(const QString &text);
     void addVideo(const QString &filePath);
+    void renderVideos();
 
     signals:
         void playPauseClicked();
@@ -28,6 +33,12 @@ private:
     QList<QMediaPlayer*> mediaPlayers;
     qint64 totalDuration;
     qint64 videoDuration;
+    QGraphicsScene *scene;
+    QGraphicsView *view;
+    QSlider *timelineSlider;
+    QLabel *currentTimeLabel;
+    QLabel *totalTimeLabel;
+    QPushButton *playPauseButton;
 };
 
 #endif // TIMELINEWIDGET_H

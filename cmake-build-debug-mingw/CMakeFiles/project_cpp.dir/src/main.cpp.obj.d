@@ -442,37 +442,38 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
@@ -499,7 +500,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \

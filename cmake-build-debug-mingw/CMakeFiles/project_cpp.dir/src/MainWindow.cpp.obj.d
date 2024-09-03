@@ -429,54 +429,45 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
  D:/QT/6.7.2/mingw_64/include/QtCore/qthread.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
@@ -498,11 +489,11 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
@@ -514,14 +505,30 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_MainWindow.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMenu \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenu.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMenuBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenubar.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenu.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
@@ -543,8 +550,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlineedit.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \

@@ -247,8 +247,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
@@ -278,16 +276,10 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qcontiguouscache.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qdatastream.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qendian.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qflags.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qfloat16.h \
@@ -306,7 +298,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qline.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qlogging.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmalloc.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h \
@@ -317,7 +308,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qmetatype.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qminmax.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qnamespace.h \
-  D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qnumeric.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qobject_impl.h \
@@ -385,14 +375,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qfont.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qfontinfo.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qfontmetrics.h \
-  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
-  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
-  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h \
@@ -401,6 +390,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -415,23 +405,21 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
-  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \

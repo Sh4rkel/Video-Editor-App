@@ -6,10 +6,34 @@
 #include <QUrl>
 #include <QTime>
 #include <QDebug>
+#include <QGraphicsRectItem>
+#include <QPushButton>
+#include <QVBoxLayout>
 
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0) {
-    QHBoxLayout *layout = new QHBoxLayout(this);
-    setLayout(layout);
+    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    setLayout(mainLayout);
+
+    scene = new QGraphicsScene(this);
+    view = new QGraphicsView(scene, this);
+    mainLayout->addWidget(view);
+
+    QHBoxLayout *controlLayout = new QHBoxLayout();
+    playPauseButton = new QPushButton("▶️", this);
+    connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
+    controlLayout->addWidget(playPauseButton);
+
+    timelineSlider = new QSlider(Qt::Horizontal, this);
+    connect(timelineSlider, &QSlider::sliderMoved, this, &TimelineWidget::onSliderMoved);
+    controlLayout->addWidget(timelineSlider);
+
+    currentTimeLabel = new QLabel("00:00", this);
+    controlLayout->addWidget(currentTimeLabel);
+
+    totalTimeLabel = new QLabel("00:00", this);
+    controlLayout->addWidget(totalTimeLabel);
+
+    mainLayout->addLayout(controlLayout);
 }
 
 void TimelineWidget::addVideo(const QString &filePath) {
@@ -25,9 +49,21 @@ void TimelineWidget::addVideo(const QString &filePath) {
     connect(mediaPlayer, &QMediaPlayer::durationChanged, this, [this, mediaPlayer](qint64 duration) {
         totalDuration += duration;
         emit setDuration(totalDuration);
+        renderVideos();
     });
 
     connect(mediaPlayer, &QMediaPlayer::positionChanged, this, &TimelineWidget::positionChanged);
+}
+
+void TimelineWidget::renderVideos() {
+    scene->clear();
+    qint64 currentPosition = 0;
+
+    for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
+        qint64 duration = mediaPlayer->duration();
+        QGraphicsRectItem *rect = scene->addRect(currentPosition, 0, duration / 1000, 50, QPen(Qt::black), QBrush(Qt::blue));
+        currentPosition += duration / 1000;
+    }
 }
 
 void TimelineWidget::setDuration(qint64 duration) {

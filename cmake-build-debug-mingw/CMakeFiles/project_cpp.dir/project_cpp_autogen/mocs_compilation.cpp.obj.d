@@ -508,25 +508,13 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h \

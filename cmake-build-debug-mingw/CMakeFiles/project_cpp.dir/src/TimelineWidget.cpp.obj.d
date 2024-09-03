@@ -409,46 +409,9 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_TimelineWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
- D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
@@ -456,13 +419,44 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpicture.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QTime \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
- D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout

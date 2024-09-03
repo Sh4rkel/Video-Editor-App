@@ -107,6 +107,7 @@ void MainWindow::addVideosToTimeline() {
     for (const QString &fileName : fileNames) {
         timelineWidget->addVideo(fileName);
     }
+    timelineWidget->renderVideos();
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
