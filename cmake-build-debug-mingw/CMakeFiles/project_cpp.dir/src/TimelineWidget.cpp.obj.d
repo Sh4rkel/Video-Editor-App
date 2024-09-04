@@ -491,4 +491,5 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsLineItem

@@ -9,6 +9,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QKeyEvent>
+#include <QGraphicsRectItem>
+#include <QGraphicsLineItem>
 
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -34,6 +36,14 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     controlLayout->addWidget(totalTimeLabel);
 
     mainLayout->addLayout(controlLayout);
+
+    background = new QGraphicsRectItem(0, 0, 1000, 50);
+    background->setBrush(QBrush(Qt::lightGray));
+    scene->addItem(background);
+
+    playPositionLine = new QGraphicsLineItem(0, 0, 0, 50);
+    playPositionLine->setPen(QPen(Qt::red, 2));
+    scene->addItem(playPositionLine);
 }
 
 void TimelineWidget::addVideo(const QString &filePath) {
@@ -57,6 +67,8 @@ void TimelineWidget::addVideo(const QString &filePath) {
 
 void TimelineWidget::renderVideos() {
     scene->clear();
+    scene->addItem(background);
+    scene->addItem(playPositionLine);
     qint64 currentPosition = 0;
 
     for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
@@ -79,6 +91,7 @@ void TimelineWidget::setPosition(qint64 position) {
         timelineSlider->setValue(static_cast<int>(position));
     }
     currentTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(static_cast<int>(position)).toString("mm:ss"));
+    playPositionLine->setLine(position / 1000, 0, position / 1000, 50);
 }
 
 void TimelineWidget::onPlayPauseButtonClicked() {

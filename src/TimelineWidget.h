@@ -46,6 +46,8 @@ private:
     QLabel *totalTimeLabel;
     QPushButton *playPauseButton;
     VideoSegmentItem *selectedSegment;
+    QGraphicsRectItem *background;
+    QGraphicsLineItem *playPositionLine;
 };
 
 #endif

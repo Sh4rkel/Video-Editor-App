@@ -415,5 +415,8 @@ CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QBrush \
  D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QPen \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h
