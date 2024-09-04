@@ -10,4 +10,5 @@
 #include "UVLADIE3JM/moc_SpeedWidget.cpp"
 #include "UVLADIE3JM/moc_TimelineWidget.cpp"
 #include "UVLADIE3JM/moc_VideoPlayerWidget.cpp"
+#include "UVLADIE3JM/moc_VideoSegmentItem.cpp"
 #include "UVLADIE3JM/moc_filehandler.cpp"

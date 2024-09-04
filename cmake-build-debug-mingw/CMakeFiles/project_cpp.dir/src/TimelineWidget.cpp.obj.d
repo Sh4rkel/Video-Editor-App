@@ -446,6 +446,8 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
@@ -473,7 +475,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
  D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QSize \

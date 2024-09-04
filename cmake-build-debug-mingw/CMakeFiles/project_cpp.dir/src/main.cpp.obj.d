@@ -468,6 +468,8 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainterpath.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
@@ -479,8 +481,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
  D:/QT/6.7.2/mingw_64/include/QtCore/qthread.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \

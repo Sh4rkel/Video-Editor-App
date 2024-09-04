@@ -248,6 +248,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h \

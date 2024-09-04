@@ -533,5 +533,7 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoSegmentItem.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_filehandler.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h

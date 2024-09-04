@@ -408,8 +408,12 @@ CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsSceneMouseEvent \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicssceneevent.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QBrush \
- D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h
+ D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h

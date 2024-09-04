@@ -62,6 +62,7 @@ void TimelineWidget::renderVideos() {
     for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
         qint64 duration = mediaPlayer->duration();
         VideoSegmentItem *rect = new VideoSegmentItem(mediaPlayer, currentPosition, 0, duration / 1000, 50);
+        connect(rect, &VideoSegmentItem::segmentSelected, this, &TimelineWidget::onSegmentSelected);
         scene->addItem(rect);
         currentPosition += duration / 1000;
     }
@@ -103,4 +104,19 @@ void TimelineWidget::keyPressEvent(QKeyEvent *event) {
     } else {
         QWidget::keyPressEvent(event);
     }
+}
+
+void TimelineWidget::onSegmentSelected(QMediaPlayer *player) {
+    if (selectedSegment) {
+        selectedSegment->deselect();
+    }
+    for (auto *segment : scene->items()) {
+        auto *videoSegment = dynamic_cast<VideoSegmentItem*>(segment);
+        if (videoSegment && videoSegment->getMediaPlayer() == player) {
+            selectedSegment = videoSegment;
+            selectedSegment->select();
+            break;
+        }
+    }
+    setPosition(player->position());
 }

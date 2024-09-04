@@ -30,6 +30,7 @@ public:
     private slots:
         void onPlayPauseButtonClicked();
     void onSliderMoved(int position);
+    void onSegmentSelected(QMediaPlayer *player);
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
