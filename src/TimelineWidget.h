@@ -44,7 +44,7 @@ private:
     QLabel *currentTimeLabel;
     QLabel *totalTimeLabel;
     QPushButton *playPauseButton;
-    QGraphicsRectItem *selectedSegment;
+    VideoSegmentItem *selectedSegment;
 };
 
-#endif // TIMELINEWIDGET_H
+#endif
