@@ -95,7 +95,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
     setupThemeMenu();
-
 }
 
 void MainWindow::addVideosToTimeline() {
