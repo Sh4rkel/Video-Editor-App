@@ -122,10 +122,10 @@ MainWindow::~MainWindow() {
 void MainWindow::openFile() {
     QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (!fileName.isEmpty()) {
-        videoPlayerWidget->loadVideo(fileName);
-        currentVideo = fileName;
+        handleFileSelected(fileName);
     }
 }
+
 
 void MainWindow::saveFile() {
     if (currentVideo.isEmpty()) {
