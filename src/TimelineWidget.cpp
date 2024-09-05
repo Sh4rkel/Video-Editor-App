@@ -12,7 +12,7 @@
 #include <QGraphicsRectItem>
 #include <QGraphicsLineItem>
 
-TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr) {
+TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
 
@@ -92,19 +92,31 @@ void TimelineWidget::setPosition(qint64 position) {
     }
     currentTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(static_cast<int>(position)).toString("mm:ss"));
     playPositionLine->setLine(position / 1000, 0, position / 1000, 50);
+    if (currentMediaPlayer) {
+        currentMediaPlayer->setPosition(position);
+    }
 }
 
 void TimelineWidget::onPlayPauseButtonClicked() {
     if (playPauseButton->text() == "▶️") {
         playPauseButton->setText("⏸️");
+        if (currentMediaPlayer) {
+            currentMediaPlayer->play();
+        }
     } else {
         playPauseButton->setText("▶️");
+        if (currentMediaPlayer) {
+            currentMediaPlayer->pause();
+        }
     }
     emit playPauseClicked();
 }
 
 void TimelineWidget::onSliderMoved(int position) {
     emit positionChanged(position);
+    if (currentMediaPlayer) {
+        currentMediaPlayer->setPosition(position);
+    }
 }
 
 void TimelineWidget::updatePlayPauseButtonText(const QString &text) {
@@ -131,5 +143,6 @@ void TimelineWidget::onSegmentSelected(QMediaPlayer *player) {
             break;
         }
     }
+    currentMediaPlayer = player;
     setPosition(player->position());
 }

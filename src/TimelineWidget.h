@@ -48,6 +48,7 @@ private:
     VideoSegmentItem *selectedSegment;
     QGraphicsRectItem *background;
     QGraphicsLineItem *playPositionLine;
+    QMediaPlayer *currentMediaPlayer;
 };
 
 #endif
