@@ -4,7 +4,7 @@
 #include <QPen>
 #include <QDebug>
 
-VideoSegmentItem::VideoSegmentItem(QMediaPlayer *player, qreal x, qreal y, qreal width, qreal height)
+VideoSegmentItem::VideoSegmentItem(QMediaPlayer *player, qint64 x, qint64 y, qint64 width, qint64 height)
     : QObject(), QGraphicsRectItem(x, y, width, height), mediaPlayer(player), isSelected(false) {
     setBrush(QBrush(Qt::blue));
     setPen(QPen(Qt::black, 2));
