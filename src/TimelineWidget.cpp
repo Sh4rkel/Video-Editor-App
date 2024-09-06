@@ -47,6 +47,7 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 }
 
 void TimelineWidget::addVideo(const QString &filePath) {
+    qDebug() << "Adding video:" << filePath;
     QMediaPlayer *mediaPlayer = new QMediaPlayer(this);
     if (!mediaPlayer) {
         qDebug() << "Failed to create QMediaPlayer";
@@ -57,6 +58,7 @@ void TimelineWidget::addVideo(const QString &filePath) {
     mediaPlayers.append(mediaPlayer);
 
     connect(mediaPlayer, &QMediaPlayer::durationChanged, this, [this, mediaPlayer](qint64 duration) {
+        qDebug() << "Duration changed for" << mediaPlayer << "to" << duration;
         totalDuration += duration;
         emit setDuration(totalDuration);
         renderVideos();
@@ -66,6 +68,7 @@ void TimelineWidget::addVideo(const QString &filePath) {
 }
 
 void TimelineWidget::renderVideos() {
+    qDebug() << "Rendering videos";
     scene->clear();
     scene->addItem(background);
     scene->addItem(playPositionLine);
@@ -73,6 +76,7 @@ void TimelineWidget::renderVideos() {
 
     for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
         qint64 duration = mediaPlayer->duration();
+        qDebug() << "Rendering video segment for" << mediaPlayer << "with duration" << duration;
         VideoSegmentItem *rect = new VideoSegmentItem(mediaPlayer, currentPosition, 0, duration / 1000, 50);
         connect(rect, &VideoSegmentItem::segmentSelected, this, &TimelineWidget::onSegmentSelected);
         scene->addItem(rect);
