@@ -375,7 +375,6 @@ void MainWindow::setupThemeMenu() {
 
 void MainWindow::addOverlayToVideo() {
     if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
         return;
     }
 
