@@ -46,20 +46,20 @@ public:
         retranslateUi(FileHandler);
 
         QMetaObject::connectSlotsByName(FileHandler);
-    } // setupUi
+    } 
 
     void retranslateUi(QWidget *FileHandler)
     {
         FileHandler->setWindowTitle(QCoreApplication::translate("FileHandler", "FileHandler", nullptr));
         addVideoButton->setText(QCoreApplication::translate("FileHandler", "Add Video", nullptr));
-    } // retranslateUi
+    } 
 
 };
 
 namespace Ui {
     class FileHandler: public Ui_FileHandler {};
-} // namespace Ui
+} 
 
 QT_END_NAMESPACE
 
-#endif // UI_FILEHANDLER_H
+#endif 
