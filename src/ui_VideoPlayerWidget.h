@@ -40,14 +40,14 @@ public:
     void retranslateUi(QWidget *VideoPlayerWidget)
     {
         VideoPlayerWidget->setWindowTitle(QCoreApplication::translate("VideoPlayerWidget", "Video Player", nullptr));
-    } // retranslateUi
+    }
 
 };
 
 namespace Ui {
     class VideoPlayerWidget: public Ui_VideoPlayerWidget {};
-} // namespace Ui
+}
 
 QT_END_NAMESPACE
 
-#endif // UI_VIDEOPLAYERWIDGET_H
+#endif 
