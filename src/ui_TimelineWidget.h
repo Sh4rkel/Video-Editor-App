@@ -71,14 +71,14 @@ public:
     void retranslateUi(QWidget *TimelineWidget)
     {
         playPauseButton->setText(QCoreApplication::translate("TimelineWidget", "▶️", nullptr));
-    } // retranslateUi
+    } 
 
 };
 
 namespace Ui {
     class TimelineWidget: public Ui_TimelineWidget {};
-} // namespace Ui
+} 
 
 QT_END_NAMESPACE
 
-#endif // UI_TIMELINEWIDGET_H
+#endif 
