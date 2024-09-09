@@ -273,6 +273,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QPointer
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QProcess
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QStringList
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QThread
@@ -350,6 +351,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpair.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h
@@ -1998,6 +2000,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QObject
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/QPointer
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20functional.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20memory.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/q20type_traits.h
@@ -2067,6 +2070,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qoverload.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpair.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qrefcount.h

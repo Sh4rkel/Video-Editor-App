@@ -10,6 +10,7 @@
 #include <QPushButton>
 #include <QToolBar>
 #include <QStatusBar>
+#include <QPointer>
 #include "VideoSegmentItem.h"
 
 class TimelineWidget : public QWidget {
@@ -38,7 +39,7 @@ protected:
     void keyPressEvent(QKeyEvent *event) override;
 
 private:
-    QList<QMediaPlayer*> mediaPlayers;
+    QList<QPointer<QMediaPlayer>> mediaPlayers;
     qint64 totalDuration;
     qint64 videoDuration;
     QGraphicsScene *scene;
@@ -50,7 +51,7 @@ private:
     VideoSegmentItem *selectedSegment;
     QGraphicsRectItem *background;
     QGraphicsLineItem *playPositionLine;
-    QMediaPlayer *currentMediaPlayer;
+    QPointer<QMediaPlayer> currentMediaPlayer;
     QToolBar *toolBar;
     QStatusBar *statusBar;
 };

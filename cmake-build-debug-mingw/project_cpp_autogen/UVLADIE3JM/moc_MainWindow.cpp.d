@@ -270,6 +270,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+  D:/QT/6.7.2/mingw_64/include/QtCore/QPointer \
   D:/QT/6.7.2/mingw_64/include/QtCore/QProcess \
   D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
   D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
@@ -347,6 +348,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtCore/qoverload.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qpair.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h \
+  D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qprocess.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qprocessordetection.h \
   D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \

@@ -16,6 +16,7 @@
 #include <QAction>
 #include <QIcon>
 #include <QFileDialog>
+
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
@@ -75,7 +76,7 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
 void TimelineWidget::addVideo(const QString &filePath) {
     qDebug() << "Adding video:" << filePath;
-    QMediaPlayer *mediaPlayer = new QMediaPlayer(this);
+    QPointer<QMediaPlayer> mediaPlayer = new QMediaPlayer(this);
     if (!mediaPlayer) {
         qDebug() << "Failed to create QMediaPlayer";
         return;
@@ -101,7 +102,8 @@ void TimelineWidget::renderVideos() {
     scene->addItem(playPositionLine);
     qint64 currentPosition = 0;
 
-    for (QMediaPlayer *mediaPlayer : std::as_const(mediaPlayers)) {
+    for (QPointer<QMediaPlayer> mediaPlayer : std::as_const(mediaPlayers)) {
+        if (!mediaPlayer) continue;
         qint64 duration = mediaPlayer->duration();
         qDebug() << "Rendering video segment for" << mediaPlayer << "with duration" << duration;
         VideoSegmentItem *rect = new VideoSegmentItem(mediaPlayer, currentPosition, 0, duration / 1000, 50);
