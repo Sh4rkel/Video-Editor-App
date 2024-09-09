@@ -126,7 +126,6 @@ void MainWindow::openFile() {
     }
 }
 
-
 void MainWindow::saveFile() {
     if (currentVideo.isEmpty()) {
         QMessageBox::warning(this, "Warning", "No video file is currently loaded.");

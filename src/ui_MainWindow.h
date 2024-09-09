@@ -92,14 +92,14 @@ public:
         saveAction->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         cutAction->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
         combineAction->setText(QCoreApplication::translate("MainWindow", "Combine", nullptr));
-    } // retranslateUi
+    } 
 
 };
 
 namespace Ui {
     class MainWindow: public Ui_MainWindow {};
-} // namespace Ui
+} 
 
 QT_END_NAMESPACE
 
-#endif // UI_MAINWINDOW_H
+#endif 
