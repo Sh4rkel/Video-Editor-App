@@ -8,6 +8,8 @@
 #include <QSlider>
 #include <QLabel>
 #include <QPushButton>
+#include <QToolBar>
+#include <QStatusBar>
 #include "VideoSegmentItem.h"
 
 class TimelineWidget : public QWidget {
@@ -49,6 +51,8 @@ private:
     QGraphicsRectItem *background;
     QGraphicsLineItem *playPositionLine;
     QMediaPlayer *currentMediaPlayer;
+    QToolBar *toolBar;
+    QStatusBar *statusBar;
 };
 
 #endif

@@ -442,6 +442,10 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
@@ -492,4 +496,23 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsLineItem
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsLineItem \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QAction \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qaction.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qfile.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qfiledevice.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qfileinfo.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qtimezone.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h

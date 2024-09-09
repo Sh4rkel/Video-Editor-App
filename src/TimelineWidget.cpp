@@ -11,10 +11,34 @@
 #include <QKeyEvent>
 #include <QGraphicsRectItem>
 #include <QGraphicsLineItem>
-
+#include <QToolBar>
+#include <QStatusBar>
+#include <QAction>
+#include <QIcon>
+#include <QFileDialog>
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
+
+    toolBar = new QToolBar(this);
+    QAction *addVideoAction = new QAction(QIcon(":/icons/add.png"), "Add Video", this);
+    connect(addVideoAction, &QAction::triggered, this, [this]() {
+        QString filePath = QFileDialog::getOpenFileName(this, "Open Video File", "", "Video Files (*.mp4 *.avi *.mkv *.mov)");
+        if (!filePath.isEmpty()) {
+            addVideo(filePath);
+        }
+    });
+    toolBar->addAction(addVideoAction);
+
+    QAction *playAction = new QAction(QIcon(":/icons/play.png"), "Play", this);
+    connect(playAction, &QAction::triggered, this, &TimelineWidget::onPlayPauseButtonClicked);
+    toolBar->addAction(playAction);
+
+    QAction *pauseAction = new QAction(QIcon(":/icons/pause.png"), "Pause", this);
+    connect(pauseAction, &QAction::triggered, this, &TimelineWidget::onPlayPauseButtonClicked);
+    toolBar->addAction(pauseAction);
+
+    mainLayout->addWidget(toolBar);
 
     scene = new QGraphicsScene(this);
     view = new QGraphicsView(scene, this);
@@ -44,6 +68,9 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     playPositionLine = new QGraphicsLineItem(0, 0, 0, 50);
     playPositionLine->setPen(QPen(Qt::red, 2));
     scene->addItem(playPositionLine);
+
+    statusBar = new QStatusBar(this);
+    mainLayout->addWidget(statusBar);
 }
 
 void TimelineWidget::addVideo(const QString &filePath) {

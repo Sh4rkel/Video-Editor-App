@@ -457,6 +457,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h
@@ -483,10 +485,12 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -2159,6 +2163,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h
@@ -2172,6 +2178,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h
+ mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h

@@ -515,6 +515,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \

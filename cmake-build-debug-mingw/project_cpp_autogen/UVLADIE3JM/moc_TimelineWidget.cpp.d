@@ -414,6 +414,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -427,6 +429,8 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

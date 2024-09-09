@@ -451,6 +451,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
@@ -530,7 +534,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenu.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
