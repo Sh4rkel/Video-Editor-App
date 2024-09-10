@@ -16,6 +16,7 @@
 #include <QAction>
 #include <QIcon>
 #include <QFileDialog>
+#include <QMessageBox>
 
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -79,24 +80,22 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 }
 
 void TimelineWidget::addVideo(const QString &filePath) {
-    qDebug() << "Adding video:" << filePath;
     QPointer<QMediaPlayer> mediaPlayer = new QMediaPlayer(this);
-    if (!mediaPlayer) {
-        qDebug() << "Failed to create QMediaPlayer";
-        return;
-    }
-
     mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
-    mediaPlayers.append(mediaPlayer);
-
-    connect(mediaPlayer, &QMediaPlayer::durationChanged, this, [this, mediaPlayer](qint64 duration) {
-        qDebug() << "Duration changed for" << mediaPlayer << "to" << duration;
-        totalDuration += duration;
-        emit setDuration(totalDuration);
-        renderVideos();
+    connect(mediaPlayer, &QMediaPlayer::mediaStatusChanged, this, [this, mediaPlayer](QMediaPlayer::MediaStatus status) {
+        if (status == QMediaPlayer::LoadedMedia) {
+            VideoSegmentItem *segment = new VideoSegmentItem(mediaPlayer, 0, 0, mediaPlayer->duration() / 1000, 50);
+            scene->addItem(segment);
+            mediaPlayers.append(mediaPlayer);
+            totalDuration += mediaPlayer->duration();
+            timelineSlider->setMaximum(totalDuration);
+            totalTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(totalDuration).toString("hh:mm:ss"));
+        } else if (status == QMediaPlayer::InvalidMedia) {
+            QMessageBox::warning(this, tr("Error"), tr("Failed to load video: %1").arg(mediaPlayer->errorString()));
+            mediaPlayer->deleteLater();
+        }
     });
-
-    connect(mediaPlayer, &QMediaPlayer::positionChanged, this, &TimelineWidget::positionChanged);
+    mediaPlayer->setPosition(0);
 }
 
 void TimelineWidget::renderVideos() {

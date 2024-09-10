@@ -104,7 +104,11 @@ void MainWindow::addVideosToTimeline() {
     }
 
     for (const QString &fileName : fileNames) {
-        timelineWidget->addVideo(fileName);
+        try {
+            timelineWidget->addVideo(fileName);
+        } catch (const std::exception &e) {
+            QMessageBox::critical(this, tr("Error"), tr("Failed to add video: %1").arg(e.what()));
+        }
     }
     timelineWidget->renderVideos();
 }

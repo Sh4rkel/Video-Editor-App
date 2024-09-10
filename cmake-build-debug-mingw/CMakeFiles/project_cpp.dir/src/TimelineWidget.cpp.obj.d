@@ -517,4 +517,7 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qfileinfo.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qtimezone.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h

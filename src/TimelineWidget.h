@@ -55,6 +55,7 @@ private:
     QPointer<QMediaPlayer> currentMediaPlayer;
     QToolBar *toolBar;
     QStatusBar *statusBar;
+    QPointer<QMediaPlayer> mediaPlayer;
 };
 
 #endif

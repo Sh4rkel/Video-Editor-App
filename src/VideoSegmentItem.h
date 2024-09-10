@@ -9,7 +9,7 @@ class VideoSegmentItem : public QObject, public QGraphicsRectItem {
     Q_OBJECT
 
 public:
-    VideoSegmentItem(QMediaPlayer *player, qint64 x, qint64 y, qint64 width, qint64 height);
+    VideoSegmentItem(QMediaPlayer *player, qint64 x, qint64 y, qint64 width, qint64 height, QGraphicsItem *parent = nullptr);
 
     void select();
     void deselect();

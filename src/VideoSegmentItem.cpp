@@ -4,13 +4,9 @@
 #include <QPen>
 #include <QDebug>
 
-VideoSegmentItem::VideoSegmentItem(QMediaPlayer *player, qint64 x, qint64 y, qint64 width, qint64 height)
-    : QObject(), QGraphicsRectItem(x, y, width, height), mediaPlayer(player), isSelected(false) {
+VideoSegmentItem::VideoSegmentItem(QMediaPlayer *player, qint64 x, qint64 y, qint64 width, qint64 height, QGraphicsItem *parent)
+    : QGraphicsRectItem(x, y, width, height, parent), mediaPlayer(player) {
     setBrush(QBrush(Qt::blue));
-    setPen(QPen(Qt::black, 2));
-    if (!mediaPlayer) {
-        qDebug() << "Error: QMediaPlayer is null in VideoSegmentItem constructor";
-    }
 }
 
 void VideoSegmentItem::select() {
