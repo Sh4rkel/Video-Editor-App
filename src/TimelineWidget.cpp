@@ -31,6 +31,10 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     });
     toolBar->addAction(addVideoAction);
 
+    QAction *addVideosAction = new QAction(QIcon(":/icons/add_multiple.png"), "Add Multiple Videos", this);
+    connect(addVideosAction, &QAction::triggered, this, &TimelineWidget::onAddVideosButtonClicked);
+    toolBar->addAction(addVideosAction);
+
     QAction *playAction = new QAction(QIcon(":/icons/play.png"), "Play", this);
     connect(playAction, &QAction::triggered, this, &TimelineWidget::onPlayPauseButtonClicked);
     toolBar->addAction(playAction);
@@ -178,4 +182,16 @@ void TimelineWidget::onSegmentSelected(QMediaPlayer *player) {
     }
     currentMediaPlayer = player;
     setPosition(player->position());
+}
+
+void TimelineWidget::onAddVideosButtonClicked() {
+    QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (fileNames.isEmpty()) {
+        return;
+    }
+
+    for (const QString &fileName : fileNames) {
+        addVideo(fileName);
+    }
+    renderVideos();
 }

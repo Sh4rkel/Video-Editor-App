@@ -34,6 +34,7 @@ public:
         void onPlayPauseButtonClicked();
     void onSliderMoved(int position);
     void onSegmentSelected(QMediaPlayer *player);
+    void onAddVideosButtonClicked();
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
