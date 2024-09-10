@@ -403,6 +403,23 @@ void MainWindow::applyCustomStyle() {
             background-color: #3E3E3E;
             color: #FFFFFF;
         }
+        QLineEdit {
+            background-color: #5E5E5E;
+            color: #FFFFFF;
+            border: 1px solid #7E7E7E;
+            padding: 5px;
+        }
+        QLineEdit:focus {
+            border: 1px solid #9E9E9E;
+        }
+        QInputDialog {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QMessageBox {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
     )";
     qApp->setStyleSheet(styleSheet);
 }
