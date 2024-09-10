@@ -38,7 +38,7 @@ public:
     void applyPurpleNouncesTheme();
     void setupThemeMenu();
     void addVideosToTimeline();
-
+    void applyCustomStyle();
 private:
     Ui::MainWindow *ui;
     VideoPlayerWidget *videoPlayerWidget;

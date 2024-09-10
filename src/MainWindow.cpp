@@ -348,6 +348,65 @@ void MainWindow::applyBlueTheme() {
     qApp->setStyleSheet(styleSheet);
 }
 
+void MainWindow::applyCustomStyle() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QMenuBar {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QMenuBar::item {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QMenuBar::item:selected {
+            background-color: #5E5E5E;
+        }
+        QMenu {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QToolBar {
+            background-color: #3E3E3E;
+            border: 1px solid #5E5E5E;
+        }
+        QPushButton {
+            background-color: #5E5E5E;
+            color: #FFFFFF;
+            border: 1px solid #7E7E7E;
+            padding: 5px;
+        }
+        QPushButton:hover {
+            background-color: #7E7E7E;
+        }
+        QSlider::groove:horizontal {
+            border: 1px solid #5E5E5E;
+            height: 8px;
+            background: #3E3E3E;
+        }
+        QSlider::handle:horizontal {
+            background: #5E5E5E;
+            border: 1px solid #7E7E7E;
+            width: 18px;
+            margin: -2px 0;
+        }
+        QLabel {
+            color: #FFFFFF;
+        }
+        QGraphicsView {
+            border: 1px solid #5E5E5E;
+        }
+        QStatusBar {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
 void MainWindow::setupThemeMenu() {
     themeMenu = menuBar->addMenu(tr("&Theme"));
 
@@ -370,6 +429,10 @@ void MainWindow::setupThemeMenu() {
     QAction *blueThemeAction = new QAction(tr("Blue Theme"), this);
     connect(blueThemeAction, &QAction::triggered, this, &MainWindow::applyBlueTheme);
     themeMenu->addAction(blueThemeAction);
+
+    QAction *customStyleAction = new QAction(tr("Custom Style"), this);
+    connect(customStyleAction, &QAction::triggered, this, &MainWindow::applyCustomStyle);
+    themeMenu->addAction(customStyleAction);
 }
 
 void MainWindow::addOverlayToVideo() {
