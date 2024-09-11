@@ -53,6 +53,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     mainLayout->addLayout(controlLayout);
 
+    progressBar = new QProgressBar(this);
+    progressBar->setRange(0, 100);
+    progressBar->setValue(0);
+    mainLayout->addWidget(progressBar);
+
     connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
@@ -164,6 +169,10 @@ void MainWindow::saveFile() {
     ffmpegHandler->convertVideoFormat(currentVideo, outputVideo, format);
 }
 
+void MainWindow::updateProgressBar(qint64 value) {
+    progressBar->setValue(value);
+}
+
 void MainWindow::cutVideo() {
     if (currentVideo.isEmpty()) {
         QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
@@ -179,6 +188,11 @@ void MainWindow::cutVideo() {
     QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Cut Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (outputVideo.isEmpty()) {
         return;
+    }
+
+    for (int i = 0; i <= 100; ++i) {
+        QThread::msleep(50);
+        updateProgressBar(i);
     }
 
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);

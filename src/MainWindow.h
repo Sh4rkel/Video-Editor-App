@@ -9,6 +9,7 @@
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
 #include "SpeedWidget.h"
+#include <QProgressBar>
 
 namespace Ui {
     class MainWindow;
@@ -39,6 +40,7 @@ public:
     void setupThemeMenu();
     void addVideosToTimeline();
     void applyCustomStyle();
+    void updateProgressBar(qint64 duration);
 private:
     Ui::MainWindow *ui;
     VideoPlayerWidget *videoPlayerWidget;
@@ -53,6 +55,7 @@ private:
     QAction *combineAction;
     QAction *addTextAction;
     QAction *addOverlayAction;
+    QProgressBar *progressBar;
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;

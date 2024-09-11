@@ -454,6 +454,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QProgressBar \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
@@ -479,6 +480,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qprogressbar.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
