@@ -433,6 +433,14 @@ void MainWindow::applyCustomStyle() {
         QLineEdit:focus {
             border: 1px solid #9E9E9E;
         }
+        QDialog {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QDialogButtonBox {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
         QInputDialog {
             background-color: #2E2E2E;
             color: #FFFFFF;
