@@ -11,6 +11,7 @@
 #include "FFmpegWorker.h"
 #include "SpeedDialog.h"
 #include "VideoPlayerWidget.h"
+#include <QShortcut>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -93,6 +94,21 @@ MainWindow::MainWindow(QWidget *parent) :
     videoMenu->addAction(addVideosAction);
 
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
+
+    QShortcut *cutShortcut = new QShortcut(QKeySequence("Ctrl+X"), this);
+    connect(cutShortcut, &QShortcut::activated, this, &MainWindow::cutVideo);
+
+    QShortcut *combineShortcut = new QShortcut(QKeySequence("Ctrl+M"), this);
+    connect(combineShortcut, &QShortcut::activated, this, &MainWindow::combineVideos);
+
+    QShortcut *addTextShortcut = new QShortcut(QKeySequence("Ctrl+T"), this);
+    connect(addTextShortcut, &QShortcut::activated, this, &MainWindow::addTextToVideo);
+
+    QShortcut *addOverlayShortcut = new QShortcut(QKeySequence("Ctrl+O"), this);
+    connect(addOverlayShortcut, &QShortcut::activated, this, &MainWindow::addOverlayToVideo);
+
+    QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
+    connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
 
     setupThemeMenu();
 }
