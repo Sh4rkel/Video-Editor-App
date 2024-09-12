@@ -41,6 +41,8 @@ public:
     void addVideosToTimeline();
     void applyCustomStyle();
     void updateProgressBar(qint64 duration);
+    void openSettings();
+
 private:
     Ui::MainWindow *ui;
     VideoPlayerWidget *videoPlayerWidget;
@@ -59,6 +61,7 @@ private:
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
+    QMenu *settingsMenu;
     QMediaPlayer *mediaPlayer;
     QVideoWidget *videoWidget;
     FileHandler *fileHandler;

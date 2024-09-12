@@ -122,6 +122,13 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
 
     setupThemeMenu();
+
+    settingsMenu = new QMenu(tr("Settings"), this);
+    menuBar->addMenu(settingsMenu);
+
+    QAction *settingsAction = new QAction(tr("Settings"), this);
+    connect(settingsAction, &QAction::triggered, this, &MainWindow::openSettings);
+    settingsMenu->addAction(settingsAction);
 }
 
 void MainWindow::addVideosToTimeline() {
@@ -174,6 +181,10 @@ void MainWindow::saveFile() {
     }
 
     ffmpegHandler->convertVideoFormat(currentVideo, outputVideo, format);
+}
+
+void MainWindow::openSettings() {
+    QMessageBox::information(this, tr("Settings"), tr("Settings dialog opened."));
 }
 
 void MainWindow::updateProgressBar(qint64 value) {
