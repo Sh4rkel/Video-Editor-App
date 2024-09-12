@@ -524,6 +524,7 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FileManager.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QStringList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstringlist.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\SettingsDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QProgressBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qprogressbar.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \

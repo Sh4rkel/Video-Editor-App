@@ -264,6 +264,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
+  C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
   C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \

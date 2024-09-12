@@ -6,6 +6,7 @@
 #include "UVLADIE3JM/moc_FilterSettings.cpp"
 #include "UVLADIE3JM/moc_FilterSettingsDialog.cpp"
 #include "UVLADIE3JM/moc_MainWindow.cpp"
+#include "UVLADIE3JM/moc_SettingsDialog.cpp"
 #include "UVLADIE3JM/moc_SpeedDialog.cpp"
 #include "UVLADIE3JM/moc_SpeedWidget.cpp"
 #include "UVLADIE3JM/moc_TimelineWidget.cpp"

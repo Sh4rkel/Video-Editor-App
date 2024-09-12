@@ -9,6 +9,7 @@
 #include "FFmpegHandler.h"
 #include "FileHandler.h"
 #include "SpeedWidget.h"
+#include "SettingsDialog.h"
 #include <QProgressBar>
 
 namespace Ui {
@@ -49,6 +50,7 @@ private:
     TimelineWidget *timelineWidget;
     SpeedDialog *speedDialog;
     SpeedWidget *speedWidget;
+    SettingsDialog *settingsDialog;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
     QAction *openAction;

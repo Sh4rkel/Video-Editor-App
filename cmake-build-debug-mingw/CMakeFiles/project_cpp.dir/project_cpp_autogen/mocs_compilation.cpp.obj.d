@@ -531,8 +531,11 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidgetItem \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QProgressBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qprogressbar.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SettingsDialog.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedDialog.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_SpeedWidget.cpp \

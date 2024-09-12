@@ -23,7 +23,8 @@ MainWindow::MainWindow(QWidget *parent) :
     speedWidget(new SpeedWidget(this)),
     fileHandler(new FileHandler(this)),
     darkModeEnabled(true),
-    currentVideo("")
+    currentVideo(""),
+    settingsDialog(new SettingsDialog(this))
 {
     ui->setupUi(this);
 

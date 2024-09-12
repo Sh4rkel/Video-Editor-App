@@ -346,6 +346,30 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/SettingsDialog.obj: src/SettingsDialog.cpp.obj
+.PHONY : src/SettingsDialog.obj
+
+# target to build an object file
+src/SettingsDialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj
+.PHONY : src/SettingsDialog.cpp.obj
+
+src/SettingsDialog.i: src/SettingsDialog.cpp.i
+.PHONY : src/SettingsDialog.i
+
+# target to preprocess a source file
+src/SettingsDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.i
+.PHONY : src/SettingsDialog.cpp.i
+
+src/SettingsDialog.s: src/SettingsDialog.cpp.s
+.PHONY : src/SettingsDialog.s
+
+# target to generate assembly for a file
+src/SettingsDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.s
+.PHONY : src/SettingsDialog.cpp.s
+
 src/SpeedDialog.obj: src/SpeedDialog.cpp.obj
 .PHONY : src/SpeedDialog.obj
 
@@ -549,6 +573,9 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
+	@echo ... src/SettingsDialog.obj
+	@echo ... src/SettingsDialog.i
+	@echo ... src/SettingsDialog.s
 	@echo ... src/SpeedDialog.obj
 	@echo ... src/SpeedDialog.i
 	@echo ... src/SpeedDialog.s

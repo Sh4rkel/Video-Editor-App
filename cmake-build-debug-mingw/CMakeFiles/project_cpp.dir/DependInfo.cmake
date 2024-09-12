@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp" "CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp" "CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp" "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj.d"
+  "C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.cpp" "CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp" "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp" "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"

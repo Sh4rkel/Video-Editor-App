@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
