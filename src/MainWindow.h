@@ -59,6 +59,8 @@ private:
     QMenuBar *menuBar;
     QMenu *videoMenu;
     QMenu *themeMenu;
+    QMediaPlayer *mediaPlayer;
+    QVideoWidget *videoWidget;
     FileHandler *fileHandler;
     bool darkModeEnabled;
 };

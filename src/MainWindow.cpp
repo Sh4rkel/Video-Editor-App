@@ -58,6 +58,11 @@ MainWindow::MainWindow(QWidget *parent) :
     progressBar->setValue(0);
     mainLayout->addWidget(progressBar);
 
+    mediaPlayer = new QMediaPlayer(this);
+    videoWidget = new QVideoWidget(this);
+    mainLayout->addWidget(videoWidget);
+    mediaPlayer->setVideoOutput(videoWidget);
+
     connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
@@ -138,6 +143,8 @@ void MainWindow::addVideosToTimeline() {
 void MainWindow::handleFileSelected(const QString &filePath) {
     currentVideo = filePath;
     videoPlayerWidget->loadVideo(filePath);
+    mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+    mediaPlayer->play();
 }
 
 MainWindow::~MainWindow() {
