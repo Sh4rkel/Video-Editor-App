@@ -23,6 +23,7 @@ public:
     signals:
         void commandFinished();
     void commandError(const QString &error);
+    void progressUpdated(int progress);
 
     private slots:
         void handleWorkerFinished();
@@ -31,6 +32,7 @@ public:
 private:
     QThread workerThread;
     FFmpegWorker *worker;
+    void simulateProgress();
 };
 
 #endif 

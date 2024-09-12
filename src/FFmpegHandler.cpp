@@ -41,6 +41,7 @@ void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &ou
               << "-to" << QString::number(end / 1000.0)
               << "-c" << "copy" << outputVideo;
     executeFFmpegCommand(arguments);
+    simulateProgress();
 }
 
 void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo) {
@@ -52,6 +53,7 @@ void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &vide
               << "-map" << "[outa]"
               << outputVideo;
     executeFFmpegCommand(arguments);
+    simulateProgress();
 }
 
 void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y) {
@@ -60,6 +62,7 @@ void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &out
               << "-vf" << QString("drawtext=text='%1':x=%2:y=%3").arg(text).arg(x).arg(y)
               << outputVideo;
     executeFFmpegCommand(arguments);
+    simulateProgress();
 }
 
 void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y) {
@@ -69,6 +72,14 @@ void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &
               << "-filter_complex" << QString("overlay=%1:%2").arg(x).arg(y)
               << outputVideo;
     executeFFmpegCommand(arguments);
+    simulateProgress();
+}
+
+void FFmpegHandler::simulateProgress() {
+    for (int i = 0; i <= 100; ++i) {
+        QThread::msleep(50);
+        emit progressUpdated(i);
+    }
 }
 
 void FFmpegHandler::handleWorkerFinished() {

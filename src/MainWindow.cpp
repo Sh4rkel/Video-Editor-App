@@ -190,11 +190,6 @@ void MainWindow::cutVideo() {
         return;
     }
 
-    for (int i = 0; i <= 100; ++i) {
-        QThread::msleep(50);
-        updateProgressBar(i);
-    }
-
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);
 }
 

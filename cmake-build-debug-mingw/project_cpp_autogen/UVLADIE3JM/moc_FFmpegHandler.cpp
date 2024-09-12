@@ -40,6 +40,8 @@ constexpr auto qt_meta_stringdata_CLASSFFmpegHandlerENDCLASS = QtMocHelpers::str
     "",
     "commandError",
     "error",
+    "progressUpdated",
+    "progress",
     "handleWorkerFinished",
     "handleWorkerError"
 );
@@ -54,24 +56,26 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFFmpegHandlerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       2,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    1 /* Public */,
-       3,    1,   39,    2, 0x06,    2 /* Public */,
+       1,    0,   44,    2, 0x06,    1 /* Public */,
+       3,    1,   45,    2, 0x06,    2 /* Public */,
+       5,    1,   48,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   42,    2, 0x08,    4 /* Private */,
-       6,    1,   43,    2, 0x08,    5 /* Private */,
+       7,    0,   51,    2, 0x08,    6 /* Private */,
+       8,    1,   52,    2, 0x08,    7 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::Int,    6,
 
  // slots: parameters
     QMetaType::Void,
@@ -94,6 +98,9 @@ Q_CONSTINIT const QMetaObject FFmpegHandler::staticMetaObject = { {
         // method 'commandError'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'progressUpdated'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'handleWorkerFinished'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleWorkerError'
@@ -111,8 +118,9 @@ void FFmpegHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->commandFinished(); break;
         case 1: _t->commandError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->handleWorkerFinished(); break;
-        case 3: _t->handleWorkerError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->progressUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->handleWorkerFinished(); break;
+        case 4: _t->handleWorkerError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -128,6 +136,13 @@ void FFmpegHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             using _t = void (FFmpegHandler::*)(const QString & );
             if (_t _q_method = &FFmpegHandler::commandError; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (FFmpegHandler::*)(int );
+            if (_t _q_method = &FFmpegHandler::progressUpdated; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
                 return;
             }
         }
@@ -153,13 +168,13 @@ int FFmpegHandler::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }
@@ -175,5 +190,12 @@ void FFmpegHandler::commandError(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void FFmpegHandler::progressUpdated(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 QT_WARNING_POP
