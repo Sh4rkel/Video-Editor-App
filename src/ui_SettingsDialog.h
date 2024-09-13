@@ -2,8 +2,7 @@
 #define UI_SETTINGSDIALOG_H
 
 #include <QDialog>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
+#include <QFormLayout>
 #include <QPushButton>
 #include <QCheckBox>
 #include <QLabel>
@@ -15,7 +14,7 @@ QT_BEGIN_NAMESPACE
 
 class Ui_SettingsDialog {
 public:
-    QVBoxLayout *verticalLayout;
+    QFormLayout *formLayout;
     QHBoxLayout *buttonLayout;
     QPushButton *okButton;
     QPushButton *cancelButton;
@@ -34,54 +33,44 @@ public:
             SettingsDialog->setObjectName(QString::fromUtf8("SettingsDialog"));
         SettingsDialog->resize(400, 400);
 
-        verticalLayout = new QVBoxLayout(SettingsDialog);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        formLayout = new QFormLayout(SettingsDialog);
+        formLayout->setObjectName(QString::fromUtf8("formLayout"));
 
         settingsLabel = new QLabel(SettingsDialog);
         settingsLabel->setObjectName(QString::fromUtf8("settingsLabel"));
         settingsLabel->setText("Settings");
-        verticalLayout->addWidget(settingsLabel);
+        formLayout->addRow(settingsLabel);
 
         darkModeCheckBox = new QCheckBox(SettingsDialog);
         darkModeCheckBox->setObjectName(QString::fromUtf8("darkModeCheckBox"));
         darkModeCheckBox->setText("Enable Dark Mode");
-        verticalLayout->addWidget(darkModeCheckBox);
+        formLayout->addRow(darkModeCheckBox);
 
         volumeLabel = new QLabel(SettingsDialog);
         volumeLabel->setObjectName(QString::fromUtf8("volumeLabel"));
         volumeLabel->setText("Volume");
-        verticalLayout->addWidget(volumeLabel);
-
-        volumeSlider = new QSlider(SettingsDialog);
+        formLayout->addRow(volumeLabel, volumeSlider = new QSlider(Qt::Horizontal, SettingsDialog));
         volumeSlider->setObjectName(QString::fromUtf8("volumeSlider"));
-        volumeSlider->setOrientation(Qt::Horizontal);
         volumeSlider->setRange(0, 100);
-        verticalLayout->addWidget(volumeSlider);
 
         themeLabel = new QLabel(SettingsDialog);
         themeLabel->setObjectName(QString::fromUtf8("themeLabel"));
         themeLabel->setText("Theme");
-        verticalLayout->addWidget(themeLabel);
-
-        themeComboBox = new QComboBox(SettingsDialog);
+        formLayout->addRow(themeLabel, themeComboBox = new QComboBox(SettingsDialog));
         themeComboBox->setObjectName(QString::fromUtf8("themeComboBox"));
         themeComboBox->addItems({"Light", "Dark", "Blue", "Green"});
-        verticalLayout->addWidget(themeComboBox);
 
         qualityLabel = new QLabel(SettingsDialog);
         qualityLabel->setObjectName(QString::fromUtf8("qualityLabel"));
         qualityLabel->setText("Video Quality");
-        verticalLayout->addWidget(qualityLabel);
-
-        qualityComboBox = new QComboBox(SettingsDialog);
+        formLayout->addRow(qualityLabel, qualityComboBox = new QComboBox(SettingsDialog));
         qualityComboBox->setObjectName(QString::fromUtf8("qualityComboBox"));
         qualityComboBox->addItems({"Low", "Medium", "High"});
-        verticalLayout->addWidget(qualityComboBox);
 
         subtitlesCheckBox = new QCheckBox(SettingsDialog);
         subtitlesCheckBox->setObjectName(QString::fromUtf8("subtitlesCheckBox"));
         subtitlesCheckBox->setText("Enable Subtitles");
-        verticalLayout->addWidget(subtitlesCheckBox);
+        formLayout->addRow(subtitlesCheckBox);
 
         buttonLayout = new QHBoxLayout();
         buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
@@ -96,7 +85,7 @@ public:
         cancelButton->setText("Cancel");
         buttonLayout->addWidget(cancelButton);
 
-        verticalLayout->addLayout(buttonLayout);
+        formLayout->addRow(buttonLayout);
 
         retranslateUi(SettingsDialog);
 

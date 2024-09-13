@@ -411,13 +411,14 @@ CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_SettingsDialog.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QFormLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qformlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
