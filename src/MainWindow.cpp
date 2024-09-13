@@ -186,15 +186,20 @@ void MainWindow::saveFile() {
 
 void MainWindow::openSettings() {
     if (settingsDialog->exec() == QDialog::Accepted) {
-        if (settingsDialog->isDarkModeEnabled()) {
+        QString theme = settingsDialog->getTheme();
+        if (theme == "Dark") {
             applyDarkTheme();
-        } else {
+        } else if (theme == "Light") {
             applyLightTheme();
+        } else if (theme == "Blue") {
+            applyBlueTheme();
+        } else if (theme == "Green") {
+            applyGreenTheme();
+        } else {
+            applyCustomStyle();
         }
 
         int volume = settingsDialog->getVolume();
-
-        QString theme = settingsDialog->getTheme();
 
         QString quality = settingsDialog->getVideoQuality();
 
