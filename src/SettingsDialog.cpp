@@ -16,12 +16,25 @@ SettingsDialog::~SettingsDialog() {
 }
 
 void SettingsDialog::applySettings() {
-    bool darkModeEnabled = ui->darkModeCheckBox->isChecked();
-    int volume = ui->volumeSlider->value();
-    QString theme = ui->themeComboBox->currentText();
     accept();
 }
 
 bool SettingsDialog::isDarkModeEnabled() const {
     return ui->darkModeCheckBox->isChecked();
+}
+
+int SettingsDialog::getVolume() const {
+    return ui->volumeSlider->value();
+}
+
+QString SettingsDialog::getTheme() const {
+    return ui->themeComboBox->currentText();
+}
+
+QString SettingsDialog::getVideoQuality() const {
+    return ui->qualityComboBox->currentText();
+}
+
+bool SettingsDialog::isSubtitlesEnabled() const {
+    return ui->subtitlesCheckBox->isChecked();
 }

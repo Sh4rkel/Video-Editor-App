@@ -191,6 +191,14 @@ void MainWindow::openSettings() {
         } else {
             applyLightTheme();
         }
+
+        int volume = settingsDialog->getVolume();
+
+        QString theme = settingsDialog->getTheme();
+
+        QString quality = settingsDialog->getVideoQuality();
+
+        bool subtitlesEnabled = settingsDialog->isSubtitlesEnabled();
     }
 }
 

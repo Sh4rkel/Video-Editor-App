@@ -15,6 +15,10 @@ public:
     ~SettingsDialog();
 
     bool isDarkModeEnabled() const;
+    int getVolume() const;
+    QString getTheme() const;
+    QString getVideoQuality() const;
+    bool isSubtitlesEnabled() const;
 
     private slots:
         void applySettings();

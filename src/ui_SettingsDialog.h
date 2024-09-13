@@ -25,11 +25,14 @@ public:
     QSlider *volumeSlider;
     QLabel *themeLabel;
     QComboBox *themeComboBox;
+    QLabel *qualityLabel;
+    QComboBox *qualityComboBox;
+    QCheckBox *subtitlesCheckBox;
 
     void setupUi(QDialog *SettingsDialog) {
         if (SettingsDialog->objectName().isEmpty())
             SettingsDialog->setObjectName(QString::fromUtf8("SettingsDialog"));
-        SettingsDialog->resize(400, 300);
+        SettingsDialog->resize(400, 400);
 
         verticalLayout = new QVBoxLayout(SettingsDialog);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
@@ -64,6 +67,21 @@ public:
         themeComboBox->setObjectName(QString::fromUtf8("themeComboBox"));
         themeComboBox->addItems({"Light", "Dark", "Blue", "Green"});
         verticalLayout->addWidget(themeComboBox);
+
+        qualityLabel = new QLabel(SettingsDialog);
+        qualityLabel->setObjectName(QString::fromUtf8("qualityLabel"));
+        qualityLabel->setText("Video Quality");
+        verticalLayout->addWidget(qualityLabel);
+
+        qualityComboBox = new QComboBox(SettingsDialog);
+        qualityComboBox->setObjectName(QString::fromUtf8("qualityComboBox"));
+        qualityComboBox->addItems({"Low", "Medium", "High"});
+        verticalLayout->addWidget(qualityComboBox);
+
+        subtitlesCheckBox = new QCheckBox(SettingsDialog);
+        subtitlesCheckBox->setObjectName(QString::fromUtf8("subtitlesCheckBox"));
+        subtitlesCheckBox->setText("Enable Subtitles");
+        verticalLayout->addWidget(subtitlesCheckBox);
 
         buttonLayout = new QHBoxLayout();
         buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));
