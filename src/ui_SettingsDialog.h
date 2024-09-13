@@ -7,7 +7,10 @@
 #include <QPushButton>
 #include <QCheckBox>
 #include <QLabel>
+#include <QSlider>
+#include <QComboBox>
 #include <QCoreApplication>
+
 QT_BEGIN_NAMESPACE
 
 class Ui_SettingsDialog {
@@ -18,6 +21,10 @@ public:
     QPushButton *cancelButton;
     QCheckBox *darkModeCheckBox;
     QLabel *settingsLabel;
+    QLabel *volumeLabel;
+    QSlider *volumeSlider;
+    QLabel *themeLabel;
+    QComboBox *themeComboBox;
 
     void setupUi(QDialog *SettingsDialog) {
         if (SettingsDialog->objectName().isEmpty())
@@ -36,6 +43,27 @@ public:
         darkModeCheckBox->setObjectName(QString::fromUtf8("darkModeCheckBox"));
         darkModeCheckBox->setText("Enable Dark Mode");
         verticalLayout->addWidget(darkModeCheckBox);
+
+        volumeLabel = new QLabel(SettingsDialog);
+        volumeLabel->setObjectName(QString::fromUtf8("volumeLabel"));
+        volumeLabel->setText("Volume");
+        verticalLayout->addWidget(volumeLabel);
+
+        volumeSlider = new QSlider(SettingsDialog);
+        volumeSlider->setObjectName(QString::fromUtf8("volumeSlider"));
+        volumeSlider->setOrientation(Qt::Horizontal);
+        volumeSlider->setRange(0, 100);
+        verticalLayout->addWidget(volumeSlider);
+
+        themeLabel = new QLabel(SettingsDialog);
+        themeLabel->setObjectName(QString::fromUtf8("themeLabel"));
+        themeLabel->setText("Theme");
+        verticalLayout->addWidget(themeLabel);
+
+        themeComboBox = new QComboBox(SettingsDialog);
+        themeComboBox->setObjectName(QString::fromUtf8("themeComboBox"));
+        themeComboBox->addItems({"Light", "Dark", "Blue", "Green"});
+        verticalLayout->addWidget(themeComboBox);
 
         buttonLayout = new QHBoxLayout();
         buttonLayout->setObjectName(QString::fromUtf8("buttonLayout"));

@@ -430,6 +430,23 @@ CMakeFiles/project_cpp.dir/src/SettingsDialog.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QCoreApplication \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \

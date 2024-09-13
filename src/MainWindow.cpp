@@ -185,7 +185,13 @@ void MainWindow::saveFile() {
 }
 
 void MainWindow::openSettings() {
-    QMessageBox::information(this, tr("Settings"), tr("Settings dialog opened."));
+    if (settingsDialog->exec() == QDialog::Accepted) {
+        if (settingsDialog->isDarkModeEnabled()) {
+            applyDarkTheme();
+        } else {
+            applyLightTheme();
+        }
+    }
 }
 
 void MainWindow::updateProgressBar(qint64 value) {

@@ -14,6 +14,11 @@ public:
     explicit SettingsDialog(QWidget *parent = nullptr);
     ~SettingsDialog();
 
+    bool isDarkModeEnabled() const;
+
+    private slots:
+        void applySettings();
+
 private:
     Ui::SettingsDialog *ui;
 };
