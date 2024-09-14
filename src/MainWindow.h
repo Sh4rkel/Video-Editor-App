@@ -43,7 +43,7 @@ public:
     void applyCustomStyle();
     void updateProgressBar(qint64 duration);
     void openSettings();
-
+    void applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect);
 private:
     Ui::MainWindow *ui;
     VideoPlayerWidget *videoPlayerWidget;

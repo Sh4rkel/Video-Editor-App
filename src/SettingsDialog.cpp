@@ -7,6 +7,12 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->okButton->setIcon(QIcon(":/icons/ok.png"));
+    ui->okButton->setToolTip("Apply settings");
+
+    ui->cancelButton->setIcon(QIcon(":/icons/cancel.png"));
+    ui->cancelButton->setToolTip("Cancel changes");
+
     connect(ui->okButton, &QPushButton::clicked, this, &SettingsDialog::applySettings);
     connect(ui->cancelButton, &QPushButton::clicked, this, &SettingsDialog::reject);
 }

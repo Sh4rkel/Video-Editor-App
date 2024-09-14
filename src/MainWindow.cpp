@@ -12,6 +12,8 @@
 #include "SpeedDialog.h"
 #include "VideoPlayerWidget.h"
 #include <QShortcut>
+#include <QPropertyAnimation>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -231,6 +233,15 @@ void MainWindow::cutVideo() {
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);
 }
 
+void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
+    QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");
+    animation->setDuration(500);
+    animation->setStartValue(startRect);
+    animation->setEndValue(endRect);
+    animation->setEasingCurve(QEasingCurve::OutCubic);
+    animation->start(QAbstractAnimation::DeleteWhenStopped);
+}
+
 void MainWindow::combineVideos() {
     QString videoFile1 = QFileDialog::getOpenFileName(this, tr("Open First Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (videoFile1.isEmpty()) {
@@ -297,19 +308,67 @@ void MainWindow::applyLightTheme() {
             background-color: #FFFFFF;
             color: #000000;
         }
-        QMenuBar {
-            background-color: #F0F0F0;
-            color: #000000;
-        }
-        QMenuBar::item {
-            background-color: #F0F0F0;
-            color: #000000;
-        }
-        QMenuBar::item:selected {
-            background-color: #D0D0D0;
-        }
         QMenu {
             background-color: #F0F0F0;
+            color: #000000;
+        }
+        QToolBar {
+            background-color: #F0F0F0;
+            border: 1px solid #C0C0C0;
+        }
+        QPushButton {
+            background-color: #E0E0E0;
+            color: #000000;
+            border: 1px solid #A0A0A0;
+            padding: 5px;
+        }
+        QPushButton:hover {
+            background-color: #C0C0C0;
+        }
+        QSlider::groove:horizontal {
+            border: 1px solid #A0A0A0;
+            height: 8px;
+            background: #F0F0F0;
+        }
+        QSlider::handle:horizontal {
+            background: #A0A0A0;
+            border: 1px solid #C0C0C0;
+            width: 18px;
+            margin: -2px 0;
+        }
+        QLabel {
+            color: #000000;
+        }
+        QGraphicsView {
+            border: 1px solid #A0A0A0;
+        }
+        QStatusBar {
+            background-color: #F0F0F0;
+            color: #000000;
+        }
+        QLineEdit {
+            background-color: #E0E0E0;
+            color: #000000;
+            border: 1px solid #A0A0A0;
+            padding: 5px;
+        }
+        QLineEdit:focus {
+            border: 1px solid #808080;
+        }
+        QDialog {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        QDialogButtonBox {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        QInputDialog {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        QMessageBox {
+            background-color: #FFFFFF;
             color: #000000;
         }
     )";
@@ -322,19 +381,67 @@ void MainWindow::applyDarkTheme() {
             background-color: #2E2E2E;
             color: #FFFFFF;
         }
-        QMenuBar {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QMenuBar::item {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QMenuBar::item:selected {
-            background-color: #5E5E5E;
-        }
         QMenu {
             background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QToolBar {
+            background-color: #3E3E3E;
+            border: 1px solid #5E5E5E;
+        }
+        QPushButton {
+            background-color: #5E5E5E;
+            color: #FFFFFF;
+            border: 1px solid #7E7E7E;
+            padding: 5px;
+        }
+        QPushButton:hover {
+            background-color: #7E7E7E;
+        }
+        QSlider::groove:horizontal {
+            border: 1px solid #5E5E5E;
+            height: 8px;
+            background: #3E3E3E;
+        }
+        QSlider::handle:horizontal {
+            background: #5E5E5E;
+            border: 1px solid #7E7E7E;
+            width: 18px;
+            margin: -2px 0;
+        }
+        QLabel {
+            color: #FFFFFF;
+        }
+        QGraphicsView {
+            border: 1px solid #5E5E5E;
+        }
+        QStatusBar {
+            background-color: #3E3E3E;
+            color: #FFFFFF;
+        }
+        QLineEdit {
+            background-color: #5E5E5E;
+            color: #FFFFFF;
+            border: 1px solid #7E7E7E;
+            padding: 5px;
+        }
+        QLineEdit:focus {
+            border: 1px solid #9E9E9E;
+        }
+        QDialog {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QDialogButtonBox {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QInputDialog {
+            background-color: #2E2E2E;
+            color: #FFFFFF;
+        }
+        QMessageBox {
+            background-color: #2E2E2E;
             color: #FFFFFF;
         }
     )";
