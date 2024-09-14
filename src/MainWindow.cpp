@@ -13,7 +13,7 @@
 #include "VideoPlayerWidget.h"
 #include <QShortcut>
 #include <QPropertyAnimation>
-
+#include <QGraphicsDropShadowEffect>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -123,6 +123,16 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
     connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
+
+    QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
+    shadowEffect->setBlurRadius(10);
+    shadowEffect->setOffset(2, 2);
+    shadowEffect->setColor(Qt::black);
+
+    ui->videoPlayerWidget->setGraphicsEffect(shadowEffect);
+    ui->timelineWidget->setGraphicsEffect(shadowEffect);
+    // ui->speedWidget->setGraphicsEffect(shadowEffect);
+    // ui->progressBar->setGraphicsEffect(shadowEffect);
 
     setupThemeMenu();
 

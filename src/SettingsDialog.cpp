@@ -1,3 +1,4 @@
+#include <QGraphicsDropShadowEffect>
 #include "SettingsDialog.h"
 #include "ui_SettingsDialog.h"
 
@@ -7,11 +8,13 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->okButton->setIcon(QIcon(":/icons/ok.png"));
-    ui->okButton->setToolTip("Apply settings");
+    QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
+    shadowEffect->setBlurRadius(10);
+    shadowEffect->setOffset(2, 2);
+    shadowEffect->setColor(Qt::black);
 
-    ui->cancelButton->setIcon(QIcon(":/icons/cancel.png"));
-    ui->cancelButton->setToolTip("Cancel changes");
+    ui->okButton->setGraphicsEffect(shadowEffect);
+    ui->cancelButton->setGraphicsEffect(shadowEffect);
 
     connect(ui->okButton, &QPushButton::clicked, this, &SettingsDialog::applySettings);
     connect(ui->cancelButton, &QPushButton::clicked, this, &SettingsDialog::reject);

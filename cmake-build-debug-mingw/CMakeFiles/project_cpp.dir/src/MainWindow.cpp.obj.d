@@ -574,4 +574,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qpropertyanimation.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qvariantanimation.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractanimation.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qeasingcurve.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qeasingcurve.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicseffect.h
