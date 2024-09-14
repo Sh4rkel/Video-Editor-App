@@ -124,13 +124,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
     connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
 
-    QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
-    shadowEffect->setBlurRadius(10);
-    shadowEffect->setOffset(2, 2);
-    shadowEffect->setColor(Qt::black);
-
-    ui->videoPlayerWidget->setGraphicsEffect(shadowEffect);
-    ui->timelineWidget->setGraphicsEffect(shadowEffect);
+    applyModernStyle();
+    applyShadows();
 
     setupThemeMenu();
 
@@ -239,15 +234,6 @@ void MainWindow::cutVideo() {
     }
 
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);
-}
-
-void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
-    QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");
-    animation->setDuration(500);
-    animation->setStartValue(startRect);
-    animation->setEndValue(endRect);
-    animation->setEasingCurve(QEasingCurve::OutCubic);
-    animation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
 void MainWindow::combineVideos() {
@@ -613,6 +599,111 @@ void MainWindow::applyCustomStyle() {
         }
     )";
     qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyModernStyle() {
+    QString styleSheet = R"(
+        QMainWindow {
+            background-color: #f0f0f0;
+            color: #333333;
+        }
+        QMenuBar {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QMenuBar::item {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QMenuBar::item:selected {
+            background-color: #e0e0e0;
+        }
+        QMenu {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QToolBar {
+            background-color: #ffffff;
+            border: 1px solid #d0d0d0;
+        }
+        QPushButton {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        QPushButton:hover {
+            background-color: #45A049;
+        }
+        QSlider::groove:horizontal {
+            border: 1px solid #d0d0d0;
+            height: 8px;
+            background: #e0e0e0;
+        }
+        QSlider::handle:horizontal {
+            background: #4CAF50;
+            border: 1px solid #45A049;
+            width: 18px;
+            margin: -2px 0;
+        }
+        QLabel {
+            color: #333333;
+        }
+        QGraphicsView {
+            border: 1px solid #d0d0d0;
+        }
+        QStatusBar {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QLineEdit {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #d0d0d0;
+            padding: 5px;
+        }
+        QLineEdit:focus {
+            border: 1px solid #4CAF50;
+        }
+        QDialog {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QDialogButtonBox {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QInputDialog {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        QMessageBox {
+            background-color: #ffffff;
+            color: #333333;
+        }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
+    QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");
+    animation->setDuration(500);
+    animation->setStartValue(startRect);
+    animation->setEndValue(endRect);
+    animation->setEasingCurve(QEasingCurve::OutCubic);
+    animation->start(QAbstractAnimation::DeleteWhenStopped);
+}
+
+void MainWindow::applyShadows() {
+    QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
+    shadowEffect->setBlurRadius(10);
+    shadowEffect->setOffset(2, 2);
+    shadowEffect->setColor(Qt::black);
+
+    videoPlayerWidget->setGraphicsEffect(shadowEffect);
+    timelineWidget->setGraphicsEffect(shadowEffect);
+    speedWidget->setGraphicsEffect(shadowEffect);
+    progressBar->setGraphicsEffect(shadowEffect);
 }
 
 void MainWindow::setupThemeMenu() {
