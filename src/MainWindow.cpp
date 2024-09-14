@@ -131,8 +131,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->videoPlayerWidget->setGraphicsEffect(shadowEffect);
     ui->timelineWidget->setGraphicsEffect(shadowEffect);
-    // ui->speedWidget->setGraphicsEffect(shadowEffect);
-    // ui->progressBar->setGraphicsEffect(shadowEffect);
 
     setupThemeMenu();
 
