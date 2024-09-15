@@ -383,19 +383,15 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qiodevice.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qtmochelpers.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FFmpegWorker.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FileImportWidget.cpp \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h \
@@ -438,10 +434,16 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qtmochelpers.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FFmpegWorker.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FileImportWidget.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QListWidget \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
@@ -476,8 +478,6 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_FilterSettingsDialog.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QLabel \

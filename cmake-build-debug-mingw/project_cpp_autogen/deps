@@ -333,6 +333,7 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_FilterSettings.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_SettingsDialog.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
 	D:/QT/6.7.2/mingw_64/include/QtCore/QPointer \

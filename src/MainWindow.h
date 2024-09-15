@@ -46,6 +46,8 @@ public:
     void applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect);
     void applyModernStyle();
     void applyShadows();
+    void openFilterSettings();
+    void applyFilter(const QString &filter);
 
 private:
     Ui::MainWindow *ui;
@@ -56,6 +58,7 @@ private:
     SettingsDialog *settingsDialog;
     FFmpegHandler *ffmpegHandler;
     QString currentVideo;
+    QString outputVideo;
     QAction *openAction;
     QAction *saveAction;
     QAction *cutAction;

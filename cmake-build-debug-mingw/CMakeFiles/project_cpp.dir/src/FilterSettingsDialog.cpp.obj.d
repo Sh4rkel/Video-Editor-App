@@ -427,8 +427,6 @@ CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QMouseEvent \
  D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
@@ -441,6 +439,7 @@ CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QRect \
  D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QSize \

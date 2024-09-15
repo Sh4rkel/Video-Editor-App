@@ -67,7 +67,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFilterSettingsENDCLASS[] = {
 };
 
 Q_CONSTINIT const QMetaObject FilterSettings::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
     qt_meta_stringdata_CLASSFilterSettingsENDCLASS.offsetsAndSizes,
     qt_meta_data_CLASSFilterSettingsENDCLASS,
     qt_static_metacall,
@@ -113,12 +113,12 @@ void *FilterSettings::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSFilterSettingsENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return QObject::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int FilterSettings::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QObject::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

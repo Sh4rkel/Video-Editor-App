@@ -12,13 +12,12 @@ class FFmpegHandler : public QObject {
 public:
     explicit FFmpegHandler(QObject *parent = nullptr);
     ~FFmpegHandler();
-    void executeFFmpegCommand(const QStringList &arguments);
     void convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format);
     void cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end);
     void combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo);
     void addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y);
     void addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y);
-    void applyFilters(const QString &inputVideo, const QString &outputVideo, const FilterSettings &settings);
+    void applyFilters(const QString &inputVideo, const QString &outputVideo, FilterSettings::FilterType filter);
 
     signals:
         void commandFinished();
@@ -33,6 +32,8 @@ private:
     QThread workerThread;
     FFmpegWorker *worker;
     void simulateProgress();
+    void executeFFmpegCommand(const QStringList &arguments);
+
 };
 
-#endif 
+#endif

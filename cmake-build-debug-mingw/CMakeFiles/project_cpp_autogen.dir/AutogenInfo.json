@@ -379,6 +379,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_FilterSettings.h",
+			"Mu",
+			"UVLADIE3JM/moc_ui_FilterSettings.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_SettingsDialog.h",
 			"Mu",
 			"UVLADIE3JM/moc_ui_SettingsDialog.cpp",

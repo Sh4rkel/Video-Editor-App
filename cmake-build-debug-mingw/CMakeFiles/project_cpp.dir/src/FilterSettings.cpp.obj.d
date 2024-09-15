@@ -1,10 +1,10 @@
 CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.cpp \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FilterSettings.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qobjectdefs.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qnamespace.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qglobal.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -167,6 +167,14 @@ CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qtresource.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qttranslation.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qversiontagging.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobjectdefs.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qnamespace.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qtmetamacros.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qfunctionaltools_impl.h \
@@ -250,6 +258,8 @@ CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qchar.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
@@ -358,4 +368,83 @@ CMakeFiles/project_cpp.dir/src/FilterSettings.cpp.obj: \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/format \
  C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/charconv \
- C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/span
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/span \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qmargins.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qaction.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qsize.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qrect.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qpoint.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qcolor.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtransform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qline.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qtextstream.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcontiguouscache.h \
+ C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qmap.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qshareddata_impl.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qset.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qhash.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qfont.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qendian.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qfontmetrics.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qfontinfo.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qcursor.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_FilterSettings.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QApplication \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qelapsedtimer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qeventloop.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qinputmethod.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QComboBox \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qcombobox.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h

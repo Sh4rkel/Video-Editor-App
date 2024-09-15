@@ -1,4 +1,5 @@
 #include "FFmpegHandler.h"
+#include <QProcess>
 
 FFmpegHandler::FFmpegHandler(QObject *parent) : QObject(parent) {
     worker = new FFmpegWorker();
@@ -16,16 +17,40 @@ FFmpegHandler::~FFmpegHandler() {
     workerThread.wait();
 }
 
-void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
-    worker->setArguments(arguments);
-    QMetaObject::invokeMethod(worker, "execute", Qt::QueuedConnection);
+void FFmpegHandler::applyFilters(const QString &inputVideo, const QString &outputVideo, FilterSettings::FilterType filter) {
+    QStringList arguments;
+    arguments << "-i" << inputVideo;
+
+    switch (filter) {
+        case FilterSettings::Grayscale:
+            arguments << "-vf" << "hue=s=0";
+        break;
+        case FilterSettings::Sepia:
+            arguments << "-vf" << "colorchannelmixer=.393:.769:.189:0:.349:.686:.168:0:.272:.534:.131";
+        break;
+        case FilterSettings::Invert:
+            arguments << "-vf" << "negate";
+        break;
+    }
+
+    arguments << outputVideo;
+    executeFFmpegCommand(arguments);
 }
 
-void FFmpegHandler::applyFilters(const QString &inputVideo, const QString &outputVideo, const FilterSettings &settings) {
-    QStringList arguments;
-    QString filterString = QString("gradients=%1,shadows=%2").arg(settings.getGradient()).arg(settings.getShadow());
-    arguments << "-i" << inputVideo << "-vf" << filterString << outputVideo;
-    executeFFmpegCommand(arguments);
+void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
+    QProcess process;
+    process.start("ffmpeg", arguments);
+    if (!process.waitForStarted()) {
+        return;
+    }
+
+    if (!process.waitForFinished()) {
+        return;
+    }
+
+    if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
+        return;
+    }
 }
 
 void FFmpegHandler::convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format) {

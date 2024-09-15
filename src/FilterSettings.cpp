@@ -1,6 +1,22 @@
 #include "FilterSettings.h"
+#include "ui_FilterSettings.h"
 
-FilterSettings::FilterSettings(QObject *parent) : QObject(parent), gradient(0), shadow(0) {}
+FilterSettings::FilterSettings(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::FilterSettings),
+    gradient(0),
+    shadow(0)
+{
+    ui->setupUi(this);
+}
+
+FilterSettings::~FilterSettings() {
+    delete ui;
+}
+
+QString FilterSettings::getSelectedFilter() const {
+    return ui->filterComboBox->currentText();
+}
 
 int FilterSettings::getGradient() const {
     return gradient;

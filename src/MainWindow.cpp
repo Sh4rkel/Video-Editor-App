@@ -15,6 +15,7 @@
 #include <QPropertyAnimation>
 #include <QGraphicsDropShadowEffect>
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -135,6 +136,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QAction *settingsAction = new QAction(tr("Settings"), this);
     connect(settingsAction, &QAction::triggered, this, &MainWindow::openSettings);
     settingsMenu->addAction(settingsAction);
+
+    QAction *filterSettingsAction = new QAction(tr("Filter Settings"), this);
+    connect(filterSettingsAction, &QAction::triggered, this, &MainWindow::openFilterSettings);
+    videoMenu->addAction(filterSettingsAction);
 }
 
 void MainWindow::addVideosToTimeline() {
@@ -158,6 +163,40 @@ void MainWindow::handleFileSelected(const QString &filePath) {
     videoPlayerWidget->loadVideo(filePath);
     mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
     mediaPlayer->play();
+}
+
+void MainWindow::openFilterSettings() {
+    FilterSettings filterSettings(this);
+    if (filterSettings.exec() == QDialog::Accepted) {
+        QString selectedFilter = filterSettings.getSelectedFilter();
+        applyFilter(selectedFilter);
+    }
+}
+
+void MainWindow::applyFilter(const QString &filter) {
+    if (currentVideo.isEmpty()) {
+        QMessageBox::warning(this, tr("No Video Loaded"), tr("Please load a video first."));
+        return;
+    }
+
+    outputVideo = QFileDialog::getSaveFileName(this, tr("Save Filtered Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    FilterSettings::FilterType filterType;
+    if (filter == "Grayscale") {
+        filterType = FilterSettings::Grayscale;
+    } else if (filter == "Sepia") {
+        filterType = FilterSettings::Sepia;
+    } else if (filter == "Invert") {
+        filterType = FilterSettings::Invert;
+    } else {
+        QMessageBox::warning(this, tr("Invalid Filter"), tr("The selected filter is not valid."));
+        return;
+    }
+
+    ffmpegHandler->applyFilters(currentVideo, outputVideo, filterType);
 }
 
 MainWindow::~MainWindow() {
