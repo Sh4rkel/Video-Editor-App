@@ -8,6 +8,9 @@ FilterSettings::FilterSettings(QWidget *parent) :
     shadow(0)
 {
     ui->setupUi(this);
+
+    connect(ui->applyButton, &QPushButton::clicked, this, &FilterSettings::accept);
+    connect(ui->cancelButton, &QPushButton::clicked, this, &FilterSettings::reject);
 }
 
 FilterSettings::~FilterSettings() {
