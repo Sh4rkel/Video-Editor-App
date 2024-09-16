@@ -414,4 +414,6 @@ CMakeFiles/project_cpp.dir/src/VideoFrameWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/QPainter \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h
