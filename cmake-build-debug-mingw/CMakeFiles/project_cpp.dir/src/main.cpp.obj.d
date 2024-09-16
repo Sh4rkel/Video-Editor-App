@@ -470,6 +470,12 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QPointer \
  D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
@@ -480,12 +486,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\SpeedWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\FFmpegHandler.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
  D:/QT/6.7.2/mingw_64/include/QtCore/qthread.h \

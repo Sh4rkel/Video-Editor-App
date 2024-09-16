@@ -11,6 +11,7 @@
 #include <QToolBar>
 #include <QStatusBar>
 #include <QPointer>
+#include <QVBoxLayout>
 #include "VideoSegmentItem.h"
 
 class TimelineWidget : public QWidget {
@@ -21,6 +22,7 @@ public:
     void updatePlayPauseButtonText(const QString &text);
     void addVideo(const QString &filePath);
     void renderVideos();
+    void addFrameWidget(QWidget *frameWidget);
 
     signals:
         void playPauseClicked();
@@ -56,6 +58,7 @@ private:
     QToolBar *toolBar;
     QStatusBar *statusBar;
     QPointer<QMediaPlayer> mediaPlayer;
+    QVBoxLayout *frameLayout;
 };
 
 #endif

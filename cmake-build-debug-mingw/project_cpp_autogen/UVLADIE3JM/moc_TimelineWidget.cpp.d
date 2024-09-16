@@ -418,15 +418,20 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \

@@ -194,3 +194,7 @@ void TimelineWidget::onAddVideosButtonClicked() {
     }
     renderVideos();
 }
+
+void TimelineWidget::addFrameWidget(QWidget *frameWidget) {
+    frameLayout->addWidget(frameWidget);
+}

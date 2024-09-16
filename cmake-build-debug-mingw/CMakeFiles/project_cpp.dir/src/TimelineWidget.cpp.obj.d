@@ -448,6 +448,12 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QPointer \
  D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoSegmentItem.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
@@ -455,11 +461,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QObject \
  D:/QT/6.7.2/mingw_64/include/QtCore/qobject.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QTime \
@@ -468,7 +469,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtGui/QKeyEvent \
  D:/QT/6.7.2/mingw_64/include/QtGui/qevent.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcoreevent.h \

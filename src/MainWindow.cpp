@@ -143,13 +143,13 @@ MainWindow::MainWindow(QWidget *parent) :
     videoMenu->addAction(filterSettingsAction);
 }
 
+// src/MainWindow.cpp
 void MainWindow::addVideosToTimeline() {
     QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (fileNames.isEmpty()) {
         return;
     }
 
-    QVBoxLayout *videoLayout = new QVBoxLayout();
     for (const QString &fileName : fileNames) {
         QImageReader reader(fileName);
         reader.setScaledSize(QSize(160, 90));
@@ -166,13 +166,12 @@ void MainWindow::addVideosToTimeline() {
 
             QWidget *frameContainer = new QWidget(this);
             frameContainer->setLayout(frameLayout);
-            videoLayout->addWidget(frameContainer);
+
+            timelineWidget->addFrameWidget(frameContainer);
+        } else {
+            qDebug() << "Failed to read frame from" << fileName;
         }
     }
-
-    QWidget *videoContainer = new QWidget(this);
-    videoContainer->setLayout(videoLayout);
-    setCentralWidget(videoContainer);
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
