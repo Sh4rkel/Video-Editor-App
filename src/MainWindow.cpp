@@ -773,7 +773,7 @@ void MainWindow::setupThemeMenu() {
     connect(darkThemeAction, &QAction::triggered, this, &MainWindow::applyDarkTheme);
     themeMenu->addAction(darkThemeAction);
 
-    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Nounces Theme"), this);
+    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Theme"), this);
     connect(purpleNouncesThemeAction, &QAction::triggered, this, &MainWindow::applyPurpleNouncesTheme);
     themeMenu->addAction(purpleNouncesThemeAction);
 
