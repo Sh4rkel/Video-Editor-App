@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp" "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp" "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"
+  "C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.cpp" "CMakeFiles/project_cpp.dir/src/VideoFrameWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/VideoFrameWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp" "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.cpp" "CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/VideoSegmentItem.cpp.obj.d"
   "C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp" "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj" "gcc" "CMakeFiles/project_cpp.dir/src/filehandler.cpp.obj.d"

@@ -361,6 +361,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.h",
+			"Mu",
+			"UVLADIE3JM/moc_VideoFrameWidget.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_VideoPlayerWidget.cpp",
@@ -522,6 +528,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.cpp",
 			"Mu",
 			null
 		],

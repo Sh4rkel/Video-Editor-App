@@ -326,6 +326,8 @@ project_cpp_autogen/timestamp: \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.cpp \
+	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
 	C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoSegmentItem.cpp \
@@ -469,6 +471,7 @@ project_cpp_autogen/timestamp: \
 	D:/QT/6.7.2/mingw_64/include/QtCore/qversiontagging.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/qxptype_traits.h \
 	D:/QT/6.7.2/mingw_64/include/QtCore/qyieldcpu.h \
+	D:/QT/6.7.2/mingw_64/include/QtGui/QImage \
 	D:/QT/6.7.2/mingw_64/include/QtGui/qaction.h \
 	D:/QT/6.7.2/mingw_64/include/QtGui/qbitmap.h \
 	D:/QT/6.7.2/mingw_64/include/QtGui/qbrush.h \

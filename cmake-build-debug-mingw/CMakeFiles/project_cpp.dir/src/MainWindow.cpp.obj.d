@@ -541,6 +541,9 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoFrameWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QImage \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
@@ -576,4 +579,16 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qabstractanimation.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qeasingcurve.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicseffect.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QImageReader \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qimagereader.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qimageiohandler.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qplugin.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qpointer.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qjsonobject.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qjsonvalue.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcborvalue.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qcborcommon.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/quuid.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/q20algorithm.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qfactoryinterface.h

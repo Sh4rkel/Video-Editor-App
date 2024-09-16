@@ -542,6 +542,10 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_TimelineWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoFrameWidget.cpp \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QImage \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoPlayerWidget.cpp \
  C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\project_cpp_autogen\UVLADIE3JM/moc_VideoSegmentItem.cpp \

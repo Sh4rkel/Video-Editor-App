@@ -1,5 +1,6 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
+#include "VideoFrameWidget.h"
 #include <QFileDialog>
 #include <QInputDialog>
 #include <QMessageBox>
@@ -14,7 +15,7 @@
 #include <QShortcut>
 #include <QPropertyAnimation>
 #include <QGraphicsDropShadowEffect>
-
+#include <QImageReader>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -148,14 +149,30 @@ void MainWindow::addVideosToTimeline() {
         return;
     }
 
+    QVBoxLayout *videoLayout = new QVBoxLayout();
     for (const QString &fileName : fileNames) {
-        try {
-            timelineWidget->addVideo(fileName);
-        } catch (const std::exception &e) {
-            QMessageBox::critical(this, tr("Error"), tr("Failed to add video: %1").arg(e.what()));
+        QImageReader reader(fileName);
+        reader.setScaledSize(QSize(160, 90));
+        QImage frame = reader.read();
+
+        if (!frame.isNull()) {
+            VideoFrameWidget *frameWidget = new VideoFrameWidget(this);
+            frameWidget->setFrame(frame);
+
+            QLabel *label = new QLabel(fileName, this);
+            QVBoxLayout *frameLayout = new QVBoxLayout();
+            frameLayout->addWidget(frameWidget);
+            frameLayout->addWidget(label);
+
+            QWidget *frameContainer = new QWidget(this);
+            frameContainer->setLayout(frameLayout);
+            videoLayout->addWidget(frameContainer);
         }
     }
-    timelineWidget->renderVideos();
+
+    QWidget *videoContainer = new QWidget(this);
+    videoContainer->setLayout(videoLayout);
+    setCentralWidget(videoContainer);
 }
 
 void MainWindow::handleFileSelected(const QString &filePath) {
