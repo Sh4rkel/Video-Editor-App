@@ -143,7 +143,6 @@ MainWindow::MainWindow(QWidget *parent) :
     videoMenu->addAction(filterSettingsAction);
 }
 
-// src/MainWindow.cpp
 void MainWindow::addVideosToTimeline() {
     QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (fileNames.isEmpty()) {
