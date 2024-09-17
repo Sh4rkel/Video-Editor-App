@@ -1,64 +1,77 @@
 #include "FFmpegHandler.h"
 #include <QProcess>
 
+// Constructor
 FFmpegHandler::FFmpegHandler(QObject *parent) : QObject(parent) {
     worker = new FFmpegWorker();
     worker->moveToThread(&workerThread);
 
+    // Connect signals and slots for worker thread
     connect(&workerThread, &QThread::finished, worker, &QObject::deleteLater);
     connect(worker, &FFmpegWorker::finished, this, &FFmpegHandler::handleWorkerFinished);
     connect(worker, &FFmpegWorker::errorOccurred, this, &FFmpegHandler::handleWorkerError);
 
+    // Start worker thread
     workerThread.start();
 }
 
+// Destructor
 FFmpegHandler::~FFmpegHandler() {
     workerThread.quit();
     workerThread.wait();
 }
 
+// Apply filters to video
 void FFmpegHandler::applyFilters(const QString &inputVideo, const QString &outputVideo, FilterSettings::FilterType filter) {
     QStringList arguments;
     arguments << "-i" << inputVideo;
 
+    // Add filter arguments based on filter type
     switch (filter) {
         case FilterSettings::Grayscale:
             arguments << "-vf" << "hue=s=0";
-        break;
+            break;
         case FilterSettings::Sepia:
             arguments << "-vf" << "colorchannelmixer=.393:.769:.189:0:.349:.686:.168:0:.272:.534:.131";
-        break;
+            break;
         case FilterSettings::Invert:
             arguments << "-vf" << "negate";
-        break;
+            break;
     }
 
     arguments << outputVideo;
     executeFFmpegCommand(arguments);
 }
 
+// Execute FFmpeg command
 void FFmpegHandler::executeFFmpegCommand(const QStringList &arguments) {
     QProcess process;
     process.start("ffmpeg", arguments);
+
+    // Wait for process to start
     if (!process.waitForStarted()) {
         return;
     }
 
+    // Wait for process to finish
     if (!process.waitForFinished()) {
         return;
     }
 
+    // Check process exit status
     if (process.exitStatus() != QProcess::NormalExit || process.exitCode() != 0) {
         return;
     }
 }
 
+// Convert video format
 void FFmpegHandler::convertVideoFormat(const QString &inputVideo, const QString &outputVideo, const QString &format) {
     QStringList arguments;
     arguments << "-i" << inputVideo << outputVideo + "." + format;
     executeFFmpegCommand(arguments);
 }
 
+// Cut video segment
 void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &outputVideo, qint64 start, qint64 end) {
     QStringList arguments;
     arguments << "-i" << inputVideo
@@ -69,6 +82,7 @@ void FFmpegHandler::cutVideoSegment(const QString &inputVideo, const QString &ou
     simulateProgress();
 }
 
+// Combine two videos
 void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &videoFile2, const QString &outputVideo) {
     QStringList arguments;
     arguments << "-i" << videoFile1
@@ -81,6 +95,7 @@ void FFmpegHandler::combineVideos(const QString &videoFile1, const QString &vide
     simulateProgress();
 }
 
+// Add text to video
 void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &outputVideo, const QString &text, int x, int y) {
     QStringList arguments;
     arguments << "-i" << inputVideo
@@ -90,6 +105,7 @@ void FFmpegHandler::addTextToVideo(const QString &inputVideo, const QString &out
     simulateProgress();
 }
 
+// Add overlay to video
 void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &outputVideo, const QString &overlayImage, int x, int y) {
     QStringList arguments;
     arguments << "-i" << inputVideo
@@ -100,6 +116,7 @@ void FFmpegHandler::addOverlayToVideo(const QString &inputVideo, const QString &
     simulateProgress();
 }
 
+// Simulate progress for long-running operations
 void FFmpegHandler::simulateProgress() {
     for (int i = 0; i <= 100; ++i) {
         QThread::msleep(50);
@@ -107,10 +124,12 @@ void FFmpegHandler::simulateProgress() {
     }
 }
 
+// Handle worker finished signal
 void FFmpegHandler::handleWorkerFinished() {
     emit commandFinished();
 }
 
+// Handle worker error signal
 void FFmpegHandler::handleWorkerError(const QString &error) {
     emit commandError(error);
 }
