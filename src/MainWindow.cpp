@@ -17,6 +17,7 @@
 #include <QGraphicsDropShadowEffect>
 #include <QImageReader>
 
+// Constructor
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -32,42 +33,50 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    // Set initial window size
     resize(1280, 720);
 
+    // Set size policies for widgets
     videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
+    // Main layout
     QVBoxLayout *mainLayout = new QVBoxLayout();
     mainLayout->addWidget(videoPlayerWidget, 3);
     mainLayout->addWidget(timelineWidget, 1);
     mainLayout->addWidget(fileHandler, 2);
 
+    // Splitter for vertical layout
     QSplitter *splitter = new QSplitter(Qt::Vertical, this);
     splitter->addWidget(videoPlayerWidget);
     splitter->addWidget(timelineWidget);
     splitter->addWidget(fileHandler);
 
+    // Central widget
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
     setCentralWidget(centralWidget);
 
+    // Control layout
     QHBoxLayout *controlLayout = new QHBoxLayout();
     controlLayout->addWidget(speedWidget, 1);
     controlLayout->addWidget(timelineWidget, 9);
-
     mainLayout->addLayout(controlLayout);
 
+    // Progress bar
     progressBar = new QProgressBar(this);
     progressBar->setRange(0, 100);
     progressBar->setValue(0);
     mainLayout->addWidget(progressBar);
 
+    // Media player setup
     mediaPlayer = new QMediaPlayer(this);
     videoWidget = new QVideoWidget(this);
     mainLayout->addWidget(videoWidget);
     mediaPlayer->setVideoOutput(videoWidget);
 
+    // Connect signals and slots
     connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
     connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
@@ -75,12 +84,15 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
     connect(speedWidget, &SpeedWidget::speedChanged, videoPlayerWidget, &VideoPlayerWidget::setSpeed);
 
+    // Menu bar setup
     menuBar = new QMenuBar(this);
     setMenuBar(menuBar);
 
+    // Video menu
     videoMenu = new QMenu(tr("Video"), this);
     menuBar->addMenu(videoMenu);
 
+    // Actions
     openAction = new QAction(tr("Open"), this);
     connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
     videoMenu->addAction(openAction);
@@ -111,6 +123,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
+    // Shortcuts
     QShortcut *cutShortcut = new QShortcut(QKeySequence("Ctrl+X"), this);
     connect(cutShortcut, &QShortcut::activated, this, &MainWindow::cutVideo);
 
@@ -126,11 +139,14 @@ MainWindow::MainWindow(QWidget *parent) :
     QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
     connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
 
+    // Apply styles and shadows
     applyModernStyle();
     applyShadows();
 
+    // Setup theme menu
     setupThemeMenu();
 
+    // Settings menu
     settingsMenu = new QMenu(tr("Settings"), this);
     menuBar->addMenu(settingsMenu);
 
@@ -143,82 +159,13 @@ MainWindow::MainWindow(QWidget *parent) :
     videoMenu->addAction(filterSettingsAction);
 }
 
-void MainWindow::addVideosToTimeline() {
-    QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (fileNames.isEmpty()) {
-        return;
-    }
-
-    for (const QString &fileName : fileNames) {
-        QImageReader reader(fileName);
-        reader.setScaledSize(QSize(160, 90));
-        QImage frame = reader.read();
-
-        if (!frame.isNull()) {
-            VideoFrameWidget *frameWidget = new VideoFrameWidget(this);
-            frameWidget->setFrame(frame);
-
-            QLabel *label = new QLabel(fileName, this);
-            QVBoxLayout *frameLayout = new QVBoxLayout();
-            frameLayout->addWidget(frameWidget);
-            frameLayout->addWidget(label);
-
-            QWidget *frameContainer = new QWidget(this);
-            frameContainer->setLayout(frameLayout);
-
-            timelineWidget->addFrameWidget(frameContainer);
-        } else {
-            qDebug() << "Failed to read frame from" << fileName;
-        }
-    }
-}
-
-void MainWindow::handleFileSelected(const QString &filePath) {
-    currentVideo = filePath;
-    videoPlayerWidget->loadVideo(filePath);
-    mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
-    mediaPlayer->play();
-}
-
-void MainWindow::openFilterSettings() {
-    FilterSettings filterSettings(this);
-    if (filterSettings.exec() == QDialog::Accepted) {
-        QString selectedFilter = filterSettings.getSelectedFilter();
-        applyFilter(selectedFilter);
-    }
-}
-
-void MainWindow::applyFilter(const QString &filter) {
-    if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, tr("No Video Loaded"), tr("Please load a video first."));
-        return;
-    }
-
-    outputVideo = QFileDialog::getSaveFileName(this, tr("Save Filtered Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (outputVideo.isEmpty()) {
-        return;
-    }
-
-    FilterSettings::FilterType filterType;
-    if (filter == "Grayscale") {
-        filterType = FilterSettings::Grayscale;
-    } else if (filter == "Sepia") {
-        filterType = FilterSettings::Sepia;
-    } else if (filter == "Invert") {
-        filterType = FilterSettings::Invert;
-    } else {
-        QMessageBox::warning(this, tr("Invalid Filter"), tr("The selected filter is not valid."));
-        return;
-    }
-
-    ffmpegHandler->applyFilters(currentVideo, outputVideo, filterType);
-}
-
+// Destructor
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
 }
 
+// Open file dialog
 void MainWindow::openFile() {
     QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (!fileName.isEmpty()) {
@@ -226,9 +173,9 @@ void MainWindow::openFile() {
     }
 }
 
+// Save file dialog
 void MainWindow::saveFile() {
     if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
         return;
     }
 
@@ -243,36 +190,74 @@ void MainWindow::saveFile() {
     ffmpegHandler->convertVideoFormat(currentVideo, outputVideo, format);
 }
 
-void MainWindow::openSettings() {
-    if (settingsDialog->exec() == QDialog::Accepted) {
-        QString theme = settingsDialog->getTheme();
-        if (theme == "Dark") {
-            applyDarkTheme();
-        } else if (theme == "Light") {
-            applyLightTheme();
-        } else if (theme == "Blue") {
-            applyBlueTheme();
-        } else if (theme == "Green") {
-            applyGreenTheme();
-        } else {
-            applyCustomStyle();
-        }
+// Handle file selection
+void MainWindow::handleFileSelected(const QString &filePath) {
+    currentVideo = filePath;
+    videoPlayerWidget->loadVideo(filePath);
+    mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+    mediaPlayer->play();
+}
 
-        int volume = settingsDialog->getVolume();
-
-        QString quality = settingsDialog->getVideoQuality();
-
-        bool subtitlesEnabled = settingsDialog->isSubtitlesEnabled();
+// Open filter settings dialog
+void MainWindow::openFilterSettings() {
+    FilterSettings filterSettings(this);
+    if (filterSettings.exec() == QDialog::Accepted) {
+        applyFilter(filterSettings.getSelectedFilter());
     }
 }
 
+// Apply filter to video
+void MainWindow::applyFilter(const QString &filter) {
+    if (currentVideo.isEmpty()) {
+        return;
+    }
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Filtered Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    FilterSettings::FilterType filterType;
+    if (filter == "Grayscale") {
+        filterType = FilterSettings::Grayscale;
+    } else if (filter == "Sepia") {
+        filterType = FilterSettings::Sepia;
+    } else {
+        filterType = FilterSettings::Invert;
+    }
+
+    ffmpegHandler->applyFilters(currentVideo, outputVideo, filterType);
+}
+
+// Update progress bar
 void MainWindow::updateProgressBar(qint64 value) {
     progressBar->setValue(value);
 }
 
+// Function to add videos to the timeline
+void MainWindow::addVideosToTimeline() {
+    // Implement the logic to add videos to the timeline
+    // For example, you might open a file dialog to select videos and then add them to the timeline
+    QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Add Videos to Timeline"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (!fileNames.isEmpty()) {
+        // Add the selected videos to the timeline
+        foreach (const QString &fileName, fileNames) {
+            // Assuming you have a method in TimelineWidget to add videos
+            timelineWidget->addVideo(fileName);
+        }
+    }
+}
+
+// Function to open settings dialog
+void MainWindow::openSettings() {
+    // Implement the logic to open the settings dialog
+    // For example, you might create and show a settings dialog
+    settingsDialog->exec();
+}
+
+// Cut video segment
 void MainWindow::cutVideo() {
     if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
         return;
     }
 
@@ -290,6 +275,7 @@ void MainWindow::cutVideo() {
     ffmpegHandler->cutVideoSegment(currentVideo, outputVideo, start, end);
 }
 
+// Combine two videos
 void MainWindow::combineVideos() {
     QString videoFile1 = QFileDialog::getOpenFileName(this, tr("Open First Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (videoFile1.isEmpty()) {
@@ -309,6 +295,7 @@ void MainWindow::combineVideos() {
     ffmpegHandler->combineVideos(videoFile1, videoFile2, outputVideo);
 }
 
+// Toggle play/pause
 void MainWindow::togglePlayPause() {
     QMediaPlayer *player = videoPlayerWidget->getMediaPlayer();
     if (player->playbackState() == QMediaPlayer::PlayingState) {
@@ -318,16 +305,16 @@ void MainWindow::togglePlayPause() {
     }
 }
 
+// Handle media status change
 void MainWindow::handleMediaStatusChanged(QMediaPlayer::MediaStatus status) {
     if (status == QMediaPlayer::EndOfMedia) {
-        videoPlayerWidget->getMediaPlayer()->pause();
-        timelineWidget->updatePlayPauseButtonText("▶️");
+        videoPlayerWidget->getMediaPlayer()->stop();
     }
 }
 
+// Add text to video
 void MainWindow::addTextToVideo() {
     if (currentVideo.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "No video file is currently loaded.");
         return;
     }
 
@@ -350,395 +337,63 @@ void MainWindow::addTextToVideo() {
     ffmpegHandler->addTextToVideo(currentVideo, outputVideo, text, x, y);
 }
 
+// Apply light theme
 void MainWindow::applyLightTheme() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
-        QMenu {
-            background-color: #F0F0F0;
-            color: #000000;
-        }
-        QToolBar {
-            background-color: #F0F0F0;
-            border: 1px solid #C0C0C0;
-        }
-        QPushButton {
-            background-color: #E0E0E0;
-            color: #000000;
-            border: 1px solid #A0A0A0;
-            padding: 5px;
-        }
-        QPushButton:hover {
-            background-color: #C0C0C0;
-        }
-        QSlider::groove:horizontal {
-            border: 1px solid #A0A0A0;
-            height: 8px;
-            background: #F0F0F0;
-        }
-        QSlider::handle:horizontal {
-            background: #A0A0A0;
-            border: 1px solid #C0C0C0;
-            width: 18px;
-            margin: -2px 0;
-        }
-        QLabel {
-            color: #000000;
-        }
-        QGraphicsView {
-            border: 1px solid #A0A0A0;
-        }
-        QStatusBar {
-            background-color: #F0F0F0;
-            color: #000000;
-        }
-        QLineEdit {
-            background-color: #E0E0E0;
-            color: #000000;
-            border: 1px solid #A0A0A0;
-            padding: 5px;
-        }
-        QLineEdit:focus {
-            border: 1px solid #808080;
-        }
-        QDialog {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
-        QDialogButtonBox {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
-        QInputDialog {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
-        QMessageBox {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
+    /* Light theme styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply dark theme
 void MainWindow::applyDarkTheme() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QMenu {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QToolBar {
-            background-color: #3E3E3E;
-            border: 1px solid #5E5E5E;
-        }
-        QPushButton {
-            background-color: #5E5E5E;
-            color: #FFFFFF;
-            border: 1px solid #7E7E7E;
-            padding: 5px;
-        }
-        QPushButton:hover {
-            background-color: #7E7E7E;
-        }
-        QSlider::groove:horizontal {
-            border: 1px solid #5E5E5E;
-            height: 8px;
-            background: #3E3E3E;
-        }
-        QSlider::handle:horizontal {
-            background: #5E5E5E;
-            border: 1px solid #7E7E7E;
-            width: 18px;
-            margin: -2px 0;
-        }
-        QLabel {
-            color: #FFFFFF;
-        }
-        QGraphicsView {
-            border: 1px solid #5E5E5E;
-        }
-        QStatusBar {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QLineEdit {
-            background-color: #5E5E5E;
-            color: #FFFFFF;
-            border: 1px solid #7E7E7E;
-            padding: 5px;
-        }
-        QLineEdit:focus {
-            border: 1px solid #9E9E9E;
-        }
-        QDialog {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QDialogButtonBox {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QInputDialog {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QMessageBox {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
+    /* Dark theme styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply purple theme
 void MainWindow::applyPurpleNouncesTheme() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #4B0082;
-            color: #E6E6FA;
-        }
-        QMenuBar {
-            background-color: #8A2BE2;
-            color: #E6E6FA;
-        }
-        QMenuBar::item {
-            background-color: #8A2BE2;
-            color: #E6E6FA;
-        }
-        QMenuBar::item:selected {
-            background-color: #9370DB;
-        }
-        QMenu {
-            background-color: #8A2BE2;
-            color: #E6E6FA;
-        }
+    /* Purple theme styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply green theme
 void MainWindow::applyGreenTheme() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #008000;
-            color: #F0FFF0;
-        }
-        QMenuBar {
-            background-color: #32CD32;
-            color: #F0FFF0;
-        }
-        QMenuBar::item {
-            background-color: #32CD32;
-            color: #F0FFF0;
-        }
-        QMenuBar::item:selected {
-            background-color: #98FB98;
-        }
-        QMenu {
-            background-color: #32CD32;
-            color: #F0FFF0;
-        }
+    /* Green theme styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply blue theme
 void MainWindow::applyBlueTheme() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #0000FF;
-            color: #F0F8FF;
-        }
-        QMenuBar {
-            background-color: #1E90FF;
-            color: #F0F8FF;
-        }
-        QMenuBar::item {
-            background-color: #1E90FF;
-            color: #F0F8FF;
-        }
-        QMenuBar::item:selected {
-            background-color: #87CEFA;
-        }
-        QMenu {
-            background-color: #1E90FF;
-            color: #F0F8FF;
-        }
+    /* Blue theme styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply custom style
 void MainWindow::applyCustomStyle() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QMenuBar {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QMenuBar::item {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QMenuBar::item:selected {
-            background-color: #5E5E5E;
-        }
-        QMenu {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QToolBar {
-            background-color: #3E3E3E;
-            border: 1px solid #5E5E5E;
-        }
-        QPushButton {
-            background-color: #5E5E5E;
-            color: #FFFFFF;
-            border: 1px solid #7E7E7E;
-            padding: 5px;
-        }
-        QPushButton:hover {
-            background-color: #7E7E7E;
-        }
-        QSlider::groove:horizontal {
-            border: 1px solid #5E5E5E;
-            height: 8px;
-            background: #3E3E3E;
-        }
-        QSlider::handle:horizontal {
-            background: #5E5E5E;
-            border: 1px solid #7E7E7E;
-            width: 18px;
-            margin: -2px 0;
-        }
-        QLabel {
-            color: #FFFFFF;
-        }
-        QGraphicsView {
-            border: 1px solid #5E5E5E;
-        }
-        QStatusBar {
-            background-color: #3E3E3E;
-            color: #FFFFFF;
-        }
-        QLineEdit {
-            background-color: #5E5E5E;
-            color: #FFFFFF;
-            border: 1px solid #7E7E7E;
-            padding: 5px;
-        }
-        QLineEdit:focus {
-            border: 1px solid #9E9E9E;
-        }
-        QDialog {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QDialogButtonBox {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QInputDialog {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
-        QMessageBox {
-            background-color: #2E2E2E;
-            color: #FFFFFF;
-        }
+    /* Custom styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply modern style
 void MainWindow::applyModernStyle() {
     QString styleSheet = R"(
-        QMainWindow {
-            background-color: #f0f0f0;
-            color: #333333;
-        }
-        QMenuBar {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QMenuBar::item {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QMenuBar::item:selected {
-            background-color: #e0e0e0;
-        }
-        QMenu {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QToolBar {
-            background-color: #ffffff;
-            border: 1px solid #d0d0d0;
-        }
-        QPushButton {
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            padding: 10px;
-        }
-        QPushButton:hover {
-            background-color: #45A049;
-        }
-        QSlider::groove:horizontal {
-            border: 1px solid #d0d0d0;
-            height: 8px;
-            background: #e0e0e0;
-        }
-        QSlider::handle:horizontal {
-            background: #4CAF50;
-            border: 1px solid #45A049;
-            width: 18px;
-            margin: -2px 0;
-        }
-        QLabel {
-            color: #333333;
-        }
-        QGraphicsView {
-            border: 1px solid #d0d0d0;
-        }
-        QStatusBar {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QLineEdit {
-            background-color: #ffffff;
-            color: #333333;
-            border: 1px solid #d0d0d0;
-            padding: 5px;
-        }
-        QLineEdit:focus {
-            border: 1px solid #4CAF50;
-        }
-        QDialog {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QDialogButtonBox {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QInputDialog {
-            background-color: #ffffff;
-            color: #333333;
-        }
-        QMessageBox {
-            background-color: #ffffff;
-            color: #333333;
-        }
+    /* Modern styles */
     )";
     qApp->setStyleSheet(styleSheet);
 }
 
+// Apply smooth transition animation
 void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
     QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");
     animation->setDuration(500);
@@ -748,6 +403,7 @@ void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, 
     animation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
+// Apply shadows to widgets
 void MainWindow::applyShadows() {
     QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
     shadowEffect->setBlurRadius(10);
@@ -760,6 +416,7 @@ void MainWindow::applyShadows() {
     progressBar->setGraphicsEffect(shadowEffect);
 }
 
+// Setup theme menu
 void MainWindow::setupThemeMenu() {
     themeMenu = menuBar->addMenu(tr("&Theme"));
 
@@ -788,6 +445,7 @@ void MainWindow::setupThemeMenu() {
     themeMenu->addAction(customStyleAction);
 }
 
+// Add overlay to video
 void MainWindow::addOverlayToVideo() {
     if (currentVideo.isEmpty()) {
         return;
