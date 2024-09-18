@@ -18,10 +18,12 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
+// Constructor
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
 
+    // Setup toolbar
     toolBar = new QToolBar(this);
     QAction *addVideoAction = new QAction(QIcon(":/icons/add.png"), "Add Video", this);
     connect(addVideoAction, &QAction::triggered, this, [this]() {
@@ -46,10 +48,12 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
     mainLayout->addWidget(toolBar);
 
+    // Setup graphics view and scene
     scene = new QGraphicsScene(this);
     view = new QGraphicsView(scene, this);
     mainLayout->addWidget(view);
 
+    // Setup control layout
     QHBoxLayout *controlLayout = new QHBoxLayout();
     playPauseButton = new QPushButton("▶️", this);
     connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
@@ -67,6 +71,7 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
     mainLayout->addLayout(controlLayout);
 
+    // Setup background and play position line
     background = new QGraphicsRectItem(0, 0, 1000, 50);
     background->setBrush(QBrush(Qt::lightGray));
     scene->addItem(background);
@@ -79,6 +84,7 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     mainLayout->addWidget(statusBar);
 }
 
+// Add video to the timeline
 void TimelineWidget::addVideo(const QString &filePath) {
     QPointer<QMediaPlayer> mediaPlayer = new QMediaPlayer(this);
     mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
@@ -98,6 +104,7 @@ void TimelineWidget::addVideo(const QString &filePath) {
     mediaPlayer->setPosition(0);
 }
 
+// Render videos on the timeline
 void TimelineWidget::renderVideos() {
     qDebug() << "Rendering videos";
     scene->clear();
@@ -116,12 +123,14 @@ void TimelineWidget::renderVideos() {
     }
 }
 
+// Set total duration of the timeline
 void TimelineWidget::setDuration(qint64 duration) {
     videoDuration = duration;
     timelineSlider->setMaximum(static_cast<int>(duration));
     totalTimeLabel->setText(QTime::fromMSecsSinceStartOfDay(static_cast<int>(duration)).toString("mm:ss"));
 }
 
+// Set current position on the timeline
 void TimelineWidget::setPosition(qint64 position) {
     if (!timelineSlider->isSliderDown()) {
         timelineSlider->setValue(static_cast<int>(position));
@@ -133,6 +142,7 @@ void TimelineWidget::setPosition(qint64 position) {
     }
 }
 
+// Handle play/pause button click
 void TimelineWidget::onPlayPauseButtonClicked() {
     if (playPauseButton->text() == "▶️") {
         playPauseButton->setText("⏸️");
@@ -148,6 +158,7 @@ void TimelineWidget::onPlayPauseButtonClicked() {
     emit playPauseClicked();
 }
 
+// Handle slider moved event
 void TimelineWidget::onSliderMoved(int position) {
     emit positionChanged(position);
     if (currentMediaPlayer) {
@@ -155,10 +166,12 @@ void TimelineWidget::onSliderMoved(int position) {
     }
 }
 
+// Update play/pause button text
 void TimelineWidget::updatePlayPauseButtonText(const QString &text) {
     playPauseButton->setText(text);
 }
 
+// Handle key press event
 void TimelineWidget::keyPressEvent(QKeyEvent *event) {
     if (event->key() == Qt::Key_Space) {
         playPauseButton->click();
@@ -167,6 +180,7 @@ void TimelineWidget::keyPressEvent(QKeyEvent *event) {
     }
 }
 
+// Handle segment selected event
 void TimelineWidget::onSegmentSelected(QMediaPlayer *player) {
     if (selectedSegment) {
         selectedSegment->deselect();
@@ -183,6 +197,7 @@ void TimelineWidget::onSegmentSelected(QMediaPlayer *player) {
     setPosition(player->position());
 }
 
+// Handle add multiple videos button click
 void TimelineWidget::onAddVideosButtonClicked() {
     QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open Video Files"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
     if (fileNames.isEmpty()) {
@@ -195,6 +210,7 @@ void TimelineWidget::onAddVideosButtonClicked() {
     renderVideos();
 }
 
+// Add frame widget to the layout
 void TimelineWidget::addFrameWidget(QWidget *frameWidget) {
     frameLayout->addWidget(frameWidget);
 }
