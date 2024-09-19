@@ -355,6 +355,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.h",
+			"Mu",
+			"UVLADIE3JM/moc_TextOverlayItem.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h",
 			"Mu",
 			"UVLADIE3JM/moc_TimelineWidget.cpp",
@@ -523,6 +529,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.cpp",
 			"Mu",
 			null
 		],

@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_cpp.dir/src/SpeedDialog.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.obj.d"
+  "CMakeFiles/project_cpp.dir/src/TextOverlayItem.cpp.obj"
+  "CMakeFiles/project_cpp.dir/src/TextOverlayItem.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj"
   "CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj.d"
   "CMakeFiles/project_cpp.dir/src/VideoFrameWidget.cpp.obj"

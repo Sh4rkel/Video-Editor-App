@@ -1,4 +1,5 @@
 #include "TimelineWidget.h"
+#include "TextOverlayItem.h"
 #include <QHBoxLayout>
 #include <QSlider>
 #include <QLabel>
@@ -101,8 +102,22 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     playPositionLine->setPen(QPen(Qt::red, 2));
     scene->addItem(playPositionLine);
 
+    QFont font("Arial", 24);
+    QColor color(Qt::white);
+    QPointF position(100, 100);
+    addTextOverlay("Sample Text", position, font, color);
+
     statusBar = new QStatusBar(this);
     mainLayout->addWidget(statusBar);
+}
+
+// Add this function to TimelineWidget class
+void TimelineWidget::addTextOverlay(const QString &text, const QPointF &position, const QFont &font, const QColor &color) {
+    TextOverlayItem *textOverlay = new TextOverlayItem(text);
+    textOverlay->setFont(font);
+    textOverlay->setColor(color);
+    textOverlay->setPosition(position);
+    scene->addItem(textOverlay);
 }
 
 // Add video to the timeline

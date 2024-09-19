@@ -2882,6 +2882,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
+C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
@@ -6197,3 +6198,4 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.h

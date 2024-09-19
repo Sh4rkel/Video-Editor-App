@@ -418,6 +418,30 @@ src/SpeedWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/SpeedWidget.cpp.s
 .PHONY : src/SpeedWidget.cpp.s
 
+src/TextOverlayItem.obj: src/TextOverlayItem.cpp.obj
+.PHONY : src/TextOverlayItem.obj
+
+# target to build an object file
+src/TextOverlayItem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayItem.cpp.obj
+.PHONY : src/TextOverlayItem.cpp.obj
+
+src/TextOverlayItem.i: src/TextOverlayItem.cpp.i
+.PHONY : src/TextOverlayItem.i
+
+# target to preprocess a source file
+src/TextOverlayItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayItem.cpp.i
+.PHONY : src/TextOverlayItem.cpp.i
+
+src/TextOverlayItem.s: src/TextOverlayItem.cpp.s
+.PHONY : src/TextOverlayItem.s
+
+# target to generate assembly for a file
+src/TextOverlayItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/TextOverlayItem.cpp.s
+.PHONY : src/TextOverlayItem.cpp.s
+
 src/TimelineWidget.obj: src/TimelineWidget.cpp.obj
 .PHONY : src/TimelineWidget.obj
 
@@ -606,6 +630,9 @@ help:
 	@echo ... src/SpeedWidget.obj
 	@echo ... src/SpeedWidget.i
 	@echo ... src/SpeedWidget.s
+	@echo ... src/TextOverlayItem.obj
+	@echo ... src/TextOverlayItem.i
+	@echo ... src/TextOverlayItem.s
 	@echo ... src/TimelineWidget.obj
 	@echo ... src/TimelineWidget.i
 	@echo ... src/TimelineWidget.s

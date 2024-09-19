@@ -23,6 +23,7 @@ public:
     void addVideo(const QString &filePath);
     void renderVideos();
     void addFrameWidget(QWidget *frameWidget);
+    void addTextOverlay(const QString &text, const QPointF &position, const QFont &font, const QColor &color); // Add semicolon here
 
     signals:
         void playPauseClicked();
