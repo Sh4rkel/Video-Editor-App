@@ -3,6 +3,11 @@
 #include <QSlider>
 #include <QLabel>
 #include <QMediaPlayer>
+#include "TimelineWidget.h"
+#include <QHBoxLayout>
+#include <QSlider>
+#include <QLabel>
+#include <QMediaPlayer>
 #include <QUrl>
 #include <QTime>
 #include <QDebug>
@@ -17,15 +22,30 @@
 #include <QIcon>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QMenuBar>
+#include <QMenu>
 
 // Constructor
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     setLayout(mainLayout);
 
+    // Setup menu bar
+    QMenuBar *menuBar = new QMenuBar(this);
+    QMenu *fileMenu = menuBar->addMenu("File");
+    QAction *openAction = fileMenu->addAction("Open");
+    connect(openAction, &QAction::triggered, this, [this]() {
+        QString filePath = QFileDialog::getOpenFileName(this, "Open Video File", "", "Video Files (*.mp4 *.avi *.mkv *.mov)");
+        if (!filePath.isEmpty()) {
+            addVideo(filePath);
+        }
+    });
+    mainLayout->setMenuBar(menuBar);
+
     // Setup toolbar
     toolBar = new QToolBar(this);
     QAction *addVideoAction = new QAction(QIcon(":/icons/add.png"), "Add Video", this);
+    addVideoAction->setToolTip("Add a new video to the timeline");
     connect(addVideoAction, &QAction::triggered, this, [this]() {
         QString filePath = QFileDialog::getOpenFileName(this, "Open Video File", "", "Video Files (*.mp4 *.avi *.mkv *.mov)");
         if (!filePath.isEmpty()) {
@@ -35,14 +55,17 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     toolBar->addAction(addVideoAction);
 
     QAction *addVideosAction = new QAction(QIcon(":/icons/add_multiple.png"), "Add Multiple Videos", this);
+    addVideosAction->setToolTip("Add multiple videos to the timeline");
     connect(addVideosAction, &QAction::triggered, this, &TimelineWidget::onAddVideosButtonClicked);
     toolBar->addAction(addVideosAction);
 
     QAction *playAction = new QAction(QIcon(":/icons/play.png"), "Play", this);
+    playAction->setToolTip("Play the video");
     connect(playAction, &QAction::triggered, this, &TimelineWidget::onPlayPauseButtonClicked);
     toolBar->addAction(playAction);
 
     QAction *pauseAction = new QAction(QIcon(":/icons/pause.png"), "Pause", this);
+    pauseAction->setToolTip("Pause the video");
     connect(pauseAction, &QAction::triggered, this, &TimelineWidget::onPlayPauseButtonClicked);
     toolBar->addAction(pauseAction);
 
@@ -55,11 +78,14 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
     // Setup control layout
     QHBoxLayout *controlLayout = new QHBoxLayout();
-    playPauseButton = new QPushButton("▶️", this);
+    playPauseButton = new QPushButton(QIcon(":/icons/play.png"), "", this);
+    playPauseButton->setToolTip("Play/Pause the video");
+    playPauseButton->setStyleSheet("QPushButton { background-color: #4CAF50; color: white; border-radius: 5px; }");
     connect(playPauseButton, &QPushButton::clicked, this, &TimelineWidget::onPlayPauseButtonClicked);
     controlLayout->addWidget(playPauseButton);
 
     timelineSlider = new QSlider(Qt::Horizontal, this);
+    timelineSlider->setStyleSheet("QSlider::groove:horizontal { height: 8px; background: #ddd; } QSlider::handle:horizontal { background: #4CAF50; width: 20px; }");
     connect(timelineSlider, &QSlider::sliderMoved, this, &TimelineWidget::onSliderMoved);
     controlLayout->addWidget(timelineSlider);
 

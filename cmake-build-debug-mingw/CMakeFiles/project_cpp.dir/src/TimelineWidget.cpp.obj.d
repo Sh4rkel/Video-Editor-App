@@ -520,4 +520,9 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QMenuBar \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenubar.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenu.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QMenu \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qmenu.h
