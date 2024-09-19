@@ -591,4 +591,8 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qcborcommon.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/quuid.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/q20algorithm.h \
- D:/QT/6.7.2/mingw_64/include/QtCore/qfactoryinterface.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qfactoryinterface.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QFontDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qfontdialog.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QColorDialog \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qcolordialog.h

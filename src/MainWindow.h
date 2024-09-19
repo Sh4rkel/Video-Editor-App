@@ -31,6 +31,7 @@ public:
     void togglePlayPause();
     void handleMediaStatusChanged(QMediaPlayer::MediaStatus status);
     void addTextToVideo();
+    void addTextOverlay();
     void handleFileSelected(const QString &filePath);
     void addOverlayToVideo();
     void applyLightTheme();

@@ -16,6 +16,8 @@
 #include <QPropertyAnimation>
 #include <QGraphicsDropShadowEffect>
 #include <QImageReader>
+#include <QFontDialog>
+#include <QColorDialog>
 
 // Constructor
 MainWindow::MainWindow(QWidget *parent) :
@@ -131,7 +133,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(combineShortcut, &QShortcut::activated, this, &MainWindow::combineVideos);
 
     QShortcut *addTextShortcut = new QShortcut(QKeySequence("Ctrl+T"), this);
-    connect(addTextShortcut, &QShortcut::activated, this, &MainWindow::addTextToVideo);
+    connect(addTextShortcut, &QShortcut::activated, this, &MainWindow::addTextOverlay);
 
     QShortcut *addOverlayShortcut = new QShortcut(QKeySequence("Ctrl+O"), this);
     connect(addOverlayShortcut, &QShortcut::activated, this, &MainWindow::addOverlayToVideo);
@@ -157,6 +159,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QAction *filterSettingsAction = new QAction(tr("Filter Settings"), this);
     connect(filterSettingsAction, &QAction::triggered, this, &MainWindow::openFilterSettings);
     videoMenu->addAction(filterSettingsAction);
+
 }
 
 // Destructor
@@ -204,6 +207,29 @@ void MainWindow::openFilterSettings() {
     if (filterSettings.exec() == QDialog::Accepted) {
         applyFilter(filterSettings.getSelectedFilter());
     }
+}
+
+// Define the addOverlayToVideo function
+void MainWindow::addOverlayToVideo() {
+    QString inputVideo = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (inputVideo.isEmpty()) {
+        return;
+    }
+
+    QString overlayImage = QFileDialog::getOpenFileName(this, tr("Open Overlay Image"), "", tr("Image Files (*.png *.jpg *.bmp)"));
+    if (overlayImage.isEmpty()) {
+        return;
+    }
+
+    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Output Video"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    if (outputVideo.isEmpty()) {
+        return;
+    }
+
+    int x = QInputDialog::getInt(this, tr("Overlay Position"), tr("X position:"), 0, 0, INT_MAX, 1);
+    int y = QInputDialog::getInt(this, tr("Overlay Position"), tr("Y position:"), 0, 0, INT_MAX, 1);
+
+    ffmpegHandler->addOverlayToVideo(inputVideo, outputVideo, overlayImage, x, y);
 }
 
 // Apply filter to video
@@ -446,24 +472,24 @@ void MainWindow::setupThemeMenu() {
 }
 
 // Add overlay to video
-void MainWindow::addOverlayToVideo() {
-    if (currentVideo.isEmpty()) {
-        return;
-    }
-
+void MainWindow::addTextOverlay() {
     bool ok;
-    QString overlayText = QInputDialog::getText(this, tr("Add Overlay Text"), tr("Enter overlay text:"), QLineEdit::Normal, "", &ok);
-    if (!ok || overlayText.isEmpty()) {
+    QString text = QInputDialog::getText(this, tr("Add Text Overlay"), tr("Enter text:"), QLineEdit::Normal, "", &ok);
+    if (!ok || text.isEmpty()) {
         return;
     }
 
-    int x = QInputDialog::getInt(this, tr("Add Overlay to Video"), tr("X position:"), 0, 0, INT_MAX, 1);
-    int y = QInputDialog::getInt(this, tr("Add Overlay to Video"), tr("Y position:"), 0, 0, INT_MAX, 1);
+    int x = QInputDialog::getInt(this, tr("Add Text Overlay"), tr("X position:"), 0, 0, INT_MAX, 1, &ok);
+    if (!ok) return;
+    int y = QInputDialog::getInt(this, tr("Add Text Overlay"), tr("Y position:"), 0, 0, INT_MAX, 1, &ok);
+    if (!ok) return;
 
-    QString outputVideo = QFileDialog::getSaveFileName(this, tr("Save Video with Overlay"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
-    if (outputVideo.isEmpty()) {
-        return;
-    }
+    QFont font = QFontDialog::getFont(&ok, QFont("Arial", 24), this);
+    if (!ok) return;
 
-    ffmpegHandler->addTextToVideo(currentVideo, outputVideo, overlayText, x, y);
+    QColor color = QColorDialog::getColor(Qt::white, this, tr("Select Text Color"));
+    if (!color.isValid()) return;
+
+    // Assuming you have a method in TimelineWidget to add text overlay
+    timelineWidget->addTextOverlay(text, QPointF(x, y), font, color);
 }
