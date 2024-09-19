@@ -3,11 +3,6 @@
 #include <QSlider>
 #include <QLabel>
 #include <QMediaPlayer>
-#include "TimelineWidget.h"
-#include <QHBoxLayout>
-#include <QSlider>
-#include <QLabel>
-#include <QMediaPlayer>
 #include <QUrl>
 #include <QTime>
 #include <QDebug>

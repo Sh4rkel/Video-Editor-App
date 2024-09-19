@@ -528,4 +528,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QProgressBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qprogressbar.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QIcon \
- D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h
+ D:/QT/6.7.2/mingw_64/include/QtGui/qicon.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QTranslator \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qtranslator.h
