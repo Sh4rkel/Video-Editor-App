@@ -490,6 +490,5 @@ void MainWindow::addTextOverlay() {
     QColor color = QColorDialog::getColor(Qt::white, this, tr("Select Text Color"));
     if (!color.isValid()) return;
 
-    // Assuming you have a method in TimelineWidget to add text overlay
     timelineWidget->addTextOverlay(text, QPointF(x, y), font, color);
 }
