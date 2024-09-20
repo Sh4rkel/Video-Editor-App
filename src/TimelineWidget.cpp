@@ -24,6 +24,8 @@
 // Constructor
 TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration(0), selectedSegment(nullptr), currentMediaPlayer(nullptr) {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    frameLayout = new QVBoxLayout();
+    mainLayout->addLayout(frameLayout);
     setLayout(mainLayout);
 
     // Setup menu bar
