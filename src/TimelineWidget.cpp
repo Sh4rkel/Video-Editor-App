@@ -42,7 +42,7 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
 
     // Setup toolbar
     toolBar = new QToolBar(this);
-    QAction *addVideoAction = new QAction(QIcon(":/icons/add.png"), "Add Video", this);
+    QAction *addVideoAction = new QAction(QIcon(":/assets/logo.png"), "Add Video", this);
     addVideoAction->setToolTip("Add a new video to the timeline");
     connect(addVideoAction, &QAction::triggered, this, [this]() {
         QString filePath = QFileDialog::getOpenFileName(this, "Open Video File", "", "Video Files (*.mp4 *.avi *.mkv *.mov)");
