@@ -380,7 +380,41 @@ void MainWindow::addTextToVideo() {
 // Apply light theme
 void MainWindow::applyLightTheme() {
     QString styleSheet = R"(
-    /* Light theme styles */
+    QMainWindow {
+        background-color: #FFFFFF;
+    }
+    QMenuBar {
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item {
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item:selected {
+        background-color: #D3D3D3;
+    }
+    QToolBar {
+        background-color: #F0F0F0;
+        border: none;
+    }
+    QPushButton {
+        background-color: #ADD8E6;
+        color: black;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background-color: #87CEEB;
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: #ADD8E6;
+        width: 20px;
+    }
     )";
     qApp->setStyleSheet(styleSheet);
 }
