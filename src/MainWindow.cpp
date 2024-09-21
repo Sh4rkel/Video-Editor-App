@@ -388,7 +388,41 @@ void MainWindow::applyLightTheme() {
 // Apply dark theme
 void MainWindow::applyDarkTheme() {
     QString styleSheet = R"(
-    /* Dark theme styles */
+    QMainWindow {
+        background-color: #2E2E2E;
+    }
+    QMenuBar {
+        background-color: #3E3E3E;
+        color: #FFFFFF;
+    }
+    QMenuBar::item {
+        background-color: #3E3E3E;
+        color: #FFFFFF;
+    }
+    QMenuBar::item:selected {
+        background-color: #5E5E5E;
+    }
+    QToolBar {
+        background-color: #3E3E3E;
+        border: none;
+    }
+    QPushButton {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background-color: #45A049;
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: #4CAF50;
+        width: 20px;
+    }
     )";
     qApp->setStyleSheet(styleSheet);
 }
