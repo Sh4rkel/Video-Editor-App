@@ -404,7 +404,41 @@ void MainWindow::applyPurpleNouncesTheme() {
 // Apply green theme
 void MainWindow::applyGreenTheme() {
     QString styleSheet = R"(
-    /* Green theme styles */
+    QMainWindow {
+        background-color: #2E8B57;
+    }
+    QMenuBar {
+        background-color: #3CB371;
+        color: #FFFFFF;
+    }
+    QMenuBar::item {
+        background-color: #3CB371;
+        color: #FFFFFF;
+    }
+    QMenuBar::item:selected {
+        background-color: #66CDAA;
+    }
+    QToolBar {
+        background-color: #3CB371;
+        border: none;
+    }
+    QPushButton {
+        background-color: #8FBC8F;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background-color: #7FFF00;
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: #8FBC8F;
+        width: 20px;
+    }
     )";
     qApp->setStyleSheet(styleSheet);
 }
