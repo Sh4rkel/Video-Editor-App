@@ -5,6 +5,7 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QMediaPlayer>
+#include <QDockWidget>
 #include "filehandler.h"
 #include "FFmpegHandler.h"
 #include <QSplitter>
@@ -140,6 +141,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
     connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
+
+    // Add a QDockWidget for additional controls
+    QDockWidget *dockWidget = new QDockWidget(tr("Controls"), this);
+    QWidget *dockContent = new QWidget(dockWidget);
+    QVBoxLayout *dockLayout = new QVBoxLayout(dockContent);
+
+    QPushButton *addTextButton = new QPushButton(tr("Add Text Overlay"), dockContent);
+    connect(addTextButton, &QPushButton::clicked, this, &MainWindow::addTextOverlay);
+    dockLayout->addWidget(addTextButton);
+
+    dockContent->setLayout(dockLayout);
+    dockWidget->setWidget(dockContent);
+    addDockWidget(Qt::RightDockWidgetArea, dockWidget);
 
     // Apply styles and shadows
     applyModernStyle();

@@ -201,6 +201,12 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
@@ -213,10 +219,22 @@
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TextOverlayItem.h">
+			<Option target="project_cpp"/>
+		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoFrameWidget.h">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp">
@@ -238,6 +256,12 @@
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/main.cpp">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_FilterSettings.h">
+			<Option target="project_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/src/ui_SettingsDialog.h">
 			<Option target="project_cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/filip/CLionProjects/Video-Editor-App/ui/filehandler.ui">
