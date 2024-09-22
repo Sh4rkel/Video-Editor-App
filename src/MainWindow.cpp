@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     applyBorders();
     // Set initial window size
-    resize(1280, 720);
+    resize(1920, 1080);
 
     // Set size policies for widgets
     videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
