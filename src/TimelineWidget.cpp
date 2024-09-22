@@ -104,11 +104,6 @@ TimelineWidget::TimelineWidget(QWidget *parent) : QWidget(parent), totalDuration
     playPositionLine->setPen(QPen(Qt::red, 2));
     scene->addItem(playPositionLine);
 
-    QFont font("Arial", 24);
-    QColor color(Qt::white);
-    QPointF position(100, 100);
-    addTextOverlay("Sample Text", position, font, color);
-
     statusBar = new QStatusBar(this);
     mainLayout->addWidget(statusBar);
 }
