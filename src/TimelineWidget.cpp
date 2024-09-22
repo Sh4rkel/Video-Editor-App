@@ -122,6 +122,15 @@ void TimelineWidget::addTextOverlay(const QString &text, const QPointF &position
     scene->addItem(textOverlay);
 }
 
+void TimelineWidget::applyGraphicsViewBorders() {
+    QString styleSheet = R"(
+    QGraphicsView {
+        border: 2px solid #4CAF50;
+    }
+    )";
+    view->setStyleSheet(styleSheet);
+}
+
 // Add video to the timeline
 void TimelineWidget::addVideo(const QString &filePath) {
     QPointer<QMediaPlayer> mediaPlayer = new QMediaPlayer(this);

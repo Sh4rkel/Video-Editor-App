@@ -24,7 +24,7 @@ public:
     void renderVideos();
     void addFrameWidget(QWidget *frameWidget);
     void addTextOverlay(const QString &text, const QPointF &position, const QFont &font, const QColor &color);
-
+    void applyGraphicsViewBorders();
     signals:
         void playPauseClicked();
     void positionChanged(int position);

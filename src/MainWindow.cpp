@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     settingsDialog(new SettingsDialog(this))
 {
     ui->setupUi(this);
-
+    applyBorders();
     // Set initial window size
     resize(1280, 720);
 
@@ -414,6 +414,109 @@ void MainWindow::applyLightTheme() {
     QSlider::handle:horizontal {
         background: #ADD8E6;
         width: 20px;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyBorders() {
+    QString styleSheet = R"(
+    QPushButton {
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        border: 2px solid #45A049;
+    }
+    QSlider::groove:horizontal {
+        border: 1px solid #999999;
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        border: 1px solid #4CAF50;
+        width: 20px;
+    }
+    QMenuBar {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item:selected {
+        border: 1px solid #AAAAAA;
+        background-color: #D3D3D3;
+    }
+    QToolBar {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
+    }
+    QGraphicsView {
+        border: 2px solid #4CAF50;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyButtonBorders() {
+    QString styleSheet = R"(
+    QPushButton {
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        border: 2px solid #45A049;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applySliderBorders() {
+    QString styleSheet = R"(
+    QSlider::groove:horizontal {
+        border: 1px solid #999999;
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        border: 1px solid #4CAF50;
+        width: 20px;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyMenuBarBorders() {
+    QString styleSheet = R"(
+    QMenuBar {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
+        color: #000000;
+    }
+    QMenuBar::item:selected {
+        border: 1px solid #AAAAAA;
+        background-color: #D3D3D3;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyToolBarBorders() {
+    QString styleSheet = R"(
+    QToolBar {
+        border: 1px solid #CCCCCC;
+        background-color: #F0F0F0;
     }
     )";
     qApp->setStyleSheet(styleSheet);

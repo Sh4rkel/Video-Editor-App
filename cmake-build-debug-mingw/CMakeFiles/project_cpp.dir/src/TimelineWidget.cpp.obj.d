@@ -466,8 +466,6 @@ CMakeFiles/project_cpp.dir/src/TimelineWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtGui/qfont.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QColor \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcolor.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QSplitter \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qsplitter.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
  D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \

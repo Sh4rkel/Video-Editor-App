@@ -56,6 +56,11 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "applyBlueTheme",
     "applyDarkTheme",
     "applyPurpleNouncesTheme",
+    "applyBorders",
+    "applyButtonBorders",
+    "applySliderBorders",
+    "applyMenuBarBorders",
+    "applyToolBarBorders",
     "setupThemeMenu",
     "addVideosToTimeline",
     "applyCustomStyle",
@@ -84,7 +89,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      25,   14, // methods
+      30,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -92,31 +97,36 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  164,    2, 0x08,    1 /* Private */,
-       3,    0,  165,    2, 0x08,    2 /* Private */,
-       4,    0,  166,    2, 0x08,    3 /* Private */,
-       5,    0,  167,    2, 0x08,    4 /* Private */,
-       6,    0,  168,    2, 0x08,    5 /* Private */,
-       7,    1,  169,    2, 0x08,    6 /* Private */,
-      10,    0,  172,    2, 0x08,    8 /* Private */,
-      11,    0,  173,    2, 0x08,    9 /* Private */,
-      12,    1,  174,    2, 0x08,   10 /* Private */,
-      14,    0,  177,    2, 0x08,   12 /* Private */,
-      15,    0,  178,    2, 0x08,   13 /* Private */,
-      16,    0,  179,    2, 0x08,   14 /* Private */,
-      17,    0,  180,    2, 0x08,   15 /* Private */,
-      18,    0,  181,    2, 0x08,   16 /* Private */,
-      19,    0,  182,    2, 0x08,   17 /* Private */,
-      20,    0,  183,    2, 0x08,   18 /* Private */,
-      21,    0,  184,    2, 0x08,   19 /* Private */,
-      22,    0,  185,    2, 0x08,   20 /* Private */,
-      23,    1,  186,    2, 0x08,   21 /* Private */,
-      25,    0,  189,    2, 0x08,   23 /* Private */,
-      26,    3,  190,    2, 0x08,   24 /* Private */,
-      31,    0,  197,    2, 0x08,   28 /* Private */,
-      32,    0,  198,    2, 0x08,   29 /* Private */,
-      33,    0,  199,    2, 0x08,   30 /* Private */,
-      34,    1,  200,    2, 0x08,   31 /* Private */,
+       1,    0,  194,    2, 0x08,    1 /* Private */,
+       3,    0,  195,    2, 0x08,    2 /* Private */,
+       4,    0,  196,    2, 0x08,    3 /* Private */,
+       5,    0,  197,    2, 0x08,    4 /* Private */,
+       6,    0,  198,    2, 0x08,    5 /* Private */,
+       7,    1,  199,    2, 0x08,    6 /* Private */,
+      10,    0,  202,    2, 0x08,    8 /* Private */,
+      11,    0,  203,    2, 0x08,    9 /* Private */,
+      12,    1,  204,    2, 0x08,   10 /* Private */,
+      14,    0,  207,    2, 0x08,   12 /* Private */,
+      15,    0,  208,    2, 0x08,   13 /* Private */,
+      16,    0,  209,    2, 0x08,   14 /* Private */,
+      17,    0,  210,    2, 0x08,   15 /* Private */,
+      18,    0,  211,    2, 0x08,   16 /* Private */,
+      19,    0,  212,    2, 0x08,   17 /* Private */,
+      20,    0,  213,    2, 0x08,   18 /* Private */,
+      21,    0,  214,    2, 0x08,   19 /* Private */,
+      22,    0,  215,    2, 0x08,   20 /* Private */,
+      23,    0,  216,    2, 0x08,   21 /* Private */,
+      24,    0,  217,    2, 0x08,   22 /* Private */,
+      25,    0,  218,    2, 0x08,   23 /* Private */,
+      26,    0,  219,    2, 0x08,   24 /* Private */,
+      27,    0,  220,    2, 0x08,   25 /* Private */,
+      28,    1,  221,    2, 0x08,   26 /* Private */,
+      30,    0,  224,    2, 0x08,   28 /* Private */,
+      31,    3,  225,    2, 0x08,   29 /* Private */,
+      36,    0,  232,    2, 0x08,   33 /* Private */,
+      37,    0,  233,    2, 0x08,   34 /* Private */,
+      38,    0,  234,    2, 0x08,   35 /* Private */,
+      39,    1,  235,    2, 0x08,   36 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -137,13 +147,18 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::LongLong,   24,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 27, QMetaType::QRect, QMetaType::QRect,   28,   29,   30,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   35,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::LongLong,   29,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 32, QMetaType::QRect, QMetaType::QRect,   33,   34,   35,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   40,
 
        0        // eod
 };
@@ -188,6 +203,16 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'applyDarkTheme'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'applyPurpleNouncesTheme'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'applyBorders'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'applyButtonBorders'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'applySliderBorders'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'applyMenuBarBorders'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'applyToolBarBorders'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setupThemeMenu'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -239,22 +264,27 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 12: _t->applyBlueTheme(); break;
         case 13: _t->applyDarkTheme(); break;
         case 14: _t->applyPurpleNouncesTheme(); break;
-        case 15: _t->setupThemeMenu(); break;
-        case 16: _t->addVideosToTimeline(); break;
-        case 17: _t->applyCustomStyle(); break;
-        case 18: _t->updateProgressBar((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 19: _t->openSettings(); break;
-        case 20: _t->applySmoothTransition((*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QRect>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QRect>>(_a[3]))); break;
-        case 21: _t->applyModernStyle(); break;
-        case 22: _t->applyShadows(); break;
-        case 23: _t->openFilterSettings(); break;
-        case 24: _t->applyFilter((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 15: _t->applyBorders(); break;
+        case 16: _t->applyButtonBorders(); break;
+        case 17: _t->applySliderBorders(); break;
+        case 18: _t->applyMenuBarBorders(); break;
+        case 19: _t->applyToolBarBorders(); break;
+        case 20: _t->setupThemeMenu(); break;
+        case 21: _t->addVideosToTimeline(); break;
+        case 22: _t->applyCustomStyle(); break;
+        case 23: _t->updateProgressBar((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 24: _t->openSettings(); break;
+        case 25: _t->applySmoothTransition((*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QRect>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QRect>>(_a[3]))); break;
+        case 26: _t->applyModernStyle(); break;
+        case 27: _t->applyShadows(); break;
+        case 28: _t->openFilterSettings(); break;
+        case 29: _t->applyFilter((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 20:
+        case 25:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
@@ -284,13 +314,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 25)
+        if (_id < 30)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 25;
+        _id -= 30;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 25)
+        if (_id < 30)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 25;
+        _id -= 30;
     }
     return _id;
 }

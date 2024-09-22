@@ -39,6 +39,11 @@ public:
     void applyBlueTheme();
     void applyDarkTheme();
     void applyPurpleNouncesTheme();
+    void applyBorders();
+    void applyButtonBorders();
+    void applySliderBorders();
+    void applyMenuBarBorders();
+    void applyToolBarBorders();
     void setupThemeMenu();
     void addVideosToTimeline();
     void applyCustomStyle();
