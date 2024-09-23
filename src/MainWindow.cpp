@@ -36,6 +36,8 @@ MainWindow::MainWindow(QWidget *parent) :
     settingsDialog(new SettingsDialog(this))
 {
     ui->setupUi(this);
+    // applyModernStyle();
+    // applyShadows();
     applyBorders();
     applyGradientTheme();
     applyCustomGradientTheme();
@@ -184,6 +186,8 @@ MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
 }
+
+
 
 void MainWindow::applyGradientThemeFromPalette(const QList<QColor> &colors) {
     QString gradient = GradientPalette::createGradientFromPalette(colors);
@@ -827,39 +831,50 @@ void MainWindow::applyCustomStyle() {
 void MainWindow::applyModernStyle() {
     QString styleSheet = R"(
     QMainWindow {
-        background-color: #F5F5F5;
+        background-color: #2E2E2E;
+        color: #FFFFFF;
     }
     QMenuBar {
-        background-color: #E0E0E0;
-        color: #000000;
+        background-color: #3E3E3E;
+        color: #FFFFFF;
     }
     QMenuBar::item {
-        background-color: #E0E0E0;
-        color: #000000;
+        background-color: transparent;
+        color: #FFFFFF;
     }
     QMenuBar::item:selected {
-        background-color: #B0B0B0;
+        background-color: #5E5E5E;
     }
     QToolBar {
-        background-color: #E0E0E0;
+        background-color: #3E3E3E;
         border: none;
     }
     QPushButton {
-        background-color: #D3D3D3;
-        color: black;
+        background-color: #5E5E5E;
+        color: white;
         border-radius: 5px;
         padding: 10px;
     }
     QPushButton:hover {
-        background-color: #C0C0C0;
+        background-color: #7E7E7E;
     }
     QSlider::groove:horizontal {
         height: 8px;
         background: #ddd;
     }
     QSlider::handle:horizontal {
-        background: #D3D3D3;
+        background: #5E5E5E;
         width: 20px;
+    }
+    QProgressBar {
+        background-color: #3E3E3E;
+        border: 1px solid #5E5E5E;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+    }
+    QProgressBar::chunk {
+        background-color: #5E5E5E;
     }
     )";
     qApp->setStyleSheet(styleSheet);
@@ -877,15 +892,18 @@ void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, 
 
 // Apply shadows to widgets
 void MainWindow::applyShadows() {
-    QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(this);
-    shadowEffect->setBlurRadius(10);
-    shadowEffect->setOffset(2, 2);
-    shadowEffect->setColor(Qt::black);
+    auto addShadow = [](QWidget *widget) {
+        QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(widget);
+        shadowEffect->setBlurRadius(10);
+        shadowEffect->setOffset(2, 2);
+        shadowEffect->setColor(Qt::black);
+        widget->setGraphicsEffect(shadowEffect);
+    };
 
-    videoPlayerWidget->setGraphicsEffect(shadowEffect);
-    timelineWidget->setGraphicsEffect(shadowEffect);
-    speedWidget->setGraphicsEffect(shadowEffect);
-    progressBar->setGraphicsEffect(shadowEffect);
+    addShadow(videoPlayerWidget);
+    addShadow(timelineWidget);
+    addShadow(speedWidget);
+    addShadow(progressBar);
 }
 
 // Setup theme menu
