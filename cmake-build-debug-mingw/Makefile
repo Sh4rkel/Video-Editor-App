@@ -322,6 +322,30 @@ src/FilterSettingsDialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/FilterSettingsDialog.cpp.s
 .PHONY : src/FilterSettingsDialog.cpp.s
 
+src/GradientPalette.obj: src/GradientPalette.cpp.obj
+.PHONY : src/GradientPalette.obj
+
+# target to build an object file
+src/GradientPalette.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/GradientPalette.cpp.obj
+.PHONY : src/GradientPalette.cpp.obj
+
+src/GradientPalette.i: src/GradientPalette.cpp.i
+.PHONY : src/GradientPalette.i
+
+# target to preprocess a source file
+src/GradientPalette.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/GradientPalette.cpp.i
+.PHONY : src/GradientPalette.cpp.i
+
+src/GradientPalette.s: src/GradientPalette.cpp.s
+.PHONY : src/GradientPalette.s
+
+# target to generate assembly for a file
+src/GradientPalette.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/src/GradientPalette.cpp.s
+.PHONY : src/GradientPalette.cpp.s
+
 src/MainWindow.obj: src/MainWindow.cpp.obj
 .PHONY : src/MainWindow.obj
 
@@ -618,6 +642,9 @@ help:
 	@echo ... src/FilterSettingsDialog.obj
 	@echo ... src/FilterSettingsDialog.i
 	@echo ... src/FilterSettingsDialog.s
+	@echo ... src/GradientPalette.obj
+	@echo ... src/GradientPalette.i
+	@echo ... src/GradientPalette.s
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s

@@ -79,16 +79,16 @@ clean: CMakeFiles/project_cpp_autogen.dir/clean
 # Target rules for target CMakeFiles/project_cpp.dir
 
 # All Build rule for target.
-CMakeFiles/project_cpp.dir/all: CMakeFiles/project_cpp_autogen_timestamp_deps.dir/all
 CMakeFiles/project_cpp.dir/all: CMakeFiles/project_cpp_autogen.dir/all
+CMakeFiles/project_cpp.dir/all: CMakeFiles/project_cpp_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp.dir\build.make CMakeFiles/project_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target project_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target project_cpp"
 .PHONY : CMakeFiles/project_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/project_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles 0
 .PHONY : CMakeFiles/project_cpp.dir/rule
@@ -135,7 +135,7 @@ CMakeFiles/project_cpp_autogen_timestamp_deps.dir/clean:
 CMakeFiles/project_cpp_autogen.dir/all: CMakeFiles/project_cpp_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp_autogen.dir\build.make CMakeFiles/project_cpp_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_cpp_autogen.dir\build.make CMakeFiles/project_cpp_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=21 "Built target project_cpp_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\filip\CLionProjects\Video-Editor-App\cmake-build-debug-mingw\CMakeFiles --progress-num=22 "Built target project_cpp_autogen"
 .PHONY : CMakeFiles/project_cpp_autogen.dir/all
 
 # Build rule for subdir invocation for target.

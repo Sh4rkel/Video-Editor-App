@@ -54,6 +54,8 @@ add_executable(project_cpp
         src/VideoFrameWidget.h
         src/TextOverlayItem.cpp
         src/TextOverlayItem.h
+        src/GradientPalette.cpp
+        src/GradientPalette.h
 )
 
 set(CMAKE_PREFIX_PATH "D:/QT/6.7.2/mingw_64")

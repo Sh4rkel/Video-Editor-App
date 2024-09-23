@@ -45,6 +45,8 @@ public:
     void applyMenuBarBorders();
     void applyToolBarBorders();
     void applyGradientTheme();
+    void applyCustomGradientTheme();
+    void applyGradientThemeFromPalette(const QList<QColor> &colors);
     void setupThemeMenu();
     void addVideosToTimeline();
     void applyCustomStyle();

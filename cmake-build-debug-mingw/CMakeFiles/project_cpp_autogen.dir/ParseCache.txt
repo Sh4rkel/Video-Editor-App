@@ -1711,6 +1711,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
+C:/Users/filip/CLionProjects/Video-Editor-App/src/GradientPalette.h
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
@@ -6192,6 +6193,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FileImportWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/SpeedDialog.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FileManager.cpp
+C:/Users/filip/CLionProjects/Video-Editor-App/src/GradientPalette.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettings.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/SettingsDialog.cpp

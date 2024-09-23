@@ -544,6 +544,13 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoFrameWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QImage \
  D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\GradientPalette.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QColor \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qcolor.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QString \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QList \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \

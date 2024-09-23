@@ -331,6 +331,12 @@
 			null
 		],
 		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/GradientPalette.h",
+			"Mu",
+			"UVLADIE3JM/moc_GradientPalette.cpp",
+			null
+		],
+		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/MainWindow.h",
 			"Mu",
 			"UVLADIE3JM/moc_MainWindow.cpp",
@@ -509,6 +515,11 @@
 		],
 		[
 			"C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.cpp",
+			"Mu",
+			null
+		],
+		[
+			"C:/Users/filip/CLionProjects/Video-Editor-App/src/GradientPalette.cpp",
 			"Mu",
 			null
 		],

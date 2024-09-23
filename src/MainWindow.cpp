@@ -1,6 +1,7 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
 #include "VideoFrameWidget.h"
+#include "GradientPalette.h"
 #include <QFileDialog>
 #include <QInputDialog>
 #include <QMessageBox>
@@ -37,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     applyBorders();
     applyGradientTheme();
+    applyCustomGradientTheme();
     // Set initial window size
     resize(1920, 1080);
 
@@ -181,6 +183,53 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
+}
+
+void MainWindow::applyGradientThemeFromPalette(const QList<QColor> &colors) {
+    QString gradient = GradientPalette::createGradientFromPalette(colors);
+    QString styleSheet = QString(R"(
+    QMainWindow {
+        background: %1;
+    }
+    QMenuBar {
+        background: %1;
+        color: #FFFFFF;
+    }
+    QMenuBar::item {
+        background: transparent;
+        color: #FFFFFF;
+    }
+    QMenuBar::item:selected {
+        background: %1;
+    }
+    QToolBar {
+        background: %1;
+        border: none;
+    }
+    QPushButton {
+        background: %1;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background: %1;
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: %1;
+        width: 20px;
+    }
+    )").arg(gradient);
+    qApp->setStyleSheet(styleSheet);
+}
+
+void MainWindow::applyCustomGradientTheme() {
+    QList<QColor> colors = { QColor("#FF5733"), QColor("#FFC300"), QColor("#C70039") };
+    applyGradientThemeFromPalette(colors);
 }
 
 void MainWindow::applyGradientTheme() {
