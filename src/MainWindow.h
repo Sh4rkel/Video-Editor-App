@@ -44,6 +44,7 @@ public:
     void applySliderBorders();
     void applyMenuBarBorders();
     void applyToolBarBorders();
+    void applyGradientTheme();
     void setupThemeMenu();
     void addVideosToTimeline();
     void applyCustomStyle();

@@ -36,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     applyBorders();
+    applyGradientTheme();
     // Set initial window size
     resize(1920, 1080);
 
@@ -180,6 +181,47 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
+}
+
+void MainWindow::applyGradientTheme() {
+    QString styleSheet = R"(
+    QMainWindow {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FF5733, stop:1 #C70039);
+    }
+    QMenuBar {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FFC300, stop:1 #FF5733);
+        color: #FFFFFF;
+    }
+    QMenuBar::item {
+        background: transparent;
+        color: #FFFFFF;
+    }
+    QMenuBar::item:selected {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FF5733, stop:1 #C70039);
+    }
+    QToolBar {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FFC300, stop:1 #FF5733);
+        border: none;
+    }
+    QPushButton {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FF5733, stop:1 #C70039);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #C70039, stop:1 #900C3F);
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #FF5733, stop:1 #C70039);
+        width: 20px;
+    }
+    )";
+    qApp->setStyleSheet(styleSheet);
 }
 
 // Open file dialog
