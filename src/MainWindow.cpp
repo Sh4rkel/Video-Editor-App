@@ -36,149 +36,151 @@ MainWindow::MainWindow(QWidget *parent) :
     settingsDialog(new SettingsDialog(this))
 {
     ui->setupUi(this);
-    // applyModernStyle();
-    // applyShadows();
-    applyBorders();
-    applyGradientTheme();
-    applyCustomGradientTheme();
-    // Set initial window size
-    resize(1920, 1080);
 
-    // Set size policies for widgets
-    videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    if (videoPlayerWidget && timelineWidget && fileHandler) {
+        // applyModernStyle();
+        // applyShadows();
+        // applyBorders();
+        // applyGradientTheme();
+        // applyCustomGradientTheme();
+        // Set initial window size
+        resize(1920, 1080);
 
-    // Main layout
-    QVBoxLayout *mainLayout = new QVBoxLayout();
-    mainLayout->addWidget(videoPlayerWidget, 3);
-    mainLayout->addWidget(timelineWidget, 1);
-    mainLayout->addWidget(fileHandler, 2);
+        // Set size policies for widgets
+        videoPlayerWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        timelineWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        fileHandler->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-    // Splitter for vertical layout
-    QSplitter *splitter = new QSplitter(Qt::Vertical, this);
-    splitter->addWidget(videoPlayerWidget);
-    splitter->addWidget(timelineWidget);
-    splitter->addWidget(fileHandler);
+        // Main layout
+        QVBoxLayout *mainLayout = new QVBoxLayout();
+        mainLayout->addWidget(videoPlayerWidget, 3);
+        mainLayout->addWidget(timelineWidget, 1);
+        mainLayout->addWidget(fileHandler, 2);
 
-    // Central widget
-    QWidget *centralWidget = new QWidget(this);
-    centralWidget->setLayout(mainLayout);
-    setCentralWidget(centralWidget);
+        // Splitter for vertical layout
+        QSplitter *splitter = new QSplitter(Qt::Vertical, this);
+        splitter->addWidget(videoPlayerWidget);
+        splitter->addWidget(timelineWidget);
+        splitter->addWidget(fileHandler);
 
-    // Control layout
-    QHBoxLayout *controlLayout = new QHBoxLayout();
-    controlLayout->addWidget(speedWidget, 1);
-    controlLayout->addWidget(timelineWidget, 9);
-    mainLayout->addLayout(controlLayout);
+        // Central widget
+        QWidget *centralWidget = new QWidget(this);
+        centralWidget->setLayout(mainLayout);
+        setCentralWidget(centralWidget);
 
-    // Progress bar
-    progressBar = new QProgressBar(this);
-    progressBar->setRange(0, 100);
-    progressBar->setValue(0);
-    mainLayout->addWidget(progressBar);
+        // Control layout
+        QHBoxLayout *controlLayout = new QHBoxLayout();
+        controlLayout->addWidget(speedWidget, 1);
+        controlLayout->addWidget(timelineWidget, 9);
+        mainLayout->addLayout(controlLayout);
 
-    // Media player setup
-    mediaPlayer = new QMediaPlayer(this);
-    videoWidget = new QVideoWidget(this);
-    mainLayout->addWidget(videoWidget);
-    mediaPlayer->setVideoOutput(videoWidget);
+        // Progress bar
+        progressBar = new QProgressBar(this);
+        progressBar->setRange(0, 100);
+        progressBar->setValue(0);
+        mainLayout->addWidget(progressBar);
 
-    // Connect signals and slots
-    connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
-    connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
-    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
-    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
-    connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
-    connect(speedWidget, &SpeedWidget::speedChanged, videoPlayerWidget, &VideoPlayerWidget::setSpeed);
+        // Media player setup
+        mediaPlayer = new QMediaPlayer(this);
+        videoWidget = new QVideoWidget(this);
+        mainLayout->addWidget(videoWidget);
+        mediaPlayer->setVideoOutput(videoWidget);
 
-    // Menu bar setup
-    menuBar = new QMenuBar(this);
-    setMenuBar(menuBar);
+        // Connect signals and slots
+        connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
+        connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
+        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
+        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
+        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
+        connect(speedWidget, &SpeedWidget::speedChanged, videoPlayerWidget, &VideoPlayerWidget::setSpeed);
 
-    // Video menu
-    videoMenu = new QMenu(tr("Video"), this);
-    menuBar->addMenu(videoMenu);
+        // Menu bar setup
+        menuBar = new QMenuBar(this);
+        setMenuBar(menuBar);
 
-    // Actions
-    openAction = new QAction(tr("Open"), this);
-    connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
-    videoMenu->addAction(openAction);
+        // Video menu
+        videoMenu = new QMenu(tr("Video"), this);
+        menuBar->addMenu(videoMenu);
 
-    saveAction = new QAction(tr("Save"), this);
-    connect(saveAction, &QAction::triggered, this, &MainWindow::saveFile);
-    videoMenu->addAction(saveAction);
+        // Actions
+        openAction = new QAction(tr("Open"), this);
+        connect(openAction, &QAction::triggered, this, &MainWindow::openFile);
+        videoMenu->addAction(openAction);
 
-    cutAction = new QAction(tr("Cut"), this);
-    connect(cutAction, &QAction::triggered, this, &MainWindow::cutVideo);
-    videoMenu->addAction(cutAction);
+        saveAction = new QAction(tr("Save"), this);
+        connect(saveAction, &QAction::triggered, this, &MainWindow::saveFile);
+        videoMenu->addAction(saveAction);
 
-    combineAction = new QAction(tr("Combine"), this);
-    connect(combineAction, &QAction::triggered, this, &MainWindow::combineVideos);
-    videoMenu->addAction(combineAction);
+        cutAction = new QAction(tr("Cut"), this);
+        connect(cutAction, &QAction::triggered, this, &MainWindow::cutVideo);
+        videoMenu->addAction(cutAction);
 
-    addTextAction = new QAction(tr("Add Text"), this);
-    connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo);
-    videoMenu->addAction(addTextAction);
+        combineAction = new QAction(tr("Combine"), this);
+        connect(combineAction, &QAction::triggered, this, &MainWindow::combineVideos);
+        videoMenu->addAction(combineAction);
 
-    addOverlayAction = new QAction(tr("Add Overlay"), this);
-    connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
-    videoMenu->addAction(addOverlayAction);
+        addTextAction = new QAction(tr("Add Text"), this);
+        connect(addTextAction, &QAction::triggered, this, &MainWindow::addTextToVideo);
+        videoMenu->addAction(addTextAction);
 
-    QAction *addVideosAction = new QAction(tr("Add Videos to Timeline"), this);
-    connect(addVideosAction, &QAction::triggered, this, &MainWindow::addVideosToTimeline);
-    videoMenu->addAction(addVideosAction);
+        addOverlayAction = new QAction(tr("Add Overlay"), this);
+        connect(addOverlayAction, &QAction::triggered, this, &MainWindow::addOverlayToVideo);
+        videoMenu->addAction(addOverlayAction);
 
-    connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
+        QAction *addVideosAction = new QAction(tr("Add Videos to Timeline"), this);
+        connect(addVideosAction, &QAction::triggered, this, &MainWindow::addVideosToTimeline);
+        videoMenu->addAction(addVideosAction);
 
-    // Shortcuts
-    QShortcut *cutShortcut = new QShortcut(QKeySequence("Ctrl+X"), this);
-    connect(cutShortcut, &QShortcut::activated, this, &MainWindow::cutVideo);
+        connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
-    QShortcut *combineShortcut = new QShortcut(QKeySequence("Ctrl+M"), this);
-    connect(combineShortcut, &QShortcut::activated, this, &MainWindow::combineVideos);
+        // Shortcuts
+        QShortcut *cutShortcut = new QShortcut(QKeySequence("Ctrl+X"), this);
+        connect(cutShortcut, &QShortcut::activated, this, &MainWindow::cutVideo);
 
-    QShortcut *addTextShortcut = new QShortcut(QKeySequence("Ctrl+T"), this);
-    connect(addTextShortcut, &QShortcut::activated, this, &MainWindow::addTextOverlay);
+        QShortcut *combineShortcut = new QShortcut(QKeySequence("Ctrl+M"), this);
+        connect(combineShortcut, &QShortcut::activated, this, &MainWindow::combineVideos);
 
-    QShortcut *addOverlayShortcut = new QShortcut(QKeySequence("Ctrl+O"), this);
-    connect(addOverlayShortcut, &QShortcut::activated, this, &MainWindow::addOverlayToVideo);
+        QShortcut *addTextShortcut = new QShortcut(QKeySequence("Ctrl+T"), this);
+        connect(addTextShortcut, &QShortcut::activated, this, &MainWindow::addTextOverlay);
 
-    QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
-    connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
+        QShortcut *addOverlayShortcut = new QShortcut(QKeySequence("Ctrl+O"), this);
+        connect(addOverlayShortcut, &QShortcut::activated, this, &MainWindow::addOverlayToVideo);
 
-    // Add a QDockWidget for additional controls
-    QDockWidget *dockWidget = new QDockWidget(tr("Controls"), this);
-    QWidget *dockContent = new QWidget(dockWidget);
-    QVBoxLayout *dockLayout = new QVBoxLayout(dockContent);
+        QShortcut *addVideosShortcut = new QShortcut(QKeySequence("Ctrl+Shift+A"), this);
+        connect(addVideosShortcut, &QShortcut::activated, this, &MainWindow::addVideosToTimeline);
 
-    QPushButton *addTextButton = new QPushButton(tr("Add Text Overlay"), dockContent);
-    connect(addTextButton, &QPushButton::clicked, this, &MainWindow::addTextOverlay);
-    dockLayout->addWidget(addTextButton);
+        // Add a QDockWidget for additional controls
+        QDockWidget *dockWidget = new QDockWidget(tr("Controls"), this);
+        QWidget *dockContent = new QWidget(dockWidget);
+        QVBoxLayout *dockLayout = new QVBoxLayout(dockContent);
 
-    dockContent->setLayout(dockLayout);
-    dockWidget->setWidget(dockContent);
-    addDockWidget(Qt::RightDockWidgetArea, dockWidget);
+        QPushButton *addTextButton = new QPushButton(tr("Add Text Overlay"), dockContent);
+        connect(addTextButton, &QPushButton::clicked, this, &MainWindow::addTextOverlay);
+        dockLayout->addWidget(addTextButton);
 
-    // Apply styles and shadows
-    applyModernStyle();
-    applyShadows();
+        dockContent->setLayout(dockLayout);
+        dockWidget->setWidget(dockContent);
+        addDockWidget(Qt::RightDockWidgetArea, dockWidget);
 
-    // Setup theme menu
-    setupThemeMenu();
+        // Apply styles and shadows
+        applyModernStyle();
+        applyShadows();
 
-    // Settings menu
-    settingsMenu = new QMenu(tr("Settings"), this);
-    menuBar->addMenu(settingsMenu);
+        // Setup theme menu
+        setupThemeMenu();
 
-    QAction *settingsAction = new QAction(tr("Settings"), this);
-    connect(settingsAction, &QAction::triggered, this, &MainWindow::openSettings);
-    settingsMenu->addAction(settingsAction);
+        // Settings menu
+        settingsMenu = new QMenu(tr("Settings"), this);
+        menuBar->addMenu(settingsMenu);
 
-    QAction *filterSettingsAction = new QAction(tr("Filter Settings"), this);
-    connect(filterSettingsAction, &QAction::triggered, this, &MainWindow::openFilterSettings);
-    videoMenu->addAction(filterSettingsAction);
+        QAction *settingsAction = new QAction(tr("Settings"), this);
+        connect(settingsAction, &QAction::triggered, this, &MainWindow::openSettings);
+        settingsMenu->addAction(settingsAction);
 
+        QAction *filterSettingsAction = new QAction(tr("Filter Settings"), this);
+        connect(filterSettingsAction, &QAction::triggered, this, &MainWindow::openFilterSettings);
+        videoMenu->addAction(filterSettingsAction);
+    }
 }
 
 // Destructor
@@ -186,8 +188,6 @@ MainWindow::~MainWindow() {
     delete ui;
     delete ffmpegHandler;
 }
-
-
 
 void MainWindow::applyGradientThemeFromPalette(const QList<QColor> &colors) {
     QString gradient = GradientPalette::createGradientFromPalette(colors);
