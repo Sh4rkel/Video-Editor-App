@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     if (videoPlayerWidget && timelineWidget && fileHandler) {
-        // applyModernStyle();
+        applyModernStyle();
         // applyShadows();
         // applyBorders();
         // applyGradientTheme();

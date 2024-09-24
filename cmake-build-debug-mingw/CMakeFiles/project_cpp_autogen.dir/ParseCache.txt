@@ -2112,6 +2112,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegHandler.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h
+C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/filehandler.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mmc:Q_OBJECT
@@ -2466,7 +2467,6 @@ C:/Users/filip/CLionProjects/Video-Editor-App/src/FFmpegWorker.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/QT/6.7.2/mingw_64/include/QtCore/qyieldcpu.h
-C:/Users/filip/CLionProjects/Video-Editor-App/src/VideoPlayerWidget.cpp
 C:/Users/filip/CLionProjects/Video-Editor-App/src/FilterSettingsDialog.h
  mmc:Q_OBJECT
  mdp:C:/Users/filip/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm
