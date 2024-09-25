@@ -385,8 +385,9 @@ void MainWindow::addVideosToTimeline() {
 
 // Function to open settings dialog
 void MainWindow::openSettings() {
-    // Implement the logic to open the settings dialog
-    // For example, you might create and show a settings dialog
+    if (!settingsDialog) {
+        settingsDialog = std::make_unique<SettingsDialog>(this);
+    }
     settingsDialog->exec();
 }
 
