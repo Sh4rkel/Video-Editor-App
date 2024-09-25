@@ -59,13 +59,13 @@ public:
     void applyFilter(const QString &filter);
 
 private:
-    Ui::MainWindow *ui;
-    VideoPlayerWidget *videoPlayerWidget;
-    TimelineWidget *timelineWidget;
-    SpeedDialog *speedDialog;
-    SpeedWidget *speedWidget;
-    SettingsDialog *settingsDialog;
-    FFmpegHandler *ffmpegHandler;
+    std::unique_ptr<Ui::MainWindow> ui;
+    std::unique_ptr<VideoPlayerWidget> videoPlayerWidget;
+    std::unique_ptr<TimelineWidget> timelineWidget;
+    std::unique_ptr<SpeedDialog> speedDialog;
+    std::unique_ptr<SpeedWidget> speedWidget;
+    std::unique_ptr<SettingsDialog> settingsDialog;
+    std::unique_ptr<FFmpegHandler> ffmpegHandler;
     QString currentVideo;
     QString outputVideo;
     QAction *openAction;
@@ -81,7 +81,7 @@ private:
     QMenu *settingsMenu;
     QMediaPlayer *mediaPlayer;
     QVideoWidget *videoWidget;
-    FileHandler *fileHandler;
+    std::unique_ptr<FileHandler> fileHandler;
     bool darkModeEnabled;
 };
 

@@ -24,16 +24,16 @@
 // Constructor
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
-    ffmpegHandler(new FFmpegHandler(this)),
-    videoPlayerWidget(new VideoPlayerWidget(this)),
-    timelineWidget(new TimelineWidget(this)),
-    speedDialog(new SpeedDialog(this)),
-    speedWidget(new SpeedWidget(this)),
-    fileHandler(new FileHandler(this)),
+    ui(std::make_unique<Ui::MainWindow>()),
+    ffmpegHandler(std::make_unique<FFmpegHandler>(this)),
+    videoPlayerWidget(std::make_unique<VideoPlayerWidget>(this)),
+    timelineWidget(std::make_unique<TimelineWidget>(this)),
+    speedDialog(std::make_unique<SpeedDialog>(this)),
+    speedWidget(std::make_unique<SpeedWidget>(this)),
+    fileHandler(std::make_unique<FileHandler>(this)),
+    settingsDialog(std::make_unique<SettingsDialog>(this)),
     darkModeEnabled(true),
-    currentVideo(""),
-    settingsDialog(new SettingsDialog(this))
+    currentVideo("")
 {
     ui->setupUi(this);
 
@@ -53,15 +53,15 @@ MainWindow::MainWindow(QWidget *parent) :
 
         // Main layout
         QVBoxLayout *mainLayout = new QVBoxLayout();
-        mainLayout->addWidget(videoPlayerWidget, 3);
-        mainLayout->addWidget(timelineWidget, 1);
-        mainLayout->addWidget(fileHandler, 2);
+        mainLayout->addWidget(videoPlayerWidget.get(), 3);
+        mainLayout->addWidget(timelineWidget.get(), 1);
+        mainLayout->addWidget(fileHandler.get(), 2);
 
         // Splitter for vertical layout
         QSplitter *splitter = new QSplitter(Qt::Vertical, this);
-        splitter->addWidget(videoPlayerWidget);
-        splitter->addWidget(timelineWidget);
-        splitter->addWidget(fileHandler);
+        splitter->addWidget(videoPlayerWidget.get());
+        splitter->addWidget(timelineWidget.get());
+        splitter->addWidget(fileHandler.get());
 
         // Central widget
         QWidget *centralWidget = new QWidget(this);
@@ -70,8 +70,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
         // Control layout
         QHBoxLayout *controlLayout = new QHBoxLayout();
-        controlLayout->addWidget(speedWidget, 1);
-        controlLayout->addWidget(timelineWidget, 9);
+        controlLayout->addWidget(speedWidget.get(), 1);
+        controlLayout->addWidget(timelineWidget.get(), 9);
         mainLayout->addLayout(controlLayout);
 
         // Progress bar
@@ -87,12 +87,12 @@ MainWindow::MainWindow(QWidget *parent) :
         mediaPlayer->setVideoOutput(videoWidget);
 
         // Connect signals and slots
-        connect(timelineWidget, &TimelineWidget::positionChanged, videoPlayerWidget, &VideoPlayerWidget::seek);
-        connect(timelineWidget, &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
-        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget, &TimelineWidget::setDuration);
-        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget, &TimelineWidget::setPosition);
+        connect(timelineWidget.get(), &TimelineWidget::positionChanged, videoPlayerWidget.get(), &VideoPlayerWidget::seek);
+        connect(timelineWidget.get(), &TimelineWidget::playPauseClicked, this, &MainWindow::togglePlayPause);
+        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::durationChanged, timelineWidget.get(), &TimelineWidget::setDuration);
+        connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget.get(), &TimelineWidget::setPosition);
         connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
-        connect(speedWidget, &SpeedWidget::speedChanged, videoPlayerWidget, &VideoPlayerWidget::setSpeed);
+        connect(speedWidget.get(), &SpeedWidget::speedChanged, videoPlayerWidget.get(), &VideoPlayerWidget::setSpeed);
 
         // Menu bar setup
         menuBar = new QMenuBar(this);
@@ -131,7 +131,7 @@ MainWindow::MainWindow(QWidget *parent) :
         connect(addVideosAction, &QAction::triggered, this, &MainWindow::addVideosToTimeline);
         videoMenu->addAction(addVideosAction);
 
-        connect(fileHandler, &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
+        connect(fileHandler.get(), &FileHandler::fileSelected, this, &MainWindow::handleFileSelected);
 
         // Shortcuts
         QShortcut *cutShortcut = new QShortcut(QKeySequence("Ctrl+X"), this);
@@ -185,8 +185,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 // Destructor
 MainWindow::~MainWindow() {
-    delete ui;
-    delete ffmpegHandler;
 }
 
 void MainWindow::applyGradientThemeFromPalette(const QList<QColor> &colors) {
@@ -830,6 +828,9 @@ void MainWindow::applyCustomStyle() {
 
 // Apply modern style
 void MainWindow::applyModernStyle() {
+    static bool styleApplied = false;
+    if (styleApplied) return;
+
     QString styleSheet = R"(
     QMainWindow {
         background-color: #2E2E2E;
@@ -879,6 +880,7 @@ void MainWindow::applyModernStyle() {
     }
     )";
     qApp->setStyleSheet(styleSheet);
+    styleApplied = true;
 }
 
 // Apply smooth transition animation
@@ -894,16 +896,16 @@ void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, 
 // Apply shadows to widgets
 void MainWindow::applyShadows() {
     auto addShadow = [](QWidget *widget) {
-        QGraphicsDropShadowEffect *shadowEffect = new QGraphicsDropShadowEffect(widget);
-        shadowEffect->setBlurRadius(10);
-        shadowEffect->setOffset(2, 2);
-        shadowEffect->setColor(Qt::black);
-        widget->setGraphicsEffect(shadowEffect);
+        if (!widget) return;
+        QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect();
+        shadow->setBlurRadius(10);
+        shadow->setOffset(2, 2);
+        widget->setGraphicsEffect(shadow);
     };
 
-    addShadow(videoPlayerWidget);
-    addShadow(timelineWidget);
-    addShadow(speedWidget);
+    addShadow(videoPlayerWidget.get());
+    addShadow(timelineWidget.get());
+    addShadow(speedWidget.get());
     addShadow(progressBar);
 }
 
