@@ -883,19 +883,6 @@ void MainWindow::applyModernStyle() {
     styleApplied = true;
 }
 
-void MainWindow::startFFmpegWorker() {
-    QThread *thread = new QThread;
-    FFmpegWorker *worker = new FFmpegWorker;
-    worker->moveToThread(thread);
-
-    connect(thread, &QThread::started, worker, &FFmpegWorker::execute);
-    connect(worker, &FFmpegWorker::finished, thread, &QThread::quit);
-    connect(worker, &FFmpegWorker::finished, worker, &FFmpegWorker::deleteLater);
-    connect(thread, &QThread::finished, thread, &QThread::deleteLater);
-
-    thread->start();
-}
-
 // Apply smooth transition animation
 void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
     QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");

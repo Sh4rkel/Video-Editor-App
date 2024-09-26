@@ -57,7 +57,6 @@ public:
     void applyShadows();
     void openFilterSettings();
     void applyFilter(const QString &filter);
-    void startFFmpegWorker();
 
 private:
     std::unique_ptr<Ui::MainWindow> ui;
