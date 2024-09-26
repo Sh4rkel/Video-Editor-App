@@ -1,4 +1,5 @@
 #include "FFmpegWorker.h"
+#include <QThread>
 
 FFmpegWorker::FFmpegWorker(QObject *parent) : QObject(parent) {}
 
