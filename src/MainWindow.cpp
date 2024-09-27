@@ -554,7 +554,9 @@ void MainWindow::applyBorders() {
         border: 2px solid #4CAF50;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 void MainWindow::applyButtonBorders() {
