@@ -510,7 +510,9 @@ void MainWindow::applyLightTheme() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 void MainWindow::applyBorders() {
