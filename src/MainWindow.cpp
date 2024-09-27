@@ -739,7 +739,9 @@ void MainWindow::applyGreenTheme() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply blue theme
