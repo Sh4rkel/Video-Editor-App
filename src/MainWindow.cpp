@@ -697,7 +697,9 @@ void MainWindow::applyPurpleNouncesTheme() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply green theme
