@@ -655,7 +655,9 @@ void MainWindow::applyDarkTheme() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply purple theme
