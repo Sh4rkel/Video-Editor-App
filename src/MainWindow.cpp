@@ -879,6 +879,7 @@ void MainWindow::applyModernStyle() {
         background-color: #5E5E5E;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
     styleApplied = true;
 }
