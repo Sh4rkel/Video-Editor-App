@@ -781,7 +781,9 @@ void MainWindow::applyBlueTheme() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply custom style
