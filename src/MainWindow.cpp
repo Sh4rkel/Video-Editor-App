@@ -568,7 +568,9 @@ void MainWindow::applyButtonBorders() {
         border: 2px solid #45A049;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 void MainWindow::applySliderBorders() {
