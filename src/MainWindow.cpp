@@ -583,7 +583,9 @@ void MainWindow::applySliderBorders() {
         width: 20px;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 void MainWindow::applyMenuBarBorders() {
