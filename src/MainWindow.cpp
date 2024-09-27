@@ -603,7 +603,9 @@ void MainWindow::applyMenuBarBorders() {
         background-color: #D3D3D3;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 void MainWindow::applyToolBarBorders() {
