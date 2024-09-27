@@ -822,8 +822,10 @@ void MainWindow::applyCustomStyle() {
         background: #ADD8E6;
         width: 20px;
     }
+
     )";
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply modern style
