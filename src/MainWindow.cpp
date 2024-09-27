@@ -613,7 +613,9 @@ void MainWindow::applyToolBarBorders() {
         background-color: #F0F0F0;
     }
     )";
+
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply dark theme
