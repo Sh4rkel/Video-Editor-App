@@ -36,6 +36,7 @@ public:
     void addOverlayToVideo();
     void applyLightTheme();
     void applyGreenTheme();
+    void applyGrayTheme();
     void applyBlueTheme();
     void applyDarkTheme();
     void applyPurpleNouncesTheme();

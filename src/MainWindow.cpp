@@ -934,7 +934,8 @@ void MainWindow::applyShadows() {
 
 // Setup theme menu
 void MainWindow::setupThemeMenu() {
-    themeMenu = menuBar->addMenu(tr("&Theme"));
+    themeMenu = new QMenu(tr("Themes"), this);
+    menuBar->addMenu(themeMenu);
 
     QAction *lightThemeAction = new QAction(tr("Light Theme"), this);
     connect(lightThemeAction, &QAction::triggered, this, &MainWindow::applyLightTheme);
@@ -944,9 +945,9 @@ void MainWindow::setupThemeMenu() {
     connect(darkThemeAction, &QAction::triggered, this, &MainWindow::applyDarkTheme);
     themeMenu->addAction(darkThemeAction);
 
-    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Theme"), this);
-    connect(purpleNouncesThemeAction, &QAction::triggered, this, &MainWindow::applyPurpleNouncesTheme);
-    themeMenu->addAction(purpleNouncesThemeAction);
+    QAction *grayThemeAction = new QAction(tr("Gray Theme"), this);
+    connect(grayThemeAction, &QAction::triggered, this, &MainWindow::applyGrayTheme);
+    themeMenu->addAction(grayThemeAction);
 
     QAction *greenThemeAction = new QAction(tr("Green Theme"), this);
     connect(greenThemeAction, &QAction::triggered, this, &MainWindow::applyGreenTheme);
@@ -956,9 +957,17 @@ void MainWindow::setupThemeMenu() {
     connect(blueThemeAction, &QAction::triggered, this, &MainWindow::applyBlueTheme);
     themeMenu->addAction(blueThemeAction);
 
-    QAction *customStyleAction = new QAction(tr("Custom Style"), this);
-    connect(customStyleAction, &QAction::triggered, this, &MainWindow::applyCustomStyle);
-    themeMenu->addAction(customStyleAction);
+    QAction *purpleNouncesThemeAction = new QAction(tr("Purple Nounces Theme"), this);
+    connect(purpleNouncesThemeAction, &QAction::triggered, this, &MainWindow::applyPurpleNouncesTheme);
+    themeMenu->addAction(purpleNouncesThemeAction);
+
+    QAction *gradientThemeAction = new QAction(tr("Gradient Theme"), this);
+    connect(gradientThemeAction, &QAction::triggered, this, &MainWindow::applyGradientTheme);
+    themeMenu->addAction(gradientThemeAction);
+
+    QAction *customGradientThemeAction = new QAction(tr("Custom Gradient Theme"), this);
+    connect(customGradientThemeAction, &QAction::triggered, this, &MainWindow::applyCustomGradientTheme);
+    themeMenu->addAction(customGradientThemeAction);
 }
 
 // Add overlay to video
