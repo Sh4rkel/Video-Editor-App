@@ -989,6 +989,7 @@ void MainWindow::applyRedTheme() {
     )";
 
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply smooth transition animation
