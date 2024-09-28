@@ -946,6 +946,7 @@ void MainWindow::applyGrayTheme() {
     )";
 
     qApp->setStyleSheet(styleSheet);
+
 }
 
 // Apply smooth transition animation
