@@ -1011,6 +1011,10 @@ void MainWindow::setupThemeMenu() {
     QAction *customGradientThemeAction = new QAction(tr("Custom Gradient Theme"), this);
     connect(customGradientThemeAction, &QAction::triggered, this, &MainWindow::applyCustomGradientTheme);
     themeMenu->addAction(customGradientThemeAction);
+
+    QAction *redThemeAction = new QAction(tr("Red Theme"), this);
+    connect(redThemeAction, &QAction::triggered, this, &MainWindow::applyRedTheme);
+    themeMenu->addAction(redThemeAction);
 }
 
 // Add overlay to video

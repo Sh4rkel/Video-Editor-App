@@ -37,6 +37,7 @@ public:
     void applyLightTheme();
     void applyGreenTheme();
     void applyGrayTheme();
+    void applyRedTheme();
     void applyBlueTheme();
     void applyDarkTheme();
     void applyPurpleNouncesTheme();
