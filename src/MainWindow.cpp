@@ -949,6 +949,48 @@ void MainWindow::applyGrayTheme() {
 
 }
 
+void MainWindow::applyRedTheme() {
+    QString styleSheet = R"(
+    QMainWindow {
+        background-color: #FF6347;
+    }
+    QMenuBar {
+        background-color: #FF4500;
+        color: #FFFFFF;
+    }
+    QMenuBar::item {
+        background-color: #FF4500;
+        color: #FFFFFF;
+    }
+    QMenuBar::item:selected {
+        background-color: #FF6347;
+    }
+    QToolBar {
+        background-color: #FF4500;
+        border: none;
+    }
+    QPushButton {
+        background-color: #FF7F50;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    QPushButton:hover {
+        background-color: #FF6347;
+    }
+    QSlider::groove:horizontal {
+        height: 8px;
+        background: #ddd;
+    }
+    QSlider::handle:horizontal {
+        background: #FF7F50;
+        width: 20px;
+    }
+    )";
+
+    qApp->setStyleSheet(styleSheet);
+}
+
 // Apply smooth transition animation
 void MainWindow::applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect) {
     QPropertyAnimation *animation = new QPropertyAnimation(widget, "geometry");
