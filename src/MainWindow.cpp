@@ -6,6 +6,7 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QMediaPlayer>
+#include <QDebug>
 #include <QDockWidget>
 #include "filehandler.h"
 #include "FFmpegHandler.h"
@@ -277,9 +278,12 @@ void MainWindow::applyGradientTheme() {
 
 // Open file dialog
 void MainWindow::openFile() {
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", tr("Video Files (*.mp4 *.avi *.mkv *.mov)"));
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", VIDEO_FILTER);
     if (!fileName.isEmpty()) {
+        qDebug() << "File selected:" << fileName;
         handleFileSelected(fileName);
+    } else {
+        qDebug() << "No file selected.";
     }
 }
 
