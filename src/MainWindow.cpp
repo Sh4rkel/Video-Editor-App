@@ -4,6 +4,8 @@
 #include "GradientPalette.h"
 #include "FilterSettings.h"
 #include "FFmpegWorker.h"
+#include "filehandler.h"
+#include "FFmpegHandler.h"
 #include "SpeedDialog.h"
 #include "VideoPlayerWidget.h"
 #include <QFileDialog>
@@ -12,8 +14,6 @@
 #include <QMediaPlayer>
 #include <QDebug>
 #include <QDockWidget>
-#include "filehandler.h"
-#include "FFmpegHandler.h"
 #include <QSplitter>
 #include <QShortcut>
 #include <QPropertyAnimation>
