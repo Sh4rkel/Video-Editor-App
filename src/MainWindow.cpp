@@ -2,6 +2,10 @@
 #include "ui_MainWindow.h"
 #include "VideoFrameWidget.h"
 #include "GradientPalette.h"
+#include "FilterSettings.h"
+#include "FFmpegWorker.h"
+#include "SpeedDialog.h"
+#include "VideoPlayerWidget.h"
 #include <QFileDialog>
 #include <QInputDialog>
 #include <QMessageBox>
@@ -11,10 +15,6 @@
 #include "filehandler.h"
 #include "FFmpegHandler.h"
 #include <QSplitter>
-#include "FilterSettings.h"
-#include "FFmpegWorker.h"
-#include "SpeedDialog.h"
-#include "VideoPlayerWidget.h"
 #include <QShortcut>
 #include <QPropertyAnimation>
 #include <QGraphicsDropShadowEffect>
