@@ -278,6 +278,7 @@ void MainWindow::applyGradientTheme() {
 
 // Open file dialog
 void MainWindow::openFile() {
+    const QString VIDEO_FILTER = "Video Files (*.mp4 *.avi *.mkv *.mov)";
     QString fileName = QFileDialog::getOpenFileName(this, tr("Open Video File"), "", VIDEO_FILTER);
     if (!fileName.isEmpty()) {
         qDebug() << "File selected:" << fileName;
