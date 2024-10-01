@@ -551,6 +551,7 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/qstring.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
@@ -575,9 +576,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
+ D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDockWidget \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qdockwidget.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSplitter \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qsplitter.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QShortcut \
