@@ -39,5 +39,5 @@ As development progresses, new options and functionalities will be added to enha
    cd video-editor
 
 ## Photo Gallery
-<img src="assets/VideoEditorApp1" alt="Screenshot 1"></img>
+<img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
 <img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
