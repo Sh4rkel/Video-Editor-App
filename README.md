@@ -40,4 +40,4 @@ As development progresses, new options and functionalities will be added to enha
 
 ## Photo Gallery
 <img src="assets/VideoEditorApp1" alt="Screenshot 1"></img>
-<img src="assets/VideoEditorApp2" alt="Screenshot 2"></img>
+<img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
