@@ -4,23 +4,17 @@
 
 This is a C++ project for developing a simple and intuitive video editor. The video editor will include essential features such as importing and exporting videos, an interactive video timeline, video speed adjustment, video cutting, and combining multiple videos. Additional options will be added in the future after completing the mentioned features.
 
-## Key Features
-
-### 1. Import/Export Video
-Our video editor will allow users to import videos from various common formats (e.g., MP4, AVI, MOV) and export the finished projects in the same formats. The import/export functionality is essential for allowing users to start editing with ease and save their work.
-
-### 2. Interactive Video Timeline
-The editor will have an interactive video timeline that allows users to navigate through their video frame by frame. This will aid in precise editing and quickly finding specific sections of the video.
-
-### 3. Video Speed Adjustment
-Users will be able to adjust the speed of the video. This feature is essential for creating slow-motion or fast-motion effects to enhance the video content.
-
-### 4. Video Cutting
-Users will be able to cut parts of the video. This functionality is essential for removing unnecessary segments and keeping only the desired content.
-
-### 5. Combining Videos
-The editor will offer the ability to combine multiple videos into a single project. Users will be able to merge various video sequences to create a complete final video.
-
+## Features
+- **Modern UI**: The application uses a modern style with support for multiple themes.
+- **Video Playback**: Play, pause, and seek through videos.
+- **Video Editing**:
+   - Cut video segments.
+   - Combine multiple videos.
+   - Add text overlays.
+   - Add image overlays.
+   - Apply various filters (e.g., Grayscale, Sepia, Invert).
+- **File Handling**: Import and manage video files.
+- **FFmpeg Integration**: Utilize FFmpeg for video processing tasks.
 ## Usage
 1. Run the application:
     ```sh
