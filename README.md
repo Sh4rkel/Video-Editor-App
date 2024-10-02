@@ -49,12 +49,22 @@ As development progresses, new options and functionalities will be added to enha
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
 
-## Installation Instructions
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Sh4rkel/Video-Editor-App.git
-   cd video-editor
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/video-editor-app.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd video-editor-app
+    ```
+3. Build the project using CMake:
+    ```sh
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ```
 
 ## Photo Gallery
 <img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
