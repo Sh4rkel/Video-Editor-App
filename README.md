@@ -21,6 +21,10 @@ Users will be able to cut parts of the video. This functionality is essential fo
 ### 5. Combining Videos
 The editor will offer the ability to combine multiple videos into a single project. Users will be able to merge various video sequences to create a complete final video.
 
+## Dependencies
+- Qt 5.15 or later
+- FFmpeg
+
 ## Future Features
 As development progresses, new options and functionalities will be added to enhance the video editor and meet user needs. These will be implemented after completing and testing the basic features.
 
