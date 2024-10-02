@@ -1,8 +1,7 @@
 # Video Editor - C++ Project
 
 ## Overview
-
-This is a C++ project for developing a simple and intuitive video editor. The video editor will include essential features such as importing and exporting videos, an interactive video timeline, video speed adjustment, video cutting, and combining multiple videos. Additional options will be added in the future after completing the mentioned features.
+This project is a video editor application built using Qt. It provides various features for video editing, including applying filters, adding overlays, cutting and combining videos, and more.
 
 ## Features
 - **Modern UI**: The application uses a modern style with support for multiple themes.
