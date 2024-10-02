@@ -27,6 +27,10 @@ The editor will offer the ability to combine multiple videos into a single proje
     ./VideoEditorApp
     ```
 
+## Photo Gallery
+<img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
+<img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
+
 ## Dependencies
 - Qt 5.15 or later
 - FFmpeg
@@ -65,10 +69,6 @@ As development progresses, new options and functionalities will be added to enha
     cmake ..
     make
     ```
-
-## Photo Gallery
-<img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
-<img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
 
 ## License
 This project is licensed under the MIT License.
