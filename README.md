@@ -49,3 +49,6 @@ As development progresses, new options and functionalities will be added to enha
 ## Photo Gallery
 <img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
 <img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
+
+## License
+This project is licensed under the MIT License.
