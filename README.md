@@ -32,6 +32,7 @@ This project is a video editor application built using Qt. It provides various f
 - FFmpeg
 
 ## Future Features
+
 As development progresses, new options and functionalities will be added to enhance the video editor and meet user needs. These will be implemented after completing and testing the basic features.
 
 ## System Requirements
