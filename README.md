@@ -4,6 +4,7 @@
 This project is a video editor application built using Qt. It provides various features for video editing, including applying filters, adding overlays, cutting and combining videos, and more.
 
 ## Features
+
 - **Modern UI**: The application uses a modern style with support for multiple themes.
 - **Video Playback**: Play, pause, and seek through videos.
 - **Video Editing**:
