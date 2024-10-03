@@ -22,6 +22,7 @@ This project is a video editor application built using Qt. It provides various f
     ```
 
 ## Photo Gallery
+
 <img src="assets/VideoEditorApp1.png" alt="Screenshot 1"></img>
 <img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
 
