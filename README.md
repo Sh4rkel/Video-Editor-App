@@ -27,6 +27,7 @@ This project is a video editor application built using Qt. It provides various f
 <img src="assets/VideoEditorApp2.png" alt="Screenshot 2"></img>
 
 ## Dependencies
+
 - Qt 5.15 or later
 - FFmpeg
 
