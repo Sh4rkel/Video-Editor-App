@@ -54,6 +54,7 @@ As development progresses, new options and functionalities will be added to enha
 6. Create a new Pull Request.
 
 ## Installation
+
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/video-editor-app.git
@@ -71,4 +72,5 @@ As development progresses, new options and functionalities will be added to enha
     ```
 
 ## License
+
 This project is licensed under the MIT License.
