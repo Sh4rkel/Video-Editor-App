@@ -15,7 +15,9 @@ This project is a video editor application built using Qt. It provides various f
    - Apply various filters (e.g., Grayscale, Sepia, Invert).
 - **File Handling**: Import and manage video files.
 - **FFmpeg Integration**: Utilize FFmpeg for video processing tasks.
+- 
 ## Usage
+
 1. Run the application:
     ```sh
     ./VideoEditorApp
