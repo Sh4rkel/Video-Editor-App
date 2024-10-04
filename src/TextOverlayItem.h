@@ -12,6 +12,7 @@ public:
     void setFont(const QFont &font);
     void setColor(const QColor &color);
     void setPosition(const QPointF &position);
+
 };
 
 #endif // TEXTOVERLAYITEM_H
