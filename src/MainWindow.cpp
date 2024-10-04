@@ -1,16 +1,13 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-#include "VideoFrameWidget.h"
 #include "GradientPalette.h"
 #include "FilterSettings.h"
-#include "FFmpegWorker.h"
 #include "filehandler.h"
 #include "FFmpegHandler.h"
 #include "SpeedDialog.h"
 #include "VideoPlayerWidget.h"
 #include <QFileDialog>
 #include <QInputDialog>
-#include <QMessageBox>
 #include <QMediaPlayer>
 #include <QDebug>
 #include <QDockWidget>
