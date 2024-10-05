@@ -424,6 +424,9 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
  D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \

@@ -3,6 +3,7 @@
 #include "GradientPalette.h"
 #include "FilterSettings.h"
 #include "filehandler.h"
+#include "TextOverlayItem.h"
 #include "FFmpegHandler.h"
 #include "SpeedDialog.h"
 #include "VideoPlayerWidget.h"
@@ -18,6 +19,7 @@
 #include <QImageReader>
 #include <QFontDialog>
 #include <QColorDialog>
+#include <QGraphicsScene>
 
 // Constructor
 MainWindow::MainWindow(QWidget *parent) :
@@ -1081,5 +1083,11 @@ void MainWindow::addTextOverlay() {
     QColor color = QColorDialog::getColor(Qt::white, this, tr("Select Text Color"));
     if (!color.isValid()) return;
 
-    timelineWidget->addTextOverlay(text, QPointF(x, y), font, color);
+    auto textOverlay = new TextOverlayItem(text);
+    textOverlay->setFont(font);
+    textOverlay->setColor(color);
+    textOverlay->setPosition(QPointF(x, y));
+
+    QGraphicsScene *scene = videoPlayerWidget->getScene();
+    scene->addItem(textOverlay);
 }

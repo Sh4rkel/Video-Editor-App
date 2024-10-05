@@ -441,10 +441,10 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \

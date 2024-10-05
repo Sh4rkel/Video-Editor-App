@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QMediaPlayer>
 #include <QVideoWidget>
-
+#include <QGraphicsScene>
 QT_BEGIN_NAMESPACE
 namespace Ui { class VideoPlayerWidget; }
 QT_END_NAMESPACE
@@ -19,10 +19,12 @@ public:
     QMediaPlayer* getMediaPlayer() const;
     void seek(int position);
     void setSpeed(double speed);
+    QGraphicsScene* getScene() const;
 
 private:
     Ui::VideoPlayerWidget *ui;
     QMediaPlayer *mediaPlayer;
+    QGraphicsScene *scene;
 };
 
 #endif 

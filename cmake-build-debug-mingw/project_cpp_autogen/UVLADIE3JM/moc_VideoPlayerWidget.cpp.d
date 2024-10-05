@@ -379,6 +379,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixmap.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpolygon.h \
@@ -403,7 +404,9 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \

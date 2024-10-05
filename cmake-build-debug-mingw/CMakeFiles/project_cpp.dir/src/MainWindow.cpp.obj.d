@@ -428,10 +428,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
@@ -541,9 +541,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\VideoFrameWidget.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/QImage \
- D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\GradientPalette.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/QColor \
  D:/QT/6.7.2/mingw_64/include/QtGui/qcolor.h \
@@ -552,6 +549,10 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtCore/QList \
  D:/QT/6.7.2/mingw_64/include/QtCore/qlist.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\filehandler.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\TextOverlayItem.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsTextItem \
+ D:/QT/6.7.2/mingw_64/include/QtGui/QFont \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qfont.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
@@ -573,9 +574,6 @@ CMakeFiles/project_cpp.dir/src/MainWindow.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qlineedit.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextcursor.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qtextformat.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
  D:/QT/6.7.2/mingw_64/include/QtCore/qdebug.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QDockWidget \

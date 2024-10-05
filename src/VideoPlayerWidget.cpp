@@ -2,10 +2,10 @@
 #include "ui_VideoPlayerWidget.h"
 #include <QUrl>
 #include <QMediaPlayer>
-
+#include <QGraphicsScene>
 // Constructor
 VideoPlayerWidget::VideoPlayerWidget(QWidget *parent)
-    : QWidget(parent), ui(new Ui::VideoPlayerWidget), mediaPlayer(new QMediaPlayer(this)) {
+    : QWidget(parent), ui(new Ui::VideoPlayerWidget), mediaPlayer(new QMediaPlayer(this)), scene(new QGraphicsScene(this)) {
     ui->setupUi(this);
     mediaPlayer->setVideoOutput(ui->videoWidget);
 }
@@ -34,4 +34,8 @@ void VideoPlayerWidget::seek(int position) {
 // Set playback speed
 void VideoPlayerWidget::setSpeed(double speed) {
     mediaPlayer->setPlaybackRate(speed);
+}
+
+QGraphicsScene* VideoPlayerWidget::getScene() const {
+    return scene;
 }
