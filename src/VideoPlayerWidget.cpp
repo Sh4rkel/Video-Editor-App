@@ -3,6 +3,8 @@
 #include <QUrl>
 #include <QMediaPlayer>
 #include <QGraphicsScene>
+#include <QGraphicsView>
+
 // Constructor
 VideoPlayerWidget::VideoPlayerWidget(QWidget *parent)
     : QWidget(parent), ui(new Ui::VideoPlayerWidget), mediaPlayer(new QMediaPlayer(this)), scene(new QGraphicsScene(this)) {
