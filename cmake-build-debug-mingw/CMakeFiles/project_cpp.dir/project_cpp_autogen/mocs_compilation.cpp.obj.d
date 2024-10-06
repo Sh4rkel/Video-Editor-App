@@ -509,12 +509,12 @@ CMakeFiles/project_cpp.dir/project_cpp_autogen/mocs_compilation.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
- C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:/Users/filip/CLionProjects/Video-Editor-App/src/TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QToolBar \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qtoolbar.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QStatusBar \

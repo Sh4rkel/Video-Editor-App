@@ -378,6 +378,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qimage.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpalette.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
@@ -386,6 +387,7 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtGui/qregion.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgb.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qrgba64.h \
+  D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
   D:/QT/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -405,8 +407,13 @@ C:/Users/filip/CLionProjects/Video-Editor-App/cmake-build-debug-mingw/project_cp
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   D:/QT/6.7.2/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+  D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/QT/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \

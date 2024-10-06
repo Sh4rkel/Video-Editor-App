@@ -444,7 +444,6 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
- C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
@@ -453,6 +452,7 @@ CMakeFiles/project_cpp.dir/src/main.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:\Users\filip\CLionProjects\Video-Editor-App\src\TimelineWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QSlider \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qslider.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \

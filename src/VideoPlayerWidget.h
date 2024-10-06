@@ -5,6 +5,8 @@
 #include <QMediaPlayer>
 #include <QVideoWidget>
 #include <QGraphicsScene>
+#include <QGraphicsView>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class VideoPlayerWidget; }
 QT_END_NAMESPACE
@@ -25,6 +27,7 @@ private:
     Ui::VideoPlayerWidget *ui;
     QMediaPlayer *mediaPlayer;
     QGraphicsScene *scene;
+    QGraphicsView *view;
 };
 
-#endif 
+#endif // VIDEOPLAYERWIDGET_H

@@ -427,6 +427,14 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  D:/QT/6.7.2/mingw_64/include/QtGui/qpen.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
+ D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+ D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:\Users\filip\CLionProjects\Video-Editor-App\src\ui_VideoPlayerWidget.h \
  D:/QT/6.7.2/mingw_64/include/QtCore/QVariant \
  D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
@@ -452,12 +460,4 @@ CMakeFiles/project_cpp.dir/src/VideoPlayerWidget.cpp.obj: \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/QT/6.7.2/mingw_64/include/QtWidgets/QWidget \
  D:/QT/6.7.2/mingw_64/include/QtCore/QUrl \
- D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/QGraphicsView \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsview.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qpainter.h \
- D:/QT/6.7.2/mingw_64/include/QtGui/qtextoption.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qframe.h \
- D:/QT/6.7.2/mingw_64/include/QtWidgets/qgraphicsscene.h
+ D:/QT/6.7.2/mingw_64/include/QtCore/qurl.h
