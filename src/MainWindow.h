@@ -57,6 +57,7 @@ public:
     void applySmoothTransition(QWidget *widget, const QRect &startRect, const QRect &endRect);
     void applyModernStyle();
     void applyShadows();
+    void openColorDialog();
     void openFilterSettings();
     void applyFilter(const QString &filter);
 
@@ -81,6 +82,7 @@ private:
     QMenu *videoMenu;
     QMenu *themeMenu;
     QMenu *settingsMenu;
+    QColor selectedColor;
     QMediaPlayer *mediaPlayer;
     QVideoWidget *videoWidget;
     std::unique_ptr<FileHandler> fileHandler;

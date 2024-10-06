@@ -33,7 +33,8 @@ MainWindow::MainWindow(QWidget *parent) :
     fileHandler(std::make_unique<FileHandler>(this)),
     settingsDialog(std::make_unique<SettingsDialog>(this)),
     darkModeEnabled(true),
-    currentVideo("")
+    currentVideo(""),
+    selectedColor(Qt::white)
 {
     ui->setupUi(this);
 
@@ -88,6 +89,7 @@ MainWindow::MainWindow(QWidget *parent) :
         connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::positionChanged, timelineWidget.get(), &TimelineWidget::setPosition);
         connect(videoPlayerWidget->getMediaPlayer(), &QMediaPlayer::mediaStatusChanged, this, &MainWindow::handleMediaStatusChanged);
         connect(speedWidget.get(), &SpeedWidget::speedChanged, videoPlayerWidget.get(), &VideoPlayerWidget::setSpeed);
+        connect(ui->colorPaletteButton, &QPushButton::clicked, this, &MainWindow::openColorDialog);
 
         // Menu bar setup
         menuBar = new QMenuBar(this);
@@ -1069,12 +1071,9 @@ void MainWindow::addTextOverlay() {
     QFont font = QFontDialog::getFont(&ok, QFont("Arial", 24), this);
     if (!ok) return;
 
-    QColor color = QColorDialog::getColor(Qt::white, this, tr("Select Text Color"));
-    if (!color.isValid()) return;
-
     auto textOverlay = new TextOverlayItem(text);
     textOverlay->setFont(font);
-    textOverlay->setColor(color);
+    textOverlay->setColor(selectedColor);
     textOverlay->setPosition(QPointF(x, y));
 
     QGraphicsScene *scene = videoPlayerWidget->getScene();
