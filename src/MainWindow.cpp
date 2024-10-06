@@ -184,6 +184,13 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow() {
 }
 
+void MainWindow::openColorDialog() {
+    QColor color = QColorDialog::getColor(selectedColor, this, tr("Select Text Color"));
+    if (color.isValid()) {
+        selectedColor = color;
+    }
+}
+
 void MainWindow::applyGradientThemeFromPalette(const QList<QColor> &colors) {
     QString gradient = GradientPalette::createGradientFromPalette(colors);
     QString styleSheet = QString(R"(

@@ -31,6 +31,7 @@ public:
     QAction *saveAction;
     QAction *cutAction;
     QAction *combineAction;
+    QPushButton *colorPaletteButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -49,6 +50,12 @@ public:
         timelineWidget = new TimelineWidget(centralwidget);
         timelineWidget->setObjectName("timelineWidget");
         verticalLayout->addWidget(timelineWidget);
+
+        // Initialize and set up the color palette button
+        colorPaletteButton = new QPushButton(centralwidget);
+        colorPaletteButton->setObjectName("colorPaletteButton");
+        colorPaletteButton->setText("Select Color");
+        verticalLayout->addWidget(colorPaletteButton);
 
         MainWindow->setCentralWidget(centralwidget);
 
@@ -92,14 +99,15 @@ public:
         saveAction->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
         cutAction->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
         combineAction->setText(QCoreApplication::translate("MainWindow", "Combine", nullptr));
-    } 
+        colorPaletteButton->setText(QCoreApplication::translate("MainWindow", "Select Color", nullptr));
+    }
 
 };
 
 namespace Ui {
     class MainWindow: public Ui_MainWindow {};
-} 
+}
 
 QT_END_NAMESPACE
 
-#endif 
+#endif
