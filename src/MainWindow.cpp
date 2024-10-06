@@ -39,11 +39,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     if (videoPlayerWidget && timelineWidget && fileHandler) {
         applyModernStyle();
-        // applyShadows();
-        // applyBorders();
-        // applyGradientTheme();
-        // applyCustomGradientTheme();
-        // Set initial window size
         resize(1920, 1080);
 
         // Set size policies for widgets
